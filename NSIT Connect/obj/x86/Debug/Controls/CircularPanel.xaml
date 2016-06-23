@@ -1,0 +1,27 @@
+﻿<UserControl x:ConnectionId='1'
+    x:Class="NSIT_Connect.Controls.CircularPanel"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:NSIT_Connect.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    x:Name="CircularPanelcontrol"
+    d:DesignHeight="180"
+    d:DesignWidth="150">
+
+    <StackPanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Ellipse Width="145" Height="145" Margin='0,4,0,0' HorizontalAlignment="Center">
+            <Ellipse.Fill>
+                <ImageBrush>
+                    <ImageBrush.ImageSource>
+                        <BitmapImage x:ConnectionId='3' DecodePixelHeight="500" DecodePixelWidth="500" UriSource="{Binding ImageUri, ElementName=CircularPanelcontrol}" x:Name="image_source" />
+                    </ImageBrush.ImageSource>
+                </ImageBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+        <TextBlock x:ConnectionId='2' x:Name="label" Text="{Binding LabelName, ElementName=CircularPanelcontrol}" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,5,0,0" FontWeight="Bold"/>
+    </StackPanel>
+
+</UserControl>
+

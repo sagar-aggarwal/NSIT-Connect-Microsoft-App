@@ -1,0 +1,54 @@
+﻿<Page x:ConnectionId='1'
+    x:Class="NSIT_Connect.Views.LocationPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:NSIT_Connect.Views"
+    xmlns:ViewModel="using:NSIT_Connect.ViewModels"
+    xmlns:models="using:NSIT_Connect.Models"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:imagepanel="using:NSIT_Connect.Controls"
+    mc:Ignorable="d">
+
+    <Page.DataContext>
+        <ViewModel:LocationPageViewModel x:ConnectionId='2' x:Name="ViewModel" />
+    </Page.DataContext>
+
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Styles/Custom.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+
+    </Page.Resources>
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0">
+            <TextBlock Text="locations" 
+        		Style="{ThemeResource BodyTextBlockStyle}"
+                Margin="15,0,0,0"
+        		Foreground="{StaticResource colorPrimaryDark}" 
+        		FontSize="55"         />
+            <TextBlock Text="#find interesting places around you" 
+        		Style="{ThemeResource BodyTextBlockStyle}" 
+        		Foreground="{StaticResource colorPrimary}" 
+                Margin="15,0,0,0"
+        		FontSize="24" />
+        </StackPanel>
+        <GridView x:ConnectionId='3' Height="Auto"                                         Margin="15,25,0,0" Grid.Row="1" >
+            <GridView.ItemTemplate >
+                <DataTemplate                                 >
+                    <imagepanel:CircularPanel x:ConnectionId='4' Margin="15"                                                 />
+                </DataTemplate>
+            </GridView.ItemTemplate>
+        </GridView>
+
+    </Grid>
+</Page>
+
