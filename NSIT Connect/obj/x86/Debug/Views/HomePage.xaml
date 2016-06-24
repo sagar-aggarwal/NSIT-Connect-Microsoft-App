@@ -21,44 +21,44 @@
 
     <Page.Resources>
         <ResourceDictionary>
-            <DataTemplate x:ConnectionId='3' x:Name="MessageListItemTemplate">
-                <Grid>
+            <DataTemplate x:ConnectionId='3' x:Name="MessageListItemTemplate" >
+                <Grid Margin="0,1,0,1">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="4" />
                         <ColumnDefinition />
                         <ColumnDefinition Width="Auto" />
                     </Grid.ColumnDefinitions>
                     <Rectangle Fill="{StaticResource colorPrimaryDark}" Visibility="{Binding IsRead, Converter={StaticResource VisibleWhenFalseConverter}}" />
-                    <StackPanel Grid.Column="1">
+                    <StackPanel Grid.Column="1" Height="60" VerticalAlignment="Center">
                         <TextBlock x:Name="From" Margin="8,0,0,0"
                                FontSize="16" FontWeight="Normal"
-                               Foreground="Black" MaxLines="1"
+                               Foreground="Black" MaxLines="1" TextWrapping="Wrap"
+                               Style="{ThemeResource BodyTextBlockStyle}"
                                Text="{Binding Message, FallbackValue=Message}" />
-                        <TextBlock x:Name="Subject" Margin="8,0,0,0"
-                               FontSize="12" FontWeight="Normal"
-                               Foreground="{StaticResource CustomColorBrush}" MaxLines="1"
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock x:Name="Subject" Margin="8,0,0,0"
+                               FontSize="12" FontWeight="Normal" Width="25" MaxLines="1" Style="{ThemeResource BodyTextBlockStyle}"
                                Text="{Binding Likes}" />
-                        <TextBlock x:Name="Body" Margin="8,0,0,8"
-                               FontSize="12" FontWeight="Normal"
-                               Foreground="DimGray" MaxLines="1"
-                               Style="{StaticResource TitleTextBlockStyle}"
-                               Text="{Binding Object_ID, FallbackValue=Object_ID}" />
+                            <Image Source="ms-appx:///Assets/ic_thumb_up_black_18dp.png" />
+                        </StackPanel>
                     </StackPanel>
                     <TextBlock x:Name="Date" Grid.Column="2"
                            Margin="8,0,16,8" HorizontalAlignment="Right"
                            VerticalAlignment="Bottom" FontSize="12"
                            FontWeight="Light" Foreground="DimGray"
+                           Style="{ThemeResource BodyTextBlockStyle}"
                            Text="{Binding Time_Created, Mode=OneWay, Converter={StaticResource StringFormatConverter}, ConverterParameter=\{0:d\}}"
                            TextAlignment="Right" />
                 </Grid>
             </DataTemplate>
 
-            <DataTemplate x:ConnectionId='4' x:Name="MessageDetailTemplate">
-                <ScrollViewer VerticalScrollBarVisibility="Auto">
+            <DataTemplate x:ConnectionId='4' x:Name="MessageDetailTemplate" >
+                <ScrollViewer VerticalScrollBarVisibility="Auto" Visibility="{Binding Detailvisible, Converter={StaticResource VisibleWhenFalseConverter}}">
                     <RelativePanel Padding="16">
                         <Ellipse x:Name="Ellipse" Width="50"
                              Height="50" Margin="0,0,16,0"
-                             Fill="Gainsboro" />
+                             Fill="{StaticResource colorPrimaryDark}" >
+                        </Ellipse>
                         <TextBlock x:Name="From" FontSize="20"
                                FontWeight="Normal" Foreground="Black"
                                MaxLines="1" RelativePanel.AlignTopWith="Ellipse"
@@ -424,6 +424,7 @@
             </Controls:MasterDetailsView.MasterCommandBarContent>
             <Controls:MasterDetailsView.MasterCommands>
                 <AppBarButton x:ConnectionId='10'
+                    Foreground="{StaticResource colorPrimaryDark}"
                                                                
                     Icon="Refresh"
                     Label="Refresh" />

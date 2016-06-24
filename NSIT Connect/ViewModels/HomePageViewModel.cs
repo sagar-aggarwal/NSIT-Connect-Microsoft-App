@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using Template10.Common;
 using Template10.Mvvm;
 using Windows.Data.Json;
+using Windows.UI.Xaml;
 using Windows.UI.Xaml.Navigation;
 
 namespace NSIT_Connect.ViewModels
@@ -20,7 +21,7 @@ namespace NSIT_Connect.ViewModels
             "object_id,link,created_time,comments.limit(0).summary(true),likes.limit(0).summary(true)" +
             "&access_token=" + Constants.common_access;
         private string result = null;
-
+        private bool refresh = false;
 
         private string hobject, hmessage, hpicture, hlink, hlikes, htime;
 
@@ -35,6 +36,8 @@ namespace NSIT_Connect.ViewModels
             RefreshCommand.Execute();
             return Task.CompletedTask;
         }
+
+
 
         ObservableCollection<Feed> _homefeed = default(ObservableCollection<Feed>);
 
@@ -60,6 +63,7 @@ namespace NSIT_Connect.ViewModels
             IsMasterLoading = true;
             HomeFeed.Clear();
             Selected = null;
+            refresh = true;
             WindowWrapper.Current().Dispatcher.Dispatch(() =>
             {
                 getinfo();
@@ -121,6 +125,8 @@ namespace NSIT_Connect.ViewModels
             var index = HomeFeed.IndexOf(_selected);
             if (index == -1)
                 return false;
+            if (index == HomeFeed.Count - 2)
+                getinfo();
             return index < (HomeFeed.Count - 1);
         }
 
@@ -173,6 +179,10 @@ namespace NSIT_Connect.ViewModels
 
         public async void getinfo()
         {
+            if(refresh)
+                next = "https://graph.facebook.com/" + Constants.id_nsitonline + "/posts?limit=20&fields=id,picture,from,shares,message," +
+            "object_id,link,created_time,comments.limit(0).summary(true),likes.limit(0).summary(true)" +
+            "&access_token=" + Constants.common_access;
             if (NetworkInterface.GetIsNetworkAvailable())
             {
                 var httpClient = new HttpClient();
@@ -243,14 +253,17 @@ namespace NSIT_Connect.ViewModels
                         htime = arr.GetObjectAt(i).GetNamedString("created_time");
                     else
                         htime = string.Empty;
-                    HomeFeed.Add(new Feed() { Object_ID = hobject, Likes = hlikes, Link = hlink, Message = hmessage, Picture = hpicture, Time_Created = htime });
+                    DateTime dt = Convert.ToDateTime(htime);
+                    HomeFeed.Add(new Feed() { Object_ID = hobject, Likes = hlikes, Link = hlink, Message = hmessage, Picture = hpicture, Time_Created = dt.ToString("d MMM , h:mm tt") });
 
                 }
                 ob = ob.GetNamedObject("paging");
                 next = ob.GetNamedString("next");
 
             }
-
+            if (refresh)
+                Selected = HomeFeed[0];
+            refresh = false;
         }
     }
 }

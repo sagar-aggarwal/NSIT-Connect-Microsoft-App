@@ -11,6 +11,7 @@
     <RootPropertyPathName Name="DetailsRequested" />
     <RootPropertyPathName Name="VisualStateNormalMinWidth" />
     <RootPropertyPathName Name="VisualStateNarrowMinWidth" />
+    <RootPropertyPathName Name="Detailvisible" />
     <RootPropertyPathName Name="Time_Created" />
     <RootPropertyPathName Name="Message" />
     <RootPropertyPathName Name="Object_ID" />
@@ -46,6 +47,7 @@
       <RootProperty Name="Background" />
       <RootProperty Name="Children" />
       <RootProperty Name="Height" />
+      <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Orientation" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
@@ -70,13 +72,14 @@
       <RootProperty Name="TextWrapping" />
       <RootProperty Name="Transitions" />
       <RootProperty Name="TextAlignment" />
+      <RootProperty Name="Width" />
       <RootProperty Name="LineHeight" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Data.Binding">
       <RootProperty Name="ElementName" />
       <RootProperty Name="RelativeSource" />
-      <RootProperty Name="Mode" />
       <RootProperty Name="Converter" />
+      <RootProperty Name="Mode" />
       <RootProperty Name="ConverterParameter" />
       <RootProperty Name="FallbackValue" />
       <RootProperty Name="UpdateSourceTrigger" />
@@ -257,6 +260,7 @@
       <RootProperty Name="TabNavigation" />
       <RootProperty Name="VerticalScrollMode" />
       <RootProperty Name="ZoomMode" />
+      <RootProperty Name="Visibility" />
       <RootProperty Name="Margin" />
       <RootProperty Name="HorizontalContentAlignment" />
       <RootEvent Name="ViewChanged" />
@@ -384,6 +388,7 @@
       <RootProperty Name="Icon" />
       <RootProperty Name="IsEnabled" />
       <RootProperty Name="Visibility" />
+      <RootProperty Name="Foreground" />
       <RootProperty Name="Command" />
       <RootProperty Name="Label" />
       <RootEvent Name="Click" />
@@ -424,6 +429,11 @@
     <RootType FullName="Windows.UI.Xaml.Shapes.Rectangle">
       <RootProperty Name="Fill" />
       <RootProperty Name="Visibility" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Image">
+      <RootProperty Name="Source" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Stretch" />
     </RootType>
     <RootType FullName="System.String" />
     <RootType FullName="NSIT_Connect.Views.HomePage" />
@@ -471,11 +481,6 @@
       <RootProperty Name="Header" />
       <RootProperty Name="Content" />
       <RootProperty Name="Padding" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.Image">
-      <RootProperty Name="Margin" />
-      <RootProperty Name="Source" />
-      <RootProperty Name="Stretch" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Documents.LineBreak" />
     <RootType FullName="Windows.UI.Xaml.Documents.Bold">

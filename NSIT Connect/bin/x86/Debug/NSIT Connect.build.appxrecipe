@@ -9,16 +9,16 @@
     <SolutionConfiguration>Debug|x86</SolutionConfiguration>
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>7b35e933-3e05-42a6-828e-8065ca037667</PackageIdentityName>
-    <IntermediateOutputPath>C:\Users\AGGARWAL%27S\documents\visual studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\</IntermediateOutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\AGGARWAL%27S\documents\visual studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\documents\visual studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\NSIT Connect.exe">
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\NSIT Connect.exe">
       <PackagePath>entrypoint\NSIT Connect.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
@@ -345,70 +345,73 @@
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\.nuget\packages\WindowsStateTriggers\1.1.0\lib\uap10.0\WindowsStateTriggers.dll">
       <PackagePath>WindowsStateTriggers.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\documents\visual studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\Location\amusment.jpg">
-      <PackagePath>Assets\Location\amusment.jpg</PackagePath>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\ic_thumb_up_black_18dp.png">
+      <PackagePath>Assets\ic_thumb_up_black_18dp.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\documents\visual studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\Location\bowling.jpg">
-      <PackagePath>Assets\Location\bowling.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\documents\visual studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\Location\cafes.jpg">
-      <PackagePath>Assets\Location\cafes.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\documents\visual studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\Location\food.jpg">
-      <PackagePath>Assets\Location\food.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\documents\visual studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\Location\malls.jpg">
-      <PackagePath>Assets\Location\malls.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\documents\visual studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\Location\movies.jpg">
-      <PackagePath>Assets\Location\movies.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\documents\visual studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\Location\night_club.jpg">
-      <PackagePath>Assets\Location\night_club.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\documents\visual studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\Location\nsit_hotspots.jpg">
-      <PackagePath>Assets\Location\nsit_hotspots.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\documents\visual studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\Location\park.jpg">
-      <PackagePath>Assets\Location\park.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\documents\visual studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\Location\restuarant.png">
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\Location\restuarant.png">
       <PackagePath>Assets\Location\restuarant.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\documents\visual studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\documents\visual studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\documents\visual studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\documents\visual studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\documents\visual studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\documents\visual studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\documents\visual studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\documents\visual studio 2015\Projects\NSIT Connect\NSIT Connect\Help.htm">
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\Location\amusment.jpg">
+      <PackagePath>Assets\Location\amusment.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\Location\bowling.jpg">
+      <PackagePath>Assets\Location\bowling.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\Location\cafes.jpg">
+      <PackagePath>Assets\Location\cafes.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\Location\food.jpg">
+      <PackagePath>Assets\Location\food.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\Location\malls.jpg">
+      <PackagePath>Assets\Location\malls.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\Location\movies.jpg">
+      <PackagePath>Assets\Location\movies.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\Location\night_club.jpg">
+      <PackagePath>Assets\Location\night_club.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\Location\nsit_hotspots.jpg">
+      <PackagePath>Assets\Location\nsit_hotspots.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\Location\park.jpg">
+      <PackagePath>Assets\Location\park.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Help.htm">
       <PackagePath>Help.htm</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\documents\visual studio 2015\Projects\NSIT Connect\NSIT Connect\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\documents\visual studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\NSIT Connect.xr.xml">
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\NSIT Connect.xr.xml">
       <PackagePath>NSIT Connect.xr.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
@@ -441,10 +444,10 @@
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\.nuget\packages\WindowsStateTriggers\1.1.0\lib\uap10.0\WindowsStateTriggers\Properties\WindowsStateTriggers.rd.xml">
       <PackagePath>WindowsStateTriggers\Properties\WindowsStateTriggers.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\documents\visual studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\documents\visual studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\Core\NSIT Connect.exe">
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\Core\NSIT Connect.exe">
       <PackagePath>NSIT Connect.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

@@ -24,9 +24,16 @@ namespace NSIT_Connect.Views
     /// </summary>
     public sealed partial class HomePage : Page
     {
+
         public HomePage()
         {
             this.InitializeComponent();
+        }
+
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            base.OnNavigatedTo(e);
+            
         }
 
         private void NarrowVisualStateGroup_CurrentStateChanged(object sender, VisualStateChangedEventArgs e)
