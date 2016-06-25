@@ -14,7 +14,11 @@ namespace NSIT_Connect.ViewModels
     public class ProfessorsPageViewModel : ViewModelBase
     {
         public ObservableCollection<LocationItem> lpanel { get; set; }
-        string[] arrlocations = {"MANAGEMENT",
+        public String[] titles = {"DM", "DC", "DP",
+            "DM", "H&M",
+            "ECE",
+            "COE", "ICE", "MPAE", "IT", "BT", "SAS"};
+        public string[] arrlocations = {"MANAGEMENT",
             "CHEMISTRY",
             "PHYSICS",
             "DEPARTMENT OF \n       MATHS",
@@ -26,7 +30,7 @@ namespace NSIT_Connect.ViewModels
             "INFORMATION \n TECHNOLOGY",
             "BIO-TECHNOLOGY",
             "APPLIED SCIENCES" };
-        string[] Source = {
+        public string[] Source = {
               "ms-appx:///Assets/Professors/management.png",
               "ms-appx:///Assets/Professors/chemistry.png",
               "ms-appx:///Assets/Professors/physics.png",
@@ -56,7 +60,7 @@ namespace NSIT_Connect.ViewModels
             lpanel = new ObservableCollection<LocationItem>();
             for (int i = 0; i < arrlocations.Length; i++)
             {
-                lpanel.Add(new LocationItem() { Name = arrlocations[i], source = new Uri(Source[i]) });
+                lpanel.Add(new LocationItem() { Name = arrlocations[i], source = new Uri(Source[i]),Number = i });
             }
             Selected = lpanel[0];
         }

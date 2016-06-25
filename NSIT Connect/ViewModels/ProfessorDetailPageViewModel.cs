@@ -1,11 +1,13 @@
 ﻿using NSIT_Connect.Models;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Template10.Mvvm;
 using Template10.Services.NavigationService;
+using Windows.Data.Json;
 using Windows.UI.Popups;
 using Windows.UI.Xaml.Navigation;
 
@@ -13,8 +15,21 @@ namespace NSIT_Connect.ViewModels
 {
     public class ProfessorDetailPageViewModel : ViewModelBase
     {
+        public string[] arrlocations = {"MANAGEMENT",
+            "CHEMISTRY",
+            "PHYSICS",
+            "DEPARTMENT OF MATHS",
+            "HUMANITIES & MANAGEMENT",
+            "ELECTRONICS & COMMUNICATION ENGG",
+            "COMPUTER ENGG",
+            "INSTRUMENTATION & CONTROL ENGG",
+            "MANUFACTURING \n     PROCESSES & AUTOMATION ENGG",
+            "INFORMATION TECHNOLOGY",
+            "BIO-TECHNOLOGY",
+            "APPLIED SCIENCES" };
+
         private LocationItem _selected = default(LocationItem);
-        public object Selected
+        public LocationItem Selected
         {
             get { return _selected; }
             set
@@ -23,19 +38,34 @@ namespace NSIT_Connect.ViewModels
                 Set(ref _selected, message);
             }
         }
-        public ProfessorDetailPageViewModel()
-        {
 
-        }
+        private ObservableCollection<ProfessorItem> item = new ObservableCollection<ProfessorItem>();
+        public ObservableCollection<ProfessorItem> Item { get { return item; } set { item = value; } }
 
         public override async Task OnNavigatedToAsync(object parameter, NavigationMode mode, IDictionary<string, object> suspensionState)
         {
-            Selected = (suspensionState.ContainsKey(nameof(Selected))) ? suspensionState[nameof(Selected)] : parameter;
-            LocationItem SelectedObject = Selected as LocationItem;
-            if(SelectedObject != null)
+            Selected = (suspensionState.ContainsKey(nameof(Selected))) ? suspensionState[nameof(Selected)] as LocationItem : parameter as LocationItem;
+            Selected.Name = "#"+arrlocations[Selected.Number].ToLower();
+            int key = Selected.Number;
+            string[] name = new string[100], ids = new string[100], contact = new string[100];
+            int k = 0;
+            JsonArray ar;
+            JsonObject ob;
+            ar = JsonArray.Parse(Constants.pro);
+            ob = ar.GetObjectAt((uint)key);
+            ar = ob.GetNamedArray("ContentArray");
+            for (uint j = 0; j < ar.Count; j++)
             {
-                var mssg = new MessageDialog(SelectedObject.Name);
-                await mssg.ShowAsync();
+
+                name[k] = ar.GetObjectAt(j).GetNamedString("Name");
+                if (ar.GetObjectAt(j).GetNamedString("Designation") != "")
+                    name[k] = name[k] + " , " + ar.GetObjectAt(j).GetNamedString("Designation");
+                ids[k] = ar.GetObjectAt(j).GetNamedString("Email");
+                contact[k] = ar.GetObjectAt(j).GetNamedString("ContactNo");
+                k++;
+            }
+            for(int j = 0; j < k; j++) {
+                Item.Add(new ProfessorItem() { Email = ids[j] , Name = name[j], Phone = contact[j] ,FirstLetter = name[j][0] });
             }
             await Task.CompletedTask;
         }

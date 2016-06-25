@@ -13,8 +13,20 @@ namespace NSIT_Connect.Models
         private string room;
         private string phone;
         private string email;
+        private char fisrtLetter;
 
         public event PropertyChangedEventHandler PropertyChanged;
+
+        public char FirstLetter
+        {
+            get { return fisrtLetter; }
+            set
+            {
+                fisrtLetter = value;
+                // Call OnPropertyChanged whenever the property is updated
+                OnPropertyChanged("FirstLetter");
+            }
+        }
 
         public string Name
         {

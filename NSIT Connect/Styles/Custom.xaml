@@ -21,6 +21,7 @@
     <SolidColorBrush x:Key="textColorPrimary">#5e5e5e</SolidColorBrush>
     <SolidColorBrush x:Key="universalBackground">#e3e3e3</SolidColorBrush>
     <SolidColorBrush x:Key="universalgray">#F4F4F4</SolidColorBrush>
+    
 
     <!--  mainpage  -->
 

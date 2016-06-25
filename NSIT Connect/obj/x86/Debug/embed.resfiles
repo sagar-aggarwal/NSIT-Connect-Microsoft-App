@@ -1,6 +1,7 @@
 App.xbf
 Controls\CircularPanel.xbf
 Controls\RectangularPanel.xbf
+Controls\Test.xbf
 Styles\Custom.xbf
 Views\Busy.xbf
 Views\HomePage.xbf

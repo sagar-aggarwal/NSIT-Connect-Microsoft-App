@@ -12,7 +12,20 @@ namespace NSIT_Connect.Models
     {
         private String _Name;
         private Uri _source;
+        private int _Number;
+        private string _Key;
         public event PropertyChangedEventHandler PropertyChanged;
+
+        public int Number
+        {
+            get { return _Number; }
+            set
+            {
+                _Number = value;
+                // Call OnPropertyChanged whenever the property is updated
+                OnPropertyChanged("Number");
+            }
+        }
 
         public string Name
         {
@@ -33,6 +46,17 @@ namespace NSIT_Connect.Models
                 _source = value;
                 // Call OnPropertyChanged whenever the property is updated
                 OnPropertyChanged("source");
+            }
+        }
+
+        public string Key
+        {
+            get { return _Key; }
+            set
+            {
+                _Key = value;
+                // Call OnPropertyChanged whenever the property is updated
+                OnPropertyChanged("Key");
             }
         }
 

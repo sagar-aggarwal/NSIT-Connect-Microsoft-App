@@ -1,0 +1,63 @@
+﻿<Page
+    x:Class="NSIT_Connect.Controls.Test"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:NSIT_Connect.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Styles/Custom.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Page.Resources>
+
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid Height="250">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="250" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Border Grid.Column="0" BorderBrush="Blue" BorderThickness="4"/>
+            <Grid Grid.Column="0" Padding="10">
+                <Border Background="Red" />
+                <Viewbox Stretch="Uniform" >
+                    <TextBlock Text="S" Foreground="White" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+                </Viewbox>
+            </Grid>
+            <Grid Grid.Column="1" Margin="5,5,5,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="4" />
+                </Grid.RowDefinitions>
+                <Viewbox Grid.Row="0" Stretch="Uniform" Margin="10">
+                    <TextBlock Style="{ThemeResource BodyTextBlockStyle}" FontWeight="SemiBold" Text="Dr. (Mrs.) Sanjeev Thakur , Associate Professor" />
+                </Viewbox>
+                <StackPanel Grid.Row="1" Orientation="Horizontal">
+                    <Image Margin="20,0,0,0" Source="ms-appx:///Assets/ic_call_black_48dp.png" />
+                    <Viewbox Stretch="Uniform" Margin="15">
+                        <TextBlock Text="25000240(DID),3240(int)"
+                               Margin="8,0,0,0"
+                               Style="{ThemeResource BodyTextBlockStyle}" />
+                    </Viewbox>
+                </StackPanel>
+                <StackPanel Grid.Row="2" Orientation="Horizontal">
+                    <Image Margin="20,0,0,0" Source="ms-appx:///Assets/ic_email_black_48dp.png" />
+                    <Viewbox Stretch="Uniform" Margin="15">
+                        <TextBlock Text="25000240(DID),3240(int)"
+                               Margin="8,0,0,0"
+                               Style="{ThemeResource BodyTextBlockStyle}" />
+                    </Viewbox>
+                </StackPanel>
+                <Rectangle Fill="{StaticResource colorPrimaryDark}" Grid.Row="3" Margin="10,0,10,0" />
+            </Grid>
+
+        </Grid>
+    </Grid>
+</Page>

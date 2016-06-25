@@ -345,8 +345,17 @@
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\.nuget\packages\WindowsStateTriggers\1.1.0\lib\uap10.0\WindowsStateTriggers.dll">
       <PackagePath>WindowsStateTriggers.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\contact.png">
+      <PackagePath>Assets\contact.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\facility-management.png">
       <PackagePath>Assets\facility-management.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\ic_call_black_36dp.png">
+      <PackagePath>Assets\ic_call_black_36dp.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\ic_email_black_36dp.png">
+      <PackagePath>Assets\ic_email_black_36dp.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\ic_thumb_up_black_18dp.png">
       <PackagePath>Assets\ic_thumb_up_black_18dp.png</PackagePath>

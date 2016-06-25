@@ -42,10 +42,9 @@
         		FontSize="24" />
         </StackPanel>
         <GridView 
-            
-            Height="Auto" ItemsSource="{x:Bind ViewModel.lpanel}" Margin="30,25,0,0" Grid.Row="1" HorizontalAlignment="Stretch" 
-            ItemClick="{x:Bind ViewModel.GotoProfessorDetailsPage}"
-            SelectedItem="{Binding Selected, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" IsItemClickEnabled="True">
+            x:Name="Main_Grid"
+            Height="Auto" ItemsSource="{x:Bind ViewModel.lpanel}" Margin="30,25,0,0" Grid.Row="1" HorizontalAlignment="Stretch"
+            ItemClick="Main_Grid_ItemClick" IsItemClickEnabled="True">
             <GridView.ItemTemplate >
                 <DataTemplate x:DataType="models:LocationItem">
                     <controls:RectangularPanel Margin="15" Label="{x:Bind Name}" Source ="{x:Bind source}" />

@@ -104,6 +104,9 @@
     <Compile Include="Controls\RectangularPanel.xaml.cs">
       <DependentUpon>RectangularPanel.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Controls\Test.xaml.cs">
+      <DependentUpon>Test.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Models\Constants.cs" />
     <Compile Include="Models\Feed.cs" />
     <Compile Include="Models\LocationItem.cs" />
@@ -117,7 +120,7 @@
     <Compile Include="Views\ProfesorsDetailPage.xaml.cs">
       <DependentUpon>ProfesorsDetailPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\SettingsPageViewModel.cs" />
+    <Compile Include="ViewModels\SettingsPageViewModel.cs" />
     <Compile Include="Views\Busy.xaml.cs">
       <DependentUpon>Busy.xaml</DependentUpon>
     </Compile>
@@ -146,7 +149,10 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\contact.png" />
     <Content Include="Assets\facility-management.png" />
+    <Content Include="Assets\ic_call_black_36dp.png" />
+    <Content Include="Assets\ic_email_black_36dp.png" />
     <Content Include="Assets\ic_thumb_up_black_18dp.png" />
     <Content Include="Assets\Location\amusment.jpg" />
     <Content Include="Assets\Location\bowling.jpg" />
@@ -193,6 +199,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Controls\RectangularPanel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\Test.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

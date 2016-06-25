@@ -249,3 +249,8 @@ C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Conn
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Views\ProfesorsDetailPage.g.cs
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Views\ProfesorsDetailPage.xaml
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Views\ProfesorsDetailPage.xbf
+C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\Controls\Test.xbf
+C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Controls\Test.g.i.cs
+C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Controls\Test.g.cs
+C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Controls\Test.xaml
+C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Controls\Test.xbf

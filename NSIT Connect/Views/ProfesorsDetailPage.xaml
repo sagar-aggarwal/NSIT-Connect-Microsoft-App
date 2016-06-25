@@ -4,6 +4,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:NSIT_Connect.Views"
     xmlns:ViewModel ="using:NSIT_Connect.ViewModels"
+    xmlns:models="using:NSIT_Connect.Models"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
@@ -12,7 +13,75 @@
         <ViewModel:ProfessorDetailPageViewModel x:Name="ViewModel" />
     </Page.DataContext>
 
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Styles/Custom.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Page.Resources>
+
+
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Viewbox Grid.Row="0" Stretch="Uniform">
+            <TextBlock 
+                Text="{x:Bind ViewModel.Selected.Name}"
+        		Style="{ThemeResource BodyTextBlockStyle}"
+                Margin="10,0,5,0"
+                FontSize="55"
+        		Foreground="{StaticResource colorPrimaryDark}" />
+        </Viewbox>
+        
+        <ListView Margin="5,25,5,0" Grid.Row="1" ItemsSource="{x:Bind ViewModel.Item}" IsActiveView="False">
+            <ListView.ItemTemplate>
+                <DataTemplate x:DataType="models:ProfessorItem">
+                    <Grid Height="150" Margin="0,2.5,0,2.5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.9*" />
+                            <ColumnDefinition Width="2*" />
+                        </Grid.ColumnDefinitions>
+                        <Viewbox Grid.Column="0" Stretch="Uniform" >
+                            <Grid Background="Red">
+                                <Image Source="ms-appx:///Assets/contact.png" ></Image>
+                            </Grid>
+                        </Viewbox>
+                        <Grid Grid.Column="1" Margin="5,5,5,0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="4" />
+                            </Grid.RowDefinitions>
+                            <Viewbox Grid.Row="0" Stretch="Uniform" Margin="10">
+                                <TextBlock Style="{ThemeResource BodyTextBlockStyle}" FontWeight="SemiBold" Text="{x:Bind Name}" />
+                            </Viewbox>
+                            <StackPanel Grid.Row="1" Orientation="Horizontal">
+                                <Image Margin="10,0,0,0" Source="ms-appx:///Assets/ic_call_black_36dp.png" />
+                                <Viewbox Stretch="Uniform" Margin="15">
+                                    <TextBlock Text="{x:Bind Phone}"
+                               Margin="8,0,0,0"
+                               Style="{ThemeResource BodyTextBlockStyle}" />
+                                </Viewbox>
+                            </StackPanel>
+                            <StackPanel Grid.Row="2" Orientation="Horizontal">
+                                <Image Margin="10,0,0,0" Source="ms-appx:///Assets/ic_email_black_36dp.png" />
+                                <Viewbox Stretch="Uniform" Margin="15">
+                                    <TextBlock Text="{x:Bind Email}"
+                               Margin="8,0,0,0"
+                               Style="{ThemeResource BodyTextBlockStyle}" />
+                                </Viewbox>
+                            </StackPanel>
+                            <!--<Rectangle Fill="{StaticResource colorPrimaryDark}" Grid.Row="3" Margin="10,0,10,0" />-->
+                        </Grid>
+                    </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
 
     </Grid>
 </Page>
