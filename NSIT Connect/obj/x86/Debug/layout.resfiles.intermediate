@@ -1,4 +1,5 @@
 WinMetadata\Windows.winmd
+Assets\facility-management.png
 Assets\ic_thumb_up_black_18dp.png
 Assets\Location\amusment.jpg
 Assets\Location\bowling.jpg
@@ -11,6 +12,19 @@ Assets\Location\nsit_hotspots.jpg
 Assets\Location\park.jpg
 Assets\Location\restuarant.png
 Assets\LockScreenLogo.scale-200.png
+Assets\Professors\applied.png
+Assets\Professors\bio.png
+Assets\Professors\bio2.png
+Assets\Professors\chemistry.png
+Assets\Professors\computer.png
+Assets\Professors\ece.png
+Assets\Professors\humanities.png
+Assets\Professors\instrumentation.png
+Assets\Professors\it.png
+Assets\Professors\management.png
+Assets\Professors\math.png
+Assets\Professors\Mechanical.png
+Assets\Professors\physics.png
 Assets\SplashScreen.scale-200.png
 Assets\Square150x150Logo.scale-200.png
 Assets\Square44x44Logo.scale-200.png

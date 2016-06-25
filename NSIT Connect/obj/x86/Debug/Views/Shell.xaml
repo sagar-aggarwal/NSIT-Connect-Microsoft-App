@@ -25,6 +25,7 @@
                                Text="Home" />
                 </StackPanel>
             </Controls:HamburgerButtonInfo>
+
             <Controls:HamburgerButtonInfo PageType="views:LocationPage" 
                                           AutomationProperties.Name="Jerry"
                                           >
@@ -32,7 +33,18 @@
                     <SymbolIcon Width="48" Height="48"
                                 Symbol="Map" />
                     <TextBlock Margin="12,0,0,0" VerticalAlignment="Center"
-                               Text="Home" />
+                               Text="Location" />
+                </StackPanel>
+            </Controls:HamburgerButtonInfo>
+
+            <Controls:HamburgerButtonInfo PageType="views:ProfessorsPage" 
+                                          AutomationProperties.Name="Jerry"
+                                          >
+                <StackPanel Orientation="Horizontal">
+                    <SymbolIcon Width="48" Height="48"
+                                Symbol="Contact" />
+                    <TextBlock Margin="12,0,0,0" VerticalAlignment="Center"
+                               Text="Professors" />
                 </StackPanel>
             </Controls:HamburgerButtonInfo>
         </Controls:HamburgerMenu.PrimaryButtons>

@@ -1,31 +1,41 @@
+﻿using NSIT_Connect.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Template10.Common;
 using Template10.Mvvm;
 using Template10.Services.NavigationService;
+using Windows.UI.Popups;
 using Windows.UI.Xaml.Navigation;
 
 namespace NSIT_Connect.ViewModels
 {
-    public class DetailPageViewModel : ViewModelBase
+    public class ProfessorDetailPageViewModel : ViewModelBase
     {
-        public DetailPageViewModel()
+        private LocationItem _selected = default(LocationItem);
+        public LocationItem Selected
         {
-            if (Windows.ApplicationModel.DesignMode.DesignModeEnabled)
+            get { return _selected; }
+            set
             {
-                Value = "Designtime value";
+                var message = value as LocationItem;
+                Set(ref _selected, message);
             }
         }
+        public ProfessorDetailPageViewModel()
+        {
 
-        private string _Value = "Default";
-        public string Value { get { return _Value; } set { Set(ref _Value, value); } }
+        }
 
         public override async Task OnNavigatedToAsync(object parameter, NavigationMode mode, IDictionary<string, object> suspensionState)
         {
-            Value = (suspensionState.ContainsKey(nameof(Value))) ? suspensionState[nameof(Value)]?.ToString() : parameter?.ToString();
+            Selected = (suspensionState.ContainsKey(nameof(Selected))) ? suspensionState[nameof(Selected)] as LocationItem : parameter as LocationItem;
+            if(Selected != null)
+            {
+                var mssg = new MessageDialog(Selected.Name);
+                await mssg.ShowAsync();
+            }
             await Task.CompletedTask;
         }
 
@@ -33,7 +43,7 @@ namespace NSIT_Connect.ViewModels
         {
             if (suspending)
             {
-                suspensionState[nameof(Value)] = Value;
+                suspensionState[nameof(Selected)] = Selected;
             }
             await Task.CompletedTask;
         }
@@ -43,6 +53,6 @@ namespace NSIT_Connect.ViewModels
             args.Cancel = false;
             await Task.CompletedTask;
         }
+
     }
 }
-

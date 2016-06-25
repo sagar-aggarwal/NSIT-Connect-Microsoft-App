@@ -1,0 +1,57 @@
+﻿<Page
+    x:Class="NSIT_Connect.Views.ProfessorsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:NSIT_Connect.Views"
+    xmlns:ViewModel="using:NSIT_Connect.ViewModels"
+    xmlns:models="using:NSIT_Connect.Models"
+    xmlns:controls="using:NSIT_Connect.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Page.DataContext>
+        <ViewModel:ProfessorsPageViewModel x:Name="ViewModel" />
+    </Page.DataContext>
+
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Styles/Custom.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+
+    </Page.Resources>
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0">
+            <TextBlock Text="professors List" 
+        		Style="{ThemeResource BodyTextBlockStyle}"
+                Margin="15,0,0,0"
+        		Foreground="{StaticResource colorPrimaryDark}" 
+        		FontSize="55"         />
+            <TextBlock Text="#departments of nsit" 
+        		Style="{ThemeResource BodyTextBlockStyle}" 
+        		Foreground="{StaticResource colorPrimary}" 
+                Margin="15,0,0,0"
+        		FontSize="24" />
+        </StackPanel>
+        <GridView 
+            
+            Height="Auto" ItemsSource="{x:Bind ViewModel.lpanel}" Margin="30,25,0,0" Grid.Row="1" HorizontalAlignment="Stretch" 
+            ItemClick="{x:Bind ViewModel.GotoProfessorDetailsPage}"
+            SelectedItem="{Binding Selected, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" IsItemClickEnabled="True">
+            <GridView.ItemTemplate >
+                <DataTemplate x:DataType="models:LocationItem">
+                    <controls:RectangularPanel Margin="15" Label="{x:Bind Name}" Source ="{x:Bind source}" />
+                </DataTemplate>
+            </GridView.ItemTemplate>
+        </GridView>
+
+    </Grid>
+</Page>

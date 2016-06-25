@@ -101,6 +101,9 @@
       <DependentUpon>CircularPanel.xaml</DependentUpon>
     </Compile>
     <Compile Include="Controls\MasterDetailsView.cs" />
+    <Compile Include="Controls\RectangularPanel.xaml.cs">
+      <DependentUpon>RectangularPanel.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Models\Constants.cs" />
     <Compile Include="Models\Feed.cs" />
     <Compile Include="Models\LocationItem.cs" />
@@ -108,15 +111,14 @@
     <Compile Include="Services\SettingsServices\SettingsService.cs" />
     <Compile Include="ViewModels\HomePageViewModel.cs" />
     <Compile Include="ViewModels\LocationPageViewModel.cs" />
-    <Compile Include="ViewModels\MainPageViewModel.cs" />
-    <Compile Include="ViewModels\DetailPageViewModel.cs" />
-    <Compile Include="ViewModels\SettingsPageViewModel.cs" />
-    <Compile Include="ViewModels\Utilites.cs" />
+    <Compile Include="ViewModels\ProfessorDetailPageViewModel.cs" />
+    <Compile Include="ViewModels\ProfessorsPageViewModel.cs" />
+    <Compile Include="Views\ProfesorsDetailPage.xaml.cs">
+      <DependentUpon>ProfesorsDetailPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SettingsPageViewModel.cs" />
     <Compile Include="Views\Busy.xaml.cs">
       <DependentUpon>Busy.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\DetailPage.xaml.cs">
-      <DependentUpon>DetailPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\HomePage.xaml.cs">
       <DependentUpon>HomePage.xaml</DependentUpon>
@@ -124,8 +126,8 @@
     <Compile Include="Views\LocationPage.xaml.cs">
       <DependentUpon>LocationPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\MainPage.xaml.cs">
-      <DependentUpon>MainPage.xaml</DependentUpon>
+    <Compile Include="Views\ProfessorsPage.xaml.cs">
+      <DependentUpon>ProfessorsPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\SettingsPage.xaml.cs">
       <DependentUpon>SettingsPage.xaml</DependentUpon>
@@ -143,6 +145,7 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\facility-management.png" />
     <Content Include="Assets\ic_thumb_up_black_18dp.png" />
     <Content Include="Assets\Location\amusment.jpg" />
     <Content Include="Assets\Location\bowling.jpg" />
@@ -154,6 +157,19 @@
     <Content Include="Assets\Location\nsit_hotspots.jpg" />
     <Content Include="Assets\Location\park.jpg" />
     <Content Include="Assets\Location\restuarant.png" />
+    <Content Include="Assets\Professors\applied.png" />
+    <Content Include="Assets\Professors\bio.png" />
+    <Content Include="Assets\Professors\bio2.png" />
+    <Content Include="Assets\Professors\chemistry.png" />
+    <Content Include="Assets\Professors\computer.png" />
+    <Content Include="Assets\Professors\ece.png" />
+    <Content Include="Assets\Professors\humanities.png" />
+    <Content Include="Assets\Professors\instrumentation.png" />
+    <Content Include="Assets\Professors\it.png" />
+    <Content Include="Assets\Professors\management.png" />
+    <Content Include="Assets\Professors\math.png" />
+    <Content Include="Assets\Professors\Mechanical.png" />
+    <Content Include="Assets\Professors\physics.png" />
     <Content Include="Help.htm" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
@@ -175,6 +191,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Controls\RectangularPanel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Styles\Custom.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -184,10 +204,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Views\DetailPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Views\HomePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -196,9 +212,13 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\MainPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
+    <Page Include="Views\ProfesorsDetailPage.xaml">
       <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ProfessorsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\SettingsPage.xaml">
       <SubType>Designer</SubType>

@@ -261,7 +261,7 @@ namespace NSIT_Connect.ViewModels
                 next = ob.GetNamedString("next");
 
             }
-            if (refresh)
+            if (refresh && HomeFeed.Count>0)
                 Selected = HomeFeed[0];
             refresh = false;
         }

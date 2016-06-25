@@ -345,11 +345,53 @@
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\.nuget\packages\WindowsStateTriggers\1.1.0\lib\uap10.0\WindowsStateTriggers.dll">
       <PackagePath>WindowsStateTriggers.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\facility-management.png">
+      <PackagePath>Assets\facility-management.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\ic_thumb_up_black_18dp.png">
       <PackagePath>Assets\ic_thumb_up_black_18dp.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\Location\restuarant.png">
       <PackagePath>Assets\Location\restuarant.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\Professors\applied.png">
+      <PackagePath>Assets\Professors\applied.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\Professors\bio.png">
+      <PackagePath>Assets\Professors\bio.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\Professors\bio2.png">
+      <PackagePath>Assets\Professors\bio2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\Professors\chemistry.png">
+      <PackagePath>Assets\Professors\chemistry.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\Professors\computer.png">
+      <PackagePath>Assets\Professors\computer.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\Professors\ece.png">
+      <PackagePath>Assets\Professors\ece.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\Professors\humanities.png">
+      <PackagePath>Assets\Professors\humanities.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\Professors\instrumentation.png">
+      <PackagePath>Assets\Professors\instrumentation.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\Professors\it.png">
+      <PackagePath>Assets\Professors\it.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\Professors\management.png">
+      <PackagePath>Assets\Professors\management.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\Professors\math.png">
+      <PackagePath>Assets\Professors\math.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\Professors\Mechanical.png">
+      <PackagePath>Assets\Professors\Mechanical.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\Professors\physics.png">
+      <PackagePath>Assets\Professors\physics.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>

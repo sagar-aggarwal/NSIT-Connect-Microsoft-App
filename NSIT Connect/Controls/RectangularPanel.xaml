@@ -1,0 +1,42 @@
+﻿<Page
+    x:Class="NSIT_Connect.Controls.RectangularPanel"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:NSIT_Connect.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    x:Name="RectangularPanelcontrol"
+    d:DesignHeight="210"
+    d:DesignWidth="160">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="145" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Image Grid.Row="0" Width="145" Source="{Binding ImageUri, ElementName=RectangularPanelcontrol}" x:Name="image_source"
+               Margin='0,4,0,0' HorizontalAlignment="Center" />
+
+
+        <!--<Rectangle Grid.Row="0" Width="145"  Margin='0,4,0,0' HorizontalAlignment="Center" >
+            <Rectangle.Fill>
+                <ImageBrush>
+                    <ImageBrush.ImageSource>
+                        <BitmapImage DecodePixelHeight="500" DecodePixelWidth="500" UriSource="{Binding ImageUri, ElementName=RectangularPanelcontrol}" x:Name="image_source" />
+                    </ImageBrush.ImageSource>
+                </ImageBrush>
+            </Rectangle.Fill>
+        </Rectangle>-->
+        <TextBlock Grid.Row="1"
+                   Margin="0,5,0,0"
+                   x:Name="label" 
+                   MaxLines="2"
+                   MinHeight="65"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"
+                   TextWrapping="Wrap"
+                   Text="{Binding LabelName, ElementName=RectangularPanelcontrol}" />
+    </Grid>
+
+</Page>
