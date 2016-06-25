@@ -2731,7 +2731,7 @@ namespace NSIT_Connect.NSIT_Connect_XamlTypeInfo
         private void set_145_ProfessorDetailPageViewModel_Selected(object instance, object Value)
         {
             var that = (global::NSIT_Connect.ViewModels.ProfessorDetailPageViewModel)instance;
-            that.Selected = (global::NSIT_Connect.Models.LocationItem)Value;
+            that.Selected = (global::System.Object)Value;
         }
         private object get_146_ProfessorsPageViewModel_lpanel(object instance)
         {
@@ -3733,7 +3733,7 @@ namespace NSIT_Connect.NSIT_Connect_XamlTypeInfo
                 break;
             case "NSIT_Connect.ViewModels.ProfessorDetailPageViewModel.Selected":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.ViewModels.ProfessorDetailPageViewModel");
-                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Selected", "NSIT_Connect.Models.LocationItem");
+                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Selected", "Object");
                 xamlMember.Getter = get_145_ProfessorDetailPageViewModel_Selected;
                 xamlMember.Setter = set_145_ProfessorDetailPageViewModel_Selected;
                 break;

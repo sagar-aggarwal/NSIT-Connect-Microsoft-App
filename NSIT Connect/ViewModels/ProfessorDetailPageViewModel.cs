@@ -14,7 +14,7 @@ namespace NSIT_Connect.ViewModels
     public class ProfessorDetailPageViewModel : ViewModelBase
     {
         private LocationItem _selected = default(LocationItem);
-        public LocationItem Selected
+        public object Selected
         {
             get { return _selected; }
             set
@@ -30,10 +30,11 @@ namespace NSIT_Connect.ViewModels
 
         public override async Task OnNavigatedToAsync(object parameter, NavigationMode mode, IDictionary<string, object> suspensionState)
         {
-            Selected = (suspensionState.ContainsKey(nameof(Selected))) ? suspensionState[nameof(Selected)] as LocationItem : parameter as LocationItem;
-            if(Selected != null)
+            Selected = (suspensionState.ContainsKey(nameof(Selected))) ? suspensionState[nameof(Selected)] : parameter;
+            LocationItem SelectedObject = Selected as LocationItem;
+            if(SelectedObject != null)
             {
-                var mssg = new MessageDialog(Selected.Name);
+                var mssg = new MessageDialog(SelectedObject.Name);
                 await mssg.ShowAsync();
             }
             await Task.CompletedTask;

@@ -42,7 +42,7 @@ namespace NSIT_Connect.ViewModels
 
         };
 
-        private LocationItem _selected = default(LocationItem);
+        private LocationItem _selected ;
         public object Selected {
             get { return _selected; }
             set {
@@ -58,6 +58,7 @@ namespace NSIT_Connect.ViewModels
             {
                 lpanel.Add(new LocationItem() { Name = arrlocations[i], source = new Uri(Source[i]) });
             }
+            Selected = lpanel[0];
         }
 
         public override async Task OnNavigatedToAsync(object parameter, NavigationMode mode, IDictionary<string, object> suspensionState)
@@ -86,6 +87,12 @@ namespace NSIT_Connect.ViewModels
 
         public void GotoProfessorDetailsPage() =>
                     NavigationService.Navigate(typeof(Views.ProfesorsDetailPage), Selected);
+
+        //public DelegateCommand GotoProfessorDetailsPageDe => new DelegateCommand(async () =>
+        //{
+
+        //    NavigationService.Navigate(typeof(Views.ProfesorsDetailPage), Selected);
+        //});
     }
 
 }
