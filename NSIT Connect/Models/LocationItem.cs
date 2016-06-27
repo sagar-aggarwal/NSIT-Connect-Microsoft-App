@@ -10,7 +10,7 @@ namespace NSIT_Connect.Models
 {
     public class LocationItem : INotifyPropertyChanged
     {
-        private String _Name;
+        private string _Name;
         private Uri _source;
         private int _Number;
         private string _Key;

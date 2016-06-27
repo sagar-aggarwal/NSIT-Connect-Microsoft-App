@@ -41,7 +41,9 @@
                 Margin="15,0,0,0"
         		FontSize="24" />
         </StackPanel>
-        <GridView Height="Auto" ItemsSource="{x:Bind ViewModel.lpanel}" Margin="15,25,0,0" Grid.Row="1" >
+        <GridView x:Name="Main_Grid"
+                  ItemClick="Main_Grid_ItemClick" IsItemClickEnabled="True"
+                  Height="Auto" ItemsSource="{x:Bind ViewModel.lpanel}" Margin="15,25,0,0" Grid.Row="1" >
             <GridView.ItemTemplate >
                 <DataTemplate x:DataType="models:LocationItem">
                     <imagepanel:CircularPanel Margin="15" Label="{x:Bind Name}" Source ="{x:Bind source}" />

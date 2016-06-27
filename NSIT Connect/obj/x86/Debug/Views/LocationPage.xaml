@@ -41,7 +41,9 @@
                 Margin="15,0,0,0"
         		FontSize="24" />
         </StackPanel>
-        <GridView x:ConnectionId='3' Height="Auto"                                         Margin="15,25,0,0" Grid.Row="1" >
+        <GridView x:ConnectionId='3' x:Name="Main_Grid"
+                                                  IsItemClickEnabled="True"
+                  Height="Auto"                                         Margin="15,25,0,0" Grid.Row="1" >
             <GridView.ItemTemplate >
                 <DataTemplate                                 >
                     <imagepanel:CircularPanel x:ConnectionId='4' Margin="15"                                                 />

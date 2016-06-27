@@ -6,6 +6,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Template10.Mvvm;
+using Template10.Services.NavigationService;
+using Windows.UI.Xaml.Navigation;
 
 namespace NSIT_Connect.ViewModels
 {
@@ -25,14 +27,56 @@ namespace NSIT_Connect.ViewModels
               "ms-appx:///Assets/Location/amusment.jpg",
               "ms-appx:///Assets/Location/park.jpg",
         };
+        private string[] searches = { "Empty" , "cafe", "night_club", "restaurant", "shopping_mall", "bowling_alley", "food", "movie_theater", "amusement_park", "park" };
 
-    public LocationPageViewModel()
+        public LocationPageViewModel()
         {
             lpanel = new ObservableCollection<LocationItem>();
             for (int i = 0; i < arrlocations.Length; i++)
             {
-                lpanel.Add(new LocationItem() { Name = arrlocations[i], source = new Uri(Source[i]) });
+                lpanel.Add(new LocationItem() { Name = arrlocations[i], source = new Uri(Source[i]) , Key = searches[i] ,Number = i});
+            }
+            Selected = lpanel[0];
+        }
+
+        private LocationItem _selected;
+        public object Selected
+        {
+            get { return _selected; }
+            set
+            {
+                var message = value as LocationItem;
+                Set(ref _selected, message);
             }
         }
+
+        public override async Task OnNavigatedToAsync(object parameter, NavigationMode mode, IDictionary<string, object> suspensionState)
+        {
+            if (suspensionState.Any())
+            {
+                Selected = suspensionState[nameof(Selected)];
+            }
+            await Task.CompletedTask;
+        }
+
+        public override async Task OnNavigatedFromAsync(IDictionary<string, object> suspensionState, bool suspending)
+        {
+            if (suspending)
+            {
+                suspensionState[nameof(Selected)] = Selected;
+            }
+            await Task.CompletedTask;
+        }
+
+        public override async Task OnNavigatingFromAsync(NavigatingEventArgs args)
+        {
+            args.Cancel = false;
+            await Task.CompletedTask;
+        }
+
+        public void GotoProfessorDetailsPage() =>
+                    NavigationService.Navigate(typeof(Views.HangoutPage), Selected);
+
+
     }
 }

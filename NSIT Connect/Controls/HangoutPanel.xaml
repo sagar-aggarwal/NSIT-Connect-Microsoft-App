@@ -1,0 +1,53 @@
+﻿<UserControl
+    x:Class="NSIT_Connect.Controls.HangoutPanel"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:NSIT_Connect.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:rating="using:Bratched.Tools.RatingControl"
+    mc:Ignorable="d"
+    x:Name="HangoutPanelcontrol"
+    d:DesignHeight="175"
+    d:DesignWidth="402">
+
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Styles/Custom.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="149" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Ellipse Grid.Column="0" Width="145" Height="145" Margin='2,4,0,0' HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Ellipse.Fill>
+                <ImageBrush>
+                    <ImageBrush.ImageSource>
+                        <BitmapImage DecodePixelHeight="500" DecodePixelWidth="500" UriSource="{Binding ImageUri, ElementName=HangoutPanelcontrol}" x:Name="image_source" />
+                    </ImageBrush.ImageSource>
+                </ImageBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+        <StackPanel Grid.Column="1" Margin="5">
+            <TextBlock Text="{Binding HangoutName, ElementName=HangoutPanelcontrol}" TextWrapping="Wrap" Foreground="{StaticResource colorPrimaryDark}" 
+                       FontWeight="Bold" Style="{ThemeResource BodyTextBlockStyle}" Margin="5,5,0,0" />
+            <TextBlock Text="{Binding HangoutVicinity, ElementName=HangoutPanelcontrol}" FontWeight="Normal"  TextWrapping="Wrap"  Style="{ThemeResource BaseTextBlockStyle}" Margin="5,5,0,0"/>
+            <TextBlock Text="{Binding Available, ElementName=HangoutPanelcontrol}" TextWrapping="Wrap" FontWeight="Bold" Style="{ThemeResource BaseTextBlockStyle}" Margin="5,0,0,0" 
+                       FontSize="20"  Foreground="#FF686868"/>
+            <rating:RatingControl ItemsCount="5" Value="{Binding RatValue, ElementName=HangoutPanelcontrol,Mode=TwoWay}" Height ="20"  Margin="0,5,125,0"  >
+                <rating:RatingControl.EmptyItemsDefinition>
+                    <rating:RateItemDefinition BackgroundColor="Gray" OutlineColor="Black" OutlineThikness="4" />
+                </rating:RatingControl.EmptyItemsDefinition>
+                <rating:RatingControl.FullItemsDefinition>
+                    <rating:RateItemDefinition BackgroundColor="#FF26B4F5" OutlineColor="Black" OutlineThikness="4" />
+                </rating:RatingControl.FullItemsDefinition>
+            </rating:RatingControl>
+        </StackPanel>
+    </Grid>
+</UserControl>

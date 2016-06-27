@@ -1,9 +1,11 @@
 App.xbf
 Controls\CircularPanel.xbf
+Controls\HangoutPanel.xbf
 Controls\RectangularPanel.xbf
 Controls\Test.xbf
 Styles\Custom.xbf
 Views\Busy.xbf
+Views\HangoutPage.xbf
 Views\HomePage.xbf
 Views\LocationPage.xbf
 Views\ProfesorsDetailPage.xbf

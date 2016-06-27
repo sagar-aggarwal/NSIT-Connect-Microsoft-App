@@ -22,13 +22,17 @@
     <AppXManifest Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-06-25T22:18:23.895</Modified>
+      <Modified>2016-06-27T00:30:35.430</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\NSIT Connect.exe">
       <PackagePath>entrypoint\NSIT Connect.exe</PackagePath>
-      <Modified>2016-06-25T22:18:21.984</Modified>
+      <Modified>2016-06-27T00:30:32.842</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\.nuget\packages\BratchedTools.RatingControl\1.0.0\lib\wpa81\Bratched.Tools.RatingControl_ua81.dll">
+      <PackagePath>Bratched.Tools.RatingControl_ua81.dll</PackagePath>
+      <Modified>2015-03-29T14:35:24.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -470,12 +474,12 @@
       <PackagePath>Assets\facility-management.png</PackagePath>
       <Modified>2016-06-24T03:40:20.043</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\ic_call_black_36dp.png">
-      <PackagePath>Assets\ic_call_black_36dp.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\ic_call_black_24dp.png">
+      <PackagePath>Assets\ic_call_black_24dp.png</PackagePath>
       <Modified>2016-02-08T06:46:20.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\ic_email_black_36dp.png">
-      <PackagePath>Assets\ic_email_black_36dp.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\ic_email_black_24dp.png">
+      <PackagePath>Assets\ic_email_black_24dp.png</PackagePath>
       <Modified>2016-02-08T06:46:16.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\ic_thumb_up_black_18dp.png">
@@ -618,11 +622,31 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\NSIT Connect.xr.xml">
       <PackagePath>NSIT Connect.xr.xml</PackagePath>
-      <Modified>2016-06-25T22:03:16.470</Modified>
+      <Modified>2016-06-27T00:29:15.117</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2016-06-22T06:38:05.651</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\.nuget\packages\BratchedTools.RatingControl\1.0.0\lib\wpa81\Bratched.Tools.RatingControl_ua81\Bratched.Tools.RatingControl_ua81.xr.xml">
+      <PackagePath>Bratched.Tools.RatingControl_ua81\Bratched.Tools.RatingControl_ua81.xr.xml</PackagePath>
+      <Modified>2015-03-29T14:35:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\.nuget\packages\BratchedTools.RatingControl\1.0.0\lib\wpa81\Bratched.Tools.RatingControl_ua81\RateItem.xaml">
+      <PackagePath>Bratched.Tools.RatingControl_ua81\RateItem.xaml</PackagePath>
+      <Modified>2015-03-29T14:35:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\.nuget\packages\BratchedTools.RatingControl\1.0.0\lib\wpa81\Bratched.Tools.RatingControl_ua81\RateItem.xbf">
+      <PackagePath>Bratched.Tools.RatingControl_ua81\RateItem.xbf</PackagePath>
+      <Modified>2015-03-29T14:35:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\.nuget\packages\BratchedTools.RatingControl\1.0.0\lib\wpa81\Bratched.Tools.RatingControl_ua81\RatingControl.xaml">
+      <PackagePath>Bratched.Tools.RatingControl_ua81\RatingControl.xaml</PackagePath>
+      <Modified>2015-03-29T14:35:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\.nuget\packages\BratchedTools.RatingControl\1.0.0\lib\wpa81\Bratched.Tools.RatingControl_ua81\RatingControl.xbf">
+      <PackagePath>Bratched.Tools.RatingControl_ua81\RatingControl.xbf</PackagePath>
+      <Modified>2015-03-29T14:35:24.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\.nuget\packages\Template10\1.1.11\lib\uap10.0\Template10Library\Template10Library.xr.xml">
       <PackagePath>Template10Library\Template10Library.xr.xml</PackagePath>
@@ -662,11 +686,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-06-25T22:18:22.899</Modified>
+      <Modified>2016-06-27T00:30:34.032</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\Core\NSIT Connect.exe">
       <PackagePath>NSIT Connect.exe</PackagePath>
-      <Modified>2016-06-25T22:18:23.890</Modified>
+      <Modified>2016-06-27T00:30:35.425</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
