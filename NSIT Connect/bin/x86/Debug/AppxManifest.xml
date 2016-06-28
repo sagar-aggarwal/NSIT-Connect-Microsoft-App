@@ -30,6 +30,7 @@
   </Applications>
   <Capabilities>
     <Capability Name="internetClient" />
+    <DeviceCapability Name="location" />
   </Capabilities>
   <build:Metadata>
     <build:Item Name="TargetFrameworkMoniker" Value=".NETCore,Version=v5.0" />

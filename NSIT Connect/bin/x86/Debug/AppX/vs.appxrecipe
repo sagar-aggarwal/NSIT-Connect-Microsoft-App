@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>7b35e933-3e05-42a6-828e-8065ca037667</PackageIdentityName>
     <IntermediateOutputPath>C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>3F704460FC4F03634EC94F9FFF1F48EA26DB80289FDFC59F0509285381E3C550</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>777F7CD00B6FBF2562BF694875906B17AACFFCEC5B26FBC9AF7FB00D73096FE6</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>7b35e933-3e05-42a6-828e-8065ca037667_1.0.0.0_x86__dgwpea4fp9k80</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>7b35e933-3e05-42a6-828e-8065ca037667_dgwpea4fp9k80!App</RegisteredUserModeAppID>
     <RegisteredPackageID>7b35e933-3e05-42a6-828e-8065ca037667</RegisteredPackageID>
@@ -22,13 +22,13 @@
     <AppXManifest Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-06-27T00:30:35.430</Modified>
+      <Modified>2016-06-28T04:36:15.142</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\NSIT Connect.exe">
       <PackagePath>entrypoint\NSIT Connect.exe</PackagePath>
-      <Modified>2016-06-27T00:30:32.842</Modified>
+      <Modified>2016-06-28T04:36:11.982</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\.nuget\packages\BratchedTools.RatingControl\1.0.0\lib\wpa81\Bratched.Tools.RatingControl_ua81.dll">
       <PackagePath>Bratched.Tools.RatingControl_ua81.dll</PackagePath>
@@ -686,11 +686,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-06-27T00:30:34.032</Modified>
+      <Modified>2016-06-28T04:36:13.539</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\Core\NSIT Connect.exe">
       <PackagePath>NSIT Connect.exe</PackagePath>
-      <Modified>2016-06-27T00:30:35.425</Modified>
+      <Modified>2016-06-28T04:36:15.137</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
