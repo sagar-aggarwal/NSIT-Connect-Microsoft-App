@@ -32,7 +32,7 @@ namespace NSIT_Connect.Views
         {
             var selecteditem = e.ClickedItem as LocationItem;
             ViewModel.Selected = selecteditem;
-            ViewModel.GotoProfessorDetailsPage();
+            ViewModel.GotoHangoutPage();
         }
     }
 }

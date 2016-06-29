@@ -10,6 +10,7 @@
     <RootPropertyPathName Name="Available" />
     <RootPropertyPathName Name="HangoutVicinity" />
     <RootPropertyPathName Name="HangoutName" />
+    <RootPropertyPathName Name="ProgressVisibility" />
     <RootPropertyPathName Name="MasterPaneWidth" />
     <RootPropertyPathName Name="IsEnabled" />
     <RootPropertyPathName Name="DetailsRequested" />
@@ -86,11 +87,11 @@
     <RootType FullName="Windows.UI.Xaml.Data.Binding">
       <RootProperty Name="ElementName" />
       <RootProperty Name="Mode" />
+      <RootProperty Name="UpdateSourceTrigger" />
+      <RootProperty Name="FallbackValue" />
       <RootProperty Name="RelativeSource" />
       <RootProperty Name="Converter" />
       <RootProperty Name="ConverterParameter" />
-      <RootProperty Name="FallbackValue" />
-      <RootProperty Name="UpdateSourceTrigger" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Media.ImageBrush">
       <RootProperty Name="ImageSource" />
@@ -282,12 +283,19 @@
       <RootProperty Name="Command" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.AppBarSeparator" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ProgressBar">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="IsIndeterminate" />
+      <RootProperty Name="Visibility" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.GridView">
+      <RootProperty Name="IsItemClickEnabled" />
       <RootProperty Name="Margin" />
       <RootProperty Name="ItemsSource" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="ItemTemplate" />
-      <RootProperty Name="IsItemClickEnabled" />
       <RootProperty Name="Height" />
       <RootEvent Name="ItemClick" />
     </RootType>
@@ -379,13 +387,6 @@
     <RootType FullName="Microsoft.Xaml.Interactivity.Interaction">
       <RootMethod Name="GetBehaviors" />
       <RootMethod Name="SetBehaviors" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.ProgressBar">
-      <RootProperty Name="Margin" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="IsIndeterminate" />
-      <RootProperty Name="Visibility" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Automation.AutomationProperties">
       <RootMethod Name="GetAccessibilityView" />

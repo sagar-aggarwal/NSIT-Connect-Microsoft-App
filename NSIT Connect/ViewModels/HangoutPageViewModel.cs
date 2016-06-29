@@ -12,6 +12,7 @@ using Template10.Services.NavigationService;
 using Windows.Data.Json;
 using Windows.Devices.Geolocation;
 using Windows.UI.Popups;
+using Windows.UI.Xaml;
 using Windows.UI.Xaml.Navigation;
 
 namespace NSIT_Connect.ViewModels
@@ -28,6 +29,11 @@ namespace NSIT_Connect.ViewModels
         private const string KEY = "&key=AIzaSyBtmOvZkhsMumJ3_9x0cZDhsYQ-GwXXCC4";
         private string URL = null;
         private string result = null;
+
+        private Visibility _progressVisibility = Visibility.Collapsed;
+        public Visibility ProgressVisibility
+        { get { return _progressVisibility; }  set { Set(() => ProgressVisibility, ref _progressVisibility, value); } }
+
 
         string[] defaulthangout = {
               "ms-appx:///Assets/Location/nsit_hotspots.jpg",
@@ -55,13 +61,17 @@ namespace NSIT_Connect.ViewModels
             }
         }
 
+
         private ObservableCollection<HangoutItem> item = new ObservableCollection<HangoutItem>();
         public ObservableCollection<HangoutItem> Item { get { return item; } set { item = value; } }
 
         public override async Task OnNavigatedToAsync(object parameter, NavigationMode mode, IDictionary<string, object> suspensionState)
         {
+            
+            ProgressVisibility = Visibility.Visible;
             Selected = (suspensionState.ContainsKey(nameof(Selected))) ? suspensionState[nameof(Selected)] as LocationItem : parameter as LocationItem;
             Selected.Name = "#" + Selected.Name.ToLower();
+            Item.Clear();
             if (NetworkInterface.GetIsNetworkAvailable())
             {
                 gethangoutlist();
@@ -83,6 +93,9 @@ namespace NSIT_Connect.ViewModels
             args.Cancel = false;
             await Task.CompletedTask;
         }
+
+        //public void GotoHangoutDetailPage() =>
+        //            NavigationService.Navigate(typeof(Views.HangoutDetailPage), Selected);
 
         public async void  gethangoutlist()
         {
@@ -206,6 +219,7 @@ namespace NSIT_Connect.ViewModels
                     });
                 }
             }
+            ProgressVisibility = Visibility.Collapsed;
         }
     }
 }

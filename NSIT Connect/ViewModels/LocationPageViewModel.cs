@@ -74,7 +74,7 @@ namespace NSIT_Connect.ViewModels
             await Task.CompletedTask;
         }
 
-        public void GotoProfessorDetailsPage() =>
+        public void GotoHangoutPage() =>
                     NavigationService.Navigate(typeof(Views.HangoutPage), Selected);
 
 

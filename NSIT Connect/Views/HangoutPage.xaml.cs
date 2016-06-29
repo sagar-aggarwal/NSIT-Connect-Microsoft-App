@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NSIT_Connect.Models;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -26,7 +27,14 @@ namespace NSIT_Connect.Views
         public HangoutPage()
         {
             this.InitializeComponent();
-          
+
+        }
+
+        private void Main_Grid_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            //var selecteditem = e.ClickedItem as HangoutItem;
+            //ViewModel.SelectedHangout = selecteditem;
+            //ViewModel.GotoHangoutDetailPage();
         }
     }
 }
