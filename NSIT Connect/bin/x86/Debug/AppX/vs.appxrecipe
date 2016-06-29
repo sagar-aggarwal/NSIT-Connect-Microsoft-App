@@ -22,13 +22,13 @@
     <AppXManifest Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-06-28T04:36:15.142</Modified>
+      <Modified>2016-06-29T05:28:34.862</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\NSIT Connect.exe">
       <PackagePath>entrypoint\NSIT Connect.exe</PackagePath>
-      <Modified>2016-06-28T04:36:11.982</Modified>
+      <Modified>2016-06-29T05:28:32.361</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\.nuget\packages\BratchedTools.RatingControl\1.0.0\lib\wpa81\Bratched.Tools.RatingControl_ua81.dll">
       <PackagePath>Bratched.Tools.RatingControl_ua81.dll</PackagePath>
@@ -576,6 +576,42 @@
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-06-23T18:07:00.821</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\Location-Default\amuse_hangout.jpg">
+      <PackagePath>Assets\Location-Default\amuse_hangout.jpg</PackagePath>
+      <Modified>2016-05-07T18:34:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\Location-Default\bowling_hangout.jpg">
+      <PackagePath>Assets\Location-Default\bowling_hangout.jpg</PackagePath>
+      <Modified>2016-05-07T18:34:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\Location-Default\cafe_hangout.jpg">
+      <PackagePath>Assets\Location-Default\cafe_hangout.jpg</PackagePath>
+      <Modified>2016-05-07T18:34:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\Location-Default\food_hangout.jpg">
+      <PackagePath>Assets\Location-Default\food_hangout.jpg</PackagePath>
+      <Modified>2016-05-07T18:34:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\Location-Default\movie_hangout.jpg">
+      <PackagePath>Assets\Location-Default\movie_hangout.jpg</PackagePath>
+      <Modified>2016-05-07T18:34:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\Location-Default\nightclub_hangout.jpg">
+      <PackagePath>Assets\Location-Default\nightclub_hangout.jpg</PackagePath>
+      <Modified>2016-05-07T18:34:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\Location-Default\park_hangout.jpg">
+      <PackagePath>Assets\Location-Default\park_hangout.jpg</PackagePath>
+      <Modified>2016-05-07T18:34:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\Location-Default\rest_hangout2.jpg">
+      <PackagePath>Assets\Location-Default\rest_hangout2.jpg</PackagePath>
+      <Modified>2016-05-07T18:34:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\Location-Default\shoppingmall_hangout.jpg">
+      <PackagePath>Assets\Location-Default\shoppingmall_hangout.jpg</PackagePath>
+      <Modified>2016-05-07T18:34:04.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\Location\amusment.jpg">
       <PackagePath>Assets\Location\amusment.jpg</PackagePath>
       <Modified>2016-06-23T18:07:00.746</Modified>
@@ -622,7 +658,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\NSIT Connect.xr.xml">
       <PackagePath>NSIT Connect.xr.xml</PackagePath>
-      <Modified>2016-06-27T00:29:15.117</Modified>
+      <Modified>2016-06-29T05:28:31.575</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -686,11 +722,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-06-28T04:36:13.539</Modified>
+      <Modified>2016-06-29T05:28:33.439</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\Core\NSIT Connect.exe">
       <PackagePath>NSIT Connect.exe</PackagePath>
-      <Modified>2016-06-28T04:36:15.137</Modified>
+      <Modified>2016-06-29T05:28:34.858</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

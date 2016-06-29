@@ -162,6 +162,15 @@
     <Content Include="Assets\ic_call_black_24dp.png" />
     <Content Include="Assets\ic_email_black_24dp.png" />
     <Content Include="Assets\ic_thumb_up_black_18dp.png" />
+    <Content Include="Assets\Location-Default\amuse_hangout.jpg" />
+    <Content Include="Assets\Location-Default\bowling_hangout.jpg" />
+    <Content Include="Assets\Location-Default\cafe_hangout.jpg" />
+    <Content Include="Assets\Location-Default\food_hangout.jpg" />
+    <Content Include="Assets\Location-Default\movie_hangout.jpg" />
+    <Content Include="Assets\Location-Default\nightclub_hangout.jpg" />
+    <Content Include="Assets\Location-Default\park_hangout.jpg" />
+    <Content Include="Assets\Location-Default\rest_hangout2.jpg" />
+    <Content Include="Assets\Location-Default\shoppingmall_hangout.jpg" />
     <Content Include="Assets\Location\amusment.jpg" />
     <Content Include="Assets\Location\bowling.jpg" />
     <Content Include="Assets\Location\cafes.jpg" />

@@ -432,6 +432,33 @@
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\Location-Default\amuse_hangout.jpg">
+      <PackagePath>Assets\Location-Default\amuse_hangout.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\Location-Default\bowling_hangout.jpg">
+      <PackagePath>Assets\Location-Default\bowling_hangout.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\Location-Default\cafe_hangout.jpg">
+      <PackagePath>Assets\Location-Default\cafe_hangout.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\Location-Default\food_hangout.jpg">
+      <PackagePath>Assets\Location-Default\food_hangout.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\Location-Default\movie_hangout.jpg">
+      <PackagePath>Assets\Location-Default\movie_hangout.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\Location-Default\nightclub_hangout.jpg">
+      <PackagePath>Assets\Location-Default\nightclub_hangout.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\Location-Default\park_hangout.jpg">
+      <PackagePath>Assets\Location-Default\park_hangout.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\Location-Default\rest_hangout2.jpg">
+      <PackagePath>Assets\Location-Default\rest_hangout2.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\Location-Default\shoppingmall_hangout.jpg">
+      <PackagePath>Assets\Location-Default\shoppingmall_hangout.jpg</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\Location\amusment.jpg">
       <PackagePath>Assets\Location\amusment.jpg</PackagePath>
     </AppxPackagedFile>

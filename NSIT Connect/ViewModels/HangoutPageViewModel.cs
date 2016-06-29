@@ -25,9 +25,24 @@ namespace NSIT_Connect.ViewModels
         private const string RADIUS = "&radius=";
         private int radius = 5000;
         private const string TYPE = "&types=";
-        private const string KEY = "&key=AIzaSyBLSYsHaIe7euGK_glMbU98ZW9SDNBcEkM";
+        private const string KEY = "&key=AIzaSyBtmOvZkhsMumJ3_9x0cZDhsYQ-GwXXCC4";
         private string URL = null;
         private string result = null;
+
+        string[] defaulthangout = {
+              "ms-appx:///Assets/Location/nsit_hotspots.jpg",
+              "ms-appx:///Assets/Location-Default/cafe_hangout.jpg",
+              "ms-appx:///Assets/Location-Default/nightclub_hangout.jpg",
+              "ms-appx:///Assets/Location-Default/rest_hangout2.jpg",
+              "ms-appx:///Assets/Location-Default/shoppingmall_hangout.jpg",
+              "ms-appx:///Assets/Location-Default/bowling_hangout.jpg",
+              "ms-appx:///Assets/Location-Default/food_hangout.jpg",
+              "ms-appx:///Assets/Location-Default/movie_hangout.jpg",
+              "ms-appx:///Assets/Location-Default/amuse_hangout.jpg",
+              "ms-appx:///Assets/Location-Default/park_hangout.jpg",
+
+        };
+
 
         private LocationItem _selected = default(LocationItem);
         public LocationItem Selected
@@ -47,8 +62,6 @@ namespace NSIT_Connect.ViewModels
         {
             Selected = (suspensionState.ContainsKey(nameof(Selected))) ? suspensionState[nameof(Selected)] as LocationItem : parameter as LocationItem;
             Selected.Name = "#" + Selected.Name.ToLower();
-            Item.Add(new HangoutItem() { Name = "Rajeev Sagar Aggarawl", Vicinity = "Khanpurasdasdasdasdasdas ", Photo_Ref = new Uri("ms-appx:///Assets/Location/nsit_hotspots.jpg"), Rating = 2.5, OpenNowString = "Closed Now" });
-
             if (NetworkInterface.GetIsNetworkAvailable())
             {
                 gethangoutlist();
@@ -108,12 +121,12 @@ namespace NSIT_Connect.ViewModels
                     string icon = null;
                     string place_id = null;
                     string phtotref = null;
-                    string longitude = null;
-                    string lattitude = null;
                     string vicinity = null;
-                    string opennow = null;
-                    float photowidth = 0;
-                    float photoheight = 0;
+                    string opennow = "No Information";
+                    double longitude = -1;
+                    double lattitude = -1;
+                    double photowidth = 0;
+                    double photoheight = 0;
                     double rating = -1;
 
                     if (jplacearray.GetObjectAt(i).ContainsKey("icon"))
@@ -132,7 +145,7 @@ namespace NSIT_Connect.ViewModels
                         name = null;
 
                     if (jplacearray.GetObjectAt(i).ContainsKey("rating"))
-                        rating = Convert.ToDouble(jplacearray.GetObjectAt(i).GetNamedString("rating"));
+                        rating = jplacearray.GetObjectAt(i).GetNamedNumber("rating");
                     else
                         rating = 0;
 
@@ -144,16 +157,16 @@ namespace NSIT_Connect.ViewModels
                     if (jplacearray.GetObjectAt(i).GetNamedObject("geometry").GetNamedObject("location").ContainsKey("lng"))
                     {
                         JsonObject jobject = jplacearray.GetObjectAt(i).GetNamedObject("geometry").GetNamedObject("location").GetObject();
-                        longitude = "ssss";
-                        //longi = jobject.GetNamedString("lng");
-                        //latti = jobject.GetNamedString("lat");
+                        longitude = -1;
+                        longitude = jobject.GetNamedNumber("lng");
+                        lattitude = jobject.GetNamedNumber("lat");
                     }
                     if (jplacearray.GetObjectAt(i).ContainsKey("photos"))
                     {
                         JsonObject obj = jplacearray.GetObjectAt(i).GetNamedArray("photos").GetObjectAt(0);
                         phtotref = obj.GetNamedString("photo_reference");
-                        photoheight = (float)Convert.ToDouble(obj.GetNamedString("height"));
-                        photowidth = (float)Convert.ToDouble(obj.GetNamedString("width"));
+                        photoheight = obj.GetNamedNumber("height");
+                        photowidth = obj.GetNamedNumber("width");
                     }
                     else
                     {
@@ -170,12 +183,19 @@ namespace NSIT_Connect.ViewModels
                         else
                             opennow = "Closed Now";
                     }
+                    string temp = null;
+                    if (phtotref != null)
+                        temp = "https://maps.googleapis.com/maps/api/place/photo?maxheight=" + photoheight + "&maxwidth=" + photowidth +
+                        "&photoreference=" + phtotref + KEY;
+                    else
+                        temp = defaulthangout[Selected.Number];
+
                     Item.Add(new HangoutItem()
                     {
                         Name = name,
                         Icon = icon,
                         Place_ID = place_id,
-                        Photo_Ref = new Uri(icon),
+                        Photo_Ref = new Uri(temp),
                         Longi = longitude,
                         Latii = lattitude,
                         Vicinity = vicinity,

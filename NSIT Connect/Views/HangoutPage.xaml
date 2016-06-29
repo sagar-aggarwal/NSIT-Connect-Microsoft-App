@@ -15,6 +15,24 @@
         <ViewModel:HangoutPageViewModel x:Name="ViewModel" />
     </Page.DataContext>
 
+    <Page.BottomAppBar>
+        <CommandBar Background="{StaticResource colorPrimaryDark}" Foreground="White" Opacity="0.65" >
+            <AppBarButton Icon="Shuffle" Label="Shuffle" />
+            <AppBarButton Icon="RepeatAll" Label="Repeat" />
+            <AppBarSeparator/>
+            <AppBarButton Icon="Back" Label="Back" />
+        </CommandBar>
+    </Page.BottomAppBar>
+
+
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Styles/Custom.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Page.Resources>
+    
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
@@ -30,10 +48,10 @@
         		Foreground="{StaticResource colorPrimaryDark}" />
 
 
-        <GridView Margin="0,25,5,0" Grid.Row="1" ItemsSource="{x:Bind ViewModel.Item}">
+        <GridView Margin="10,25,5,0" Grid.Row="1" ItemsSource="{x:Bind ViewModel.Item}" HorizontalAlignment="Stretch">
             <GridView.ItemTemplate>
                 <DataTemplate x:DataType="models:HangoutItem">
-                    <Controls:HangoutPanel PlaceName="{x:Bind Name}" PlaceVicinity="{x:Bind Vicinity}" RatingValue="{x:Bind Rating}" PlaceAvailable="{x:Bind OpenNowString}" Source="{x:Bind Photo_Ref}" />
+                    <Controls:HangoutPanel Height="180" Width="402"  PlaceName="{x:Bind Name}" PlaceVicinity="{x:Bind Vicinity}" RatingValue="{x:Bind Rating}" PlaceAvailable="{x:Bind OpenNowString}" Source="{x:Bind Photo_Ref}" />
                 </DataTemplate>
             </GridView.ItemTemplate>
 

@@ -8,7 +8,7 @@
     xmlns:rating="using:Bratched.Tools.RatingControl"
     mc:Ignorable="d"
     x:Name="HangoutPanelcontrol"
-    d:DesignHeight="175"
+    d:DesignHeight="190"
     d:DesignWidth="402">
 
     <UserControl.Resources>
@@ -19,7 +19,7 @@
         </ResourceDictionary>
     </UserControl.Resources>
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" >
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" HorizontalAlignment="Left">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="149" />
             <ColumnDefinition Width="*" />
@@ -34,13 +34,17 @@
                 </ImageBrush>
             </Ellipse.Fill>
         </Ellipse>
-        <StackPanel Grid.Column="1" Margin="5">
-            <TextBlock Text="{Binding HangoutName, ElementName=HangoutPanelcontrol}" TextWrapping="Wrap" Foreground="{StaticResource colorPrimaryDark}" 
+        <StackPanel Grid.Column="1" Margin="5" VerticalAlignment="Center">
+            <TextBlock Text="{Binding HangoutName, ElementName=HangoutPanelcontrol}" 
+                       MaxLines="2"
+                       TextTrimming="WordEllipsis"
+                       MaxWidth="243"
+                       TextWrapping="Wrap" Foreground="{StaticResource colorPrimaryDark}" 
                        FontWeight="Bold" Style="{ThemeResource BodyTextBlockStyle}" Margin="5,5,0,0" />
             <TextBlock Text="{Binding HangoutVicinity, ElementName=HangoutPanelcontrol}" FontWeight="Normal"  TextWrapping="Wrap"  Style="{ThemeResource BaseTextBlockStyle}" Margin="5,5,0,0"/>
             <TextBlock Text="{Binding Available, ElementName=HangoutPanelcontrol}" TextWrapping="Wrap" FontWeight="Bold" Style="{ThemeResource BaseTextBlockStyle}" Margin="5,0,0,0" 
                        FontSize="20"  Foreground="#FF686868"/>
-            <rating:RatingControl ItemsCount="5" Value="{Binding RatValue, ElementName=HangoutPanelcontrol,Mode=TwoWay}" Height ="20"  Margin="0,5,125,0"  >
+            <rating:RatingControl ItemsCount="5" Value="{Binding RatValue, ElementName=HangoutPanelcontrol,Mode=TwoWay}" Height ="20"  Margin="0,8,125,0"  >
                 <rating:RatingControl.EmptyItemsDefinition>
                     <rating:RateItemDefinition BackgroundColor="Gray" OutlineColor="Black" OutlineThikness="4" />
                 </rating:RatingControl.EmptyItemsDefinition>

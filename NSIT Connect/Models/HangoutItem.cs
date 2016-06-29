@@ -10,8 +10,8 @@ namespace NSIT_Connect.Models
 {
     class HangoutItem : INotifyPropertyChanged
     {
-        private float photowidth;
-        private float photoheight;
+        private double photowidth;
+        private double photoheight;
         private double rating;
 
         private string opennowstring;
@@ -19,17 +19,17 @@ namespace NSIT_Connect.Models
         private string icon;
         private string place_id;
         private Uri phtotref;
-        private string longi;
-        private string latti;
+        private double longi;
+        private double latti;
         private string vicinity;
 
 
         public event PropertyChangedEventHandler PropertyChanged;
 
-        public float PhotoWidth
+        public double PhotoWidth
         { get { return photowidth; } set { photowidth = value; OnPropertyChanged(); } }
 
-        public float PhotoHeight
+        public double PhotoHeight
         { get { return photoheight; } set { photoheight = value; OnPropertyChanged(); } }
 
         public double Rating
@@ -50,10 +50,10 @@ namespace NSIT_Connect.Models
         public Uri Photo_Ref
         { get { return phtotref; } set { phtotref = value; OnPropertyChanged(); } }
 
-        public string Longi
+        public double Longi
         { get { return longi; } set { longi = value; OnPropertyChanged(); } }
 
-        public string Latii
+        public double Latii
         { get { return latti; } set { latti = value; OnPropertyChanged(); } }
 
         public string Vicinity

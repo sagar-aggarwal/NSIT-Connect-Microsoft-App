@@ -26,7 +26,7 @@ namespace NSIT_Connect.Views
         public HangoutPage()
         {
             this.InitializeComponent();
-
+          
         }
     }
 }
