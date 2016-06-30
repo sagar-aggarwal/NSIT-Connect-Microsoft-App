@@ -112,16 +112,21 @@
     </Compile>
     <Compile Include="Models\Constants.cs" />
     <Compile Include="Models\Feed.cs" />
+    <Compile Include="Models\HangoutDetailItem.cs" />
     <Compile Include="Models\HangoutItem.cs" />
     <Compile Include="Models\LocationItem.cs" />
     <Compile Include="Models\ProfessorItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\SettingsServices\SettingsService.cs" />
+    <Compile Include="ViewModels\HangoutDetailPageViewModel.cs" />
     <Compile Include="ViewModels\HangoutPageViewModel.cs" />
     <Compile Include="ViewModels\HomePageViewModel.cs" />
     <Compile Include="ViewModels\LocationPageViewModel.cs" />
     <Compile Include="ViewModels\ProfessorDetailPageViewModel.cs" />
     <Compile Include="ViewModels\ProfessorsPageViewModel.cs" />
+    <Compile Include="Views\HangoutDetailPage.xaml.cs">
+      <DependentUpon>HangoutDetailPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\HangoutPage.xaml.cs">
       <DependentUpon>HangoutPage.xaml</DependentUpon>
     </Compile>
@@ -235,6 +240,10 @@
     <Page Include="Views\Busy.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\HangoutDetailPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\HangoutPage.xaml">
       <SubType>Designer</SubType>

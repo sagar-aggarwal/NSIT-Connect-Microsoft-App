@@ -60,7 +60,7 @@ namespace NSIT_Connect.Models
         { get { return vicinity; } set { vicinity = value; OnPropertyChanged(); } }
 
 
-        protected void OnPropertyChanged(string name = null)
+        protected void OnPropertyChanged([CallerMemberName]string name = null)
         {
             PropertyChangedEventHandler handler = PropertyChanged;
             if (handler != null)

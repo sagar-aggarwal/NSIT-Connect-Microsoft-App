@@ -1,0 +1,105 @@
+﻿<Page
+    x:Class="NSIT_Connect.Views.HangoutDetailPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:NSIT_Connect.Views"
+    xmlns:ViewModel ="using:NSIT_Connect.ViewModels"
+    xmlns:rating="using:Bratched.Tools.RatingControl"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Page.DataContext>
+        <ViewModel:HangoutDetailPageViewModel x:Name="ViewModel" />
+    </Page.DataContext>
+
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Styles/Custom.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Page.Resources>
+
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Pivot x:Name="Main_Pivot"  Margin="0,5,0,0">
+            <Pivot.Resources>
+                <Style TargetType="PivotHeaderItem" >
+                    <Setter Property="Foreground" Value="{StaticResource colorPrimary}" />
+                    <Setter Property="FontSize" Value="40" />
+                    <Setter Property="Style" Value="{ThemeResource BaseTextBlockStyle}" />
+                </Style>
+            </Pivot.Resources>
+            <PivotItem Header="place" Margin="1,0,0,0.2" >
+                <ScrollViewer Margin="0,-9,0,9">
+                    <Grid Margin="0,5,0,0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto " />
+                            <RowDefinition Height="Auto " />
+                            <RowDefinition Height="3" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+
+                        <TextBlock 
+                                Grid.Row="0"
+                                Text="{x:Bind ViewModel.SelectedHangout.Name}"
+        		                Style="{ThemeResource BodyTextBlockStyle}"
+                                Margin="5,0,0,0"
+                                FontSize="45"
+                                MaxLines="1"
+                                TextTrimming="WordEllipsis"
+        		                Foreground="{StaticResource colorPrimaryDark}" />
+
+                        <StackPanel Grid.Row="1" Margin="0,10,0,0" Padding="5" Background="{StaticResource colorPrimary}" >
+                            <TextBlock Text="{Binding Address,Mode=TwoWay}" 
+                                   Foreground="White" HorizontalAlignment="Left" FontSize="20" 
+                                   FontWeight="SemiBold"  TextWrapping="Wrap"  Style="{ThemeResource BaseTextBlockStyle}" Margin="5,5,0,0"/>
+                            <rating:RatingControl ItemsCount="5" Value="{x:Bind ViewModel.SelectedHangout.Rating}" Height ="20" HorizontalAlignment="Left"  Margin="0,8,125,0"  >
+                                <rating:RatingControl.EmptyItemsDefinition>
+                                    <rating:RateItemDefinition BackgroundColor="{StaticResource colorPrimary}" OutlineColor="White" OutlineThikness="4" />
+                                </rating:RatingControl.EmptyItemsDefinition>
+                                <rating:RatingControl.FullItemsDefinition>
+                                    <rating:RateItemDefinition BackgroundColor="White" OutlineColor="White" OutlineThikness="4" />
+                                </rating:RatingControl.FullItemsDefinition>
+                            </rating:RatingControl>
+                            <TextBlock Text="{Binding Phone,Mode=TwoWay}" 
+                                   Foreground="White" HorizontalAlignment="Left" FontSize="20" 
+                                   FontWeight="Normal"  TextWrapping="Wrap"  Style="{ThemeResource BaseTextBlockStyle}" Margin="5,5,0,0"/>
+                            <TextBlock Text="{Binding InternationalPhone}" 
+                                   Foreground="White" HorizontalAlignment="Left" FontSize="20" 
+                                   FontWeight="Normal"  TextWrapping="Wrap"  Style="{ThemeResource BaseTextBlockStyle}" Margin="5,5,0,0"/>
+                        </StackPanel>
+                        <TextBlock Text="{x:Bind ViewModel.SelectedHangout.Vicinity}" Grid.Row="2"
+                                    HorizontalAlignment="Left" FontSize="15" MaxLines="1" TextTrimming="WordEllipsis"
+                                   FontWeight="SemiBold"   Style="{ThemeResource BaseTextBlockStyle}" Margin="10,10,0,10"/>
+                        <StackPanel Background="{StaticResource colorPrimary}" Margin="10,0,10,0" Grid.Row="3" />
+                        <Image Grid.Row="4" Source="{Binding ImageSource}"  Margin="10" MaxHeight="500" MaxWidth="500" HorizontalAlignment="Left"/>
+                        <StackPanel Orientation="Horizontal" Margin="0,10,0,0" Grid.Row="5" >
+                            <TextBlock Text="Website" Margin="10,0,10,0" FontSize="25" Foreground="{StaticResource colorPrimaryDark}" />
+                            <TextBlock Text="Google Maps" Margin="10,0,10,0" FontSize="25" Foreground="{StaticResource colorPrimaryDark}" />
+                        </StackPanel>
+                        <StackPanel  Margin="10" Grid.Row="6" >
+                            <TextBlock Text="Latest Reviews" FontSize="30" FontWeight="SemiBold"/>
+                            <ListView >
+                                <ListView.ItemTemplate>
+                                    <DataTemplate>
+                                        
+                                    </DataTemplate>
+                                </ListView.ItemTemplate>
+                            </ListView>
+                        </StackPanel>
+                    </Grid>
+                </ScrollViewer>
+            </PivotItem>
+            <PivotItem Header="maps" Foreground="{StaticResource colorPrimaryDark}" >
+                <TextBlock Text="Maps" />
+            </PivotItem>
+        </Pivot>
+
+
+    </Grid>
+</Page>

@@ -1,5 +1,4 @@
-﻿using NSIT_Connect.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -21,20 +20,11 @@ namespace NSIT_Connect.Views
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class HangoutPage : Page
+    public sealed partial class HangoutDetailPage : Page
     {
-
-        public HangoutPage()
+        public HangoutDetailPage()
         {
             this.InitializeComponent();
-            NavigationCacheMode = Windows.UI.Xaml.Navigation.NavigationCacheMode.Enabled;
-        }
-
-        private void Main_Grid_ItemClick(object sender, ItemClickEventArgs e)
-        {
-            var selecteditem = e.ClickedItem as HangoutItem;
-            ViewModel.SelectedHangout = selecteditem;
-            ViewModel.GotoHangoutDetailPage();
         }
     }
 }

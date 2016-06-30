@@ -10,6 +10,10 @@
     <RootPropertyPathName Name="Available" />
     <RootPropertyPathName Name="HangoutVicinity" />
     <RootPropertyPathName Name="HangoutName" />
+    <RootPropertyPathName Name="ImageSource" />
+    <RootPropertyPathName Name="InternationalPhone" />
+    <RootPropertyPathName Name="Phone" />
+    <RootPropertyPathName Name="Address" />
     <RootPropertyPathName Name="ProgressVisibility" />
     <RootPropertyPathName Name="MasterPaneWidth" />
     <RootPropertyPathName Name="IsEnabled" />
@@ -53,6 +57,7 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Orientation" />
+      <RootProperty Name="Padding" />
       <RootProperty Name="Height" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
@@ -133,6 +138,7 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="EmptyItemsDefinition" />
       <RootProperty Name="FullItemsDefinition" />
+      <RootProperty Name="HorizontalAlignment" />
     </RootType>
     <RootType FullName="Bratched.Tools.RatingControl.RateItemDefinition">
       <RootProperty Name="BackgroundColor" />
@@ -164,6 +170,8 @@
       <RootProperty Name="Source" />
       <RootProperty Name="Margin" />
       <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="MaxHeight" />
+      <RootProperty Name="MaxWidth" />
       <RootProperty Name="Stretch" />
     </RootType>
     <RootType FullName="NSIT_Connect.Controls.RectangularPanel">
@@ -233,6 +241,7 @@
     <RootType FullName="Windows.UI.Xaml.Controls.Control">
       <RootProperty Name="Background" />
       <RootProperty Name="Foreground" />
+      <RootProperty Name="FontSize" />
       <RootProperty Name="Padding" />
       <RootProperty Name="HorizontalContentAlignment" />
       <RootProperty Name="VerticalContentAlignment" />
@@ -266,6 +275,70 @@
       <RootProperty Name="FallbackValue" />
     </RootType>
     <RootType FullName="NSIT_Connect.Views.Busy" />
+    <RootType FullName="NSIT_Connect.ViewModels.HangoutDetailPageViewModel" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Pivot">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Resources" />
+      <RootProperty Name="Items" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Primitives.PivotHeaderItem" />
+    <RootType FullName="Windows.UI.Xaml.FrameworkElement">
+      <RootProperty Name="Style" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.PivotItem">
+      <RootProperty Name="Header" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Content" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="DataContext" />
+      <RootProperty Name="Padding" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Content" />
+      <RootProperty Name="BringIntoViewOnFocusChange" />
+      <RootProperty Name="HorizontalScrollBarVisibility" />
+      <RootProperty Name="HorizontalScrollMode" />
+      <RootProperty Name="IsDeferredScrollingEnabled" />
+      <RootProperty Name="IsHorizontalRailEnabled" />
+      <RootProperty Name="IsHorizontalScrollChainingEnabled" />
+      <RootProperty Name="IsVerticalRailEnabled" />
+      <RootProperty Name="IsVerticalScrollChainingEnabled" />
+      <RootProperty Name="TabNavigation" />
+      <RootProperty Name="VerticalScrollBarVisibility" />
+      <RootProperty Name="VerticalScrollMode" />
+      <RootProperty Name="ZoomMode" />
+      <RootProperty Name="HorizontalContentAlignment" />
+      <RootEvent Name="ViewChanged" />
+      <RootMethod Name="GetHorizontalScrollBarVisibility" />
+      <RootMethod Name="SetHorizontalScrollBarVisibility" />
+      <RootMethod Name="GetVerticalScrollBarVisibility" />
+      <RootMethod Name="SetVerticalScrollBarVisibility" />
+      <RootMethod Name="GetHorizontalScrollMode" />
+      <RootMethod Name="SetHorizontalScrollMode" />
+      <RootMethod Name="GetIsHorizontalRailEnabled" />
+      <RootMethod Name="SetIsHorizontalRailEnabled" />
+      <RootMethod Name="GetVerticalScrollMode" />
+      <RootMethod Name="SetVerticalScrollMode" />
+      <RootMethod Name="GetIsVerticalRailEnabled" />
+      <RootMethod Name="SetIsVerticalRailEnabled" />
+      <RootMethod Name="GetZoomMode" />
+      <RootMethod Name="SetZoomMode" />
+      <RootMethod Name="GetIsDeferredScrollingEnabled" />
+      <RootMethod Name="SetIsDeferredScrollingEnabled" />
+      <RootMethod Name="GetBringIntoViewOnFocusChange" />
+      <RootMethod Name="SetBringIntoViewOnFocusChange" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ListView">
+      <RootProperty Name="ItemTemplate" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.DataTemplate">
+      <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="NSIT_Connect.Views.HangoutDetailPage" />
     <RootType FullName="NSIT_Connect.ViewModels.HangoutPageViewModel" />
     <RootType FullName="Windows.UI.Xaml.Controls.CommandBar">
       <RootProperty Name="Background" />
@@ -299,21 +372,12 @@
       <RootProperty Name="Height" />
       <RootEvent Name="ItemClick" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.DataTemplate">
-      <RootProperty Name="Template" />
-    </RootType>
     <RootType FullName="NSIT_Connect.Views.HangoutPage" />
     <RootType FullName="NSIT_Connect.ViewModels.HomePageViewModel" />
-    <RootType FullName="Windows.UI.Xaml.Controls.ListView" />
     <RootType FullName="Windows.UI.Xaml.Controls.ItemsControl">
       <RootProperty Name="ItemContainerStyle" />
       <RootProperty Name="ItemContainerTransitions" />
       <RootProperty Name="ItemsPanel" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.FrameworkElement">
-      <RootProperty Name="Margin" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="VerticalAlignment" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ListViewItem" />
     <RootType FullName="Template10.Controls.MasterDetailsView">
@@ -338,42 +402,6 @@
     <RootType FullName="Windows.UI.Xaml.Controls.ListViewBase">
       <RootProperty Name="IsItemClickEnabled" />
       <RootProperty Name="IsSwipeEnabled" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
-      <RootProperty Name="BringIntoViewOnFocusChange" />
-      <RootProperty Name="HorizontalScrollBarVisibility" />
-      <RootProperty Name="HorizontalScrollMode" />
-      <RootProperty Name="IsDeferredScrollingEnabled" />
-      <RootProperty Name="IsHorizontalRailEnabled" />
-      <RootProperty Name="IsHorizontalScrollChainingEnabled" />
-      <RootProperty Name="IsVerticalRailEnabled" />
-      <RootProperty Name="IsVerticalScrollChainingEnabled" />
-      <RootProperty Name="TabNavigation" />
-      <RootProperty Name="VerticalScrollBarVisibility" />
-      <RootProperty Name="VerticalScrollMode" />
-      <RootProperty Name="ZoomMode" />
-      <RootProperty Name="Content" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="HorizontalContentAlignment" />
-      <RootEvent Name="ViewChanged" />
-      <RootMethod Name="GetHorizontalScrollBarVisibility" />
-      <RootMethod Name="SetHorizontalScrollBarVisibility" />
-      <RootMethod Name="GetVerticalScrollBarVisibility" />
-      <RootMethod Name="SetVerticalScrollBarVisibility" />
-      <RootMethod Name="GetHorizontalScrollMode" />
-      <RootMethod Name="SetHorizontalScrollMode" />
-      <RootMethod Name="GetIsHorizontalRailEnabled" />
-      <RootMethod Name="SetIsHorizontalRailEnabled" />
-      <RootMethod Name="GetVerticalScrollMode" />
-      <RootMethod Name="SetVerticalScrollMode" />
-      <RootMethod Name="GetIsVerticalRailEnabled" />
-      <RootMethod Name="SetIsVerticalRailEnabled" />
-      <RootMethod Name="GetZoomMode" />
-      <RootMethod Name="SetZoomMode" />
-      <RootMethod Name="GetIsDeferredScrollingEnabled" />
-      <RootMethod Name="SetIsDeferredScrollingEnabled" />
-      <RootMethod Name="GetBringIntoViewOnFocusChange" />
-      <RootMethod Name="SetBringIntoViewOnFocusChange" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ControlTemplate">
       <RootProperty Name="TargetType" />
@@ -495,15 +523,6 @@
     <RootType FullName="NSIT_Connect.ViewModels.ProfessorsPageViewModel" />
     <RootType FullName="NSIT_Connect.Views.ProfessorsPage" />
     <RootType FullName="NSIT_Connect.ViewModels.SettingsPageViewModel" />
-    <RootType FullName="Windows.UI.Xaml.Controls.Pivot">
-      <RootProperty Name="Items" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.PivotItem">
-      <RootProperty Name="DataContext" />
-      <RootProperty Name="Header" />
-      <RootProperty Name="Content" />
-      <RootProperty Name="Padding" />
-    </RootType>
     <RootType FullName="Windows.UI.Xaml.Documents.LineBreak" />
     <RootType FullName="Windows.UI.Xaml.Documents.Bold">
       <RootProperty Name="Inlines" />

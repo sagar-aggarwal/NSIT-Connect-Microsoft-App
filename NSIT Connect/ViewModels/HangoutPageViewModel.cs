@@ -26,7 +26,7 @@ namespace NSIT_Connect.ViewModels
         private const string RADIUS = "&radius=";
         private int radius = 5000;
         private const string TYPE = "&types=";
-        private const string KEY = "&key=AIzaSyBtmOvZkhsMumJ3_9x0cZDhsYQ-GwXXCC4";
+        private const string KEY = "&key=AIzaSyBAuY7uwzJkS1d1Cp8WLYphhs4UuAZ7ZL4";
         private string URL = null;
         private string result = null;
 
@@ -50,7 +50,7 @@ namespace NSIT_Connect.ViewModels
         };
 
 
-        private LocationItem _selected = default(LocationItem);
+        private LocationItem _selected;
         public LocationItem Selected
         {
             get { return _selected; }
@@ -61,13 +61,27 @@ namespace NSIT_Connect.ViewModels
             }
         }
 
+        private HangoutItem _selectedhangout = default(HangoutItem);
+        public object SelectedHangout
+        {
+            get { return _selectedhangout; }
+            set
+            {
+                var message = value as HangoutItem;
+                Set(ref _selectedhangout, message);
+            }
+        }
+
 
         private ObservableCollection<HangoutItem> item = new ObservableCollection<HangoutItem>();
         public ObservableCollection<HangoutItem> Item { get { return item; } set { item = value; } }
 
         public override async Task OnNavigatedToAsync(object parameter, NavigationMode mode, IDictionary<string, object> suspensionState)
         {
-            
+            if (suspensionState.Any())
+            {
+                SelectedHangout = suspensionState[nameof(SelectedHangout)];
+            }
             ProgressVisibility = Visibility.Visible;
             Selected = (suspensionState.ContainsKey(nameof(Selected))) ? suspensionState[nameof(Selected)] as LocationItem : parameter as LocationItem;
             Selected.Name = "#" + Selected.Name.ToLower();
@@ -79,10 +93,13 @@ namespace NSIT_Connect.ViewModels
             await Task.CompletedTask;
         }
 
+
+
         public override async Task OnNavigatedFromAsync(IDictionary<string, object> suspensionState, bool suspending)
         {
             if (suspending)
             {
+                suspensionState[nameof(SelectedHangout)] = SelectedHangout;
                 suspensionState[nameof(Selected)] = Selected;
             }
             await Task.CompletedTask;
@@ -94,8 +111,8 @@ namespace NSIT_Connect.ViewModels
             await Task.CompletedTask;
         }
 
-        //public void GotoHangoutDetailPage() =>
-        //            NavigationService.Navigate(typeof(Views.HangoutDetailPage), Selected);
+        public void GotoHangoutDetailPage() =>
+                    NavigationService.Navigate(typeof(Views.HangoutDetailPage), SelectedHangout);
 
         public async void  gethangoutlist()
         {
