@@ -1,6 +1,7 @@
 ﻿{
   "dependencies": {
     "BratchedTools.RatingControl": "1.0.0",
+    "Google.Apis.YouTube.v3": "1.13.1.529",
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
     "Microsoft.Xaml.Behaviors.Uwp.Managed": "1.1.0",
     "MyToolkit": "2.5.12",

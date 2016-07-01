@@ -36,5 +36,17 @@ namespace NSIT_Connect.Views
             ViewModel.SelectedHangout = selecteditem;
             ViewModel.GotoHangoutDetailPage();
         }
+
+        private void Slider_ValueChanged(object sender, RangeBaseValueChangedEventArgs e)
+        {
+            var newvalue = e.NewValue;
+            ViewModel.Radius = newvalue*1000;
+            ViewModel.RadiusText = newvalue.ToString() + "(km)";
+        }
+
+        private void AppBarButton_Click(object sender, RoutedEventArgs e)
+        {
+            ViewModel.gethangoutlist();
+        }
     }
 }

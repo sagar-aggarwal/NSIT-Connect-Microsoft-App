@@ -23,6 +23,8 @@
     <RootPropertyPathName Name="InternationalPhone" />
     <RootPropertyPathName Name="Phone" />
     <RootPropertyPathName Name="Address" />
+    <RootPropertyPathName Name="RadiusText" />
+    <RootPropertyPathName Name="Radius" />
     <RootPropertyPathName Name="ProgressVisibility" />
     <RootPropertyPathName Name="MasterPaneWidth" />
     <RootPropertyPathName Name="IsEnabled" />
@@ -215,7 +217,6 @@
       <RootProperty Name="AccentColor" />
       <RootProperty Name="VisualStateNarrowDisplayMode" />
       <RootProperty Name="PrimaryButtons" />
-      <RootProperty Name="SecondaryButtons" />
     </RootType>
     <RootType FullName="Template10.Controls.PageHeader">
       <RootProperty Name="VisualStateNarrowMinWidth" />
@@ -362,19 +363,27 @@
     <RootType FullName="Windows.UI.Xaml.Controls.CommandBar">
       <RootProperty Name="Background" />
       <RootProperty Name="Foreground" />
-      <RootProperty Name="Opacity" />
       <RootProperty Name="PrimaryCommands" />
       <RootProperty Name="Content" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.AppBarButton">
       <RootProperty Name="Icon" />
       <RootProperty Name="Label" />
+      <RootProperty Name="Foreground" />
       <RootProperty Name="IsEnabled" />
       <RootProperty Name="Visibility" />
-      <RootProperty Name="Foreground" />
       <RootProperty Name="Command" />
+      <RootEvent Name="Click" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.AppBarSeparator" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Slider">
+      <RootProperty Name="Value" />
+      <RootProperty Name="Minimum" />
+      <RootProperty Name="Maximum" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="Width" />
+      <RootEvent Name="ValueChanged" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ProgressBar">
       <RootProperty Name="Margin" />
       <RootProperty Name="HorizontalAlignment" />
@@ -580,12 +589,12 @@
       <RootProperty Name="PageParameter" />
       <RootProperty Name="NavigationTransitionInfo" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.SuppressNavigationTransitionInfo" />
     <RootType FullName="Windows.UI.Xaml.Controls.SymbolIcon">
       <RootProperty Name="Width" />
       <RootProperty Name="Height" />
       <RootProperty Name="Symbol" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Media.Animation.SuppressNavigationTransitionInfo" />
     <RootType FullName="NSIT_Connect.Views.Shell" />
     <RootType FullName="Windows.UI.Xaml.Controls.Canvas">
       <RootProperty Name="HorizontalAlignment" />

@@ -26,6 +26,30 @@
                 </StackPanel>
             </Controls:HamburgerButtonInfo>
 
+            <Controls:HamburgerButtonInfo ClearHistory="True" PageType="views:HomePage" 
+                                          AutomationProperties.Name="Jerry"
+                                          >
+                <StackPanel Orientation="Horizontal">
+                    <SymbolIcon Width="48" Height="48"
+                                Symbol="List" />
+                    <TextBlock Margin="12,0,0,0" VerticalAlignment="Center"
+                               Text="My Feed" />
+                </StackPanel>
+            </Controls:HamburgerButtonInfo>
+
+            <Controls:HamburgerButtonInfo ClearHistory="True" PageType="views:HomePage" 
+                                          AutomationProperties.Name="Jerry"
+                                          >
+                <StackPanel Orientation="Horizontal">
+                    <SymbolIcon Width="48" Height="48"
+                                Symbol="Video" />
+                    <TextBlock Margin="12,0,0,0" VerticalAlignment="Center"
+                               Text="Video" />
+                </StackPanel>
+            </Controls:HamburgerButtonInfo>
+            
+            
+
             <Controls:HamburgerButtonInfo ClearHistory="True" PageType="views:LocationPage" 
                                           AutomationProperties.Name="Jerry"
                                           >
@@ -47,10 +71,31 @@
                                Text="Professors" />
                 </StackPanel>
             </Controls:HamburgerButtonInfo>
-        </Controls:HamburgerMenu.PrimaryButtons>
 
-        <Controls:HamburgerMenu.SecondaryButtons>
+            <Controls:HamburgerButtonInfo ClearHistory="True" PageType="views:HomePage" 
+                                          AutomationProperties.Name="Jerry"
+                                          >
+                <StackPanel Orientation="Horizontal">
+                    <SymbolIcon Width="48" Height="48"
+                                Symbol="Document" />
+                    <TextBlock Margin="12,0,0,0" VerticalAlignment="Center"
+                               Text="Feedback" />
+                </StackPanel>
+            </Controls:HamburgerButtonInfo>
+
+            <Controls:HamburgerButtonInfo ClearHistory="True" PageType="views:HomePage" 
+                                          AutomationProperties.Name="Jerry"
+                                          >
+                <StackPanel Orientation="Horizontal">
+                    <SymbolIcon Width="48" Height="48"
+                                Symbol="Admin" />
+                    <TextBlock Margin="12,0,0,0" VerticalAlignment="Center"
+                               Text="About" />
+                </StackPanel>
+            </Controls:HamburgerButtonInfo>
+
             <!--  settingspage button  -->
+            
             <Controls:HamburgerButtonInfo x:ConnectionId='2' x:Name="SettingsButton" PageParameter="0"
                                           PageType="views:SettingsPage">
                 <Controls:HamburgerButtonInfo.NavigationTransitionInfo>
@@ -63,7 +108,8 @@
                                Text="Settings" />
                 </StackPanel>
             </Controls:HamburgerButtonInfo>
-        </Controls:HamburgerMenu.SecondaryButtons>
+            
+        </Controls:HamburgerMenu.PrimaryButtons>
 
     </Controls:HamburgerMenu>
 

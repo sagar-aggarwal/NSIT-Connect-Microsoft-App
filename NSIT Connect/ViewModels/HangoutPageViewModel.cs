@@ -24,11 +24,24 @@ namespace NSIT_Connect.ViewModels
         private const string LOCATION = "/json?location=";
         private const string QUERY = "/xml?query=";
         private const string RADIUS = "&radius=";
-        private int radius = 5000;
+        private double radius = 1;
+        private string radiustext = "1(km)";
         private const string TYPE = "&types=";
         private const string KEY = "&key=AIzaSyDU_a1tyoeYORYMjXzqzWrNJ8IhP8Ycgts";
         private string URL = null;
         private string result = null;
+
+        public string RadiusText
+        {
+            get { return radiustext; }
+            set { Set(ref radiustext, value); }
+        }
+
+        public double Radius
+        {
+            get { return radius; }
+            set { Set(ref radius, value); }
+        }
 
         private Visibility _progressVisibility = Visibility.Collapsed;
         public Visibility ProgressVisibility
@@ -82,14 +95,10 @@ namespace NSIT_Connect.ViewModels
             {
                 SelectedHangout = suspensionState[nameof(SelectedHangout)];
             }
-            ProgressVisibility = Visibility.Visible;
             Selected = (suspensionState.ContainsKey(nameof(Selected))) ? suspensionState[nameof(Selected)] as LocationItem : parameter as LocationItem;
             Selected.Name = "#" + Selected.Name.ToLower();
-            
-            if (NetworkInterface.GetIsNetworkAvailable())
-            {
-                gethangoutlist();
-            }
+            ProgressVisibility = Visibility.Collapsed;
+            gethangoutlist();
             await Task.CompletedTask;
         }
 
@@ -119,127 +128,132 @@ namespace NSIT_Connect.ViewModels
         public async void  gethangoutlist()
         {
             Item.Clear();
-            var accessStatus = await Geolocator.RequestAccessAsync();
-            if(accessStatus == GeolocationAccessStatus.Allowed)
+            if (NetworkInterface.GetIsNetworkAvailable())
             {
-                Geolocator geolocator = new Geolocator();
-                Geoposition pos = await geolocator.GetGeopositionAsync();
-                URL = MAIN_HTTP + NEARBYPLACES + LOCATION + pos.Coordinate.Latitude.ToString() + "," + pos.Coordinate.Longitude.ToString()
-                +RADIUS + radius.ToString() + TYPE + Selected.Key + KEY;
-            }
-            if(URL != null){
-                var httpClient = new HttpClient();
-                var uri = new Uri(URL);
-
-                try
+                ProgressVisibility = Visibility.Visible;
+                var accessStatus = await Geolocator.RequestAccessAsync();
+                if (accessStatus == GeolocationAccessStatus.Allowed)
                 {
-                    HttpResponseMessage responseMessage = await httpClient.GetAsync(uri);
-                    responseMessage.EnsureSuccessStatusCode();
-                    result = await responseMessage.Content.ReadAsStringAsync();
+                    Geolocator geolocator = new Geolocator();
+                    Geoposition pos = await geolocator.GetGeopositionAsync();
+                    URL = MAIN_HTTP + NEARBYPLACES + LOCATION + pos.Coordinate.Latitude.ToString() + "," + pos.Coordinate.Longitude.ToString()
+                    + RADIUS + Radius.ToString() + TYPE + Selected.Key + KEY;
                 }
-                catch (Exception ex) { }
-                httpClient.Dispose();
-            }
-            if (result != null)
-            {
-                JsonObject jplaceobject = JsonObject.Parse(result);
-                JsonArray jplacearray = jplaceobject.GetNamedArray("results");
-
-                //if (jplaceobject.GetNamedString("status").Equals("ZERO_RESULTS"))
-                //    Toast.makeText(getApplicationContext(), "No " + HangoutPlaces[choice] + " Present in Current Radius", Toast.LENGTH_SHORT).show();
-
-                for (uint i = 0; i < jplacearray.Count; i++)
+                if (URL != null)
                 {
-                    string name = null;
-                    string icon = null;
-                    string place_id = null;
-                    string phtotref = null;
-                    string vicinity = null;
-                    string opennow = "No Information";
-                    double longitude = -1;
-                    double lattitude = -1;
-                    double photowidth = 0;
-                    double photoheight = 0;
-                    double rating = -1;
+                    var httpClient = new HttpClient();
+                    var uri = new Uri(URL);
 
-                    if (jplacearray.GetObjectAt(i).ContainsKey("icon"))
-                        icon = jplacearray.GetObjectAt(i).GetNamedString("icon");
-                    else
-                        icon = null;
-
-                    if (jplacearray.GetObjectAt(i).ContainsKey("place_id"))
-                        place_id = jplacearray.GetObjectAt(i).GetNamedString("place_id");
-                    else
-                        place_id = null;
-
-                    if (jplacearray.GetObjectAt(i).ContainsKey("name"))
-                        name = jplacearray.GetObjectAt(i).GetNamedString("name");
-                    else
-                        name = null;
-
-                    if (jplacearray.GetObjectAt(i).ContainsKey("rating"))
-                        rating = jplacearray.GetObjectAt(i).GetNamedNumber("rating");
-                    else
-                        rating = 0;
-
-                    if (jplacearray.GetObjectAt(i).ContainsKey("vicinity"))
-                        vicinity = jplacearray.GetObjectAt(i).GetNamedString("vicinity");
-                    else
-                        vicinity = null;
-
-                    if (jplacearray.GetObjectAt(i).GetNamedObject("geometry").GetNamedObject("location").ContainsKey("lng"))
+                    try
                     {
-                        JsonObject jobject = jplacearray.GetObjectAt(i).GetNamedObject("geometry").GetNamedObject("location").GetObject();
-                        longitude = -1;
-                        longitude = jobject.GetNamedNumber("lng");
-                        lattitude = jobject.GetNamedNumber("lat");
+                        HttpResponseMessage responseMessage = await httpClient.GetAsync(uri);
+                        responseMessage.EnsureSuccessStatusCode();
+                        result = await responseMessage.Content.ReadAsStringAsync();
                     }
-                    if (jplacearray.GetObjectAt(i).ContainsKey("photos"))
-                    {
-                        JsonObject obj = jplacearray.GetObjectAt(i).GetNamedArray("photos").GetObjectAt(0);
-                        phtotref = obj.GetNamedString("photo_reference");
-                        photoheight = obj.GetNamedNumber("height");
-                        photowidth = obj.GetNamedNumber("width");
-                    }
-                    else
-                    {
-                        phtotref = null;
-                        photoheight = 0;
-                        photowidth = 0;
-                    }
+                    catch (Exception ex) { }
+                    httpClient.Dispose();
+                }
+                if (result != null)
+                {
+                    JsonObject jplaceobject = JsonObject.Parse(result);
+                    JsonArray jplacearray = jplaceobject.GetNamedArray("results");
 
-                    if (jplacearray.GetObjectAt(i).ContainsKey("opening_hours"))
+                    //if (jplaceobject.GetNamedString("status").Equals("ZERO_RESULTS"))
+                    //    Toast.makeText(getApplicationContext(), "No " + HangoutPlaces[choice] + " Present in Current Radius", Toast.LENGTH_SHORT).show();
+
+                    for (uint i = 0; i < jplacearray.Count; i++)
                     {
-                        bool open = jplacearray.GetObjectAt(i).GetNamedObject("opening_hours").GetNamedBoolean("open_now");
-                        if (open)
-                            opennow = "Open Now";
+                        string name = null;
+                        string icon = null;
+                        string place_id = null;
+                        string phtotref = null;
+                        string vicinity = null;
+                        string opennow = "No Information";
+                        double longitude = -1;
+                        double lattitude = -1;
+                        double photowidth = 0;
+                        double photoheight = 0;
+                        double rating = -1;
+
+                        if (jplacearray.GetObjectAt(i).ContainsKey("icon"))
+                            icon = jplacearray.GetObjectAt(i).GetNamedString("icon");
                         else
-                            opennow = "Closed Now";
-                    }
-                    string temp = null;
-                    if (phtotref != null)
-                        temp = "https://maps.googleapis.com/maps/api/place/photo?maxheight=" + photoheight + "&maxwidth=" + photowidth +
-                        "&photoreference=" + phtotref + KEY;
-                    else
-                        temp = defaulthangout[Selected.Number];
+                            icon = null;
 
-                    Item.Add(new HangoutItem()
-                    {
-                        Name = name,
-                        Icon = icon,
-                        Place_ID = place_id,
-                        Photo_Ref = new Uri(temp),
-                        Longi = longitude,
-                        Latii = lattitude,
-                        Vicinity = vicinity,
-                        OpenNowString = opennow,
-                        PhotoWidth = photowidth,
-                        PhotoHeight = photoheight,
-                        Rating = rating
-                    });
+                        if (jplacearray.GetObjectAt(i).ContainsKey("place_id"))
+                            place_id = jplacearray.GetObjectAt(i).GetNamedString("place_id");
+                        else
+                            place_id = null;
+
+                        if (jplacearray.GetObjectAt(i).ContainsKey("name"))
+                            name = jplacearray.GetObjectAt(i).GetNamedString("name");
+                        else
+                            name = null;
+
+                        if (jplacearray.GetObjectAt(i).ContainsKey("rating"))
+                            rating = jplacearray.GetObjectAt(i).GetNamedNumber("rating");
+                        else
+                            rating = 0;
+
+                        if (jplacearray.GetObjectAt(i).ContainsKey("vicinity"))
+                            vicinity = jplacearray.GetObjectAt(i).GetNamedString("vicinity");
+                        else
+                            vicinity = null;
+
+                        if (jplacearray.GetObjectAt(i).GetNamedObject("geometry").GetNamedObject("location").ContainsKey("lng"))
+                        {
+                            JsonObject jobject = jplacearray.GetObjectAt(i).GetNamedObject("geometry").GetNamedObject("location").GetObject();
+                            longitude = -1;
+                            longitude = jobject.GetNamedNumber("lng");
+                            lattitude = jobject.GetNamedNumber("lat");
+                        }
+                        if (jplacearray.GetObjectAt(i).ContainsKey("photos"))
+                        {
+                            JsonObject obj = jplacearray.GetObjectAt(i).GetNamedArray("photos").GetObjectAt(0);
+                            phtotref = obj.GetNamedString("photo_reference");
+                            photoheight = obj.GetNamedNumber("height");
+                            photowidth = obj.GetNamedNumber("width");
+                        }
+                        else
+                        {
+                            phtotref = null;
+                            photoheight = 0;
+                            photowidth = 0;
+                        }
+
+                        if (jplacearray.GetObjectAt(i).ContainsKey("opening_hours"))
+                        {
+                            bool open = jplacearray.GetObjectAt(i).GetNamedObject("opening_hours").GetNamedBoolean("open_now");
+                            if (open)
+                                opennow = "Open Now";
+                            else
+                                opennow = "Closed Now";
+                        }
+                        string temp = null;
+                        if (phtotref != null)
+                            temp = "https://maps.googleapis.com/maps/api/place/photo?maxheight=" + photoheight + "&maxwidth=" + photowidth +
+                            "&photoreference=" + phtotref + KEY;
+                        else
+                            temp = defaulthangout[Selected.Number];
+
+                        Item.Add(new HangoutItem()
+                        {
+                            Name = name,
+                            Icon = icon,
+                            Place_ID = place_id,
+                            Photo_Ref = new Uri(temp),
+                            Longi = longitude,
+                            Latii = lattitude,
+                            Vicinity = vicinity,
+                            OpenNowString = opennow,
+                            PhotoWidth = photowidth,
+                            PhotoHeight = photoheight,
+                            Rating = rating
+                        });
+                    }
                 }
+                ProgressVisibility = Visibility.Collapsed;
             }
-            ProgressVisibility = Visibility.Collapsed;
         }
     }
 }

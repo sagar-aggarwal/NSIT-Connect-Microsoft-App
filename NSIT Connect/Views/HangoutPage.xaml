@@ -16,11 +16,25 @@
     </Page.DataContext>
 
     <Page.BottomAppBar>
-        <CommandBar Background="{StaticResource colorPrimary}" Foreground="White" Opacity="0.25" >
-            <AppBarButton Icon="Shuffle" Label="Shuffle" />
-            <AppBarButton Icon="RepeatAll" Label="Repeat" />
-            <AppBarSeparator/>
-            <AppBarButton Icon="Back" Label="Back" />
+        <CommandBar Background="{StaticResource colorPrimaryDark}" Foreground="White"    >
+            <AppBarButton Icon="Refresh" Label="Refresh" Foreground="WhiteSmoke" Click="AppBarButton_Click" />
+            <CommandBar.Content>
+                <Grid Margin="10,0,0,0" >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <Image Grid.Column="0"  Source="ms-appx:///Assets/ic_wifi_tethering_white_24dp.png" Stretch="None" />
+                    <Slider Grid.Column="1" 
+                            Value="{Binding Radius}"
+                            ValueChanged="Slider_ValueChanged"
+                            Minimum="0" Maximum="50" 
+                            Margin="15,7,0,0"  Foreground="White" Width="600"   >
+                    </Slider>
+                    <TextBlock Grid.Column="2" Margin="10,0,0,0" FontSize="20" VerticalAlignment="Center"  Style="{ThemeResource BodyTextBlockStyle}" Text="{Binding RadiusText}" Foreground="WhiteSmoke" />
+                </Grid>
+            </CommandBar.Content>
         </CommandBar>
     </Page.BottomAppBar>
 
@@ -57,7 +71,7 @@
 
         <GridView x:Name="Main_Grid"
                   ItemClick="Main_Grid_ItemClick" IsItemClickEnabled="True"
-                  Margin="10,25,5,0" Grid.Row="2" ItemsSource="{x:Bind ViewModel.Item}" HorizontalAlignment="Stretch">
+                  Margin="10,20,5,5" Grid.Row="2" ItemsSource="{x:Bind ViewModel.Item}" HorizontalAlignment="Stretch">
             <GridView.ItemTemplate>
                 <DataTemplate x:DataType="models:HangoutItem">
                     <Controls:HangoutPanel 
