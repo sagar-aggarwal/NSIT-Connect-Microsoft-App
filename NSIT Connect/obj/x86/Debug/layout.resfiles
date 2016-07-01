@@ -1,7 +1,9 @@
 WinMetadata\Windows.winmd
+Assets\blue-marker-icon.png
 Assets\contact.png
 Assets\facility-management.png
 Assets\ic_call_black_24dp.png
+Assets\ic_directions_white_24dp_2x.png
 Assets\ic_email_black_24dp.png
 Assets\ic_thumb_up_black_18dp.png
 Assets\Location\amusment.jpg
@@ -37,6 +39,7 @@ Assets\Professors\management.png
 Assets\Professors\math.png
 Assets\Professors\Mechanical.png
 Assets\Professors\physics.png
+Assets\red-marker-icon.png
 Assets\SplashScreen.scale-200.png
 Assets\Square150x150Logo.scale-200.png
 Assets\Square44x44Logo.scale-200.png

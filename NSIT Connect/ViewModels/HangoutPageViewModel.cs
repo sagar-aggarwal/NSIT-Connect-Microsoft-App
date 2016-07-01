@@ -26,7 +26,7 @@ namespace NSIT_Connect.ViewModels
         private const string RADIUS = "&radius=";
         private int radius = 5000;
         private const string TYPE = "&types=";
-        private const string KEY = "&key=AIzaSyBAuY7uwzJkS1d1Cp8WLYphhs4UuAZ7ZL4";
+        private const string KEY = "&key=AIzaSyDU_a1tyoeYORYMjXzqzWrNJ8IhP8Ycgts";
         private string URL = null;
         private string result = null;
 
@@ -85,7 +85,7 @@ namespace NSIT_Connect.ViewModels
             ProgressVisibility = Visibility.Visible;
             Selected = (suspensionState.ContainsKey(nameof(Selected))) ? suspensionState[nameof(Selected)] as LocationItem : parameter as LocationItem;
             Selected.Name = "#" + Selected.Name.ToLower();
-            Item.Clear();
+            
             if (NetworkInterface.GetIsNetworkAvailable())
             {
                 gethangoutlist();
@@ -114,8 +114,11 @@ namespace NSIT_Connect.ViewModels
         public void GotoHangoutDetailPage() =>
                     NavigationService.Navigate(typeof(Views.HangoutDetailPage), SelectedHangout);
 
+        
+
         public async void  gethangoutlist()
         {
+            Item.Clear();
             var accessStatus = await Geolocator.RequestAccessAsync();
             if(accessStatus == GeolocationAccessStatus.Allowed)
             {

@@ -5,6 +5,7 @@ C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Conn
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\Controls\Test.xbf
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\Styles\Custom.xbf
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\Views\Busy.xbf
+C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\Views\HangoutDetailPage.xbf
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\Views\HangoutPage.xbf
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\Views\HomePage.xbf
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\Views\LocationPage.xbf
@@ -132,6 +133,7 @@ C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Conn
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\Template10Library.dll
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\WindowsStateTriggers.dll
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\WindowsStateTriggers.pdb
+C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\NSIT Connect.csprojResolveAssemblyReference.cache
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\App.g.i.cs
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\App.g.cs
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Controls\CircularPanel.g.i.cs
@@ -144,6 +146,8 @@ C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Conn
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Controls\Test.g.cs
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Views\Busy.g.i.cs
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Views\Busy.g.cs
+C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Views\HangoutDetailPage.g.i.cs
+C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Views\HangoutDetailPage.g.cs
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Views\HangoutPage.g.i.cs
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Views\HangoutPage.g.cs
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Views\HomePage.g.i.cs
@@ -163,10 +167,12 @@ C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Conn
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\XamlTypeInfo.g.cs
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\App.xaml
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Controls\CircularPanel.xaml
+C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Controls\HangoutPanel.xaml
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Controls\RectangularPanel.xaml
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Controls\Test.xaml
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Styles\Custom.xaml
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Views\Busy.xaml
+C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Views\HangoutPage.xaml
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Views\HomePage.xaml
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Views\LocationPage.xaml
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Views\ProfesorsDetailPage.xaml
@@ -174,14 +180,15 @@ C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Conn
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Views\SettingsPage.xaml
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Views\Shell.xaml
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Views\Splash.xaml
-C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Controls\HangoutPanel.xaml
-C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Views\HangoutPage.xaml
+C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Views\HangoutDetailPage.xaml
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\App.xbf
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Controls\CircularPanel.xbf
+C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Controls\HangoutPanel.xbf
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Controls\RectangularPanel.xbf
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Controls\Test.xbf
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Styles\Custom.xbf
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Views\Busy.xbf
+C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Views\HangoutPage.xbf
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Views\HomePage.xbf
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Views\LocationPage.xbf
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Views\ProfesorsDetailPage.xbf
@@ -189,8 +196,7 @@ C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Conn
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Views\SettingsPage.xbf
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Views\Shell.xbf
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Views\Splash.xbf
-C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Controls\HangoutPanel.xbf
-C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Views\HangoutPage.xbf
+C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Views\HangoutDetailPage.xbf
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\XamlSaveStateFile.xml
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\NSIT Connect.exe
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\NSIT Connect.pdb
@@ -266,8 +272,4 @@ C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Conn
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Template10Library.pri.xml
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\WindowsStateTriggers.pri.xml
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\ProjectArchitectures.txt
-C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\Views\HangoutDetailPage.xbf
-C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Views\HangoutDetailPage.g.i.cs
-C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Views\HangoutDetailPage.g.cs
-C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Views\HangoutDetailPage.xaml
-C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Views\HangoutDetailPage.xbf
+C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\MyToolkit.dll

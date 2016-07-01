@@ -112,10 +112,10 @@
     </Compile>
     <Compile Include="Models\Constants.cs" />
     <Compile Include="Models\Feed.cs" />
-    <Compile Include="Models\HangoutDetailItem.cs" />
     <Compile Include="Models\HangoutItem.cs" />
     <Compile Include="Models\LocationItem.cs" />
     <Compile Include="Models\ProfessorItem.cs" />
+    <Compile Include="Models\ReviewItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\SettingsServices\SettingsService.cs" />
     <Compile Include="ViewModels\HangoutDetailPageViewModel.cs" />
@@ -162,9 +162,11 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\blue-marker-icon.png" />
     <Content Include="Assets\contact.png" />
     <Content Include="Assets\facility-management.png" />
     <Content Include="Assets\ic_call_black_24dp.png" />
+    <Content Include="Assets\ic_directions_white_24dp_2x.png" />
     <Content Include="Assets\ic_email_black_24dp.png" />
     <Content Include="Assets\ic_thumb_up_black_18dp.png" />
     <Content Include="Assets\Location-Default\amuse_hangout.jpg" />
@@ -199,6 +201,7 @@
     <Content Include="Assets\Professors\math.png" />
     <Content Include="Assets\Professors\Mechanical.png" />
     <Content Include="Assets\Professors\physics.png" />
+    <Content Include="Assets\red-marker-icon.png" />
     <Content Include="Help.htm" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />

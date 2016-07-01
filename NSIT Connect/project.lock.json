@@ -298,6 +298,15 @@
           "lib/uap10.0/Microsoft.Xaml.Interactivity.dll": {}
         }
       },
+      "MyToolkit/2.5.12": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+wp8+win8+wpa81/MyToolkit.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp8+win8+wpa81/MyToolkit.dll": {}
+        }
+      },
       "Newtonsoft.Json/8.0.3": {
         "type": "package",
         "compile": {
@@ -2176,6 +2185,15 @@
           "lib/uap10.0/Microsoft.Xaml.Interactivity.dll": {}
         }
       },
+      "MyToolkit/2.5.12": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+wp8+win8+wpa81/MyToolkit.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp8+win8+wpa81/MyToolkit.dll": {}
+        }
+      },
       "Newtonsoft.Json/8.0.3": {
         "type": "package",
         "compile": {
@@ -3969,6 +3987,15 @@
           "lib/uap10.0/Microsoft.Xaml.Interactivity.dll": {}
         }
       },
+      "MyToolkit/2.5.12": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+wp8+win8+wpa81/MyToolkit.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp8+win8+wpa81/MyToolkit.dll": {}
+        }
+      },
       "Newtonsoft.Json/8.0.3": {
         "type": "package",
         "compile": {
@@ -5727,6 +5754,15 @@
         "runtime": {
           "lib/uap10.0/Microsoft.Xaml.Interactions.dll": {},
           "lib/uap10.0/Microsoft.Xaml.Interactivity.dll": {}
+        }
+      },
+      "MyToolkit/2.5.12": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+wp8+win8+wpa81/MyToolkit.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp8+win8+wpa81/MyToolkit.dll": {}
         }
       },
       "Newtonsoft.Json/8.0.3": {
@@ -7525,6 +7561,15 @@
           "lib/uap10.0/Microsoft.Xaml.Interactivity.dll": {}
         }
       },
+      "MyToolkit/2.5.12": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+wp8+win8+wpa81/MyToolkit.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp8+win8+wpa81/MyToolkit.dll": {}
+        }
+      },
       "Newtonsoft.Json/8.0.3": {
         "type": "package",
         "compile": {
@@ -9283,6 +9328,15 @@
         "runtime": {
           "lib/uap10.0/Microsoft.Xaml.Interactions.dll": {},
           "lib/uap10.0/Microsoft.Xaml.Interactivity.dll": {}
+        }
+      },
+      "MyToolkit/2.5.12": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+wp8+win8+wpa81/MyToolkit.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp8+win8+wpa81/MyToolkit.dll": {}
         }
       },
       "Newtonsoft.Json/8.0.3": {
@@ -11079,6 +11133,15 @@
         "runtime": {
           "lib/uap10.0/Microsoft.Xaml.Interactions.dll": {},
           "lib/uap10.0/Microsoft.Xaml.Interactivity.dll": {}
+        }
+      },
+      "MyToolkit/2.5.12": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+wp8+win8+wpa81/MyToolkit.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp8+win8+wpa81/MyToolkit.dll": {}
         }
       },
       "Newtonsoft.Json/8.0.3": {
@@ -13212,6 +13275,19 @@
         "lib/uap10.0/Microsoft.Xaml.Interactivity.dll",
         "lib/uap10.0/Microsoft.Xaml.Interactivity.pri",
         "lib/uap10.0/Microsoft.Xaml.Interactivity.xml"
+      ]
+    },
+    "MyToolkit/2.5.12": {
+      "sha512": "dUPVdRP5Intc4JSKjzXnbWp0wKhtiToQCiTNekF4tT0y0Dr+iCr2FCwY3HmOmyAz6XUnfseknBWCsdsmxbU4KQ==",
+      "type": "package",
+      "files": [
+        "MyToolkit.2.5.12.nupkg.sha512",
+        "MyToolkit.nuspec",
+        "lib/portable-net45+wp8+win8+wpa81/CodeContracts/MyToolkit.Contracts.dll",
+        "lib/portable-net45+wp8+win8+wpa81/MyToolkit.dll",
+        "lib/portable-net45+wp8+win8+wpa81/MyToolkit.xml",
+        "lib/portable-sl5+wp71/MyToolkit.dll",
+        "lib/portable-sl5+wp71/MyToolkit.xml"
       ]
     },
     "Newtonsoft.Json/8.0.3": {
@@ -15978,6 +16054,7 @@
       "BratchedTools.RatingControl >= 1.0.0",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 5.1.0",
       "Microsoft.Xaml.Behaviors.Uwp.Managed >= 1.1.0",
+      "MyToolkit >= 2.5.12",
       "Newtonsoft.Json >= 8.0.3",
       "Template10 >= 1.1.*",
       "WindowsStateTriggers >= 1.1.0"

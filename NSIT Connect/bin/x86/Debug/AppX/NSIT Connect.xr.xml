@@ -10,7 +10,16 @@
     <RootPropertyPathName Name="Available" />
     <RootPropertyPathName Name="HangoutVicinity" />
     <RootPropertyPathName Name="HangoutName" />
+    <RootPropertyPathName Name="Directions" />
+    <RootPropertyPathName Name="Time" />
+    <RootPropertyPathName Name="Distance" />
+    <RootPropertyPathName Name="Item" />
+    <RootPropertyPathName Name="Text" />
+    <RootPropertyPathName Name="Name" />
+    <RootPropertyPathName Name="Rating" />
     <RootPropertyPathName Name="ImageSource" />
+    <RootPropertyPathName Name="SelectedHangout" />
+    <RootPropertyPathName Name="Vicinity" />
     <RootPropertyPathName Name="InternationalPhone" />
     <RootPropertyPathName Name="Phone" />
     <RootPropertyPathName Name="Address" />
@@ -58,6 +67,7 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Orientation" />
       <RootProperty Name="Padding" />
+      <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Height" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
@@ -119,10 +129,9 @@
       <RootProperty Name="ColumnDefinitions" />
       <RootProperty Name="Children" />
       <RootProperty Name="RowDefinitions" />
+      <RootProperty Name="Margin" />
       <RootProperty Name="Height" />
       <RootProperty Name="Width" />
-      <RootProperty Name="Padding" />
-      <RootProperty Name="Margin" />
       <RootMethod Name="GetColumn" />
       <RootMethod Name="SetColumn" />
       <RootMethod Name="GetRow" />
@@ -170,37 +179,13 @@
       <RootProperty Name="Source" />
       <RootProperty Name="Margin" />
       <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="MaxHeight" />
-      <RootProperty Name="MaxWidth" />
       <RootProperty Name="Stretch" />
+      <RootProperty Name="MaxHeight" />
     </RootType>
     <RootType FullName="NSIT_Connect.Controls.RectangularPanel">
       <RootProperty Name="Margin" />
       <RootProperty Name="Label" />
       <RootProperty Name="Source" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.Border">
-      <RootProperty Name="BorderBrush" />
-      <RootProperty Name="BorderThickness" />
-      <RootProperty Name="Background" />
-      <RootProperty Name="Child" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="IsHitTestVisible" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.Viewbox">
-      <RootProperty Name="Stretch" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="Child" />
-      <RootProperty Name="Height" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Width" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Shapes.Rectangle">
-      <RootProperty Name="Fill" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="Visibility" />
     </RootType>
     <RootType FullName="NSIT_Connect.Controls.Test" />
     <RootType FullName="System.Double" />
@@ -258,6 +243,15 @@
       <RootProperty Name="GrabberBrush" />
       <RootProperty Name="GrabberVisibility" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Viewbox">
+      <RootProperty Name="Height" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Child" />
+      <RootProperty Name="Stretch" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Width" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ProgressRing">
       <RootProperty Name="Width" />
       <RootProperty Name="Height" />
@@ -292,9 +286,32 @@
       <RootProperty Name="Header" />
       <RootProperty Name="Margin" />
       <RootProperty Name="Content" />
+      <RootProperty Name="Padding" />
       <RootProperty Name="Foreground" />
       <RootProperty Name="DataContext" />
-      <RootProperty Name="Padding" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Maps.MapControl">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="ZoomInteractionMode" />
+      <RootProperty Name="TiltInteractionMode" />
+      <RootProperty Name="MapServiceToken" />
+      <RootProperty Name="Children" />
+      <RootEvent Name="Loaded" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Button">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="Content" />
+      <RootProperty Name="Flyout" />
+      <RootProperty Name="Command" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Flyout">
+      <RootProperty Name="Placement" />
+      <RootProperty Name="Content" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
       <RootProperty Name="Margin" />
@@ -333,6 +350,8 @@
       <RootMethod Name="SetBringIntoViewOnFocusChange" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ListView">
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="Margin" />
       <RootProperty Name="ItemTemplate" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.DataTemplate">
@@ -406,6 +425,15 @@
     <RootType FullName="Windows.UI.Xaml.Controls.ControlTemplate">
       <RootProperty Name="TargetType" />
       <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Border">
+      <RootProperty Name="Background" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="Child" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="IsHitTestVisible" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.VisualStateManager">
       <RootMethod Name="GetVisualStateGroups" />
@@ -514,6 +542,10 @@
       <RootProperty Name="Text" />
       <RootProperty Name="Foreground" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Shapes.Rectangle">
+      <RootProperty Name="Fill" />
+      <RootProperty Name="Visibility" />
+    </RootType>
     <RootType FullName="System.String" />
     <RootType FullName="NSIT_Connect.Views.HomePage" />
     <RootType FullName="NSIT_Connect.ViewModels.LocationPageViewModel" />
@@ -539,11 +571,6 @@
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Header" />
       <RootProperty Name="Text" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.Button">
-      <RootProperty Name="Margin" />
-      <RootProperty Name="Command" />
-      <RootProperty Name="Content" />
     </RootType>
     <RootType FullName="NSIT_Connect.Views.SettingsPage" />
     <RootType FullName="Template10.Controls.HamburgerButtonInfo">

@@ -16,6 +16,7 @@
     <Color x:Key="CustomColor">#01b29b</Color>
     <Color x:Key="ContrastColor">#008978</Color>
     <Color x:Key="SystemAccentColor">#01b29b</Color>
+    <Color x:Key="PrimaryColor">#01b29b</Color>
     <SolidColorBrush x:Key="colorPrimary">#01b29b</SolidColorBrush>
     <SolidColorBrush x:Key="colorPrimaryDark">#008978</SolidColorBrush>
     <SolidColorBrush x:Key="textColorPrimary">#5e5e5e</SolidColorBrush>
