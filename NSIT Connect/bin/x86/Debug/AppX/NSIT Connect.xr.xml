@@ -38,6 +38,7 @@
     <RootPropertyPathName Name="Likes" />
     <RootPropertyPathName Name="PictureUri" />
     <RootPropertyPathName Name="IsRead" />
+    <RootPropertyPathName Name="Title" />
     <RootPropertyPathName Name="AboutPartViewModel" />
     <RootPropertyPathName Name="Version" />
     <RootPropertyPathName Name="Publisher" />
@@ -69,8 +70,8 @@
       <RootProperty Name="Children" />
       <RootProperty Name="Margin" />
       <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Orientation" />
       <RootProperty Name="Padding" />
+      <RootProperty Name="Orientation" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Height" />
     </RootType>
@@ -134,9 +135,10 @@
       <RootProperty Name="ColumnDefinitions" />
       <RootProperty Name="Children" />
       <RootProperty Name="RowDefinitions" />
-      <RootProperty Name="Margin" />
       <RootProperty Name="Height" />
       <RootProperty Name="Width" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="VerticalAlignment" />
       <RootMethod Name="GetColumn" />
       <RootMethod Name="SetColumn" />
       <RootMethod Name="GetRow" />
@@ -389,6 +391,7 @@
       <RootProperty Name="IsEnabled" />
       <RootProperty Name="Visibility" />
       <RootProperty Name="Command" />
+      <RootProperty Name="Flyout" />
       <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Slider">
@@ -407,6 +410,9 @@
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="ItemTemplate" />
       <RootProperty Name="Height" />
+      <RootProperty Name="IsMultiSelectCheckBoxEnabled" />
+      <RootProperty Name="SelectionMode" />
+      <RootProperty Name="ItemsPanel" />
       <RootEvent Name="ItemClick" />
     </RootType>
     <RootType FullName="NSIT_Connect.Views.HangoutPage" />
@@ -570,6 +576,14 @@
     <RootType FullName="NSIT_Connect.Views.HomePage" />
     <RootType FullName="NSIT_Connect.ViewModels.LocationPageViewModel" />
     <RootType FullName="NSIT_Connect.Views.LocationPage" />
+    <RootType FullName="NSIT_Connect.ViewModels.MyFeedPageViewModel" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ItemsWrapGrid">
+      <RootProperty Name="MaximumRowsOrColumns" />
+      <RootProperty Name="Orientation" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+    </RootType>
+    <RootType FullName="NSIT_Connect.Views.MyFeedPage" />
     <RootType FullName="NSIT_Connect.ViewModels.ProfessorDetailPageViewModel" />
     <RootType FullName="NSIT_Connect.Views.ProfesorsDetailPage" />
     <RootType FullName="NSIT_Connect.ViewModels.ProfessorsPageViewModel" />

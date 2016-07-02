@@ -15,7 +15,7 @@ using Windows.UI.Xaml.Navigation;
 
 namespace NSIT_Connect.ViewModels
 {
-    public class HomePageViewModel : ViewModelBase
+    public class MyFeedPageViewModel : ViewModelBase
     {
         private string next = "https://graph.facebook.com/" + Constants.id_nsitonline + "/posts?limit=20&fields=id,picture,from,shares,message," +
             "object_id,link,created_time,comments.limit(0).summary(true),likes.limit(0).summary(true)" +
@@ -25,12 +25,38 @@ namespace NSIT_Connect.ViewModels
         private bool refresh = false;
         private string PictureUri = null;
         private string hobject, hmessage, hpicture, hlink, hlikes, htime;
+        private string[] ChooseSource = {
+            "ms-appx:///Assets/ChooseFeedItem/collegespace.png",
+            "ms-appx:///Assets/ChooseFeedItem/crosslinks.png",
+            "ms-appx:///Assets/ChooseFeedItem/csi.png",
+            "ms-appx:///Assets/ChooseFeedItem/ieee.png",
+            "ms-appx:///Assets/ChooseFeedItem/ashwamedh.png",
+            "ms-appx:///Assets/ChooseFeedItem/junoon.png",
+            "ms-appx:///Assets/ChooseFeedItem/debsoc.png",
+            "ms-appx:///Assets/ChooseFeedItem/quiz.png",
+            "ms-appx:///Assets/ChooseFeedItem/bullethawk.png",
+            "ms-appx:///Assets/ChooseFeedItem/rotaract.png",
+            "ms-appx:///Assets/ChooseFeedItem/enactus.png",
+            "ms-appx:///Assets/ChooseFeedItem/aagaz.png"
 
-        public HomePageViewModel()
+        };
+
+        private string[] ChooseTitle = {
+            "COLLEGESPACE","CROSSLINKS","CSI NSIT","IEEE NSIT","ASHWAMEDH","JUNOON" ,"DEBSOC","QUIZ CLUB","BULLETHAWK","ROTARACT","ENACTUS","AAGAZ"
+        };
+
+        private ObservableCollection<ChooseFeedItem> item = new ObservableCollection<ChooseFeedItem>();
+        public ObservableCollection<ChooseFeedItem> Item { get { return item; } set { item = value; } }
+
+        public MyFeedPageViewModel()
         {
             HomeFeed = new ObservableCollection<Feed>();
-          
+            for (int i = 0; i < 12; i++)
+            {
+                Item.Add(new ChooseFeedItem() {ImageSource = new Uri(ChooseSource[i]),Title = ChooseTitle[i] });
+            } 
         }
+
 
         public override Task OnNavigatedToAsync(object parameter, NavigationMode mode, IDictionary<string, object> state)
         {
@@ -70,7 +96,7 @@ namespace NSIT_Connect.ViewModels
                 getinfo();
                 Selected = HomeFeed?.FirstOrDefault();
                 IsMasterLoading = false;
-                
+
             }, 2000);
         });
 
@@ -87,7 +113,7 @@ namespace NSIT_Connect.ViewModels
                 //PreviousCommand.RaiseCanExecuteChanged();
                 if (message == null) return;
                 message.IsRead = true;
-                IsDetailsLoading = true;   
+                IsDetailsLoading = true;
                 WindowWrapper.Current().Dispatcher.Dispatch(() =>
                 {
                     IsDetailsLoading = false;
@@ -179,7 +205,7 @@ namespace NSIT_Connect.ViewModels
 
         public async void getinfo()
         {
-            if(refresh)
+            if (refresh)
                 next = "https://graph.facebook.com/" + Constants.id_nsitonline + "/posts?limit=20&fields=id,picture,from,shares,message," +
             "object_id,link,created_time,comments.limit(0).summary(true),likes.limit(0).summary(true)" +
             "&access_token=" + Constants.common_access;
@@ -201,11 +227,11 @@ namespace NSIT_Connect.ViewModels
             }
             JsonObject ob, ob2;
             JsonArray arr;
-            if (result != null && result!= string.Empty)
+            if (result != null && result != string.Empty)
             {
                 ob = JsonObject.Parse(result);
                 arr = ob.GetNamedArray("data");
-                
+
 
                 int len = arr.Count;
                 for (uint i = 0; i < len; i++)
@@ -262,12 +288,12 @@ namespace NSIT_Connect.ViewModels
 
             }
 
-            foreach(Feed item in HomeFeed)
+            foreach (Feed item in HomeFeed)
             {
-                
+
             }
 
-            if (refresh && HomeFeed.Count>0)
+            if (refresh && HomeFeed.Count > 0)
                 Selected = HomeFeed[0];
             refresh = false;
         }
@@ -305,7 +331,5 @@ namespace NSIT_Connect.ViewModels
                 }
             }
         }
-
     }
 }
-

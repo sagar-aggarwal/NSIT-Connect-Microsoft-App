@@ -17,19 +17,17 @@
     </Page.Resources>
 
 
-    <StackPanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" >
-        <StackPanel Orientation="Horizontal" Margin="3,5,0,0">
-            <rating:RatingControl ItemsCount="5" Value="2.5" Height ="20"  HorizontalAlignment="Left"  >
-                <rating:RatingControl.EmptyItemsDefinition>
-                    <rating:RateItemDefinition BackgroundColor="Gray" OutlineColor="Black" OutlineThikness="4" />
-                </rating:RatingControl.EmptyItemsDefinition>
-                <rating:RatingControl.FullItemsDefinition>
-                    <rating:RateItemDefinition BackgroundColor="#FF26B4F5" OutlineColor="Black" OutlineThikness="4" />
-                </rating:RatingControl.FullItemsDefinition>
-            </rating:RatingControl>
-            <TextBlock Text="Sagar Agg"  Margin="5,0,0,0"/>
-            <TextBlock Text="24 Mar,2016"  Margin="5,0,0,0"/>
-        </StackPanel>
-        <TextBlock Text="asdasdasd" TextWrapping="Wrap" MaxLines='4' TextTrimming="WordEllipsis"/>
-    </StackPanel>
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" >
+        <Grid Height="170" Width="140" Margin="19,33,191,427" >
+            <Grid.RowDefinitions >
+                <RowDefinition Height="*" />
+                <RowDefinition Height="30" />
+            </Grid.RowDefinitions>
+            <Image Grid.Row="0" Source="ms-appx:///Assets/Location/malls.jpg" Stretch="Fill" HorizontalAlignment="Stretch" />
+            <Grid Grid.Row="1" Background="Teal">
+                <TextBlock Grid.Row="1" FontWeight="SemiBold" VerticalAlignment="Center" HorizontalAlignment="Center" Text="College Space" Foreground="White"/>
+            </Grid>
+            
+        </Grid>
+    </Grid>
 </Page>

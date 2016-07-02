@@ -22,13 +22,13 @@
     <AppXManifest Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-07-02T16:55:11.936</Modified>
+      <Modified>2016-07-02T21:43:09.913</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\NSIT Connect.exe">
       <PackagePath>entrypoint\NSIT Connect.exe</PackagePath>
-      <Modified>2016-07-02T16:55:10.065</Modified>
+      <Modified>2016-07-02T21:43:07.650</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\.nuget\packages\BratchedTools.RatingControl\1.0.0\lib\wpa81\Bratched.Tools.RatingControl_ua81.dll">
       <PackagePath>Bratched.Tools.RatingControl_ua81.dll</PackagePath>
@@ -518,9 +518,61 @@
       <PackagePath>Assets\appbar.email.blue.minimal.png</PackagePath>
       <Modified>2016-07-02T09:52:50.748</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\appbar.settings.png">
+      <PackagePath>Assets\appbar.settings.png</PackagePath>
+      <Modified>2015-02-11T13:54:36.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\blue-marker-icon.png">
       <PackagePath>Assets\blue-marker-icon.png</PackagePath>
       <Modified>2016-07-01T16:21:33.669</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\ChooseFeedItem\aagaz.png">
+      <PackagePath>Assets\ChooseFeedItem\aagaz.png</PackagePath>
+      <Modified>2016-05-07T18:34:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\ChooseFeedItem\ashwamedh.png">
+      <PackagePath>Assets\ChooseFeedItem\ashwamedh.png</PackagePath>
+      <Modified>2016-05-07T18:34:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\ChooseFeedItem\bullethawk.png">
+      <PackagePath>Assets\ChooseFeedItem\bullethawk.png</PackagePath>
+      <Modified>2016-05-07T18:34:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\ChooseFeedItem\collegespace.png">
+      <PackagePath>Assets\ChooseFeedItem\collegespace.png</PackagePath>
+      <Modified>2016-05-07T18:34:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\ChooseFeedItem\crosslinks.png">
+      <PackagePath>Assets\ChooseFeedItem\crosslinks.png</PackagePath>
+      <Modified>2016-05-07T18:34:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\ChooseFeedItem\csi.png">
+      <PackagePath>Assets\ChooseFeedItem\csi.png</PackagePath>
+      <Modified>2016-05-07T18:34:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\ChooseFeedItem\debsoc.png">
+      <PackagePath>Assets\ChooseFeedItem\debsoc.png</PackagePath>
+      <Modified>2016-05-07T18:34:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\ChooseFeedItem\enactus.png">
+      <PackagePath>Assets\ChooseFeedItem\enactus.png</PackagePath>
+      <Modified>2016-05-07T18:34:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\ChooseFeedItem\ieee.png">
+      <PackagePath>Assets\ChooseFeedItem\ieee.png</PackagePath>
+      <Modified>2016-05-07T18:34:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\ChooseFeedItem\junoon.png">
+      <PackagePath>Assets\ChooseFeedItem\junoon.png</PackagePath>
+      <Modified>2016-05-07T18:34:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\ChooseFeedItem\quiz.png">
+      <PackagePath>Assets\ChooseFeedItem\quiz.png</PackagePath>
+      <Modified>2016-05-07T18:34:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\ChooseFeedItem\rotaract.png">
+      <PackagePath>Assets\ChooseFeedItem\rotaract.png</PackagePath>
+      <Modified>2016-05-07T18:34:04.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\contact.png">
       <PackagePath>Assets\contact.png</PackagePath>
@@ -762,7 +814,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\NSIT Connect.xr.xml">
       <PackagePath>NSIT Connect.xr.xml</PackagePath>
-      <Modified>2016-07-02T16:15:35.394</Modified>
+      <Modified>2016-07-02T21:43:06.669</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -826,11 +878,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-07-02T16:53:57.716</Modified>
+      <Modified>2016-07-02T21:43:08.569</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\Core\NSIT Connect.exe">
       <PackagePath>NSIT Connect.exe</PackagePath>
-      <Modified>2016-07-02T16:55:11.932</Modified>
+      <Modified>2016-07-02T21:43:09.908</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

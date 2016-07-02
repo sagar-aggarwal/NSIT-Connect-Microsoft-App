@@ -10,6 +10,7 @@ Views\HangoutDetailPage.xbf
 Views\HangoutPage.xbf
 Views\HomePage.xbf
 Views\LocationPage.xbf
+Views\MyFeedPage.xbf
 Views\ProfesorsDetailPage.xbf
 Views\ProfessorsPage.xbf
 Views\SettingsPage.xbf
