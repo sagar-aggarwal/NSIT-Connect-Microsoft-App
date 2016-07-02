@@ -8,7 +8,9 @@ using System.Threading.Tasks;
 using Template10.Mvvm;
 using Template10.Services.NavigationService;
 using Windows.Data.Json;
+using Windows.UI;
 using Windows.UI.Popups;
+using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
 namespace NSIT_Connect.ViewModels
@@ -64,8 +66,19 @@ namespace NSIT_Connect.ViewModels
                 contact[k] = ar.GetObjectAt(j).GetNamedString("ContactNo");
                 k++;
             }
-            for(int j = 0; j < k; j++) {
-                Item.Add(new ProfessorItem() { Email = ids[j] , Name = name[j], Phone = contact[j] ,FirstLetter = name[j][0] });
+            Random rnd = new Random();
+            Byte[] b = new Byte[3];
+            for (int j = 0; j < k; j++) {
+                if (ids[j] == string.Empty)
+                    ids[j] = "not available";
+                if (contact[j] == string.Empty)
+                    contact[j] = "not available";
+
+                rnd.NextBytes(b);
+                Color color = Color.FromArgb(150,b[0], b[1], b[2]);
+
+                SolidColorBrush brush = new SolidColorBrush(color);
+                Item.Add(new ProfessorItem() { Email = ids[j] , Name = name[j], Phone = contact[j],Foreground = brush });
             }
             await Task.CompletedTask;
         }

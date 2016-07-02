@@ -27,6 +27,9 @@ namespace NSIT_Connect.Models
         string _Picture = default(string);
         public string Picture { get { return _Picture; } set { Set(ref _Picture, value); } }
 
+        Uri _PictureUri = default(Uri);
+        public Uri PictureUri { get { return _PictureUri; } set { Set(ref _PictureUri, value); } }
+
         DateTime _Date = default(DateTime);
         public DateTime Date { get { return _Date; } set { Set(ref _Date, value); } }
 

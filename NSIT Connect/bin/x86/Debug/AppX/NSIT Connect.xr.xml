@@ -10,6 +10,8 @@
     <RootPropertyPathName Name="Available" />
     <RootPropertyPathName Name="HangoutVicinity" />
     <RootPropertyPathName Name="HangoutName" />
+    <RootPropertyPathName Name="SourceUri" />
+    <RootPropertyPathName Name="ProgressVisibility" />
     <RootPropertyPathName Name="Directions" />
     <RootPropertyPathName Name="Time" />
     <RootPropertyPathName Name="Distance" />
@@ -25,7 +27,6 @@
     <RootPropertyPathName Name="Address" />
     <RootPropertyPathName Name="RadiusText" />
     <RootPropertyPathName Name="Radius" />
-    <RootPropertyPathName Name="ProgressVisibility" />
     <RootPropertyPathName Name="MasterPaneWidth" />
     <RootPropertyPathName Name="IsEnabled" />
     <RootPropertyPathName Name="DetailsRequested" />
@@ -35,6 +36,7 @@
     <RootPropertyPathName Name="Message" />
     <RootPropertyPathName Name="Object_ID" />
     <RootPropertyPathName Name="Likes" />
+    <RootPropertyPathName Name="PictureUri" />
     <RootPropertyPathName Name="IsRead" />
     <RootPropertyPathName Name="AboutPartViewModel" />
     <RootPropertyPathName Name="Version" />
@@ -96,6 +98,7 @@
       <RootProperty Name="FontSize" />
       <RootProperty Name="MinHeight" />
       <RootProperty Name="Inlines" />
+      <RootProperty Name="Visibility" />
       <RootProperty Name="Transitions" />
       <RootProperty Name="TextAlignment" />
       <RootProperty Name="Width" />
@@ -183,6 +186,7 @@
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Stretch" />
       <RootProperty Name="MaxHeight" />
+      <RootProperty Name="Height" />
     </RootType>
     <RootType FullName="NSIT_Connect.Controls.RectangularPanel">
       <RootProperty Name="Margin" />
@@ -249,8 +253,6 @@
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Child" />
-      <RootProperty Name="Stretch" />
-      <RootProperty Name="Margin" />
       <RootProperty Name="Width" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ProgressRing">
@@ -270,6 +272,19 @@
       <RootProperty Name="FallbackValue" />
     </RootType>
     <RootType FullName="NSIT_Connect.Views.Busy" />
+    <RootType FullName="NSIT_Connect.ViewModels.FeedBackPageViewModel" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ProgressBar">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="IsIndeterminate" />
+      <RootProperty Name="Visibility" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.WebView">
+      <RootProperty Name="Source" />
+      <RootEvent Name="DOMContentLoaded" />
+    </RootType>
+    <RootType FullName="NSIT_Connect.Views.FeedBackPage" />
     <RootType FullName="NSIT_Connect.ViewModels.HangoutDetailPageViewModel" />
     <RootType FullName="Windows.UI.Xaml.Controls.Pivot">
       <RootProperty Name="Margin" />
@@ -329,6 +344,7 @@
       <RootProperty Name="VerticalScrollBarVisibility" />
       <RootProperty Name="VerticalScrollMode" />
       <RootProperty Name="ZoomMode" />
+      <RootProperty Name="Background" />
       <RootProperty Name="HorizontalContentAlignment" />
       <RootEvent Name="ViewChanged" />
       <RootMethod Name="GetHorizontalScrollBarVisibility" />
@@ -384,13 +400,6 @@
       <RootProperty Name="Width" />
       <RootEvent Name="ValueChanged" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.ProgressBar">
-      <RootProperty Name="Margin" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="IsIndeterminate" />
-      <RootProperty Name="Visibility" />
-    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.GridView">
       <RootProperty Name="IsItemClickEnabled" />
       <RootProperty Name="Margin" />
@@ -424,8 +433,10 @@
       <RootProperty Name="FooterTemplate" />
       <RootProperty Name="MasterCommandBarContent" />
       <RootProperty Name="MasterCommands" />
+      <RootProperty Name="DetailsCommandBarContent" />
       <RootProperty Name="DetailsCommands" />
       <RootProperty Name="Items" />
+      <RootEvent Name="ItemClick" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ListViewBase">
       <RootProperty Name="IsItemClickEnabled" />
@@ -530,10 +541,10 @@
       <RootMethod Name="SetAlignTopWith" />
       <RootMethod Name="GetRightOf" />
       <RootMethod Name="SetRightOf" />
-      <RootMethod Name="GetAlignLeftWith" />
-      <RootMethod Name="SetAlignLeftWith" />
       <RootMethod Name="GetBelow" />
       <RootMethod Name="SetBelow" />
+      <RootMethod Name="GetAlignLeftWith" />
+      <RootMethod Name="SetAlignLeftWith" />
       <RootMethod Name="GetAlignLeftWithPanel" />
       <RootMethod Name="SetAlignLeftWithPanel" />
       <RootMethod Name="GetAlignRightWithPanel" />
@@ -594,6 +605,11 @@
       <RootProperty Name="Width" />
       <RootProperty Name="Height" />
       <RootProperty Name="Symbol" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.BitmapIcon">
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="UriSource" />
     </RootType>
     <RootType FullName="NSIT_Connect.Views.Shell" />
     <RootType FullName="Windows.UI.Xaml.Controls.Canvas">

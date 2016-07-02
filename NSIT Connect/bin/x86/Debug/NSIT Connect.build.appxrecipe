@@ -105,10 +105,7 @@
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\.nuget\packages\Microsoft.Xaml.Behaviors.Uwp.Managed\1.1.0\lib\uap10.0\Microsoft.Xaml.Interactivity.dll">
       <PackagePath>Microsoft.Xaml.Interactivity.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\.nuget\packages\MyToolkit\2.5.12\lib\portable-net45+wp8+win8+wpa81\MyToolkit.dll">
-      <PackagePath>MyToolkit.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\.nuget\packages\Newtonsoft.Json\8.0.3\lib\portable-net45+wp80+win8+wpa81+dnxcore50\Newtonsoft.Json.dll">
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\.nuget\packages\Newtonsoft.Json\9.0.1\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\.nuget\packages\runtime.any.System.Private.DataContractSerialization\4.1.0\lib\netcore50\System.Private.DataContractSerialization.dll">
@@ -384,11 +381,20 @@
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\.nuget\packages\Zlib.Portable.Signed\1.11.0\lib\portable-net4+sl5+wp8+win8+wpa81+MonoTouch+MonoAndroid\Zlib.Portable.dll">
       <PackagePath>Zlib.Portable.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\appbar.blue.phone.png">
+      <PackagePath>Assets\appbar.blue.phone.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\appbar.email.blue.minimal.png">
+      <PackagePath>Assets\appbar.email.blue.minimal.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\blue-marker-icon.png">
       <PackagePath>Assets\blue-marker-icon.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\contact.png">
       <PackagePath>Assets\contact.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\facebook_circle_color-128.png">
+      <PackagePath>Assets\facebook_circle_color-128.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\facility-management.png">
       <PackagePath>Assets\facility-management.png</PackagePath>
@@ -405,11 +411,11 @@
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\ic_settings_input_antenna_white_24dp_2x.png">
       <PackagePath>Assets\ic_settings_input_antenna_white_24dp_2x.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\ic_thumb_up_black_18dp.png">
-      <PackagePath>Assets\ic_thumb_up_black_18dp.png</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\ic_wifi_tethering_white_24dp.png">
       <PackagePath>Assets\ic_wifi_tethering_white_24dp.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\like.png">
+      <PackagePath>Assets\like.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\Location\restuarant.png">
       <PackagePath>Assets\Location\restuarant.png</PackagePath>
@@ -455,6 +461,27 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\red-marker-icon.png">
       <PackagePath>Assets\red-marker-icon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\ShellIcon\appbar.book.open.information.png">
+      <PackagePath>Assets\ShellIcon\appbar.book.open.information.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\ShellIcon\appbar.home.empty.png">
+      <PackagePath>Assets\ShellIcon\appbar.home.empty.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\ShellIcon\appbar.information.circle.png">
+      <PackagePath>Assets\ShellIcon\appbar.information.circle.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\ShellIcon\appbar.location.checkin.png">
+      <PackagePath>Assets\ShellIcon\appbar.location.checkin.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\ShellIcon\appbar.people.png">
+      <PackagePath>Assets\ShellIcon\appbar.people.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\ShellIcon\appbar.tiles.four.png">
+      <PackagePath>Assets\ShellIcon\appbar.tiles.four.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\ShellIcon\appbar.video.png">
+      <PackagePath>Assets\ShellIcon\appbar.video.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>

@@ -272,7 +272,6 @@ C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Conn
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Template10Library.pri.xml
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\WindowsStateTriggers.pri.xml
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\ProjectArchitectures.txt
-C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\MyToolkit.dll
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\Google.Apis.PlatformServices.dll
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\Google.Apis.PlatformServices.pdb
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\Google.Apis.dll
@@ -290,3 +289,8 @@ C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Conn
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\System.Net.Http.Extensions.dll
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\System.Net.Http.Primitives.dll
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\Zlib.Portable.dll
+C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Views\FeedBackPage.g.i.cs
+C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Views\FeedBackPage.g.cs
+C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Views\FeedBackPage.xaml
+C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Views\FeedBackPage.xbf
+C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\Views\FeedBackPage.xbf

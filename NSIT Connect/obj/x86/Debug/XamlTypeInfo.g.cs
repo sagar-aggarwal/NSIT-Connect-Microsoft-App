@@ -156,7 +156,7 @@ namespace NSIT_Connect.NSIT_Connect_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[132];
+            _typeNameTable = new string[133];
             _typeNameTable[0] = "Template10.Common.BootStrapper";
             _typeNameTable[1] = "Windows.UI.Xaml.Application";
             _typeNameTable[2] = "Template10.Common.StateItems";
@@ -210,9 +210,9 @@ namespace NSIT_Connect.NSIT_Connect_XamlTypeInfo
             _typeNameTable[50] = "System.Type";
             _typeNameTable[51] = "Windows.UI.Xaml.Visibility";
             _typeNameTable[52] = "System.Nullable`1<Boolean>";
-            _typeNameTable[53] = "Windows.UI.Xaml.Controls.SplitViewDisplayMode";
-            _typeNameTable[54] = "Windows.UI.Xaml.Thickness";
-            _typeNameTable[55] = "Windows.UI.Xaml.Media.Brush";
+            _typeNameTable[53] = "Windows.UI.Xaml.Thickness";
+            _typeNameTable[54] = "Windows.UI.Xaml.Media.Brush";
+            _typeNameTable[55] = "Windows.UI.Xaml.Controls.SplitViewDisplayMode";
             _typeNameTable[56] = "Windows.UI.Xaml.Controls.Orientation";
             _typeNameTable[57] = "Template10.Controls.HamburgerMenu.OpenCloseModes";
             _typeNameTable[58] = "Template10.Mvvm.DelegateCommand`1<Template10.Controls.HamburgerButtonInfo>";
@@ -225,72 +225,73 @@ namespace NSIT_Connect.NSIT_Connect_XamlTypeInfo
             _typeNameTable[65] = "Windows.UI.Xaml.Controls.Control";
             _typeNameTable[66] = "Windows.Foundation.Size";
             _typeNameTable[67] = "NSIT_Connect.Views.Busy";
-            _typeNameTable[68] = "NSIT_Connect.ViewModels.HangoutDetailPageViewModel";
+            _typeNameTable[68] = "NSIT_Connect.ViewModels.FeedBackPageViewModel";
             _typeNameTable[69] = "Template10.Mvvm.ViewModelBase";
             _typeNameTable[70] = "Template10.Mvvm.BindableBase";
-            _typeNameTable[71] = "Windows.UI.Xaml.Media.Imaging.BitmapImage";
-            _typeNameTable[72] = "NSIT_Connect.Models.HangoutItem";
-            _typeNameTable[73] = "System.Collections.ObjectModel.ObservableCollection`1<NSIT_Connect.Models.ReviewItem>";
-            _typeNameTable[74] = "System.Collections.ObjectModel.Collection`1<NSIT_Connect.Models.ReviewItem>";
-            _typeNameTable[75] = "NSIT_Connect.Models.ReviewItem";
-            _typeNameTable[76] = "Template10.Common.IDispatcherWrapper";
-            _typeNameTable[77] = "Template10.Common.IStateItems";
-            _typeNameTable[78] = "System.Collections.Generic.IList`1<Windows.UI.Xaml.DependencyObject>";
-            _typeNameTable[79] = "NSIT_Connect.Views.HangoutDetailPage";
-            _typeNameTable[80] = "NSIT_Connect.ViewModels.HangoutPageViewModel";
-            _typeNameTable[81] = "NSIT_Connect.Models.LocationItem";
-            _typeNameTable[82] = "System.Collections.ObjectModel.ObservableCollection`1<NSIT_Connect.Models.HangoutItem>";
-            _typeNameTable[83] = "System.Collections.ObjectModel.Collection`1<NSIT_Connect.Models.HangoutItem>";
-            _typeNameTable[84] = "NSIT_Connect.Views.HangoutPage";
-            _typeNameTable[85] = "NSIT_Connect.ViewModels.HomePageViewModel";
-            _typeNameTable[86] = "System.Collections.ObjectModel.ObservableCollection`1<NSIT_Connect.Models.Feed>";
-            _typeNameTable[87] = "System.Collections.ObjectModel.Collection`1<NSIT_Connect.Models.Feed>";
-            _typeNameTable[88] = "NSIT_Connect.Models.Feed";
-            _typeNameTable[89] = "System.DateTime";
-            _typeNameTable[90] = "Template10.Mvvm.DelegateCommand";
-            _typeNameTable[91] = "Template10.Controls.MasterDetailsView";
-            _typeNameTable[92] = "Windows.UI.Xaml.Controls.ListView";
-            _typeNameTable[93] = "Windows.UI.Xaml.Controls.ItemsControl";
-            _typeNameTable[94] = "Windows.UI.Xaml.DataTemplate";
-            _typeNameTable[95] = "System.Collections.ObjectModel.ObservableCollection`1<Windows.UI.Xaml.Controls.ICommandBarElement>";
-            _typeNameTable[96] = "System.Collections.ObjectModel.Collection`1<Windows.UI.Xaml.Controls.ICommandBarElement>";
-            _typeNameTable[97] = "Windows.UI.Xaml.Controls.ICommandBarElement";
-            _typeNameTable[98] = "Windows.UI.Xaml.Controls.ProgressBar";
-            _typeNameTable[99] = "Windows.UI.Xaml.Controls.ProgressRing";
-            _typeNameTable[100] = "Microsoft.Xaml.Interactivity.Interaction";
-            _typeNameTable[101] = "Microsoft.Xaml.Interactivity.BehaviorCollection";
-            _typeNameTable[102] = "Windows.UI.Xaml.DependencyObjectCollection";
-            _typeNameTable[103] = "Template10.Behaviors.EllipsisBehavior";
-            _typeNameTable[104] = "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior";
-            _typeNameTable[105] = "Microsoft.Xaml.Interactivity.Behavior";
-            _typeNameTable[106] = "Microsoft.Xaml.Interactivity.ActionCollection";
-            _typeNameTable[107] = "Template10.Behaviors.BackButtonBehavior";
-            _typeNameTable[108] = "Microsoft.Xaml.Interactions.Core.ChangePropertyAction";
-            _typeNameTable[109] = "Windows.UI.Xaml.PropertyPath";
-            _typeNameTable[110] = "WindowsStateTriggers.DeviceFamilyStateTrigger";
-            _typeNameTable[111] = "Windows.UI.Xaml.StateTriggerBase";
-            _typeNameTable[112] = "WindowsStateTriggers.DeviceFamily";
-            _typeNameTable[113] = "NSIT_Connect.Views.HomePage";
-            _typeNameTable[114] = "NSIT_Connect.ViewModels.LocationPageViewModel";
-            _typeNameTable[115] = "System.Collections.ObjectModel.ObservableCollection`1<NSIT_Connect.Models.LocationItem>";
-            _typeNameTable[116] = "System.Collections.ObjectModel.Collection`1<NSIT_Connect.Models.LocationItem>";
-            _typeNameTable[117] = "NSIT_Connect.Views.LocationPage";
-            _typeNameTable[118] = "NSIT_Connect.ViewModels.ProfessorDetailPageViewModel";
-            _typeNameTable[119] = "System.Collections.ObjectModel.ObservableCollection`1<NSIT_Connect.Models.ProfessorItem>";
-            _typeNameTable[120] = "System.Collections.ObjectModel.Collection`1<NSIT_Connect.Models.ProfessorItem>";
-            _typeNameTable[121] = "NSIT_Connect.Models.ProfessorItem";
-            _typeNameTable[122] = "Char";
-            _typeNameTable[123] = "NSIT_Connect.Views.ProfesorsDetailPage";
-            _typeNameTable[124] = "NSIT_Connect.ViewModels.ProfessorsPageViewModel";
-            _typeNameTable[125] = "NSIT_Connect.Views.ProfessorsPage";
-            _typeNameTable[126] = "NSIT_Connect.ViewModels.SettingsPageViewModel";
-            _typeNameTable[127] = "NSIT_Connect.ViewModels.SettingsPartViewModel";
-            _typeNameTable[128] = "NSIT_Connect.ViewModels.AboutPartViewModel";
-            _typeNameTable[129] = "NSIT_Connect.Views.SettingsPage";
-            _typeNameTable[130] = "NSIT_Connect.Views.Shell";
-            _typeNameTable[131] = "NSIT_Connect.Views.Splash";
+            _typeNameTable[71] = "Template10.Common.IDispatcherWrapper";
+            _typeNameTable[72] = "Template10.Common.IStateItems";
+            _typeNameTable[73] = "NSIT_Connect.Views.FeedBackPage";
+            _typeNameTable[74] = "NSIT_Connect.ViewModels.HangoutDetailPageViewModel";
+            _typeNameTable[75] = "Windows.UI.Xaml.Media.Imaging.BitmapImage";
+            _typeNameTable[76] = "NSIT_Connect.Models.HangoutItem";
+            _typeNameTable[77] = "System.Collections.ObjectModel.ObservableCollection`1<NSIT_Connect.Models.ReviewItem>";
+            _typeNameTable[78] = "System.Collections.ObjectModel.Collection`1<NSIT_Connect.Models.ReviewItem>";
+            _typeNameTable[79] = "NSIT_Connect.Models.ReviewItem";
+            _typeNameTable[80] = "System.Collections.Generic.IList`1<Windows.UI.Xaml.DependencyObject>";
+            _typeNameTable[81] = "NSIT_Connect.Views.HangoutDetailPage";
+            _typeNameTable[82] = "NSIT_Connect.ViewModels.HangoutPageViewModel";
+            _typeNameTable[83] = "NSIT_Connect.Models.LocationItem";
+            _typeNameTable[84] = "System.Collections.ObjectModel.ObservableCollection`1<NSIT_Connect.Models.HangoutItem>";
+            _typeNameTable[85] = "System.Collections.ObjectModel.Collection`1<NSIT_Connect.Models.HangoutItem>";
+            _typeNameTable[86] = "NSIT_Connect.Views.HangoutPage";
+            _typeNameTable[87] = "NSIT_Connect.ViewModels.HomePageViewModel";
+            _typeNameTable[88] = "System.Collections.ObjectModel.ObservableCollection`1<NSIT_Connect.Models.Feed>";
+            _typeNameTable[89] = "System.Collections.ObjectModel.Collection`1<NSIT_Connect.Models.Feed>";
+            _typeNameTable[90] = "NSIT_Connect.Models.Feed";
+            _typeNameTable[91] = "System.DateTime";
+            _typeNameTable[92] = "Template10.Mvvm.DelegateCommand";
+            _typeNameTable[93] = "Template10.Controls.MasterDetailsView";
+            _typeNameTable[94] = "Windows.UI.Xaml.Controls.ListView";
+            _typeNameTable[95] = "Windows.UI.Xaml.Controls.ItemsControl";
+            _typeNameTable[96] = "Windows.UI.Xaml.DataTemplate";
+            _typeNameTable[97] = "System.Collections.ObjectModel.ObservableCollection`1<Windows.UI.Xaml.Controls.ICommandBarElement>";
+            _typeNameTable[98] = "System.Collections.ObjectModel.Collection`1<Windows.UI.Xaml.Controls.ICommandBarElement>";
+            _typeNameTable[99] = "Windows.UI.Xaml.Controls.ICommandBarElement";
+            _typeNameTable[100] = "Windows.UI.Xaml.Controls.ProgressBar";
+            _typeNameTable[101] = "Windows.UI.Xaml.Controls.ProgressRing";
+            _typeNameTable[102] = "Microsoft.Xaml.Interactivity.Interaction";
+            _typeNameTable[103] = "Microsoft.Xaml.Interactivity.BehaviorCollection";
+            _typeNameTable[104] = "Windows.UI.Xaml.DependencyObjectCollection";
+            _typeNameTable[105] = "Template10.Behaviors.EllipsisBehavior";
+            _typeNameTable[106] = "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior";
+            _typeNameTable[107] = "Microsoft.Xaml.Interactivity.Behavior";
+            _typeNameTable[108] = "Microsoft.Xaml.Interactivity.ActionCollection";
+            _typeNameTable[109] = "Template10.Behaviors.BackButtonBehavior";
+            _typeNameTable[110] = "Microsoft.Xaml.Interactions.Core.ChangePropertyAction";
+            _typeNameTable[111] = "Windows.UI.Xaml.PropertyPath";
+            _typeNameTable[112] = "WindowsStateTriggers.DeviceFamilyStateTrigger";
+            _typeNameTable[113] = "Windows.UI.Xaml.StateTriggerBase";
+            _typeNameTable[114] = "WindowsStateTriggers.DeviceFamily";
+            _typeNameTable[115] = "NSIT_Connect.Views.HomePage";
+            _typeNameTable[116] = "NSIT_Connect.ViewModels.LocationPageViewModel";
+            _typeNameTable[117] = "System.Collections.ObjectModel.ObservableCollection`1<NSIT_Connect.Models.LocationItem>";
+            _typeNameTable[118] = "System.Collections.ObjectModel.Collection`1<NSIT_Connect.Models.LocationItem>";
+            _typeNameTable[119] = "NSIT_Connect.Views.LocationPage";
+            _typeNameTable[120] = "NSIT_Connect.ViewModels.ProfessorDetailPageViewModel";
+            _typeNameTable[121] = "System.Collections.ObjectModel.ObservableCollection`1<NSIT_Connect.Models.ProfessorItem>";
+            _typeNameTable[122] = "System.Collections.ObjectModel.Collection`1<NSIT_Connect.Models.ProfessorItem>";
+            _typeNameTable[123] = "NSIT_Connect.Models.ProfessorItem";
+            _typeNameTable[124] = "NSIT_Connect.Views.ProfesorsDetailPage";
+            _typeNameTable[125] = "NSIT_Connect.ViewModels.ProfessorsPageViewModel";
+            _typeNameTable[126] = "NSIT_Connect.Views.ProfessorsPage";
+            _typeNameTable[127] = "NSIT_Connect.ViewModels.SettingsPageViewModel";
+            _typeNameTable[128] = "NSIT_Connect.ViewModels.SettingsPartViewModel";
+            _typeNameTable[129] = "NSIT_Connect.ViewModels.AboutPartViewModel";
+            _typeNameTable[130] = "NSIT_Connect.Views.SettingsPage";
+            _typeNameTable[131] = "NSIT_Connect.Views.Shell";
+            _typeNameTable[132] = "NSIT_Connect.Views.Splash";
 
-            _typeTable = new global::System.Type[132];
+            _typeTable = new global::System.Type[133];
             _typeTable[0] = typeof(global::Template10.Common.BootStrapper);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Application);
             _typeTable[2] = typeof(global::Template10.Common.StateItems);
@@ -344,9 +345,9 @@ namespace NSIT_Connect.NSIT_Connect_XamlTypeInfo
             _typeTable[50] = typeof(global::System.Type);
             _typeTable[51] = typeof(global::Windows.UI.Xaml.Visibility);
             _typeTable[52] = typeof(global::System.Nullable<global::System.Boolean>);
-            _typeTable[53] = typeof(global::Windows.UI.Xaml.Controls.SplitViewDisplayMode);
-            _typeTable[54] = typeof(global::Windows.UI.Xaml.Thickness);
-            _typeTable[55] = typeof(global::Windows.UI.Xaml.Media.Brush);
+            _typeTable[53] = typeof(global::Windows.UI.Xaml.Thickness);
+            _typeTable[54] = typeof(global::Windows.UI.Xaml.Media.Brush);
+            _typeTable[55] = typeof(global::Windows.UI.Xaml.Controls.SplitViewDisplayMode);
             _typeTable[56] = typeof(global::Windows.UI.Xaml.Controls.Orientation);
             _typeTable[57] = typeof(global::Template10.Controls.HamburgerMenu.OpenCloseModes);
             _typeTable[58] = typeof(global::Template10.Mvvm.DelegateCommand<global::Template10.Controls.HamburgerButtonInfo>);
@@ -359,70 +360,71 @@ namespace NSIT_Connect.NSIT_Connect_XamlTypeInfo
             _typeTable[65] = typeof(global::Windows.UI.Xaml.Controls.Control);
             _typeTable[66] = typeof(global::Windows.Foundation.Size);
             _typeTable[67] = typeof(global::NSIT_Connect.Views.Busy);
-            _typeTable[68] = typeof(global::NSIT_Connect.ViewModels.HangoutDetailPageViewModel);
+            _typeTable[68] = typeof(global::NSIT_Connect.ViewModels.FeedBackPageViewModel);
             _typeTable[69] = typeof(global::Template10.Mvvm.ViewModelBase);
             _typeTable[70] = typeof(global::Template10.Mvvm.BindableBase);
-            _typeTable[71] = typeof(global::Windows.UI.Xaml.Media.Imaging.BitmapImage);
-            _typeTable[72] = typeof(global::NSIT_Connect.Models.HangoutItem);
-            _typeTable[73] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::NSIT_Connect.Models.ReviewItem>);
-            _typeTable[74] = typeof(global::System.Collections.ObjectModel.Collection<global::NSIT_Connect.Models.ReviewItem>);
-            _typeTable[75] = typeof(global::NSIT_Connect.Models.ReviewItem);
-            _typeTable[76] = typeof(global::Template10.Common.IDispatcherWrapper);
-            _typeTable[77] = typeof(global::Template10.Common.IStateItems);
-            _typeTable[78] = typeof(global::System.Collections.Generic.IList<global::Windows.UI.Xaml.DependencyObject>);
-            _typeTable[79] = typeof(global::NSIT_Connect.Views.HangoutDetailPage);
-            _typeTable[80] = typeof(global::NSIT_Connect.ViewModels.HangoutPageViewModel);
-            _typeTable[81] = typeof(global::NSIT_Connect.Models.LocationItem);
-            _typeTable[82] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::NSIT_Connect.Models.HangoutItem>);
-            _typeTable[83] = typeof(global::System.Collections.ObjectModel.Collection<global::NSIT_Connect.Models.HangoutItem>);
-            _typeTable[84] = typeof(global::NSIT_Connect.Views.HangoutPage);
-            _typeTable[85] = typeof(global::NSIT_Connect.ViewModels.HomePageViewModel);
-            _typeTable[86] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::NSIT_Connect.Models.Feed>);
-            _typeTable[87] = typeof(global::System.Collections.ObjectModel.Collection<global::NSIT_Connect.Models.Feed>);
-            _typeTable[88] = typeof(global::NSIT_Connect.Models.Feed);
-            _typeTable[89] = typeof(global::System.DateTime);
-            _typeTable[90] = typeof(global::Template10.Mvvm.DelegateCommand);
-            _typeTable[91] = typeof(global::Template10.Controls.MasterDetailsView);
-            _typeTable[92] = typeof(global::Windows.UI.Xaml.Controls.ListView);
-            _typeTable[93] = typeof(global::Windows.UI.Xaml.Controls.ItemsControl);
-            _typeTable[94] = typeof(global::Windows.UI.Xaml.DataTemplate);
-            _typeTable[95] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Windows.UI.Xaml.Controls.ICommandBarElement>);
-            _typeTable[96] = typeof(global::System.Collections.ObjectModel.Collection<global::Windows.UI.Xaml.Controls.ICommandBarElement>);
-            _typeTable[97] = typeof(global::Windows.UI.Xaml.Controls.ICommandBarElement);
-            _typeTable[98] = typeof(global::Windows.UI.Xaml.Controls.ProgressBar);
-            _typeTable[99] = typeof(global::Windows.UI.Xaml.Controls.ProgressRing);
-            _typeTable[100] = typeof(global::Microsoft.Xaml.Interactivity.Interaction);
-            _typeTable[101] = typeof(global::Microsoft.Xaml.Interactivity.BehaviorCollection);
-            _typeTable[102] = typeof(global::Windows.UI.Xaml.DependencyObjectCollection);
-            _typeTable[103] = typeof(global::Template10.Behaviors.EllipsisBehavior);
-            _typeTable[104] = typeof(global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior);
-            _typeTable[105] = typeof(global::Microsoft.Xaml.Interactivity.Behavior);
-            _typeTable[106] = typeof(global::Microsoft.Xaml.Interactivity.ActionCollection);
-            _typeTable[107] = typeof(global::Template10.Behaviors.BackButtonBehavior);
-            _typeTable[108] = typeof(global::Microsoft.Xaml.Interactions.Core.ChangePropertyAction);
-            _typeTable[109] = typeof(global::Windows.UI.Xaml.PropertyPath);
-            _typeTable[110] = typeof(global::WindowsStateTriggers.DeviceFamilyStateTrigger);
-            _typeTable[111] = typeof(global::Windows.UI.Xaml.StateTriggerBase);
-            _typeTable[112] = typeof(global::WindowsStateTriggers.DeviceFamily);
-            _typeTable[113] = typeof(global::NSIT_Connect.Views.HomePage);
-            _typeTable[114] = typeof(global::NSIT_Connect.ViewModels.LocationPageViewModel);
-            _typeTable[115] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::NSIT_Connect.Models.LocationItem>);
-            _typeTable[116] = typeof(global::System.Collections.ObjectModel.Collection<global::NSIT_Connect.Models.LocationItem>);
-            _typeTable[117] = typeof(global::NSIT_Connect.Views.LocationPage);
-            _typeTable[118] = typeof(global::NSIT_Connect.ViewModels.ProfessorDetailPageViewModel);
-            _typeTable[119] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::NSIT_Connect.Models.ProfessorItem>);
-            _typeTable[120] = typeof(global::System.Collections.ObjectModel.Collection<global::NSIT_Connect.Models.ProfessorItem>);
-            _typeTable[121] = typeof(global::NSIT_Connect.Models.ProfessorItem);
-            _typeTable[122] = typeof(global::System.Char);
-            _typeTable[123] = typeof(global::NSIT_Connect.Views.ProfesorsDetailPage);
-            _typeTable[124] = typeof(global::NSIT_Connect.ViewModels.ProfessorsPageViewModel);
-            _typeTable[125] = typeof(global::NSIT_Connect.Views.ProfessorsPage);
-            _typeTable[126] = typeof(global::NSIT_Connect.ViewModels.SettingsPageViewModel);
-            _typeTable[127] = typeof(global::NSIT_Connect.ViewModels.SettingsPartViewModel);
-            _typeTable[128] = typeof(global::NSIT_Connect.ViewModels.AboutPartViewModel);
-            _typeTable[129] = typeof(global::NSIT_Connect.Views.SettingsPage);
-            _typeTable[130] = typeof(global::NSIT_Connect.Views.Shell);
-            _typeTable[131] = typeof(global::NSIT_Connect.Views.Splash);
+            _typeTable[71] = typeof(global::Template10.Common.IDispatcherWrapper);
+            _typeTable[72] = typeof(global::Template10.Common.IStateItems);
+            _typeTable[73] = typeof(global::NSIT_Connect.Views.FeedBackPage);
+            _typeTable[74] = typeof(global::NSIT_Connect.ViewModels.HangoutDetailPageViewModel);
+            _typeTable[75] = typeof(global::Windows.UI.Xaml.Media.Imaging.BitmapImage);
+            _typeTable[76] = typeof(global::NSIT_Connect.Models.HangoutItem);
+            _typeTable[77] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::NSIT_Connect.Models.ReviewItem>);
+            _typeTable[78] = typeof(global::System.Collections.ObjectModel.Collection<global::NSIT_Connect.Models.ReviewItem>);
+            _typeTable[79] = typeof(global::NSIT_Connect.Models.ReviewItem);
+            _typeTable[80] = typeof(global::System.Collections.Generic.IList<global::Windows.UI.Xaml.DependencyObject>);
+            _typeTable[81] = typeof(global::NSIT_Connect.Views.HangoutDetailPage);
+            _typeTable[82] = typeof(global::NSIT_Connect.ViewModels.HangoutPageViewModel);
+            _typeTable[83] = typeof(global::NSIT_Connect.Models.LocationItem);
+            _typeTable[84] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::NSIT_Connect.Models.HangoutItem>);
+            _typeTable[85] = typeof(global::System.Collections.ObjectModel.Collection<global::NSIT_Connect.Models.HangoutItem>);
+            _typeTable[86] = typeof(global::NSIT_Connect.Views.HangoutPage);
+            _typeTable[87] = typeof(global::NSIT_Connect.ViewModels.HomePageViewModel);
+            _typeTable[88] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::NSIT_Connect.Models.Feed>);
+            _typeTable[89] = typeof(global::System.Collections.ObjectModel.Collection<global::NSIT_Connect.Models.Feed>);
+            _typeTable[90] = typeof(global::NSIT_Connect.Models.Feed);
+            _typeTable[91] = typeof(global::System.DateTime);
+            _typeTable[92] = typeof(global::Template10.Mvvm.DelegateCommand);
+            _typeTable[93] = typeof(global::Template10.Controls.MasterDetailsView);
+            _typeTable[94] = typeof(global::Windows.UI.Xaml.Controls.ListView);
+            _typeTable[95] = typeof(global::Windows.UI.Xaml.Controls.ItemsControl);
+            _typeTable[96] = typeof(global::Windows.UI.Xaml.DataTemplate);
+            _typeTable[97] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Windows.UI.Xaml.Controls.ICommandBarElement>);
+            _typeTable[98] = typeof(global::System.Collections.ObjectModel.Collection<global::Windows.UI.Xaml.Controls.ICommandBarElement>);
+            _typeTable[99] = typeof(global::Windows.UI.Xaml.Controls.ICommandBarElement);
+            _typeTable[100] = typeof(global::Windows.UI.Xaml.Controls.ProgressBar);
+            _typeTable[101] = typeof(global::Windows.UI.Xaml.Controls.ProgressRing);
+            _typeTable[102] = typeof(global::Microsoft.Xaml.Interactivity.Interaction);
+            _typeTable[103] = typeof(global::Microsoft.Xaml.Interactivity.BehaviorCollection);
+            _typeTable[104] = typeof(global::Windows.UI.Xaml.DependencyObjectCollection);
+            _typeTable[105] = typeof(global::Template10.Behaviors.EllipsisBehavior);
+            _typeTable[106] = typeof(global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior);
+            _typeTable[107] = typeof(global::Microsoft.Xaml.Interactivity.Behavior);
+            _typeTable[108] = typeof(global::Microsoft.Xaml.Interactivity.ActionCollection);
+            _typeTable[109] = typeof(global::Template10.Behaviors.BackButtonBehavior);
+            _typeTable[110] = typeof(global::Microsoft.Xaml.Interactions.Core.ChangePropertyAction);
+            _typeTable[111] = typeof(global::Windows.UI.Xaml.PropertyPath);
+            _typeTable[112] = typeof(global::WindowsStateTriggers.DeviceFamilyStateTrigger);
+            _typeTable[113] = typeof(global::Windows.UI.Xaml.StateTriggerBase);
+            _typeTable[114] = typeof(global::WindowsStateTriggers.DeviceFamily);
+            _typeTable[115] = typeof(global::NSIT_Connect.Views.HomePage);
+            _typeTable[116] = typeof(global::NSIT_Connect.ViewModels.LocationPageViewModel);
+            _typeTable[117] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::NSIT_Connect.Models.LocationItem>);
+            _typeTable[118] = typeof(global::System.Collections.ObjectModel.Collection<global::NSIT_Connect.Models.LocationItem>);
+            _typeTable[119] = typeof(global::NSIT_Connect.Views.LocationPage);
+            _typeTable[120] = typeof(global::NSIT_Connect.ViewModels.ProfessorDetailPageViewModel);
+            _typeTable[121] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::NSIT_Connect.Models.ProfessorItem>);
+            _typeTable[122] = typeof(global::System.Collections.ObjectModel.Collection<global::NSIT_Connect.Models.ProfessorItem>);
+            _typeTable[123] = typeof(global::NSIT_Connect.Models.ProfessorItem);
+            _typeTable[124] = typeof(global::NSIT_Connect.Views.ProfesorsDetailPage);
+            _typeTable[125] = typeof(global::NSIT_Connect.ViewModels.ProfessorsPageViewModel);
+            _typeTable[126] = typeof(global::NSIT_Connect.Views.ProfessorsPage);
+            _typeTable[127] = typeof(global::NSIT_Connect.ViewModels.SettingsPageViewModel);
+            _typeTable[128] = typeof(global::NSIT_Connect.ViewModels.SettingsPartViewModel);
+            _typeTable[129] = typeof(global::NSIT_Connect.ViewModels.AboutPartViewModel);
+            _typeTable[130] = typeof(global::NSIT_Connect.Views.SettingsPage);
+            _typeTable[131] = typeof(global::NSIT_Connect.Views.Shell);
+            _typeTable[132] = typeof(global::NSIT_Connect.Views.Splash);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -476,48 +478,50 @@ namespace NSIT_Connect.NSIT_Connect_XamlTypeInfo
         private object Activate_59_PageHeader() { return new global::Template10.Controls.PageHeader(); }
         private object Activate_64_Resizer() { return new global::Template10.Controls.Resizer(); }
         private object Activate_67_Busy() { return new global::NSIT_Connect.Views.Busy(); }
-        private object Activate_68_HangoutDetailPageViewModel() { return new global::NSIT_Connect.ViewModels.HangoutDetailPageViewModel(); }
-        private object Activate_72_HangoutItem() { return new global::NSIT_Connect.Models.HangoutItem(); }
-        private object Activate_73_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::NSIT_Connect.Models.ReviewItem>(); }
-        private object Activate_74_Collection() { return new global::System.Collections.ObjectModel.Collection<global::NSIT_Connect.Models.ReviewItem>(); }
-        private object Activate_75_ReviewItem() { return new global::NSIT_Connect.Models.ReviewItem(); }
-        private object Activate_79_HangoutDetailPage() { return new global::NSIT_Connect.Views.HangoutDetailPage(); }
-        private object Activate_80_HangoutPageViewModel() { return new global::NSIT_Connect.ViewModels.HangoutPageViewModel(); }
-        private object Activate_81_LocationItem() { return new global::NSIT_Connect.Models.LocationItem(); }
-        private object Activate_82_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::NSIT_Connect.Models.HangoutItem>(); }
-        private object Activate_83_Collection() { return new global::System.Collections.ObjectModel.Collection<global::NSIT_Connect.Models.HangoutItem>(); }
-        private object Activate_84_HangoutPage() { return new global::NSIT_Connect.Views.HangoutPage(); }
-        private object Activate_85_HomePageViewModel() { return new global::NSIT_Connect.ViewModels.HomePageViewModel(); }
-        private object Activate_86_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::NSIT_Connect.Models.Feed>(); }
-        private object Activate_87_Collection() { return new global::System.Collections.ObjectModel.Collection<global::NSIT_Connect.Models.Feed>(); }
-        private object Activate_88_Feed() { return new global::NSIT_Connect.Models.Feed(); }
-        private object Activate_91_MasterDetailsView() { return new global::Template10.Controls.MasterDetailsView(); }
-        private object Activate_95_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Windows.UI.Xaml.Controls.ICommandBarElement>(); }
-        private object Activate_96_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Windows.UI.Xaml.Controls.ICommandBarElement>(); }
-        private object Activate_101_BehaviorCollection() { return new global::Microsoft.Xaml.Interactivity.BehaviorCollection(); }
-        private object Activate_103_EllipsisBehavior() { return new global::Template10.Behaviors.EllipsisBehavior(); }
-        private object Activate_104_EventTriggerBehavior() { return new global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior(); }
-        private object Activate_106_ActionCollection() { return new global::Microsoft.Xaml.Interactivity.ActionCollection(); }
-        private object Activate_107_BackButtonBehavior() { return new global::Template10.Behaviors.BackButtonBehavior(); }
-        private object Activate_108_ChangePropertyAction() { return new global::Microsoft.Xaml.Interactions.Core.ChangePropertyAction(); }
-        private object Activate_110_DeviceFamilyStateTrigger() { return new global::WindowsStateTriggers.DeviceFamilyStateTrigger(); }
-        private object Activate_113_HomePage() { return new global::NSIT_Connect.Views.HomePage(); }
-        private object Activate_114_LocationPageViewModel() { return new global::NSIT_Connect.ViewModels.LocationPageViewModel(); }
-        private object Activate_115_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::NSIT_Connect.Models.LocationItem>(); }
-        private object Activate_116_Collection() { return new global::System.Collections.ObjectModel.Collection<global::NSIT_Connect.Models.LocationItem>(); }
-        private object Activate_117_LocationPage() { return new global::NSIT_Connect.Views.LocationPage(); }
-        private object Activate_118_ProfessorDetailPageViewModel() { return new global::NSIT_Connect.ViewModels.ProfessorDetailPageViewModel(); }
-        private object Activate_119_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::NSIT_Connect.Models.ProfessorItem>(); }
-        private object Activate_120_Collection() { return new global::System.Collections.ObjectModel.Collection<global::NSIT_Connect.Models.ProfessorItem>(); }
-        private object Activate_121_ProfessorItem() { return new global::NSIT_Connect.Models.ProfessorItem(); }
-        private object Activate_123_ProfesorsDetailPage() { return new global::NSIT_Connect.Views.ProfesorsDetailPage(); }
-        private object Activate_124_ProfessorsPageViewModel() { return new global::NSIT_Connect.ViewModels.ProfessorsPageViewModel(); }
-        private object Activate_125_ProfessorsPage() { return new global::NSIT_Connect.Views.ProfessorsPage(); }
-        private object Activate_126_SettingsPageViewModel() { return new global::NSIT_Connect.ViewModels.SettingsPageViewModel(); }
-        private object Activate_127_SettingsPartViewModel() { return new global::NSIT_Connect.ViewModels.SettingsPartViewModel(); }
-        private object Activate_128_AboutPartViewModel() { return new global::NSIT_Connect.ViewModels.AboutPartViewModel(); }
-        private object Activate_129_SettingsPage() { return new global::NSIT_Connect.Views.SettingsPage(); }
-        private object Activate_130_Shell() { return new global::NSIT_Connect.Views.Shell(); }
+        private object Activate_68_FeedBackPageViewModel() { return new global::NSIT_Connect.ViewModels.FeedBackPageViewModel(); }
+        private object Activate_73_FeedBackPage() { return new global::NSIT_Connect.Views.FeedBackPage(); }
+        private object Activate_74_HangoutDetailPageViewModel() { return new global::NSIT_Connect.ViewModels.HangoutDetailPageViewModel(); }
+        private object Activate_76_HangoutItem() { return new global::NSIT_Connect.Models.HangoutItem(); }
+        private object Activate_77_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::NSIT_Connect.Models.ReviewItem>(); }
+        private object Activate_78_Collection() { return new global::System.Collections.ObjectModel.Collection<global::NSIT_Connect.Models.ReviewItem>(); }
+        private object Activate_79_ReviewItem() { return new global::NSIT_Connect.Models.ReviewItem(); }
+        private object Activate_81_HangoutDetailPage() { return new global::NSIT_Connect.Views.HangoutDetailPage(); }
+        private object Activate_82_HangoutPageViewModel() { return new global::NSIT_Connect.ViewModels.HangoutPageViewModel(); }
+        private object Activate_83_LocationItem() { return new global::NSIT_Connect.Models.LocationItem(); }
+        private object Activate_84_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::NSIT_Connect.Models.HangoutItem>(); }
+        private object Activate_85_Collection() { return new global::System.Collections.ObjectModel.Collection<global::NSIT_Connect.Models.HangoutItem>(); }
+        private object Activate_86_HangoutPage() { return new global::NSIT_Connect.Views.HangoutPage(); }
+        private object Activate_87_HomePageViewModel() { return new global::NSIT_Connect.ViewModels.HomePageViewModel(); }
+        private object Activate_88_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::NSIT_Connect.Models.Feed>(); }
+        private object Activate_89_Collection() { return new global::System.Collections.ObjectModel.Collection<global::NSIT_Connect.Models.Feed>(); }
+        private object Activate_90_Feed() { return new global::NSIT_Connect.Models.Feed(); }
+        private object Activate_93_MasterDetailsView() { return new global::Template10.Controls.MasterDetailsView(); }
+        private object Activate_97_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Windows.UI.Xaml.Controls.ICommandBarElement>(); }
+        private object Activate_98_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Windows.UI.Xaml.Controls.ICommandBarElement>(); }
+        private object Activate_103_BehaviorCollection() { return new global::Microsoft.Xaml.Interactivity.BehaviorCollection(); }
+        private object Activate_105_EllipsisBehavior() { return new global::Template10.Behaviors.EllipsisBehavior(); }
+        private object Activate_106_EventTriggerBehavior() { return new global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior(); }
+        private object Activate_108_ActionCollection() { return new global::Microsoft.Xaml.Interactivity.ActionCollection(); }
+        private object Activate_109_BackButtonBehavior() { return new global::Template10.Behaviors.BackButtonBehavior(); }
+        private object Activate_110_ChangePropertyAction() { return new global::Microsoft.Xaml.Interactions.Core.ChangePropertyAction(); }
+        private object Activate_112_DeviceFamilyStateTrigger() { return new global::WindowsStateTriggers.DeviceFamilyStateTrigger(); }
+        private object Activate_115_HomePage() { return new global::NSIT_Connect.Views.HomePage(); }
+        private object Activate_116_LocationPageViewModel() { return new global::NSIT_Connect.ViewModels.LocationPageViewModel(); }
+        private object Activate_117_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::NSIT_Connect.Models.LocationItem>(); }
+        private object Activate_118_Collection() { return new global::System.Collections.ObjectModel.Collection<global::NSIT_Connect.Models.LocationItem>(); }
+        private object Activate_119_LocationPage() { return new global::NSIT_Connect.Views.LocationPage(); }
+        private object Activate_120_ProfessorDetailPageViewModel() { return new global::NSIT_Connect.ViewModels.ProfessorDetailPageViewModel(); }
+        private object Activate_121_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::NSIT_Connect.Models.ProfessorItem>(); }
+        private object Activate_122_Collection() { return new global::System.Collections.ObjectModel.Collection<global::NSIT_Connect.Models.ProfessorItem>(); }
+        private object Activate_123_ProfessorItem() { return new global::NSIT_Connect.Models.ProfessorItem(); }
+        private object Activate_124_ProfesorsDetailPage() { return new global::NSIT_Connect.Views.ProfesorsDetailPage(); }
+        private object Activate_125_ProfessorsPageViewModel() { return new global::NSIT_Connect.ViewModels.ProfessorsPageViewModel(); }
+        private object Activate_126_ProfessorsPage() { return new global::NSIT_Connect.Views.ProfessorsPage(); }
+        private object Activate_127_SettingsPageViewModel() { return new global::NSIT_Connect.ViewModels.SettingsPageViewModel(); }
+        private object Activate_128_SettingsPartViewModel() { return new global::NSIT_Connect.ViewModels.SettingsPartViewModel(); }
+        private object Activate_129_AboutPartViewModel() { return new global::NSIT_Connect.ViewModels.AboutPartViewModel(); }
+        private object Activate_130_SettingsPage() { return new global::NSIT_Connect.Views.SettingsPage(); }
+        private object Activate_131_Shell() { return new global::NSIT_Connect.Views.Shell(); }
         private void MapAdd_2_StateItems(object instance, object key, object item)
         {
             var collection = (global::System.Collections.Generic.IDictionary<global::System.String, global::System.Object>)instance;
@@ -550,91 +554,91 @@ namespace NSIT_Connect.NSIT_Connect_XamlTypeInfo
             var newItem = (global::Template10.Controls.HamburgerButtonInfo)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_73_ObservableCollection(object instance, object item)
+        private void VectorAdd_77_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::NSIT_Connect.Models.ReviewItem>)instance;
             var newItem = (global::NSIT_Connect.Models.ReviewItem)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_74_Collection(object instance, object item)
+        private void VectorAdd_78_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::NSIT_Connect.Models.ReviewItem>)instance;
             var newItem = (global::NSIT_Connect.Models.ReviewItem)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_78_IList(object instance, object item)
+        private void VectorAdd_80_IList(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.DependencyObject>)instance;
             var newItem = (global::Windows.UI.Xaml.DependencyObject)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_82_ObservableCollection(object instance, object item)
+        private void VectorAdd_84_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::NSIT_Connect.Models.HangoutItem>)instance;
             var newItem = (global::NSIT_Connect.Models.HangoutItem)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_83_Collection(object instance, object item)
+        private void VectorAdd_85_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::NSIT_Connect.Models.HangoutItem>)instance;
             var newItem = (global::NSIT_Connect.Models.HangoutItem)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_86_ObservableCollection(object instance, object item)
+        private void VectorAdd_88_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::NSIT_Connect.Models.Feed>)instance;
             var newItem = (global::NSIT_Connect.Models.Feed)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_87_Collection(object instance, object item)
+        private void VectorAdd_89_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::NSIT_Connect.Models.Feed>)instance;
             var newItem = (global::NSIT_Connect.Models.Feed)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_95_ObservableCollection(object instance, object item)
+        private void VectorAdd_97_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.Controls.ICommandBarElement>)instance;
             var newItem = (global::Windows.UI.Xaml.Controls.ICommandBarElement)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_96_Collection(object instance, object item)
+        private void VectorAdd_98_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.Controls.ICommandBarElement>)instance;
             var newItem = (global::Windows.UI.Xaml.Controls.ICommandBarElement)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_101_BehaviorCollection(object instance, object item)
+        private void VectorAdd_103_BehaviorCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.DependencyObject>)instance;
             var newItem = (global::Windows.UI.Xaml.DependencyObject)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_106_ActionCollection(object instance, object item)
+        private void VectorAdd_108_ActionCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.DependencyObject>)instance;
             var newItem = (global::Windows.UI.Xaml.DependencyObject)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_115_ObservableCollection(object instance, object item)
+        private void VectorAdd_117_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::NSIT_Connect.Models.LocationItem>)instance;
             var newItem = (global::NSIT_Connect.Models.LocationItem)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_116_Collection(object instance, object item)
+        private void VectorAdd_118_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::NSIT_Connect.Models.LocationItem>)instance;
             var newItem = (global::NSIT_Connect.Models.LocationItem)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_119_ObservableCollection(object instance, object item)
+        private void VectorAdd_121_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::NSIT_Connect.Models.ProfessorItem>)instance;
             var newItem = (global::NSIT_Connect.Models.ProfessorItem)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_120_Collection(object instance, object item)
+        private void VectorAdd_122_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::NSIT_Connect.Models.ProfessorItem>)instance;
             var newItem = (global::NSIT_Connect.Models.ProfessorItem)item;
@@ -932,7 +936,6 @@ namespace NSIT_Connect.NSIT_Connect_XamlTypeInfo
                 userType.Activator = Activate_41_HamburgerMenu;
                 userType.SetContentPropertyName("Template10.Controls.HamburgerMenu.PrimaryButtons");
                 userType.AddMemberName("PrimaryButtons");
-                userType.AddMemberName("VisualStateNarrowDisplayMode");
                 userType.AddMemberName("PaneBorderThickness");
                 userType.AddMemberName("SecondarySeparator");
                 userType.AddMemberName("NavButtonBackground");
@@ -954,6 +957,7 @@ namespace NSIT_Connect.NSIT_Connect_XamlTypeInfo
                 userType.AddMemberName("NavButtonHoverBackground");
                 userType.AddMemberName("HamburgerButtonVisibility");
                 userType.AddMemberName("DisplayMode");
+                userType.AddMemberName("VisualStateNarrowDisplayMode");
                 userType.AddMemberName("VisualStateNormalDisplayMode");
                 userType.AddMemberName("VisualStateWideDisplayMode");
                 userType.AddMemberName("SecondaryButtonOrientation");
@@ -1049,15 +1053,15 @@ namespace NSIT_Connect.NSIT_Connect_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 53:   //  Windows.UI.Xaml.Controls.SplitViewDisplayMode
+            case 53:   //  Windows.UI.Xaml.Thickness
                 xamlType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 54:   //  Windows.UI.Xaml.Thickness
+            case 54:   //  Windows.UI.Xaml.Media.Brush
                 xamlType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 55:   //  Windows.UI.Xaml.Media.Brush
+            case 55:   //  Windows.UI.Xaml.Controls.SplitViewDisplayMode
                 xamlType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
@@ -1143,20 +1147,11 @@ namespace NSIT_Connect.NSIT_Connect_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 68:   //  NSIT_Connect.ViewModels.HangoutDetailPageViewModel
+            case 68:   //  NSIT_Connect.ViewModels.FeedBackPageViewModel
                 userType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Template10.Mvvm.ViewModelBase"));
-                userType.Activator = Activate_68_HangoutDetailPageViewModel;
-                userType.AddMemberName("Distance");
-                userType.AddMemberName("Time");
-                userType.AddMemberName("Directions");
-                userType.AddMemberName("Address");
-                userType.AddMemberName("Phone");
-                userType.AddMemberName("InternationalPhone");
-                userType.AddMemberName("Website");
-                userType.AddMemberName("Googlemaps");
-                userType.AddMemberName("ImageSource");
-                userType.AddMemberName("SelectedHangout");
-                userType.AddMemberName("Item");
+                userType.Activator = Activate_68_FeedBackPageViewModel;
+                userType.AddMemberName("ProgressVisibility");
+                userType.AddMemberName("SourceUri");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -1174,13 +1169,50 @@ namespace NSIT_Connect.NSIT_Connect_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 71:   //  Windows.UI.Xaml.Media.Imaging.BitmapImage
+            case 71:   //  Template10.Common.IDispatcherWrapper
+                userType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType(this, typeName, type, null);
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 72:   //  Template10.Common.IStateItems
+                userType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType(this, typeName, type, null);
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 73:   //  NSIT_Connect.Views.FeedBackPage
+                userType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_73_FeedBackPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 74:   //  NSIT_Connect.ViewModels.HangoutDetailPageViewModel
+                userType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Template10.Mvvm.ViewModelBase"));
+                userType.Activator = Activate_74_HangoutDetailPageViewModel;
+                userType.AddMemberName("Distance");
+                userType.AddMemberName("Time");
+                userType.AddMemberName("Directions");
+                userType.AddMemberName("Address");
+                userType.AddMemberName("Phone");
+                userType.AddMemberName("InternationalPhone");
+                userType.AddMemberName("Website");
+                userType.AddMemberName("Googlemaps");
+                userType.AddMemberName("ImageSource");
+                userType.AddMemberName("SelectedHangout");
+                userType.AddMemberName("Item");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 75:   //  Windows.UI.Xaml.Media.Imaging.BitmapImage
                 xamlType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 72:   //  NSIT_Connect.Models.HangoutItem
+            case 76:   //  NSIT_Connect.Models.HangoutItem
                 userType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_72_HangoutItem;
+                userType.Activator = Activate_76_HangoutItem;
                 userType.AddMemberName("PhotoWidth");
                 userType.AddMemberName("PhotoHeight");
                 userType.AddMemberName("Rating");
@@ -1196,23 +1228,23 @@ namespace NSIT_Connect.NSIT_Connect_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 73:   //  System.Collections.ObjectModel.ObservableCollection`1<NSIT_Connect.Models.ReviewItem>
+            case 77:   //  System.Collections.ObjectModel.ObservableCollection`1<NSIT_Connect.Models.ReviewItem>
                 userType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<NSIT_Connect.Models.ReviewItem>"));
-                userType.CollectionAdd = VectorAdd_73_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_77_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 74:   //  System.Collections.ObjectModel.Collection`1<NSIT_Connect.Models.ReviewItem>
+            case 78:   //  System.Collections.ObjectModel.Collection`1<NSIT_Connect.Models.ReviewItem>
                 userType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_74_Collection;
-                userType.CollectionAdd = VectorAdd_74_Collection;
+                userType.Activator = Activate_78_Collection;
+                userType.CollectionAdd = VectorAdd_78_Collection;
                 xamlType = userType;
                 break;
 
-            case 75:   //  NSIT_Connect.Models.ReviewItem
+            case 79:   //  NSIT_Connect.Models.ReviewItem
                 userType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_75_ReviewItem;
+                userType.Activator = Activate_79_ReviewItem;
                 userType.AddMemberName("Rating");
                 userType.AddMemberName("Time");
                 userType.AddMemberName("Name");
@@ -1222,34 +1254,22 @@ namespace NSIT_Connect.NSIT_Connect_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 76:   //  Template10.Common.IDispatcherWrapper
+            case 80:   //  System.Collections.Generic.IList`1<Windows.UI.Xaml.DependencyObject>
                 userType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType(this, typeName, type, null);
-                userType.SetIsReturnTypeStub();
+                userType.CollectionAdd = VectorAdd_80_IList;
                 xamlType = userType;
                 break;
 
-            case 77:   //  Template10.Common.IStateItems
-                userType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType(this, typeName, type, null);
-                userType.SetIsReturnTypeStub();
-                xamlType = userType;
-                break;
-
-            case 78:   //  System.Collections.Generic.IList`1<Windows.UI.Xaml.DependencyObject>
-                userType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType(this, typeName, type, null);
-                userType.CollectionAdd = VectorAdd_78_IList;
-                xamlType = userType;
-                break;
-
-            case 79:   //  NSIT_Connect.Views.HangoutDetailPage
+            case 81:   //  NSIT_Connect.Views.HangoutDetailPage
                 userType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_79_HangoutDetailPage;
+                userType.Activator = Activate_81_HangoutDetailPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 80:   //  NSIT_Connect.ViewModels.HangoutPageViewModel
+            case 82:   //  NSIT_Connect.ViewModels.HangoutPageViewModel
                 userType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Template10.Mvvm.ViewModelBase"));
-                userType.Activator = Activate_80_HangoutPageViewModel;
+                userType.Activator = Activate_82_HangoutPageViewModel;
                 userType.AddMemberName("RadiusText");
                 userType.AddMemberName("Radius");
                 userType.AddMemberName("ProgressVisibility");
@@ -1260,9 +1280,9 @@ namespace NSIT_Connect.NSIT_Connect_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 81:   //  NSIT_Connect.Models.LocationItem
+            case 83:   //  NSIT_Connect.Models.LocationItem
                 userType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_81_LocationItem;
+                userType.Activator = Activate_83_LocationItem;
                 userType.AddMemberName("Number");
                 userType.AddMemberName("Name");
                 userType.AddMemberName("source");
@@ -1271,91 +1291,91 @@ namespace NSIT_Connect.NSIT_Connect_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 82:   //  System.Collections.ObjectModel.ObservableCollection`1<NSIT_Connect.Models.HangoutItem>
+            case 84:   //  System.Collections.ObjectModel.ObservableCollection`1<NSIT_Connect.Models.HangoutItem>
                 userType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<NSIT_Connect.Models.HangoutItem>"));
-                userType.CollectionAdd = VectorAdd_82_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_84_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 83:   //  System.Collections.ObjectModel.Collection`1<NSIT_Connect.Models.HangoutItem>
+            case 85:   //  System.Collections.ObjectModel.Collection`1<NSIT_Connect.Models.HangoutItem>
                 userType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_83_Collection;
-                userType.CollectionAdd = VectorAdd_83_Collection;
+                userType.Activator = Activate_85_Collection;
+                userType.CollectionAdd = VectorAdd_85_Collection;
                 xamlType = userType;
                 break;
 
-            case 84:   //  NSIT_Connect.Views.HangoutPage
+            case 86:   //  NSIT_Connect.Views.HangoutPage
                 userType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_84_HangoutPage;
+                userType.Activator = Activate_86_HangoutPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 85:   //  NSIT_Connect.ViewModels.HomePageViewModel
+            case 87:   //  NSIT_Connect.ViewModels.HomePageViewModel
                 userType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Template10.Mvvm.ViewModelBase"));
-                userType.Activator = Activate_85_HomePageViewModel;
+                userType.Activator = Activate_87_HomePageViewModel;
                 userType.AddMemberName("HomeFeed");
                 userType.AddMemberName("RefreshCommand");
                 userType.AddMemberName("Selected");
-                userType.AddMemberName("NextCommand");
-                userType.AddMemberName("PreviousCommand");
                 userType.AddMemberName("IsDetailsLoading");
                 userType.AddMemberName("IsMasterLoading");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 86:   //  System.Collections.ObjectModel.ObservableCollection`1<NSIT_Connect.Models.Feed>
+            case 88:   //  System.Collections.ObjectModel.ObservableCollection`1<NSIT_Connect.Models.Feed>
                 userType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<NSIT_Connect.Models.Feed>"));
-                userType.CollectionAdd = VectorAdd_86_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_88_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 87:   //  System.Collections.ObjectModel.Collection`1<NSIT_Connect.Models.Feed>
+            case 89:   //  System.Collections.ObjectModel.Collection`1<NSIT_Connect.Models.Feed>
                 userType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_87_Collection;
-                userType.CollectionAdd = VectorAdd_87_Collection;
+                userType.Activator = Activate_89_Collection;
+                userType.CollectionAdd = VectorAdd_89_Collection;
                 xamlType = userType;
                 break;
 
-            case 88:   //  NSIT_Connect.Models.Feed
+            case 90:   //  NSIT_Connect.Models.Feed
                 userType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Template10.Mvvm.BindableBase"));
-                userType.Activator = Activate_88_Feed;
+                userType.Activator = Activate_90_Feed;
                 userType.AddMemberName("Message");
                 userType.AddMemberName("Object_ID");
                 userType.AddMemberName("Likes");
                 userType.AddMemberName("Link");
                 userType.AddMemberName("Time_Created");
                 userType.AddMemberName("Picture");
+                userType.AddMemberName("PictureUri");
                 userType.AddMemberName("Date");
                 userType.AddMemberName("IsRead");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 89:   //  System.DateTime
+            case 91:   //  System.DateTime
                 userType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 90:   //  Template10.Mvvm.DelegateCommand
+            case 92:   //  Template10.Mvvm.DelegateCommand
                 userType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 91:   //  Template10.Controls.MasterDetailsView
+            case 93:   //  Template10.Controls.MasterDetailsView
                 userType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.ListView"));
-                userType.Activator = Activate_91_MasterDetailsView;
+                userType.Activator = Activate_93_MasterDetailsView;
                 userType.AddMemberName("Details");
                 userType.AddMemberName("DetailsTemplate");
                 userType.AddMemberName("IsDetailsLoading");
                 userType.AddMemberName("IsMasterLoading");
                 userType.AddMemberName("MasterCommandBarContent");
                 userType.AddMemberName("MasterCommands");
+                userType.AddMemberName("DetailsCommandBarContent");
                 userType.AddMemberName("DetailsCommands");
                 userType.AddMemberName("VisualStateNarrowMinWidth");
                 userType.AddMemberName("VisualStateNormalMinWidth");
@@ -1367,77 +1387,76 @@ namespace NSIT_Connect.NSIT_Connect_XamlTypeInfo
                 userType.AddMemberName("DetailsProgressRing");
                 userType.AddMemberName("DetailsCommandBar");
                 userType.AddMemberName("MobileDetailsCommandBar");
-                userType.AddMemberName("DetailsCommandBarContent");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 92:   //  Windows.UI.Xaml.Controls.ListView
+            case 94:   //  Windows.UI.Xaml.Controls.ListView
                 xamlType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 93:   //  Windows.UI.Xaml.Controls.ItemsControl
+            case 95:   //  Windows.UI.Xaml.Controls.ItemsControl
                 xamlType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 94:   //  Windows.UI.Xaml.DataTemplate
+            case 96:   //  Windows.UI.Xaml.DataTemplate
                 xamlType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 95:   //  System.Collections.ObjectModel.ObservableCollection`1<Windows.UI.Xaml.Controls.ICommandBarElement>
+            case 97:   //  System.Collections.ObjectModel.ObservableCollection`1<Windows.UI.Xaml.Controls.ICommandBarElement>
                 userType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Windows.UI.Xaml.Controls.ICommandBarElement>"));
-                userType.CollectionAdd = VectorAdd_95_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_97_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 96:   //  System.Collections.ObjectModel.Collection`1<Windows.UI.Xaml.Controls.ICommandBarElement>
+            case 98:   //  System.Collections.ObjectModel.Collection`1<Windows.UI.Xaml.Controls.ICommandBarElement>
                 userType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_96_Collection;
-                userType.CollectionAdd = VectorAdd_96_Collection;
+                userType.Activator = Activate_98_Collection;
+                userType.CollectionAdd = VectorAdd_98_Collection;
                 xamlType = userType;
                 break;
 
-            case 97:   //  Windows.UI.Xaml.Controls.ICommandBarElement
+            case 99:   //  Windows.UI.Xaml.Controls.ICommandBarElement
                 xamlType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 98:   //  Windows.UI.Xaml.Controls.ProgressBar
+            case 100:   //  Windows.UI.Xaml.Controls.ProgressBar
                 xamlType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 99:   //  Windows.UI.Xaml.Controls.ProgressRing
+            case 101:   //  Windows.UI.Xaml.Controls.ProgressRing
                 xamlType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 100:   //  Microsoft.Xaml.Interactivity.Interaction
+            case 102:   //  Microsoft.Xaml.Interactivity.Interaction
                 userType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.AddMemberName("Behaviors");
                 xamlType = userType;
                 break;
 
-            case 101:   //  Microsoft.Xaml.Interactivity.BehaviorCollection
+            case 103:   //  Microsoft.Xaml.Interactivity.BehaviorCollection
                 userType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObjectCollection"));
-                userType.CollectionAdd = VectorAdd_101_BehaviorCollection;
+                userType.CollectionAdd = VectorAdd_103_BehaviorCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 102:   //  Windows.UI.Xaml.DependencyObjectCollection
+            case 104:   //  Windows.UI.Xaml.DependencyObjectCollection
                 xamlType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 103:   //  Template10.Behaviors.EllipsisBehavior
+            case 105:   //  Template10.Behaviors.EllipsisBehavior
                 userType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_103_EllipsisBehavior;
+                userType.Activator = Activate_105_EllipsisBehavior;
                 userType.AddMemberName("Visibility");
                 userType.AddMemberName("AssociatedObject");
                 xamlType = userType;
                 break;
 
-            case 104:   //  Microsoft.Xaml.Interactions.Core.EventTriggerBehavior
+            case 106:   //  Microsoft.Xaml.Interactions.Core.EventTriggerBehavior
                 userType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.Xaml.Interactivity.Behavior"));
-                userType.Activator = Activate_104_EventTriggerBehavior;
+                userType.Activator = Activate_106_EventTriggerBehavior;
                 userType.SetContentPropertyName("Microsoft.Xaml.Interactions.Core.EventTriggerBehavior.Actions");
                 userType.AddMemberName("Actions");
                 userType.AddMemberName("EventName");
@@ -1445,22 +1464,22 @@ namespace NSIT_Connect.NSIT_Connect_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 105:   //  Microsoft.Xaml.Interactivity.Behavior
+            case 107:   //  Microsoft.Xaml.Interactivity.Behavior
                 userType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
                 userType.AddMemberName("AssociatedObject");
                 xamlType = userType;
                 break;
 
-            case 106:   //  Microsoft.Xaml.Interactivity.ActionCollection
+            case 108:   //  Microsoft.Xaml.Interactivity.ActionCollection
                 userType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObjectCollection"));
-                userType.CollectionAdd = VectorAdd_106_ActionCollection;
+                userType.CollectionAdd = VectorAdd_108_ActionCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 107:   //  Template10.Behaviors.BackButtonBehavior
+            case 109:   //  Template10.Behaviors.BackButtonBehavior
                 userType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_107_BackButtonBehavior;
+                userType.Activator = Activate_109_BackButtonBehavior;
                 userType.SetContentPropertyName("Template10.Behaviors.BackButtonBehavior.Actions");
                 userType.AddMemberName("Actions");
                 userType.AddMemberName("Handled");
@@ -1468,32 +1487,32 @@ namespace NSIT_Connect.NSIT_Connect_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 108:   //  Microsoft.Xaml.Interactions.Core.ChangePropertyAction
+            case 110:   //  Microsoft.Xaml.Interactions.Core.ChangePropertyAction
                 userType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_108_ChangePropertyAction;
+                userType.Activator = Activate_110_ChangePropertyAction;
                 userType.AddMemberName("PropertyName");
                 userType.AddMemberName("TargetObject");
                 userType.AddMemberName("Value");
                 xamlType = userType;
                 break;
 
-            case 109:   //  Windows.UI.Xaml.PropertyPath
+            case 111:   //  Windows.UI.Xaml.PropertyPath
                 xamlType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 110:   //  WindowsStateTriggers.DeviceFamilyStateTrigger
+            case 112:   //  WindowsStateTriggers.DeviceFamilyStateTrigger
                 userType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.StateTriggerBase"));
-                userType.Activator = Activate_110_DeviceFamilyStateTrigger;
+                userType.Activator = Activate_112_DeviceFamilyStateTrigger;
                 userType.AddMemberName("DeviceFamily");
                 userType.AddMemberName("IsActive");
                 xamlType = userType;
                 break;
 
-            case 111:   //  Windows.UI.Xaml.StateTriggerBase
+            case 113:   //  Windows.UI.Xaml.StateTriggerBase
                 xamlType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 112:   //  WindowsStateTriggers.DeviceFamily
+            case 114:   //  WindowsStateTriggers.DeviceFamily
                 userType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Unknown", global::WindowsStateTriggers.DeviceFamily.Unknown);
                 userType.AddEnumValue("Desktop", global::WindowsStateTriggers.DeviceFamily.Desktop);
@@ -1504,70 +1523,70 @@ namespace NSIT_Connect.NSIT_Connect_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 113:   //  NSIT_Connect.Views.HomePage
+            case 115:   //  NSIT_Connect.Views.HomePage
                 userType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_113_HomePage;
+                userType.Activator = Activate_115_HomePage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 114:   //  NSIT_Connect.ViewModels.LocationPageViewModel
+            case 116:   //  NSIT_Connect.ViewModels.LocationPageViewModel
                 userType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Template10.Mvvm.ViewModelBase"));
-                userType.Activator = Activate_114_LocationPageViewModel;
+                userType.Activator = Activate_116_LocationPageViewModel;
                 userType.AddMemberName("lpanel");
                 userType.AddMemberName("Selected");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 115:   //  System.Collections.ObjectModel.ObservableCollection`1<NSIT_Connect.Models.LocationItem>
+            case 117:   //  System.Collections.ObjectModel.ObservableCollection`1<NSIT_Connect.Models.LocationItem>
                 userType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<NSIT_Connect.Models.LocationItem>"));
-                userType.CollectionAdd = VectorAdd_115_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_117_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 116:   //  System.Collections.ObjectModel.Collection`1<NSIT_Connect.Models.LocationItem>
+            case 118:   //  System.Collections.ObjectModel.Collection`1<NSIT_Connect.Models.LocationItem>
                 userType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_116_Collection;
-                userType.CollectionAdd = VectorAdd_116_Collection;
+                userType.Activator = Activate_118_Collection;
+                userType.CollectionAdd = VectorAdd_118_Collection;
                 xamlType = userType;
                 break;
 
-            case 117:   //  NSIT_Connect.Views.LocationPage
+            case 119:   //  NSIT_Connect.Views.LocationPage
                 userType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_117_LocationPage;
+                userType.Activator = Activate_119_LocationPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 118:   //  NSIT_Connect.ViewModels.ProfessorDetailPageViewModel
+            case 120:   //  NSIT_Connect.ViewModels.ProfessorDetailPageViewModel
                 userType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Template10.Mvvm.ViewModelBase"));
-                userType.Activator = Activate_118_ProfessorDetailPageViewModel;
+                userType.Activator = Activate_120_ProfessorDetailPageViewModel;
                 userType.AddMemberName("Selected");
                 userType.AddMemberName("Item");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 119:   //  System.Collections.ObjectModel.ObservableCollection`1<NSIT_Connect.Models.ProfessorItem>
+            case 121:   //  System.Collections.ObjectModel.ObservableCollection`1<NSIT_Connect.Models.ProfessorItem>
                 userType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<NSIT_Connect.Models.ProfessorItem>"));
-                userType.CollectionAdd = VectorAdd_119_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_121_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 120:   //  System.Collections.ObjectModel.Collection`1<NSIT_Connect.Models.ProfessorItem>
+            case 122:   //  System.Collections.ObjectModel.Collection`1<NSIT_Connect.Models.ProfessorItem>
                 userType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_120_Collection;
-                userType.CollectionAdd = VectorAdd_120_Collection;
+                userType.Activator = Activate_122_Collection;
+                userType.CollectionAdd = VectorAdd_122_Collection;
                 xamlType = userType;
                 break;
 
-            case 121:   //  NSIT_Connect.Models.ProfessorItem
+            case 123:   //  NSIT_Connect.Models.ProfessorItem
                 userType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_121_ProfessorItem;
-                userType.AddMemberName("FirstLetter");
+                userType.Activator = Activate_123_ProfessorItem;
+                userType.AddMemberName("Foreground");
                 userType.AddMemberName("Name");
                 userType.AddMemberName("Room");
                 userType.AddMemberName("Phone");
@@ -1576,73 +1595,67 @@ namespace NSIT_Connect.NSIT_Connect_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 122:   //  Char
-                userType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
-                userType.SetIsReturnTypeStub();
-                xamlType = userType;
-                break;
-
-            case 123:   //  NSIT_Connect.Views.ProfesorsDetailPage
+            case 124:   //  NSIT_Connect.Views.ProfesorsDetailPage
                 userType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_123_ProfesorsDetailPage;
+                userType.Activator = Activate_124_ProfesorsDetailPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 124:   //  NSIT_Connect.ViewModels.ProfessorsPageViewModel
+            case 125:   //  NSIT_Connect.ViewModels.ProfessorsPageViewModel
                 userType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Template10.Mvvm.ViewModelBase"));
-                userType.Activator = Activate_124_ProfessorsPageViewModel;
+                userType.Activator = Activate_125_ProfessorsPageViewModel;
                 userType.AddMemberName("lpanel");
                 userType.AddMemberName("Selected");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 125:   //  NSIT_Connect.Views.ProfessorsPage
+            case 126:   //  NSIT_Connect.Views.ProfessorsPage
                 userType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_125_ProfessorsPage;
+                userType.Activator = Activate_126_ProfessorsPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 126:   //  NSIT_Connect.ViewModels.SettingsPageViewModel
+            case 127:   //  NSIT_Connect.ViewModels.SettingsPageViewModel
                 userType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Template10.Mvvm.ViewModelBase"));
-                userType.Activator = Activate_126_SettingsPageViewModel;
+                userType.Activator = Activate_127_SettingsPageViewModel;
                 userType.AddMemberName("SettingsPartViewModel");
                 userType.AddMemberName("AboutPartViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 127:   //  NSIT_Connect.ViewModels.SettingsPartViewModel
+            case 128:   //  NSIT_Connect.ViewModels.SettingsPartViewModel
                 userType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Template10.Mvvm.ViewModelBase"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 128:   //  NSIT_Connect.ViewModels.AboutPartViewModel
+            case 129:   //  NSIT_Connect.ViewModels.AboutPartViewModel
                 userType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Template10.Mvvm.ViewModelBase"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 129:   //  NSIT_Connect.Views.SettingsPage
+            case 130:   //  NSIT_Connect.Views.SettingsPage
                 userType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_129_SettingsPage;
+                userType.Activator = Activate_130_SettingsPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 130:   //  NSIT_Connect.Views.Shell
+            case 131:   //  NSIT_Connect.Views.Shell
                 userType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_130_Shell;
+                userType.Activator = Activate_131_Shell;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 131:   //  NSIT_Connect.Views.Splash
+            case 132:   //  NSIT_Connect.Views.Splash
                 userType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
                 userType.SetIsLocalType();
                 xamlType = userType;
@@ -2313,225 +2326,225 @@ namespace NSIT_Connect.NSIT_Connect_XamlTypeInfo
             var that = (global::Template10.Controls.HamburgerButtonInfo)instance;
             that.MaxWidth = (global::System.Double)Value;
         }
-        private object get_63_HamburgerMenu_VisualStateNarrowDisplayMode(object instance)
-        {
-            var that = (global::Template10.Controls.HamburgerMenu)instance;
-            return that.VisualStateNarrowDisplayMode;
-        }
-        private void set_63_HamburgerMenu_VisualStateNarrowDisplayMode(object instance, object Value)
-        {
-            var that = (global::Template10.Controls.HamburgerMenu)instance;
-            that.VisualStateNarrowDisplayMode = (global::Windows.UI.Xaml.Controls.SplitViewDisplayMode)Value;
-        }
-        private object get_64_HamburgerMenu_PaneBorderThickness(object instance)
+        private object get_63_HamburgerMenu_PaneBorderThickness(object instance)
         {
             var that = (global::Template10.Controls.HamburgerMenu)instance;
             return that.PaneBorderThickness;
         }
-        private void set_64_HamburgerMenu_PaneBorderThickness(object instance, object Value)
+        private void set_63_HamburgerMenu_PaneBorderThickness(object instance, object Value)
         {
             var that = (global::Template10.Controls.HamburgerMenu)instance;
             that.PaneBorderThickness = (global::Windows.UI.Xaml.Thickness)Value;
         }
-        private object get_65_HamburgerMenu_SecondarySeparator(object instance)
+        private object get_64_HamburgerMenu_SecondarySeparator(object instance)
         {
             var that = (global::Template10.Controls.HamburgerMenu)instance;
             return that.SecondarySeparator;
         }
-        private void set_65_HamburgerMenu_SecondarySeparator(object instance, object Value)
+        private void set_64_HamburgerMenu_SecondarySeparator(object instance, object Value)
         {
             var that = (global::Template10.Controls.HamburgerMenu)instance;
             that.SecondarySeparator = (global::Windows.UI.Xaml.Media.Brush)Value;
         }
-        private object get_66_HamburgerMenu_NavButtonBackground(object instance)
+        private object get_65_HamburgerMenu_NavButtonBackground(object instance)
         {
             var that = (global::Template10.Controls.HamburgerMenu)instance;
             return that.NavButtonBackground;
         }
-        private void set_66_HamburgerMenu_NavButtonBackground(object instance, object Value)
+        private void set_65_HamburgerMenu_NavButtonBackground(object instance, object Value)
         {
             var that = (global::Template10.Controls.HamburgerMenu)instance;
             that.NavButtonBackground = (global::Windows.UI.Xaml.Media.Brush)Value;
         }
-        private object get_67_HamburgerMenu_NavButtonForeground(object instance)
+        private object get_66_HamburgerMenu_NavButtonForeground(object instance)
         {
             var that = (global::Template10.Controls.HamburgerMenu)instance;
             return that.NavButtonForeground;
         }
-        private void set_67_HamburgerMenu_NavButtonForeground(object instance, object Value)
+        private void set_66_HamburgerMenu_NavButtonForeground(object instance, object Value)
         {
             var that = (global::Template10.Controls.HamburgerMenu)instance;
             that.NavButtonForeground = (global::Windows.UI.Xaml.Media.Brush)Value;
         }
-        private object get_68_HamburgerMenu_NavAreaBackground(object instance)
+        private object get_67_HamburgerMenu_NavAreaBackground(object instance)
         {
             var that = (global::Template10.Controls.HamburgerMenu)instance;
             return that.NavAreaBackground;
         }
-        private void set_68_HamburgerMenu_NavAreaBackground(object instance, object Value)
+        private void set_67_HamburgerMenu_NavAreaBackground(object instance, object Value)
         {
             var that = (global::Template10.Controls.HamburgerMenu)instance;
             that.NavAreaBackground = (global::Windows.UI.Xaml.Media.Brush)Value;
         }
-        private object get_69_HamburgerMenu_HamburgerForeground(object instance)
+        private object get_68_HamburgerMenu_HamburgerForeground(object instance)
         {
             var that = (global::Template10.Controls.HamburgerMenu)instance;
             return that.HamburgerForeground;
         }
-        private void set_69_HamburgerMenu_HamburgerForeground(object instance, object Value)
+        private void set_68_HamburgerMenu_HamburgerForeground(object instance, object Value)
         {
             var that = (global::Template10.Controls.HamburgerMenu)instance;
             that.HamburgerForeground = (global::Windows.UI.Xaml.Media.Brush)Value;
         }
-        private object get_70_HamburgerMenu_HamburgerBackground(object instance)
+        private object get_69_HamburgerMenu_HamburgerBackground(object instance)
         {
             var that = (global::Template10.Controls.HamburgerMenu)instance;
             return that.HamburgerBackground;
         }
-        private void set_70_HamburgerMenu_HamburgerBackground(object instance, object Value)
+        private void set_69_HamburgerMenu_HamburgerBackground(object instance, object Value)
         {
             var that = (global::Template10.Controls.HamburgerMenu)instance;
             that.HamburgerBackground = (global::Windows.UI.Xaml.Media.Brush)Value;
         }
-        private object get_71_HamburgerMenu_VisualStateNarrowMinWidth(object instance)
+        private object get_70_HamburgerMenu_VisualStateNarrowMinWidth(object instance)
         {
             var that = (global::Template10.Controls.HamburgerMenu)instance;
             return that.VisualStateNarrowMinWidth;
         }
-        private void set_71_HamburgerMenu_VisualStateNarrowMinWidth(object instance, object Value)
+        private void set_70_HamburgerMenu_VisualStateNarrowMinWidth(object instance, object Value)
         {
             var that = (global::Template10.Controls.HamburgerMenu)instance;
             that.VisualStateNarrowMinWidth = (global::System.Double)Value;
         }
-        private object get_72_HamburgerMenu_VisualStateNormalMinWidth(object instance)
+        private object get_71_HamburgerMenu_VisualStateNormalMinWidth(object instance)
         {
             var that = (global::Template10.Controls.HamburgerMenu)instance;
             return that.VisualStateNormalMinWidth;
         }
-        private void set_72_HamburgerMenu_VisualStateNormalMinWidth(object instance, object Value)
+        private void set_71_HamburgerMenu_VisualStateNormalMinWidth(object instance, object Value)
         {
             var that = (global::Template10.Controls.HamburgerMenu)instance;
             that.VisualStateNormalMinWidth = (global::System.Double)Value;
         }
-        private object get_73_HamburgerMenu_VisualStateWideMinWidth(object instance)
+        private object get_72_HamburgerMenu_VisualStateWideMinWidth(object instance)
         {
             var that = (global::Template10.Controls.HamburgerMenu)instance;
             return that.VisualStateWideMinWidth;
         }
-        private void set_73_HamburgerMenu_VisualStateWideMinWidth(object instance, object Value)
+        private void set_72_HamburgerMenu_VisualStateWideMinWidth(object instance, object Value)
         {
             var that = (global::Template10.Controls.HamburgerMenu)instance;
             that.VisualStateWideMinWidth = (global::System.Double)Value;
         }
-        private object get_74_HamburgerMenu_AccentColor(object instance)
+        private object get_73_HamburgerMenu_AccentColor(object instance)
         {
             var that = (global::Template10.Controls.HamburgerMenu)instance;
             return that.AccentColor;
         }
-        private void set_74_HamburgerMenu_AccentColor(object instance, object Value)
+        private void set_73_HamburgerMenu_AccentColor(object instance, object Value)
         {
             var that = (global::Template10.Controls.HamburgerMenu)instance;
             that.AccentColor = (global::Windows.UI.Color)Value;
         }
-        private object get_75_HamburgerMenu_PaneBorderBrush(object instance)
+        private object get_74_HamburgerMenu_PaneBorderBrush(object instance)
         {
             var that = (global::Template10.Controls.HamburgerMenu)instance;
             return that.PaneBorderBrush;
         }
-        private void set_75_HamburgerMenu_PaneBorderBrush(object instance, object Value)
+        private void set_74_HamburgerMenu_PaneBorderBrush(object instance, object Value)
         {
             var that = (global::Template10.Controls.HamburgerMenu)instance;
             that.PaneBorderBrush = (global::Windows.UI.Xaml.Media.Brush)Value;
         }
-        private object get_76_HamburgerMenu_NavButtonCheckedForeground(object instance)
+        private object get_75_HamburgerMenu_NavButtonCheckedForeground(object instance)
         {
             var that = (global::Template10.Controls.HamburgerMenu)instance;
             return that.NavButtonCheckedForeground;
         }
-        private void set_76_HamburgerMenu_NavButtonCheckedForeground(object instance, object Value)
+        private void set_75_HamburgerMenu_NavButtonCheckedForeground(object instance, object Value)
         {
             var that = (global::Template10.Controls.HamburgerMenu)instance;
             that.NavButtonCheckedForeground = (global::Windows.UI.Xaml.Media.Brush)Value;
         }
-        private object get_77_HamburgerMenu_NavButtonCheckedBackground(object instance)
+        private object get_76_HamburgerMenu_NavButtonCheckedBackground(object instance)
         {
             var that = (global::Template10.Controls.HamburgerMenu)instance;
             return that.NavButtonCheckedBackground;
         }
-        private void set_77_HamburgerMenu_NavButtonCheckedBackground(object instance, object Value)
+        private void set_76_HamburgerMenu_NavButtonCheckedBackground(object instance, object Value)
         {
             var that = (global::Template10.Controls.HamburgerMenu)instance;
             that.NavButtonCheckedBackground = (global::Windows.UI.Xaml.Media.Brush)Value;
         }
-        private object get_78_HamburgerMenu_NavButtonCheckedIndicatorBrush(object instance)
+        private object get_77_HamburgerMenu_NavButtonCheckedIndicatorBrush(object instance)
         {
             var that = (global::Template10.Controls.HamburgerMenu)instance;
             return that.NavButtonCheckedIndicatorBrush;
         }
-        private void set_78_HamburgerMenu_NavButtonCheckedIndicatorBrush(object instance, object Value)
+        private void set_77_HamburgerMenu_NavButtonCheckedIndicatorBrush(object instance, object Value)
         {
             var that = (global::Template10.Controls.HamburgerMenu)instance;
             that.NavButtonCheckedIndicatorBrush = (global::Windows.UI.Xaml.Media.Brush)Value;
         }
-        private object get_79_HamburgerMenu_NavButtonPressedForeground(object instance)
+        private object get_78_HamburgerMenu_NavButtonPressedForeground(object instance)
         {
             var that = (global::Template10.Controls.HamburgerMenu)instance;
             return that.NavButtonPressedForeground;
         }
-        private void set_79_HamburgerMenu_NavButtonPressedForeground(object instance, object Value)
+        private void set_78_HamburgerMenu_NavButtonPressedForeground(object instance, object Value)
         {
             var that = (global::Template10.Controls.HamburgerMenu)instance;
             that.NavButtonPressedForeground = (global::Windows.UI.Xaml.Media.Brush)Value;
         }
-        private object get_80_HamburgerMenu_NavButtonPressedBackground(object instance)
+        private object get_79_HamburgerMenu_NavButtonPressedBackground(object instance)
         {
             var that = (global::Template10.Controls.HamburgerMenu)instance;
             return that.NavButtonPressedBackground;
         }
-        private void set_80_HamburgerMenu_NavButtonPressedBackground(object instance, object Value)
+        private void set_79_HamburgerMenu_NavButtonPressedBackground(object instance, object Value)
         {
             var that = (global::Template10.Controls.HamburgerMenu)instance;
             that.NavButtonPressedBackground = (global::Windows.UI.Xaml.Media.Brush)Value;
         }
-        private object get_81_HamburgerMenu_NavButtonHoverForeground(object instance)
+        private object get_80_HamburgerMenu_NavButtonHoverForeground(object instance)
         {
             var that = (global::Template10.Controls.HamburgerMenu)instance;
             return that.NavButtonHoverForeground;
         }
-        private void set_81_HamburgerMenu_NavButtonHoverForeground(object instance, object Value)
+        private void set_80_HamburgerMenu_NavButtonHoverForeground(object instance, object Value)
         {
             var that = (global::Template10.Controls.HamburgerMenu)instance;
             that.NavButtonHoverForeground = (global::Windows.UI.Xaml.Media.Brush)Value;
         }
-        private object get_82_HamburgerMenu_NavButtonHoverBackground(object instance)
+        private object get_81_HamburgerMenu_NavButtonHoverBackground(object instance)
         {
             var that = (global::Template10.Controls.HamburgerMenu)instance;
             return that.NavButtonHoverBackground;
         }
-        private void set_82_HamburgerMenu_NavButtonHoverBackground(object instance, object Value)
+        private void set_81_HamburgerMenu_NavButtonHoverBackground(object instance, object Value)
         {
             var that = (global::Template10.Controls.HamburgerMenu)instance;
             that.NavButtonHoverBackground = (global::Windows.UI.Xaml.Media.Brush)Value;
         }
-        private object get_83_HamburgerMenu_HamburgerButtonVisibility(object instance)
+        private object get_82_HamburgerMenu_HamburgerButtonVisibility(object instance)
         {
             var that = (global::Template10.Controls.HamburgerMenu)instance;
             return that.HamburgerButtonVisibility;
         }
-        private void set_83_HamburgerMenu_HamburgerButtonVisibility(object instance, object Value)
+        private void set_82_HamburgerMenu_HamburgerButtonVisibility(object instance, object Value)
         {
             var that = (global::Template10.Controls.HamburgerMenu)instance;
             that.HamburgerButtonVisibility = (global::Windows.UI.Xaml.Visibility)Value;
         }
-        private object get_84_HamburgerMenu_DisplayMode(object instance)
+        private object get_83_HamburgerMenu_DisplayMode(object instance)
         {
             var that = (global::Template10.Controls.HamburgerMenu)instance;
             return that.DisplayMode;
         }
-        private void set_84_HamburgerMenu_DisplayMode(object instance, object Value)
+        private void set_83_HamburgerMenu_DisplayMode(object instance, object Value)
         {
             var that = (global::Template10.Controls.HamburgerMenu)instance;
             that.DisplayMode = (global::Windows.UI.Xaml.Controls.SplitViewDisplayMode)Value;
+        }
+        private object get_84_HamburgerMenu_VisualStateNarrowDisplayMode(object instance)
+        {
+            var that = (global::Template10.Controls.HamburgerMenu)instance;
+            return that.VisualStateNarrowDisplayMode;
+        }
+        private void set_84_HamburgerMenu_VisualStateNarrowDisplayMode(object instance, object Value)
+        {
+            var that = (global::Template10.Controls.HamburgerMenu)instance;
+            that.VisualStateNarrowDisplayMode = (global::Windows.UI.Xaml.Controls.SplitViewDisplayMode)Value;
         }
         private object get_85_HamburgerMenu_VisualStateNormalDisplayMode(object instance)
         {
@@ -2813,965 +2826,975 @@ namespace NSIT_Connect.NSIT_Connect_XamlTypeInfo
             var that = (global::NSIT_Connect.Views.Busy)instance;
             that.IsBusy = (global::System.Boolean)Value;
         }
-        private object get_114_HangoutDetailPageViewModel_Distance(object instance)
+        private object get_114_FeedBackPageViewModel_ProgressVisibility(object instance)
         {
-            var that = (global::NSIT_Connect.ViewModels.HangoutDetailPageViewModel)instance;
-            return that.Distance;
+            var that = (global::NSIT_Connect.ViewModels.FeedBackPageViewModel)instance;
+            return that.ProgressVisibility;
         }
-        private void set_114_HangoutDetailPageViewModel_Distance(object instance, object Value)
+        private void set_114_FeedBackPageViewModel_ProgressVisibility(object instance, object Value)
         {
-            var that = (global::NSIT_Connect.ViewModels.HangoutDetailPageViewModel)instance;
-            that.Distance = (global::System.String)Value;
+            var that = (global::NSIT_Connect.ViewModels.FeedBackPageViewModel)instance;
+            that.ProgressVisibility = (global::Windows.UI.Xaml.Visibility)Value;
         }
-        private object get_115_HangoutDetailPageViewModel_Time(object instance)
+        private object get_115_FeedBackPageViewModel_SourceUri(object instance)
         {
-            var that = (global::NSIT_Connect.ViewModels.HangoutDetailPageViewModel)instance;
-            return that.Time;
+            var that = (global::NSIT_Connect.ViewModels.FeedBackPageViewModel)instance;
+            return that.SourceUri;
         }
-        private void set_115_HangoutDetailPageViewModel_Time(object instance, object Value)
+        private void set_115_FeedBackPageViewModel_SourceUri(object instance, object Value)
         {
-            var that = (global::NSIT_Connect.ViewModels.HangoutDetailPageViewModel)instance;
-            that.Time = (global::System.String)Value;
+            var that = (global::NSIT_Connect.ViewModels.FeedBackPageViewModel)instance;
+            that.SourceUri = (global::System.Uri)Value;
         }
-        private object get_116_HangoutDetailPageViewModel_Directions(object instance)
-        {
-            var that = (global::NSIT_Connect.ViewModels.HangoutDetailPageViewModel)instance;
-            return that.Directions;
-        }
-        private void set_116_HangoutDetailPageViewModel_Directions(object instance, object Value)
-        {
-            var that = (global::NSIT_Connect.ViewModels.HangoutDetailPageViewModel)instance;
-            that.Directions = (global::System.String)Value;
-        }
-        private object get_117_HangoutDetailPageViewModel_Address(object instance)
-        {
-            var that = (global::NSIT_Connect.ViewModels.HangoutDetailPageViewModel)instance;
-            return that.Address;
-        }
-        private void set_117_HangoutDetailPageViewModel_Address(object instance, object Value)
-        {
-            var that = (global::NSIT_Connect.ViewModels.HangoutDetailPageViewModel)instance;
-            that.Address = (global::System.String)Value;
-        }
-        private object get_118_HangoutDetailPageViewModel_Phone(object instance)
-        {
-            var that = (global::NSIT_Connect.ViewModels.HangoutDetailPageViewModel)instance;
-            return that.Phone;
-        }
-        private void set_118_HangoutDetailPageViewModel_Phone(object instance, object Value)
-        {
-            var that = (global::NSIT_Connect.ViewModels.HangoutDetailPageViewModel)instance;
-            that.Phone = (global::System.String)Value;
-        }
-        private object get_119_HangoutDetailPageViewModel_InternationalPhone(object instance)
-        {
-            var that = (global::NSIT_Connect.ViewModels.HangoutDetailPageViewModel)instance;
-            return that.InternationalPhone;
-        }
-        private void set_119_HangoutDetailPageViewModel_InternationalPhone(object instance, object Value)
-        {
-            var that = (global::NSIT_Connect.ViewModels.HangoutDetailPageViewModel)instance;
-            that.InternationalPhone = (global::System.String)Value;
-        }
-        private object get_120_HangoutDetailPageViewModel_Website(object instance)
-        {
-            var that = (global::NSIT_Connect.ViewModels.HangoutDetailPageViewModel)instance;
-            return that.Website;
-        }
-        private void set_120_HangoutDetailPageViewModel_Website(object instance, object Value)
-        {
-            var that = (global::NSIT_Connect.ViewModels.HangoutDetailPageViewModel)instance;
-            that.Website = (global::System.String)Value;
-        }
-        private object get_121_HangoutDetailPageViewModel_Googlemaps(object instance)
-        {
-            var that = (global::NSIT_Connect.ViewModels.HangoutDetailPageViewModel)instance;
-            return that.Googlemaps;
-        }
-        private void set_121_HangoutDetailPageViewModel_Googlemaps(object instance, object Value)
-        {
-            var that = (global::NSIT_Connect.ViewModels.HangoutDetailPageViewModel)instance;
-            that.Googlemaps = (global::System.String)Value;
-        }
-        private object get_122_HangoutDetailPageViewModel_ImageSource(object instance)
-        {
-            var that = (global::NSIT_Connect.ViewModels.HangoutDetailPageViewModel)instance;
-            return that.ImageSource;
-        }
-        private void set_122_HangoutDetailPageViewModel_ImageSource(object instance, object Value)
-        {
-            var that = (global::NSIT_Connect.ViewModels.HangoutDetailPageViewModel)instance;
-            that.ImageSource = (global::Windows.UI.Xaml.Media.Imaging.BitmapImage)Value;
-        }
-        private object get_123_HangoutDetailPageViewModel_SelectedHangout(object instance)
-        {
-            var that = (global::NSIT_Connect.ViewModels.HangoutDetailPageViewModel)instance;
-            return that.SelectedHangout;
-        }
-        private void set_123_HangoutDetailPageViewModel_SelectedHangout(object instance, object Value)
-        {
-            var that = (global::NSIT_Connect.ViewModels.HangoutDetailPageViewModel)instance;
-            that.SelectedHangout = (global::NSIT_Connect.Models.HangoutItem)Value;
-        }
-        private object get_124_HangoutDetailPageViewModel_Item(object instance)
-        {
-            var that = (global::NSIT_Connect.ViewModels.HangoutDetailPageViewModel)instance;
-            return that.Item;
-        }
-        private void set_124_HangoutDetailPageViewModel_Item(object instance, object Value)
-        {
-            var that = (global::NSIT_Connect.ViewModels.HangoutDetailPageViewModel)instance;
-            that.Item = (global::System.Collections.ObjectModel.ObservableCollection<global::NSIT_Connect.Models.ReviewItem>)Value;
-        }
-        private object get_125_ReviewItem_Rating(object instance)
-        {
-            var that = (global::NSIT_Connect.Models.ReviewItem)instance;
-            return that.Rating;
-        }
-        private void set_125_ReviewItem_Rating(object instance, object Value)
-        {
-            var that = (global::NSIT_Connect.Models.ReviewItem)instance;
-            that.Rating = (global::System.Double)Value;
-        }
-        private object get_126_ReviewItem_Time(object instance)
-        {
-            var that = (global::NSIT_Connect.Models.ReviewItem)instance;
-            return that.Time;
-        }
-        private void set_126_ReviewItem_Time(object instance, object Value)
-        {
-            var that = (global::NSIT_Connect.Models.ReviewItem)instance;
-            that.Time = (global::System.String)Value;
-        }
-        private object get_127_ReviewItem_Name(object instance)
-        {
-            var that = (global::NSIT_Connect.Models.ReviewItem)instance;
-            return that.Name;
-        }
-        private void set_127_ReviewItem_Name(object instance, object Value)
-        {
-            var that = (global::NSIT_Connect.Models.ReviewItem)instance;
-            that.Name = (global::System.String)Value;
-        }
-        private object get_128_ReviewItem_Profile(object instance)
-        {
-            var that = (global::NSIT_Connect.Models.ReviewItem)instance;
-            return that.Profile;
-        }
-        private void set_128_ReviewItem_Profile(object instance, object Value)
-        {
-            var that = (global::NSIT_Connect.Models.ReviewItem)instance;
-            that.Profile = (global::System.String)Value;
-        }
-        private object get_129_ReviewItem_Text(object instance)
-        {
-            var that = (global::NSIT_Connect.Models.ReviewItem)instance;
-            return that.Text;
-        }
-        private void set_129_ReviewItem_Text(object instance, object Value)
-        {
-            var that = (global::NSIT_Connect.Models.ReviewItem)instance;
-            that.Text = (global::System.String)Value;
-        }
-        private object get_130_ViewModelBase_NavigationService(object instance)
+        private object get_116_ViewModelBase_NavigationService(object instance)
         {
             var that = (global::Template10.Mvvm.ViewModelBase)instance;
             return that.NavigationService;
         }
-        private void set_130_ViewModelBase_NavigationService(object instance, object Value)
+        private void set_116_ViewModelBase_NavigationService(object instance, object Value)
         {
             var that = (global::Template10.Mvvm.ViewModelBase)instance;
             that.NavigationService = (global::Template10.Services.NavigationService.INavigationService)Value;
         }
-        private object get_131_ViewModelBase_Dispatcher(object instance)
+        private object get_117_ViewModelBase_Dispatcher(object instance)
         {
             var that = (global::Template10.Mvvm.ViewModelBase)instance;
             return that.Dispatcher;
         }
-        private void set_131_ViewModelBase_Dispatcher(object instance, object Value)
+        private void set_117_ViewModelBase_Dispatcher(object instance, object Value)
         {
             var that = (global::Template10.Mvvm.ViewModelBase)instance;
             that.Dispatcher = (global::Template10.Common.IDispatcherWrapper)Value;
         }
-        private object get_132_ViewModelBase_SessionState(object instance)
+        private object get_118_ViewModelBase_SessionState(object instance)
         {
             var that = (global::Template10.Mvvm.ViewModelBase)instance;
             return that.SessionState;
         }
-        private void set_132_ViewModelBase_SessionState(object instance, object Value)
+        private void set_118_ViewModelBase_SessionState(object instance, object Value)
         {
             var that = (global::Template10.Mvvm.ViewModelBase)instance;
             that.SessionState = (global::Template10.Common.IStateItems)Value;
         }
-        private object get_133_HangoutPageViewModel_RadiusText(object instance)
+        private object get_119_HangoutDetailPageViewModel_Distance(object instance)
+        {
+            var that = (global::NSIT_Connect.ViewModels.HangoutDetailPageViewModel)instance;
+            return that.Distance;
+        }
+        private void set_119_HangoutDetailPageViewModel_Distance(object instance, object Value)
+        {
+            var that = (global::NSIT_Connect.ViewModels.HangoutDetailPageViewModel)instance;
+            that.Distance = (global::System.String)Value;
+        }
+        private object get_120_HangoutDetailPageViewModel_Time(object instance)
+        {
+            var that = (global::NSIT_Connect.ViewModels.HangoutDetailPageViewModel)instance;
+            return that.Time;
+        }
+        private void set_120_HangoutDetailPageViewModel_Time(object instance, object Value)
+        {
+            var that = (global::NSIT_Connect.ViewModels.HangoutDetailPageViewModel)instance;
+            that.Time = (global::System.String)Value;
+        }
+        private object get_121_HangoutDetailPageViewModel_Directions(object instance)
+        {
+            var that = (global::NSIT_Connect.ViewModels.HangoutDetailPageViewModel)instance;
+            return that.Directions;
+        }
+        private void set_121_HangoutDetailPageViewModel_Directions(object instance, object Value)
+        {
+            var that = (global::NSIT_Connect.ViewModels.HangoutDetailPageViewModel)instance;
+            that.Directions = (global::System.String)Value;
+        }
+        private object get_122_HangoutDetailPageViewModel_Address(object instance)
+        {
+            var that = (global::NSIT_Connect.ViewModels.HangoutDetailPageViewModel)instance;
+            return that.Address;
+        }
+        private void set_122_HangoutDetailPageViewModel_Address(object instance, object Value)
+        {
+            var that = (global::NSIT_Connect.ViewModels.HangoutDetailPageViewModel)instance;
+            that.Address = (global::System.String)Value;
+        }
+        private object get_123_HangoutDetailPageViewModel_Phone(object instance)
+        {
+            var that = (global::NSIT_Connect.ViewModels.HangoutDetailPageViewModel)instance;
+            return that.Phone;
+        }
+        private void set_123_HangoutDetailPageViewModel_Phone(object instance, object Value)
+        {
+            var that = (global::NSIT_Connect.ViewModels.HangoutDetailPageViewModel)instance;
+            that.Phone = (global::System.String)Value;
+        }
+        private object get_124_HangoutDetailPageViewModel_InternationalPhone(object instance)
+        {
+            var that = (global::NSIT_Connect.ViewModels.HangoutDetailPageViewModel)instance;
+            return that.InternationalPhone;
+        }
+        private void set_124_HangoutDetailPageViewModel_InternationalPhone(object instance, object Value)
+        {
+            var that = (global::NSIT_Connect.ViewModels.HangoutDetailPageViewModel)instance;
+            that.InternationalPhone = (global::System.String)Value;
+        }
+        private object get_125_HangoutDetailPageViewModel_Website(object instance)
+        {
+            var that = (global::NSIT_Connect.ViewModels.HangoutDetailPageViewModel)instance;
+            return that.Website;
+        }
+        private void set_125_HangoutDetailPageViewModel_Website(object instance, object Value)
+        {
+            var that = (global::NSIT_Connect.ViewModels.HangoutDetailPageViewModel)instance;
+            that.Website = (global::System.String)Value;
+        }
+        private object get_126_HangoutDetailPageViewModel_Googlemaps(object instance)
+        {
+            var that = (global::NSIT_Connect.ViewModels.HangoutDetailPageViewModel)instance;
+            return that.Googlemaps;
+        }
+        private void set_126_HangoutDetailPageViewModel_Googlemaps(object instance, object Value)
+        {
+            var that = (global::NSIT_Connect.ViewModels.HangoutDetailPageViewModel)instance;
+            that.Googlemaps = (global::System.String)Value;
+        }
+        private object get_127_HangoutDetailPageViewModel_ImageSource(object instance)
+        {
+            var that = (global::NSIT_Connect.ViewModels.HangoutDetailPageViewModel)instance;
+            return that.ImageSource;
+        }
+        private void set_127_HangoutDetailPageViewModel_ImageSource(object instance, object Value)
+        {
+            var that = (global::NSIT_Connect.ViewModels.HangoutDetailPageViewModel)instance;
+            that.ImageSource = (global::Windows.UI.Xaml.Media.Imaging.BitmapImage)Value;
+        }
+        private object get_128_HangoutDetailPageViewModel_SelectedHangout(object instance)
+        {
+            var that = (global::NSIT_Connect.ViewModels.HangoutDetailPageViewModel)instance;
+            return that.SelectedHangout;
+        }
+        private void set_128_HangoutDetailPageViewModel_SelectedHangout(object instance, object Value)
+        {
+            var that = (global::NSIT_Connect.ViewModels.HangoutDetailPageViewModel)instance;
+            that.SelectedHangout = (global::NSIT_Connect.Models.HangoutItem)Value;
+        }
+        private object get_129_HangoutDetailPageViewModel_Item(object instance)
+        {
+            var that = (global::NSIT_Connect.ViewModels.HangoutDetailPageViewModel)instance;
+            return that.Item;
+        }
+        private void set_129_HangoutDetailPageViewModel_Item(object instance, object Value)
+        {
+            var that = (global::NSIT_Connect.ViewModels.HangoutDetailPageViewModel)instance;
+            that.Item = (global::System.Collections.ObjectModel.ObservableCollection<global::NSIT_Connect.Models.ReviewItem>)Value;
+        }
+        private object get_130_ReviewItem_Rating(object instance)
+        {
+            var that = (global::NSIT_Connect.Models.ReviewItem)instance;
+            return that.Rating;
+        }
+        private void set_130_ReviewItem_Rating(object instance, object Value)
+        {
+            var that = (global::NSIT_Connect.Models.ReviewItem)instance;
+            that.Rating = (global::System.Double)Value;
+        }
+        private object get_131_ReviewItem_Time(object instance)
+        {
+            var that = (global::NSIT_Connect.Models.ReviewItem)instance;
+            return that.Time;
+        }
+        private void set_131_ReviewItem_Time(object instance, object Value)
+        {
+            var that = (global::NSIT_Connect.Models.ReviewItem)instance;
+            that.Time = (global::System.String)Value;
+        }
+        private object get_132_ReviewItem_Name(object instance)
+        {
+            var that = (global::NSIT_Connect.Models.ReviewItem)instance;
+            return that.Name;
+        }
+        private void set_132_ReviewItem_Name(object instance, object Value)
+        {
+            var that = (global::NSIT_Connect.Models.ReviewItem)instance;
+            that.Name = (global::System.String)Value;
+        }
+        private object get_133_ReviewItem_Profile(object instance)
+        {
+            var that = (global::NSIT_Connect.Models.ReviewItem)instance;
+            return that.Profile;
+        }
+        private void set_133_ReviewItem_Profile(object instance, object Value)
+        {
+            var that = (global::NSIT_Connect.Models.ReviewItem)instance;
+            that.Profile = (global::System.String)Value;
+        }
+        private object get_134_ReviewItem_Text(object instance)
+        {
+            var that = (global::NSIT_Connect.Models.ReviewItem)instance;
+            return that.Text;
+        }
+        private void set_134_ReviewItem_Text(object instance, object Value)
+        {
+            var that = (global::NSIT_Connect.Models.ReviewItem)instance;
+            that.Text = (global::System.String)Value;
+        }
+        private object get_135_HangoutPageViewModel_RadiusText(object instance)
         {
             var that = (global::NSIT_Connect.ViewModels.HangoutPageViewModel)instance;
             return that.RadiusText;
         }
-        private void set_133_HangoutPageViewModel_RadiusText(object instance, object Value)
+        private void set_135_HangoutPageViewModel_RadiusText(object instance, object Value)
         {
             var that = (global::NSIT_Connect.ViewModels.HangoutPageViewModel)instance;
             that.RadiusText = (global::System.String)Value;
         }
-        private object get_134_HangoutPageViewModel_Radius(object instance)
+        private object get_136_HangoutPageViewModel_Radius(object instance)
         {
             var that = (global::NSIT_Connect.ViewModels.HangoutPageViewModel)instance;
             return that.Radius;
         }
-        private void set_134_HangoutPageViewModel_Radius(object instance, object Value)
+        private void set_136_HangoutPageViewModel_Radius(object instance, object Value)
         {
             var that = (global::NSIT_Connect.ViewModels.HangoutPageViewModel)instance;
             that.Radius = (global::System.Double)Value;
         }
-        private object get_135_HangoutPageViewModel_ProgressVisibility(object instance)
+        private object get_137_HangoutPageViewModel_ProgressVisibility(object instance)
         {
             var that = (global::NSIT_Connect.ViewModels.HangoutPageViewModel)instance;
             return that.ProgressVisibility;
         }
-        private void set_135_HangoutPageViewModel_ProgressVisibility(object instance, object Value)
+        private void set_137_HangoutPageViewModel_ProgressVisibility(object instance, object Value)
         {
             var that = (global::NSIT_Connect.ViewModels.HangoutPageViewModel)instance;
             that.ProgressVisibility = (global::Windows.UI.Xaml.Visibility)Value;
         }
-        private object get_136_HangoutPageViewModel_Selected(object instance)
+        private object get_138_HangoutPageViewModel_Selected(object instance)
         {
             var that = (global::NSIT_Connect.ViewModels.HangoutPageViewModel)instance;
             return that.Selected;
         }
-        private void set_136_HangoutPageViewModel_Selected(object instance, object Value)
+        private void set_138_HangoutPageViewModel_Selected(object instance, object Value)
         {
             var that = (global::NSIT_Connect.ViewModels.HangoutPageViewModel)instance;
             that.Selected = (global::NSIT_Connect.Models.LocationItem)Value;
         }
-        private object get_137_HangoutPageViewModel_SelectedHangout(object instance)
+        private object get_139_HangoutPageViewModel_SelectedHangout(object instance)
         {
             var that = (global::NSIT_Connect.ViewModels.HangoutPageViewModel)instance;
             return that.SelectedHangout;
         }
-        private void set_137_HangoutPageViewModel_SelectedHangout(object instance, object Value)
+        private void set_139_HangoutPageViewModel_SelectedHangout(object instance, object Value)
         {
             var that = (global::NSIT_Connect.ViewModels.HangoutPageViewModel)instance;
             that.SelectedHangout = (global::System.Object)Value;
         }
-        private object get_138_HangoutPageViewModel_Item(object instance)
+        private object get_140_HangoutPageViewModel_Item(object instance)
         {
             var that = (global::NSIT_Connect.ViewModels.HangoutPageViewModel)instance;
             return that.Item;
         }
-        private void set_138_HangoutPageViewModel_Item(object instance, object Value)
+        private void set_140_HangoutPageViewModel_Item(object instance, object Value)
         {
             var that = (global::NSIT_Connect.ViewModels.HangoutPageViewModel)instance;
             that.Item = (global::System.Collections.ObjectModel.ObservableCollection<global::NSIT_Connect.Models.HangoutItem>)Value;
         }
-        private object get_139_HangoutItem_PhotoWidth(object instance)
+        private object get_141_HangoutItem_PhotoWidth(object instance)
         {
             var that = (global::NSIT_Connect.Models.HangoutItem)instance;
             return that.PhotoWidth;
         }
-        private void set_139_HangoutItem_PhotoWidth(object instance, object Value)
+        private void set_141_HangoutItem_PhotoWidth(object instance, object Value)
         {
             var that = (global::NSIT_Connect.Models.HangoutItem)instance;
             that.PhotoWidth = (global::System.Double)Value;
         }
-        private object get_140_HangoutItem_PhotoHeight(object instance)
+        private object get_142_HangoutItem_PhotoHeight(object instance)
         {
             var that = (global::NSIT_Connect.Models.HangoutItem)instance;
             return that.PhotoHeight;
         }
-        private void set_140_HangoutItem_PhotoHeight(object instance, object Value)
+        private void set_142_HangoutItem_PhotoHeight(object instance, object Value)
         {
             var that = (global::NSIT_Connect.Models.HangoutItem)instance;
             that.PhotoHeight = (global::System.Double)Value;
         }
-        private object get_141_HangoutItem_Rating(object instance)
+        private object get_143_HangoutItem_Rating(object instance)
         {
             var that = (global::NSIT_Connect.Models.HangoutItem)instance;
             return that.Rating;
         }
-        private void set_141_HangoutItem_Rating(object instance, object Value)
+        private void set_143_HangoutItem_Rating(object instance, object Value)
         {
             var that = (global::NSIT_Connect.Models.HangoutItem)instance;
             that.Rating = (global::System.Double)Value;
         }
-        private object get_142_HangoutItem_OpenNowString(object instance)
+        private object get_144_HangoutItem_OpenNowString(object instance)
         {
             var that = (global::NSIT_Connect.Models.HangoutItem)instance;
             return that.OpenNowString;
         }
-        private void set_142_HangoutItem_OpenNowString(object instance, object Value)
+        private void set_144_HangoutItem_OpenNowString(object instance, object Value)
         {
             var that = (global::NSIT_Connect.Models.HangoutItem)instance;
             that.OpenNowString = (global::System.String)Value;
         }
-        private object get_143_HangoutItem_Name(object instance)
+        private object get_145_HangoutItem_Name(object instance)
         {
             var that = (global::NSIT_Connect.Models.HangoutItem)instance;
             return that.Name;
         }
-        private void set_143_HangoutItem_Name(object instance, object Value)
+        private void set_145_HangoutItem_Name(object instance, object Value)
         {
             var that = (global::NSIT_Connect.Models.HangoutItem)instance;
             that.Name = (global::System.String)Value;
         }
-        private object get_144_HangoutItem_Icon(object instance)
+        private object get_146_HangoutItem_Icon(object instance)
         {
             var that = (global::NSIT_Connect.Models.HangoutItem)instance;
             return that.Icon;
         }
-        private void set_144_HangoutItem_Icon(object instance, object Value)
+        private void set_146_HangoutItem_Icon(object instance, object Value)
         {
             var that = (global::NSIT_Connect.Models.HangoutItem)instance;
             that.Icon = (global::System.String)Value;
         }
-        private object get_145_HangoutItem_Place_ID(object instance)
+        private object get_147_HangoutItem_Place_ID(object instance)
         {
             var that = (global::NSIT_Connect.Models.HangoutItem)instance;
             return that.Place_ID;
         }
-        private void set_145_HangoutItem_Place_ID(object instance, object Value)
+        private void set_147_HangoutItem_Place_ID(object instance, object Value)
         {
             var that = (global::NSIT_Connect.Models.HangoutItem)instance;
             that.Place_ID = (global::System.String)Value;
         }
-        private object get_146_HangoutItem_Photo_Ref(object instance)
+        private object get_148_HangoutItem_Photo_Ref(object instance)
         {
             var that = (global::NSIT_Connect.Models.HangoutItem)instance;
             return that.Photo_Ref;
         }
-        private void set_146_HangoutItem_Photo_Ref(object instance, object Value)
+        private void set_148_HangoutItem_Photo_Ref(object instance, object Value)
         {
             var that = (global::NSIT_Connect.Models.HangoutItem)instance;
             that.Photo_Ref = (global::System.Uri)Value;
         }
-        private object get_147_HangoutItem_Longi(object instance)
+        private object get_149_HangoutItem_Longi(object instance)
         {
             var that = (global::NSIT_Connect.Models.HangoutItem)instance;
             return that.Longi;
         }
-        private void set_147_HangoutItem_Longi(object instance, object Value)
+        private void set_149_HangoutItem_Longi(object instance, object Value)
         {
             var that = (global::NSIT_Connect.Models.HangoutItem)instance;
             that.Longi = (global::System.Double)Value;
         }
-        private object get_148_HangoutItem_Latii(object instance)
+        private object get_150_HangoutItem_Latii(object instance)
         {
             var that = (global::NSIT_Connect.Models.HangoutItem)instance;
             return that.Latii;
         }
-        private void set_148_HangoutItem_Latii(object instance, object Value)
+        private void set_150_HangoutItem_Latii(object instance, object Value)
         {
             var that = (global::NSIT_Connect.Models.HangoutItem)instance;
             that.Latii = (global::System.Double)Value;
         }
-        private object get_149_HangoutItem_Vicinity(object instance)
+        private object get_151_HangoutItem_Vicinity(object instance)
         {
             var that = (global::NSIT_Connect.Models.HangoutItem)instance;
             return that.Vicinity;
         }
-        private void set_149_HangoutItem_Vicinity(object instance, object Value)
+        private void set_151_HangoutItem_Vicinity(object instance, object Value)
         {
             var that = (global::NSIT_Connect.Models.HangoutItem)instance;
             that.Vicinity = (global::System.String)Value;
         }
-        private object get_150_HomePageViewModel_HomeFeed(object instance)
+        private object get_152_HomePageViewModel_HomeFeed(object instance)
         {
             var that = (global::NSIT_Connect.ViewModels.HomePageViewModel)instance;
             return that.HomeFeed;
         }
-        private object get_151_Feed_Message(object instance)
+        private object get_153_Feed_Message(object instance)
         {
             var that = (global::NSIT_Connect.Models.Feed)instance;
             return that.Message;
         }
-        private void set_151_Feed_Message(object instance, object Value)
+        private void set_153_Feed_Message(object instance, object Value)
         {
             var that = (global::NSIT_Connect.Models.Feed)instance;
             that.Message = (global::System.String)Value;
         }
-        private object get_152_Feed_Object_ID(object instance)
+        private object get_154_Feed_Object_ID(object instance)
         {
             var that = (global::NSIT_Connect.Models.Feed)instance;
             return that.Object_ID;
         }
-        private void set_152_Feed_Object_ID(object instance, object Value)
+        private void set_154_Feed_Object_ID(object instance, object Value)
         {
             var that = (global::NSIT_Connect.Models.Feed)instance;
             that.Object_ID = (global::System.String)Value;
         }
-        private object get_153_Feed_Likes(object instance)
+        private object get_155_Feed_Likes(object instance)
         {
             var that = (global::NSIT_Connect.Models.Feed)instance;
             return that.Likes;
         }
-        private void set_153_Feed_Likes(object instance, object Value)
+        private void set_155_Feed_Likes(object instance, object Value)
         {
             var that = (global::NSIT_Connect.Models.Feed)instance;
             that.Likes = (global::System.String)Value;
         }
-        private object get_154_Feed_Link(object instance)
+        private object get_156_Feed_Link(object instance)
         {
             var that = (global::NSIT_Connect.Models.Feed)instance;
             return that.Link;
         }
-        private void set_154_Feed_Link(object instance, object Value)
+        private void set_156_Feed_Link(object instance, object Value)
         {
             var that = (global::NSIT_Connect.Models.Feed)instance;
             that.Link = (global::System.String)Value;
         }
-        private object get_155_Feed_Time_Created(object instance)
+        private object get_157_Feed_Time_Created(object instance)
         {
             var that = (global::NSIT_Connect.Models.Feed)instance;
             return that.Time_Created;
         }
-        private void set_155_Feed_Time_Created(object instance, object Value)
+        private void set_157_Feed_Time_Created(object instance, object Value)
         {
             var that = (global::NSIT_Connect.Models.Feed)instance;
             that.Time_Created = (global::System.String)Value;
         }
-        private object get_156_Feed_Picture(object instance)
+        private object get_158_Feed_Picture(object instance)
         {
             var that = (global::NSIT_Connect.Models.Feed)instance;
             return that.Picture;
         }
-        private void set_156_Feed_Picture(object instance, object Value)
+        private void set_158_Feed_Picture(object instance, object Value)
         {
             var that = (global::NSIT_Connect.Models.Feed)instance;
             that.Picture = (global::System.String)Value;
         }
-        private object get_157_Feed_Date(object instance)
+        private object get_159_Feed_PictureUri(object instance)
+        {
+            var that = (global::NSIT_Connect.Models.Feed)instance;
+            return that.PictureUri;
+        }
+        private void set_159_Feed_PictureUri(object instance, object Value)
+        {
+            var that = (global::NSIT_Connect.Models.Feed)instance;
+            that.PictureUri = (global::System.Uri)Value;
+        }
+        private object get_160_Feed_Date(object instance)
         {
             var that = (global::NSIT_Connect.Models.Feed)instance;
             return that.Date;
         }
-        private void set_157_Feed_Date(object instance, object Value)
+        private void set_160_Feed_Date(object instance, object Value)
         {
             var that = (global::NSIT_Connect.Models.Feed)instance;
             that.Date = (global::System.DateTime)Value;
         }
-        private object get_158_Feed_IsRead(object instance)
+        private object get_161_Feed_IsRead(object instance)
         {
             var that = (global::NSIT_Connect.Models.Feed)instance;
             return that.IsRead;
         }
-        private void set_158_Feed_IsRead(object instance, object Value)
+        private void set_161_Feed_IsRead(object instance, object Value)
         {
             var that = (global::NSIT_Connect.Models.Feed)instance;
             that.IsRead = (global::System.Boolean)Value;
         }
-        private object get_159_HomePageViewModel_RefreshCommand(object instance)
+        private object get_162_HomePageViewModel_RefreshCommand(object instance)
         {
             var that = (global::NSIT_Connect.ViewModels.HomePageViewModel)instance;
             return that.RefreshCommand;
         }
-        private object get_160_HomePageViewModel_Selected(object instance)
+        private object get_163_HomePageViewModel_Selected(object instance)
         {
             var that = (global::NSIT_Connect.ViewModels.HomePageViewModel)instance;
             return that.Selected;
         }
-        private void set_160_HomePageViewModel_Selected(object instance, object Value)
+        private void set_163_HomePageViewModel_Selected(object instance, object Value)
         {
             var that = (global::NSIT_Connect.ViewModels.HomePageViewModel)instance;
             that.Selected = (global::System.Object)Value;
         }
-        private object get_161_HomePageViewModel_NextCommand(object instance)
-        {
-            var that = (global::NSIT_Connect.ViewModels.HomePageViewModel)instance;
-            return that.NextCommand;
-        }
-        private void set_161_HomePageViewModel_NextCommand(object instance, object Value)
-        {
-            var that = (global::NSIT_Connect.ViewModels.HomePageViewModel)instance;
-            that.NextCommand = (global::Template10.Mvvm.DelegateCommand)Value;
-        }
-        private object get_162_HomePageViewModel_PreviousCommand(object instance)
-        {
-            var that = (global::NSIT_Connect.ViewModels.HomePageViewModel)instance;
-            return that.PreviousCommand;
-        }
-        private void set_162_HomePageViewModel_PreviousCommand(object instance, object Value)
-        {
-            var that = (global::NSIT_Connect.ViewModels.HomePageViewModel)instance;
-            that.PreviousCommand = (global::Template10.Mvvm.DelegateCommand)Value;
-        }
-        private object get_163_HomePageViewModel_IsDetailsLoading(object instance)
+        private object get_164_HomePageViewModel_IsDetailsLoading(object instance)
         {
             var that = (global::NSIT_Connect.ViewModels.HomePageViewModel)instance;
             return that.IsDetailsLoading;
         }
-        private void set_163_HomePageViewModel_IsDetailsLoading(object instance, object Value)
+        private void set_164_HomePageViewModel_IsDetailsLoading(object instance, object Value)
         {
             var that = (global::NSIT_Connect.ViewModels.HomePageViewModel)instance;
             that.IsDetailsLoading = (global::System.Boolean)Value;
         }
-        private object get_164_HomePageViewModel_IsMasterLoading(object instance)
+        private object get_165_HomePageViewModel_IsMasterLoading(object instance)
         {
             var that = (global::NSIT_Connect.ViewModels.HomePageViewModel)instance;
             return that.IsMasterLoading;
         }
-        private void set_164_HomePageViewModel_IsMasterLoading(object instance, object Value)
+        private void set_165_HomePageViewModel_IsMasterLoading(object instance, object Value)
         {
             var that = (global::NSIT_Connect.ViewModels.HomePageViewModel)instance;
             that.IsMasterLoading = (global::System.Boolean)Value;
         }
-        private object get_165_MasterDetailsView_Details(object instance)
+        private object get_166_MasterDetailsView_Details(object instance)
         {
             var that = (global::Template10.Controls.MasterDetailsView)instance;
             return that.Details;
         }
-        private void set_165_MasterDetailsView_Details(object instance, object Value)
+        private void set_166_MasterDetailsView_Details(object instance, object Value)
         {
             var that = (global::Template10.Controls.MasterDetailsView)instance;
             that.Details = (global::System.Object)Value;
         }
-        private object get_166_MasterDetailsView_DetailsTemplate(object instance)
+        private object get_167_MasterDetailsView_DetailsTemplate(object instance)
         {
             var that = (global::Template10.Controls.MasterDetailsView)instance;
             return that.DetailsTemplate;
         }
-        private void set_166_MasterDetailsView_DetailsTemplate(object instance, object Value)
+        private void set_167_MasterDetailsView_DetailsTemplate(object instance, object Value)
         {
             var that = (global::Template10.Controls.MasterDetailsView)instance;
             that.DetailsTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
         }
-        private object get_167_MasterDetailsView_IsDetailsLoading(object instance)
+        private object get_168_MasterDetailsView_IsDetailsLoading(object instance)
         {
             var that = (global::Template10.Controls.MasterDetailsView)instance;
             return that.IsDetailsLoading;
         }
-        private void set_167_MasterDetailsView_IsDetailsLoading(object instance, object Value)
+        private void set_168_MasterDetailsView_IsDetailsLoading(object instance, object Value)
         {
             var that = (global::Template10.Controls.MasterDetailsView)instance;
             that.IsDetailsLoading = (global::System.Boolean)Value;
         }
-        private object get_168_MasterDetailsView_IsMasterLoading(object instance)
+        private object get_169_MasterDetailsView_IsMasterLoading(object instance)
         {
             var that = (global::Template10.Controls.MasterDetailsView)instance;
             return that.IsMasterLoading;
         }
-        private void set_168_MasterDetailsView_IsMasterLoading(object instance, object Value)
+        private void set_169_MasterDetailsView_IsMasterLoading(object instance, object Value)
         {
             var that = (global::Template10.Controls.MasterDetailsView)instance;
             that.IsMasterLoading = (global::System.Boolean)Value;
         }
-        private object get_169_MasterDetailsView_MasterCommandBarContent(object instance)
+        private object get_170_MasterDetailsView_MasterCommandBarContent(object instance)
         {
             var that = (global::Template10.Controls.MasterDetailsView)instance;
             return that.MasterCommandBarContent;
         }
-        private void set_169_MasterDetailsView_MasterCommandBarContent(object instance, object Value)
+        private void set_170_MasterDetailsView_MasterCommandBarContent(object instance, object Value)
         {
             var that = (global::Template10.Controls.MasterDetailsView)instance;
             that.MasterCommandBarContent = (global::System.Object)Value;
         }
-        private object get_170_MasterDetailsView_MasterCommands(object instance)
+        private object get_171_MasterDetailsView_MasterCommands(object instance)
         {
             var that = (global::Template10.Controls.MasterDetailsView)instance;
             return that.MasterCommands;
         }
-        private void set_170_MasterDetailsView_MasterCommands(object instance, object Value)
+        private void set_171_MasterDetailsView_MasterCommands(object instance, object Value)
         {
             var that = (global::Template10.Controls.MasterDetailsView)instance;
             that.MasterCommands = (global::System.Collections.ObjectModel.ObservableCollection<global::Windows.UI.Xaml.Controls.ICommandBarElement>)Value;
         }
-        private object get_171_MasterDetailsView_DetailsCommands(object instance)
-        {
-            var that = (global::Template10.Controls.MasterDetailsView)instance;
-            return that.DetailsCommands;
-        }
-        private void set_171_MasterDetailsView_DetailsCommands(object instance, object Value)
-        {
-            var that = (global::Template10.Controls.MasterDetailsView)instance;
-            that.DetailsCommands = (global::System.Collections.ObjectModel.ObservableCollection<global::Windows.UI.Xaml.Controls.ICommandBarElement>)Value;
-        }
-        private object get_172_MasterDetailsView_VisualStateNarrowMinWidth(object instance)
-        {
-            var that = (global::Template10.Controls.MasterDetailsView)instance;
-            return that.VisualStateNarrowMinWidth;
-        }
-        private void set_172_MasterDetailsView_VisualStateNarrowMinWidth(object instance, object Value)
-        {
-            var that = (global::Template10.Controls.MasterDetailsView)instance;
-            that.VisualStateNarrowMinWidth = (global::System.Double)Value;
-        }
-        private object get_173_MasterDetailsView_VisualStateNormalMinWidth(object instance)
-        {
-            var that = (global::Template10.Controls.MasterDetailsView)instance;
-            return that.VisualStateNormalMinWidth;
-        }
-        private void set_173_MasterDetailsView_VisualStateNormalMinWidth(object instance, object Value)
-        {
-            var that = (global::Template10.Controls.MasterDetailsView)instance;
-            that.VisualStateNormalMinWidth = (global::System.Double)Value;
-        }
-        private object get_174_MasterDetailsView_MasterPaneWidth(object instance)
-        {
-            var that = (global::Template10.Controls.MasterDetailsView)instance;
-            return that.MasterPaneWidth;
-        }
-        private void set_174_MasterDetailsView_MasterPaneWidth(object instance, object Value)
-        {
-            var that = (global::Template10.Controls.MasterDetailsView)instance;
-            that.MasterPaneWidth = (global::System.Double)Value;
-        }
-        private object get_175_MasterDetailsView_MasterProgressBar(object instance)
-        {
-            var that = (global::Template10.Controls.MasterDetailsView)instance;
-            return that.MasterProgressBar;
-        }
-        private void set_175_MasterDetailsView_MasterProgressBar(object instance, object Value)
-        {
-            var that = (global::Template10.Controls.MasterDetailsView)instance;
-            that.MasterProgressBar = (global::Windows.UI.Xaml.Controls.ProgressBar)Value;
-        }
-        private object get_176_MasterDetailsView_MasterCommandBar(object instance)
-        {
-            var that = (global::Template10.Controls.MasterDetailsView)instance;
-            return that.MasterCommandBar;
-        }
-        private void set_176_MasterDetailsView_MasterCommandBar(object instance, object Value)
-        {
-            var that = (global::Template10.Controls.MasterDetailsView)instance;
-            that.MasterCommandBar = (global::Windows.UI.Xaml.Controls.CommandBar)Value;
-        }
-        private object get_177_MasterDetailsView_MobileMasterCommandBar(object instance)
-        {
-            var that = (global::Template10.Controls.MasterDetailsView)instance;
-            return that.MobileMasterCommandBar;
-        }
-        private void set_177_MasterDetailsView_MobileMasterCommandBar(object instance, object Value)
-        {
-            var that = (global::Template10.Controls.MasterDetailsView)instance;
-            that.MobileMasterCommandBar = (global::Windows.UI.Xaml.Controls.CommandBar)Value;
-        }
-        private object get_178_MasterDetailsView_DetailsRequested(object instance)
-        {
-            var that = (global::Template10.Controls.MasterDetailsView)instance;
-            return that.DetailsRequested;
-        }
-        private void set_178_MasterDetailsView_DetailsRequested(object instance, object Value)
-        {
-            var that = (global::Template10.Controls.MasterDetailsView)instance;
-            that.DetailsRequested = (global::System.Boolean)Value;
-        }
-        private object get_179_MasterDetailsView_DetailsProgressRing(object instance)
-        {
-            var that = (global::Template10.Controls.MasterDetailsView)instance;
-            return that.DetailsProgressRing;
-        }
-        private void set_179_MasterDetailsView_DetailsProgressRing(object instance, object Value)
-        {
-            var that = (global::Template10.Controls.MasterDetailsView)instance;
-            that.DetailsProgressRing = (global::Windows.UI.Xaml.Controls.ProgressRing)Value;
-        }
-        private object get_180_MasterDetailsView_DetailsCommandBar(object instance)
-        {
-            var that = (global::Template10.Controls.MasterDetailsView)instance;
-            return that.DetailsCommandBar;
-        }
-        private void set_180_MasterDetailsView_DetailsCommandBar(object instance, object Value)
-        {
-            var that = (global::Template10.Controls.MasterDetailsView)instance;
-            that.DetailsCommandBar = (global::Windows.UI.Xaml.Controls.CommandBar)Value;
-        }
-        private object get_181_MasterDetailsView_MobileDetailsCommandBar(object instance)
-        {
-            var that = (global::Template10.Controls.MasterDetailsView)instance;
-            return that.MobileDetailsCommandBar;
-        }
-        private void set_181_MasterDetailsView_MobileDetailsCommandBar(object instance, object Value)
-        {
-            var that = (global::Template10.Controls.MasterDetailsView)instance;
-            that.MobileDetailsCommandBar = (global::Windows.UI.Xaml.Controls.CommandBar)Value;
-        }
-        private object get_182_MasterDetailsView_DetailsCommandBarContent(object instance)
+        private object get_172_MasterDetailsView_DetailsCommandBarContent(object instance)
         {
             var that = (global::Template10.Controls.MasterDetailsView)instance;
             return that.DetailsCommandBarContent;
         }
-        private void set_182_MasterDetailsView_DetailsCommandBarContent(object instance, object Value)
+        private void set_172_MasterDetailsView_DetailsCommandBarContent(object instance, object Value)
         {
             var that = (global::Template10.Controls.MasterDetailsView)instance;
             that.DetailsCommandBarContent = (global::System.Object)Value;
         }
-        private object get_183_Interaction_Behaviors(object instance)
+        private object get_173_MasterDetailsView_DetailsCommands(object instance)
+        {
+            var that = (global::Template10.Controls.MasterDetailsView)instance;
+            return that.DetailsCommands;
+        }
+        private void set_173_MasterDetailsView_DetailsCommands(object instance, object Value)
+        {
+            var that = (global::Template10.Controls.MasterDetailsView)instance;
+            that.DetailsCommands = (global::System.Collections.ObjectModel.ObservableCollection<global::Windows.UI.Xaml.Controls.ICommandBarElement>)Value;
+        }
+        private object get_174_MasterDetailsView_VisualStateNarrowMinWidth(object instance)
+        {
+            var that = (global::Template10.Controls.MasterDetailsView)instance;
+            return that.VisualStateNarrowMinWidth;
+        }
+        private void set_174_MasterDetailsView_VisualStateNarrowMinWidth(object instance, object Value)
+        {
+            var that = (global::Template10.Controls.MasterDetailsView)instance;
+            that.VisualStateNarrowMinWidth = (global::System.Double)Value;
+        }
+        private object get_175_MasterDetailsView_VisualStateNormalMinWidth(object instance)
+        {
+            var that = (global::Template10.Controls.MasterDetailsView)instance;
+            return that.VisualStateNormalMinWidth;
+        }
+        private void set_175_MasterDetailsView_VisualStateNormalMinWidth(object instance, object Value)
+        {
+            var that = (global::Template10.Controls.MasterDetailsView)instance;
+            that.VisualStateNormalMinWidth = (global::System.Double)Value;
+        }
+        private object get_176_MasterDetailsView_MasterPaneWidth(object instance)
+        {
+            var that = (global::Template10.Controls.MasterDetailsView)instance;
+            return that.MasterPaneWidth;
+        }
+        private void set_176_MasterDetailsView_MasterPaneWidth(object instance, object Value)
+        {
+            var that = (global::Template10.Controls.MasterDetailsView)instance;
+            that.MasterPaneWidth = (global::System.Double)Value;
+        }
+        private object get_177_MasterDetailsView_MasterProgressBar(object instance)
+        {
+            var that = (global::Template10.Controls.MasterDetailsView)instance;
+            return that.MasterProgressBar;
+        }
+        private void set_177_MasterDetailsView_MasterProgressBar(object instance, object Value)
+        {
+            var that = (global::Template10.Controls.MasterDetailsView)instance;
+            that.MasterProgressBar = (global::Windows.UI.Xaml.Controls.ProgressBar)Value;
+        }
+        private object get_178_MasterDetailsView_MasterCommandBar(object instance)
+        {
+            var that = (global::Template10.Controls.MasterDetailsView)instance;
+            return that.MasterCommandBar;
+        }
+        private void set_178_MasterDetailsView_MasterCommandBar(object instance, object Value)
+        {
+            var that = (global::Template10.Controls.MasterDetailsView)instance;
+            that.MasterCommandBar = (global::Windows.UI.Xaml.Controls.CommandBar)Value;
+        }
+        private object get_179_MasterDetailsView_MobileMasterCommandBar(object instance)
+        {
+            var that = (global::Template10.Controls.MasterDetailsView)instance;
+            return that.MobileMasterCommandBar;
+        }
+        private void set_179_MasterDetailsView_MobileMasterCommandBar(object instance, object Value)
+        {
+            var that = (global::Template10.Controls.MasterDetailsView)instance;
+            that.MobileMasterCommandBar = (global::Windows.UI.Xaml.Controls.CommandBar)Value;
+        }
+        private object get_180_MasterDetailsView_DetailsRequested(object instance)
+        {
+            var that = (global::Template10.Controls.MasterDetailsView)instance;
+            return that.DetailsRequested;
+        }
+        private void set_180_MasterDetailsView_DetailsRequested(object instance, object Value)
+        {
+            var that = (global::Template10.Controls.MasterDetailsView)instance;
+            that.DetailsRequested = (global::System.Boolean)Value;
+        }
+        private object get_181_MasterDetailsView_DetailsProgressRing(object instance)
+        {
+            var that = (global::Template10.Controls.MasterDetailsView)instance;
+            return that.DetailsProgressRing;
+        }
+        private void set_181_MasterDetailsView_DetailsProgressRing(object instance, object Value)
+        {
+            var that = (global::Template10.Controls.MasterDetailsView)instance;
+            that.DetailsProgressRing = (global::Windows.UI.Xaml.Controls.ProgressRing)Value;
+        }
+        private object get_182_MasterDetailsView_DetailsCommandBar(object instance)
+        {
+            var that = (global::Template10.Controls.MasterDetailsView)instance;
+            return that.DetailsCommandBar;
+        }
+        private void set_182_MasterDetailsView_DetailsCommandBar(object instance, object Value)
+        {
+            var that = (global::Template10.Controls.MasterDetailsView)instance;
+            that.DetailsCommandBar = (global::Windows.UI.Xaml.Controls.CommandBar)Value;
+        }
+        private object get_183_MasterDetailsView_MobileDetailsCommandBar(object instance)
+        {
+            var that = (global::Template10.Controls.MasterDetailsView)instance;
+            return that.MobileDetailsCommandBar;
+        }
+        private void set_183_MasterDetailsView_MobileDetailsCommandBar(object instance, object Value)
+        {
+            var that = (global::Template10.Controls.MasterDetailsView)instance;
+            that.MobileDetailsCommandBar = (global::Windows.UI.Xaml.Controls.CommandBar)Value;
+        }
+        private object get_184_Interaction_Behaviors(object instance)
         {
             return global::Microsoft.Xaml.Interactivity.Interaction.GetBehaviors((global::Windows.UI.Xaml.DependencyObject)instance);
         }
-        private void set_183_Interaction_Behaviors(object instance, object Value)
+        private void set_184_Interaction_Behaviors(object instance, object Value)
         {
             global::Microsoft.Xaml.Interactivity.Interaction.SetBehaviors((global::Windows.UI.Xaml.DependencyObject)instance, (global::Microsoft.Xaml.Interactivity.BehaviorCollection)Value);
         }
-        private object get_184_EllipsisBehavior_Visibility(object instance)
+        private object get_185_EllipsisBehavior_Visibility(object instance)
         {
             var that = (global::Template10.Behaviors.EllipsisBehavior)instance;
             return that.Visibility;
         }
-        private void set_184_EllipsisBehavior_Visibility(object instance, object Value)
+        private void set_185_EllipsisBehavior_Visibility(object instance, object Value)
         {
             var that = (global::Template10.Behaviors.EllipsisBehavior)instance;
             that.Visibility = (global::Template10.Behaviors.EllipsisBehavior.Visibilities)Value;
         }
-        private object get_185_EllipsisBehavior_AssociatedObject(object instance)
+        private object get_186_EllipsisBehavior_AssociatedObject(object instance)
         {
             var that = (global::Template10.Behaviors.EllipsisBehavior)instance;
             return that.AssociatedObject;
         }
-        private object get_186_EventTriggerBehavior_Actions(object instance)
+        private object get_187_EventTriggerBehavior_Actions(object instance)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
             return that.Actions;
         }
-        private object get_187_EventTriggerBehavior_EventName(object instance)
+        private object get_188_EventTriggerBehavior_EventName(object instance)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
             return that.EventName;
         }
-        private void set_187_EventTriggerBehavior_EventName(object instance, object Value)
+        private void set_188_EventTriggerBehavior_EventName(object instance, object Value)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
             that.EventName = (global::System.String)Value;
         }
-        private object get_188_EventTriggerBehavior_SourceObject(object instance)
+        private object get_189_EventTriggerBehavior_SourceObject(object instance)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
             return that.SourceObject;
         }
-        private void set_188_EventTriggerBehavior_SourceObject(object instance, object Value)
+        private void set_189_EventTriggerBehavior_SourceObject(object instance, object Value)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
             that.SourceObject = (global::System.Object)Value;
         }
-        private object get_189_Behavior_AssociatedObject(object instance)
+        private object get_190_Behavior_AssociatedObject(object instance)
         {
             var that = (global::Microsoft.Xaml.Interactivity.Behavior)instance;
             return that.AssociatedObject;
         }
-        private object get_190_BackButtonBehavior_Actions(object instance)
+        private object get_191_BackButtonBehavior_Actions(object instance)
         {
             var that = (global::Template10.Behaviors.BackButtonBehavior)instance;
             return that.Actions;
         }
-        private object get_191_BackButtonBehavior_Handled(object instance)
+        private object get_192_BackButtonBehavior_Handled(object instance)
         {
             var that = (global::Template10.Behaviors.BackButtonBehavior)instance;
             return that.Handled;
         }
-        private void set_191_BackButtonBehavior_Handled(object instance, object Value)
+        private void set_192_BackButtonBehavior_Handled(object instance, object Value)
         {
             var that = (global::Template10.Behaviors.BackButtonBehavior)instance;
             that.Handled = (global::System.Boolean)Value;
         }
-        private object get_192_BackButtonBehavior_AssociatedObject(object instance)
+        private object get_193_BackButtonBehavior_AssociatedObject(object instance)
         {
             var that = (global::Template10.Behaviors.BackButtonBehavior)instance;
             return that.AssociatedObject;
         }
-        private void set_192_BackButtonBehavior_AssociatedObject(object instance, object Value)
+        private void set_193_BackButtonBehavior_AssociatedObject(object instance, object Value)
         {
             var that = (global::Template10.Behaviors.BackButtonBehavior)instance;
             that.AssociatedObject = (global::Windows.UI.Xaml.DependencyObject)Value;
         }
-        private object get_193_ChangePropertyAction_PropertyName(object instance)
+        private object get_194_ChangePropertyAction_PropertyName(object instance)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.ChangePropertyAction)instance;
             return that.PropertyName;
         }
-        private void set_193_ChangePropertyAction_PropertyName(object instance, object Value)
+        private void set_194_ChangePropertyAction_PropertyName(object instance, object Value)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.ChangePropertyAction)instance;
             that.PropertyName = (global::Windows.UI.Xaml.PropertyPath)Value;
         }
-        private object get_194_ChangePropertyAction_TargetObject(object instance)
+        private object get_195_ChangePropertyAction_TargetObject(object instance)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.ChangePropertyAction)instance;
             return that.TargetObject;
         }
-        private void set_194_ChangePropertyAction_TargetObject(object instance, object Value)
+        private void set_195_ChangePropertyAction_TargetObject(object instance, object Value)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.ChangePropertyAction)instance;
             that.TargetObject = (global::System.Object)Value;
         }
-        private object get_195_ChangePropertyAction_Value(object instance)
+        private object get_196_ChangePropertyAction_Value(object instance)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.ChangePropertyAction)instance;
             return that.Value;
         }
-        private void set_195_ChangePropertyAction_Value(object instance, object Value)
+        private void set_196_ChangePropertyAction_Value(object instance, object Value)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.ChangePropertyAction)instance;
             that.Value = (global::System.Object)Value;
         }
-        private object get_196_DeviceFamilyStateTrigger_DeviceFamily(object instance)
+        private object get_197_DeviceFamilyStateTrigger_DeviceFamily(object instance)
         {
             var that = (global::WindowsStateTriggers.DeviceFamilyStateTrigger)instance;
             return that.DeviceFamily;
         }
-        private void set_196_DeviceFamilyStateTrigger_DeviceFamily(object instance, object Value)
+        private void set_197_DeviceFamilyStateTrigger_DeviceFamily(object instance, object Value)
         {
             var that = (global::WindowsStateTriggers.DeviceFamilyStateTrigger)instance;
             that.DeviceFamily = (global::WindowsStateTriggers.DeviceFamily)Value;
         }
-        private object get_197_DeviceFamilyStateTrigger_IsActive(object instance)
+        private object get_198_DeviceFamilyStateTrigger_IsActive(object instance)
         {
             var that = (global::WindowsStateTriggers.DeviceFamilyStateTrigger)instance;
             return that.IsActive;
         }
-        private object get_198_LocationPageViewModel_lpanel(object instance)
+        private object get_199_LocationPageViewModel_lpanel(object instance)
         {
             var that = (global::NSIT_Connect.ViewModels.LocationPageViewModel)instance;
             return that.lpanel;
         }
-        private void set_198_LocationPageViewModel_lpanel(object instance, object Value)
+        private void set_199_LocationPageViewModel_lpanel(object instance, object Value)
         {
             var that = (global::NSIT_Connect.ViewModels.LocationPageViewModel)instance;
             that.lpanel = (global::System.Collections.ObjectModel.ObservableCollection<global::NSIT_Connect.Models.LocationItem>)Value;
         }
-        private object get_199_LocationItem_Number(object instance)
+        private object get_200_LocationItem_Number(object instance)
         {
             var that = (global::NSIT_Connect.Models.LocationItem)instance;
             return that.Number;
         }
-        private void set_199_LocationItem_Number(object instance, object Value)
+        private void set_200_LocationItem_Number(object instance, object Value)
         {
             var that = (global::NSIT_Connect.Models.LocationItem)instance;
             that.Number = (global::System.Int32)Value;
         }
-        private object get_200_LocationItem_Name(object instance)
+        private object get_201_LocationItem_Name(object instance)
         {
             var that = (global::NSIT_Connect.Models.LocationItem)instance;
             return that.Name;
         }
-        private void set_200_LocationItem_Name(object instance, object Value)
+        private void set_201_LocationItem_Name(object instance, object Value)
         {
             var that = (global::NSIT_Connect.Models.LocationItem)instance;
             that.Name = (global::System.String)Value;
         }
-        private object get_201_LocationItem_source(object instance)
+        private object get_202_LocationItem_source(object instance)
         {
             var that = (global::NSIT_Connect.Models.LocationItem)instance;
             return that.source;
         }
-        private void set_201_LocationItem_source(object instance, object Value)
+        private void set_202_LocationItem_source(object instance, object Value)
         {
             var that = (global::NSIT_Connect.Models.LocationItem)instance;
             that.source = (global::System.Uri)Value;
         }
-        private object get_202_LocationItem_Key(object instance)
+        private object get_203_LocationItem_Key(object instance)
         {
             var that = (global::NSIT_Connect.Models.LocationItem)instance;
             return that.Key;
         }
-        private void set_202_LocationItem_Key(object instance, object Value)
+        private void set_203_LocationItem_Key(object instance, object Value)
         {
             var that = (global::NSIT_Connect.Models.LocationItem)instance;
             that.Key = (global::System.String)Value;
         }
-        private object get_203_LocationPageViewModel_Selected(object instance)
+        private object get_204_LocationPageViewModel_Selected(object instance)
         {
             var that = (global::NSIT_Connect.ViewModels.LocationPageViewModel)instance;
             return that.Selected;
         }
-        private void set_203_LocationPageViewModel_Selected(object instance, object Value)
+        private void set_204_LocationPageViewModel_Selected(object instance, object Value)
         {
             var that = (global::NSIT_Connect.ViewModels.LocationPageViewModel)instance;
             that.Selected = (global::System.Object)Value;
         }
-        private object get_204_ProfessorDetailPageViewModel_Selected(object instance)
+        private object get_205_ProfessorDetailPageViewModel_Selected(object instance)
         {
             var that = (global::NSIT_Connect.ViewModels.ProfessorDetailPageViewModel)instance;
             return that.Selected;
         }
-        private void set_204_ProfessorDetailPageViewModel_Selected(object instance, object Value)
+        private void set_205_ProfessorDetailPageViewModel_Selected(object instance, object Value)
         {
             var that = (global::NSIT_Connect.ViewModels.ProfessorDetailPageViewModel)instance;
             that.Selected = (global::NSIT_Connect.Models.LocationItem)Value;
         }
-        private object get_205_ProfessorDetailPageViewModel_Item(object instance)
+        private object get_206_ProfessorDetailPageViewModel_Item(object instance)
         {
             var that = (global::NSIT_Connect.ViewModels.ProfessorDetailPageViewModel)instance;
             return that.Item;
         }
-        private void set_205_ProfessorDetailPageViewModel_Item(object instance, object Value)
+        private void set_206_ProfessorDetailPageViewModel_Item(object instance, object Value)
         {
             var that = (global::NSIT_Connect.ViewModels.ProfessorDetailPageViewModel)instance;
             that.Item = (global::System.Collections.ObjectModel.ObservableCollection<global::NSIT_Connect.Models.ProfessorItem>)Value;
         }
-        private object get_206_ProfessorItem_FirstLetter(object instance)
+        private object get_207_ProfessorItem_Foreground(object instance)
         {
             var that = (global::NSIT_Connect.Models.ProfessorItem)instance;
-            return that.FirstLetter;
+            return that.Foreground;
         }
-        private void set_206_ProfessorItem_FirstLetter(object instance, object Value)
+        private void set_207_ProfessorItem_Foreground(object instance, object Value)
         {
             var that = (global::NSIT_Connect.Models.ProfessorItem)instance;
-            that.FirstLetter = (global::System.Char)Value;
+            that.Foreground = (global::Windows.UI.Xaml.Media.SolidColorBrush)Value;
         }
-        private object get_207_ProfessorItem_Name(object instance)
+        private object get_208_ProfessorItem_Name(object instance)
         {
             var that = (global::NSIT_Connect.Models.ProfessorItem)instance;
             return that.Name;
         }
-        private void set_207_ProfessorItem_Name(object instance, object Value)
+        private void set_208_ProfessorItem_Name(object instance, object Value)
         {
             var that = (global::NSIT_Connect.Models.ProfessorItem)instance;
             that.Name = (global::System.String)Value;
         }
-        private object get_208_ProfessorItem_Room(object instance)
+        private object get_209_ProfessorItem_Room(object instance)
         {
             var that = (global::NSIT_Connect.Models.ProfessorItem)instance;
             return that.Room;
         }
-        private void set_208_ProfessorItem_Room(object instance, object Value)
+        private void set_209_ProfessorItem_Room(object instance, object Value)
         {
             var that = (global::NSIT_Connect.Models.ProfessorItem)instance;
             that.Room = (global::System.String)Value;
         }
-        private object get_209_ProfessorItem_Phone(object instance)
+        private object get_210_ProfessorItem_Phone(object instance)
         {
             var that = (global::NSIT_Connect.Models.ProfessorItem)instance;
             return that.Phone;
         }
-        private void set_209_ProfessorItem_Phone(object instance, object Value)
+        private void set_210_ProfessorItem_Phone(object instance, object Value)
         {
             var that = (global::NSIT_Connect.Models.ProfessorItem)instance;
             that.Phone = (global::System.String)Value;
         }
-        private object get_210_ProfessorItem_Email(object instance)
+        private object get_211_ProfessorItem_Email(object instance)
         {
             var that = (global::NSIT_Connect.Models.ProfessorItem)instance;
             return that.Email;
         }
-        private void set_210_ProfessorItem_Email(object instance, object Value)
+        private void set_211_ProfessorItem_Email(object instance, object Value)
         {
             var that = (global::NSIT_Connect.Models.ProfessorItem)instance;
             that.Email = (global::System.String)Value;
         }
-        private object get_211_ProfessorsPageViewModel_lpanel(object instance)
+        private object get_212_ProfessorsPageViewModel_lpanel(object instance)
         {
             var that = (global::NSIT_Connect.ViewModels.ProfessorsPageViewModel)instance;
             return that.lpanel;
         }
-        private void set_211_ProfessorsPageViewModel_lpanel(object instance, object Value)
+        private void set_212_ProfessorsPageViewModel_lpanel(object instance, object Value)
         {
             var that = (global::NSIT_Connect.ViewModels.ProfessorsPageViewModel)instance;
             that.lpanel = (global::System.Collections.ObjectModel.ObservableCollection<global::NSIT_Connect.Models.LocationItem>)Value;
         }
-        private object get_212_ProfessorsPageViewModel_Selected(object instance)
+        private object get_213_ProfessorsPageViewModel_Selected(object instance)
         {
             var that = (global::NSIT_Connect.ViewModels.ProfessorsPageViewModel)instance;
             return that.Selected;
         }
-        private void set_212_ProfessorsPageViewModel_Selected(object instance, object Value)
+        private void set_213_ProfessorsPageViewModel_Selected(object instance, object Value)
         {
             var that = (global::NSIT_Connect.ViewModels.ProfessorsPageViewModel)instance;
             that.Selected = (global::System.Object)Value;
         }
-        private object get_213_SettingsPageViewModel_SettingsPartViewModel(object instance)
+        private object get_214_SettingsPageViewModel_SettingsPartViewModel(object instance)
         {
             var that = (global::NSIT_Connect.ViewModels.SettingsPageViewModel)instance;
             return that.SettingsPartViewModel;
         }
-        private object get_214_SettingsPageViewModel_AboutPartViewModel(object instance)
+        private object get_215_SettingsPageViewModel_AboutPartViewModel(object instance)
         {
             var that = (global::NSIT_Connect.ViewModels.SettingsPageViewModel)instance;
             return that.AboutPartViewModel;
@@ -4193,159 +4216,159 @@ namespace NSIT_Connect.NSIT_Connect_XamlTypeInfo
                 xamlMember.Getter = get_62_HamburgerButtonInfo_MaxWidth;
                 xamlMember.Setter = set_62_HamburgerButtonInfo_MaxWidth;
                 break;
-            case "Template10.Controls.HamburgerMenu.VisualStateNarrowDisplayMode":
-                userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.HamburgerMenu");
-                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "VisualStateNarrowDisplayMode", "Windows.UI.Xaml.Controls.SplitViewDisplayMode");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_63_HamburgerMenu_VisualStateNarrowDisplayMode;
-                xamlMember.Setter = set_63_HamburgerMenu_VisualStateNarrowDisplayMode;
-                break;
             case "Template10.Controls.HamburgerMenu.PaneBorderThickness":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.HamburgerMenu");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "PaneBorderThickness", "Windows.UI.Xaml.Thickness");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_64_HamburgerMenu_PaneBorderThickness;
-                xamlMember.Setter = set_64_HamburgerMenu_PaneBorderThickness;
+                xamlMember.Getter = get_63_HamburgerMenu_PaneBorderThickness;
+                xamlMember.Setter = set_63_HamburgerMenu_PaneBorderThickness;
                 break;
             case "Template10.Controls.HamburgerMenu.SecondarySeparator":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.HamburgerMenu");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "SecondarySeparator", "Windows.UI.Xaml.Media.Brush");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_65_HamburgerMenu_SecondarySeparator;
-                xamlMember.Setter = set_65_HamburgerMenu_SecondarySeparator;
+                xamlMember.Getter = get_64_HamburgerMenu_SecondarySeparator;
+                xamlMember.Setter = set_64_HamburgerMenu_SecondarySeparator;
                 break;
             case "Template10.Controls.HamburgerMenu.NavButtonBackground":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.HamburgerMenu");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "NavButtonBackground", "Windows.UI.Xaml.Media.Brush");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_66_HamburgerMenu_NavButtonBackground;
-                xamlMember.Setter = set_66_HamburgerMenu_NavButtonBackground;
+                xamlMember.Getter = get_65_HamburgerMenu_NavButtonBackground;
+                xamlMember.Setter = set_65_HamburgerMenu_NavButtonBackground;
                 break;
             case "Template10.Controls.HamburgerMenu.NavButtonForeground":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.HamburgerMenu");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "NavButtonForeground", "Windows.UI.Xaml.Media.Brush");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_67_HamburgerMenu_NavButtonForeground;
-                xamlMember.Setter = set_67_HamburgerMenu_NavButtonForeground;
+                xamlMember.Getter = get_66_HamburgerMenu_NavButtonForeground;
+                xamlMember.Setter = set_66_HamburgerMenu_NavButtonForeground;
                 break;
             case "Template10.Controls.HamburgerMenu.NavAreaBackground":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.HamburgerMenu");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "NavAreaBackground", "Windows.UI.Xaml.Media.Brush");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_68_HamburgerMenu_NavAreaBackground;
-                xamlMember.Setter = set_68_HamburgerMenu_NavAreaBackground;
+                xamlMember.Getter = get_67_HamburgerMenu_NavAreaBackground;
+                xamlMember.Setter = set_67_HamburgerMenu_NavAreaBackground;
                 break;
             case "Template10.Controls.HamburgerMenu.HamburgerForeground":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.HamburgerMenu");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "HamburgerForeground", "Windows.UI.Xaml.Media.Brush");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_69_HamburgerMenu_HamburgerForeground;
-                xamlMember.Setter = set_69_HamburgerMenu_HamburgerForeground;
+                xamlMember.Getter = get_68_HamburgerMenu_HamburgerForeground;
+                xamlMember.Setter = set_68_HamburgerMenu_HamburgerForeground;
                 break;
             case "Template10.Controls.HamburgerMenu.HamburgerBackground":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.HamburgerMenu");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "HamburgerBackground", "Windows.UI.Xaml.Media.Brush");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_70_HamburgerMenu_HamburgerBackground;
-                xamlMember.Setter = set_70_HamburgerMenu_HamburgerBackground;
+                xamlMember.Getter = get_69_HamburgerMenu_HamburgerBackground;
+                xamlMember.Setter = set_69_HamburgerMenu_HamburgerBackground;
                 break;
             case "Template10.Controls.HamburgerMenu.VisualStateNarrowMinWidth":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.HamburgerMenu");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "VisualStateNarrowMinWidth", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_71_HamburgerMenu_VisualStateNarrowMinWidth;
-                xamlMember.Setter = set_71_HamburgerMenu_VisualStateNarrowMinWidth;
+                xamlMember.Getter = get_70_HamburgerMenu_VisualStateNarrowMinWidth;
+                xamlMember.Setter = set_70_HamburgerMenu_VisualStateNarrowMinWidth;
                 break;
             case "Template10.Controls.HamburgerMenu.VisualStateNormalMinWidth":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.HamburgerMenu");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "VisualStateNormalMinWidth", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_72_HamburgerMenu_VisualStateNormalMinWidth;
-                xamlMember.Setter = set_72_HamburgerMenu_VisualStateNormalMinWidth;
+                xamlMember.Getter = get_71_HamburgerMenu_VisualStateNormalMinWidth;
+                xamlMember.Setter = set_71_HamburgerMenu_VisualStateNormalMinWidth;
                 break;
             case "Template10.Controls.HamburgerMenu.VisualStateWideMinWidth":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.HamburgerMenu");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "VisualStateWideMinWidth", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_73_HamburgerMenu_VisualStateWideMinWidth;
-                xamlMember.Setter = set_73_HamburgerMenu_VisualStateWideMinWidth;
+                xamlMember.Getter = get_72_HamburgerMenu_VisualStateWideMinWidth;
+                xamlMember.Setter = set_72_HamburgerMenu_VisualStateWideMinWidth;
                 break;
             case "Template10.Controls.HamburgerMenu.AccentColor":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.HamburgerMenu");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "AccentColor", "Windows.UI.Color");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_74_HamburgerMenu_AccentColor;
-                xamlMember.Setter = set_74_HamburgerMenu_AccentColor;
+                xamlMember.Getter = get_73_HamburgerMenu_AccentColor;
+                xamlMember.Setter = set_73_HamburgerMenu_AccentColor;
                 break;
             case "Template10.Controls.HamburgerMenu.PaneBorderBrush":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.HamburgerMenu");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "PaneBorderBrush", "Windows.UI.Xaml.Media.Brush");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_75_HamburgerMenu_PaneBorderBrush;
-                xamlMember.Setter = set_75_HamburgerMenu_PaneBorderBrush;
+                xamlMember.Getter = get_74_HamburgerMenu_PaneBorderBrush;
+                xamlMember.Setter = set_74_HamburgerMenu_PaneBorderBrush;
                 break;
             case "Template10.Controls.HamburgerMenu.NavButtonCheckedForeground":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.HamburgerMenu");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "NavButtonCheckedForeground", "Windows.UI.Xaml.Media.Brush");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_76_HamburgerMenu_NavButtonCheckedForeground;
-                xamlMember.Setter = set_76_HamburgerMenu_NavButtonCheckedForeground;
+                xamlMember.Getter = get_75_HamburgerMenu_NavButtonCheckedForeground;
+                xamlMember.Setter = set_75_HamburgerMenu_NavButtonCheckedForeground;
                 break;
             case "Template10.Controls.HamburgerMenu.NavButtonCheckedBackground":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.HamburgerMenu");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "NavButtonCheckedBackground", "Windows.UI.Xaml.Media.Brush");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_77_HamburgerMenu_NavButtonCheckedBackground;
-                xamlMember.Setter = set_77_HamburgerMenu_NavButtonCheckedBackground;
+                xamlMember.Getter = get_76_HamburgerMenu_NavButtonCheckedBackground;
+                xamlMember.Setter = set_76_HamburgerMenu_NavButtonCheckedBackground;
                 break;
             case "Template10.Controls.HamburgerMenu.NavButtonCheckedIndicatorBrush":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.HamburgerMenu");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "NavButtonCheckedIndicatorBrush", "Windows.UI.Xaml.Media.Brush");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_78_HamburgerMenu_NavButtonCheckedIndicatorBrush;
-                xamlMember.Setter = set_78_HamburgerMenu_NavButtonCheckedIndicatorBrush;
+                xamlMember.Getter = get_77_HamburgerMenu_NavButtonCheckedIndicatorBrush;
+                xamlMember.Setter = set_77_HamburgerMenu_NavButtonCheckedIndicatorBrush;
                 break;
             case "Template10.Controls.HamburgerMenu.NavButtonPressedForeground":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.HamburgerMenu");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "NavButtonPressedForeground", "Windows.UI.Xaml.Media.Brush");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_79_HamburgerMenu_NavButtonPressedForeground;
-                xamlMember.Setter = set_79_HamburgerMenu_NavButtonPressedForeground;
+                xamlMember.Getter = get_78_HamburgerMenu_NavButtonPressedForeground;
+                xamlMember.Setter = set_78_HamburgerMenu_NavButtonPressedForeground;
                 break;
             case "Template10.Controls.HamburgerMenu.NavButtonPressedBackground":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.HamburgerMenu");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "NavButtonPressedBackground", "Windows.UI.Xaml.Media.Brush");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_80_HamburgerMenu_NavButtonPressedBackground;
-                xamlMember.Setter = set_80_HamburgerMenu_NavButtonPressedBackground;
+                xamlMember.Getter = get_79_HamburgerMenu_NavButtonPressedBackground;
+                xamlMember.Setter = set_79_HamburgerMenu_NavButtonPressedBackground;
                 break;
             case "Template10.Controls.HamburgerMenu.NavButtonHoverForeground":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.HamburgerMenu");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "NavButtonHoverForeground", "Windows.UI.Xaml.Media.Brush");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_81_HamburgerMenu_NavButtonHoverForeground;
-                xamlMember.Setter = set_81_HamburgerMenu_NavButtonHoverForeground;
+                xamlMember.Getter = get_80_HamburgerMenu_NavButtonHoverForeground;
+                xamlMember.Setter = set_80_HamburgerMenu_NavButtonHoverForeground;
                 break;
             case "Template10.Controls.HamburgerMenu.NavButtonHoverBackground":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.HamburgerMenu");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "NavButtonHoverBackground", "Windows.UI.Xaml.Media.Brush");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_82_HamburgerMenu_NavButtonHoverBackground;
-                xamlMember.Setter = set_82_HamburgerMenu_NavButtonHoverBackground;
+                xamlMember.Getter = get_81_HamburgerMenu_NavButtonHoverBackground;
+                xamlMember.Setter = set_81_HamburgerMenu_NavButtonHoverBackground;
                 break;
             case "Template10.Controls.HamburgerMenu.HamburgerButtonVisibility":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.HamburgerMenu");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "HamburgerButtonVisibility", "Windows.UI.Xaml.Visibility");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_83_HamburgerMenu_HamburgerButtonVisibility;
-                xamlMember.Setter = set_83_HamburgerMenu_HamburgerButtonVisibility;
+                xamlMember.Getter = get_82_HamburgerMenu_HamburgerButtonVisibility;
+                xamlMember.Setter = set_82_HamburgerMenu_HamburgerButtonVisibility;
                 break;
             case "Template10.Controls.HamburgerMenu.DisplayMode":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.HamburgerMenu");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "DisplayMode", "Windows.UI.Xaml.Controls.SplitViewDisplayMode");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_84_HamburgerMenu_DisplayMode;
-                xamlMember.Setter = set_84_HamburgerMenu_DisplayMode;
+                xamlMember.Getter = get_83_HamburgerMenu_DisplayMode;
+                xamlMember.Setter = set_83_HamburgerMenu_DisplayMode;
+                break;
+            case "Template10.Controls.HamburgerMenu.VisualStateNarrowDisplayMode":
+                userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.HamburgerMenu");
+                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "VisualStateNarrowDisplayMode", "Windows.UI.Xaml.Controls.SplitViewDisplayMode");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_84_HamburgerMenu_VisualStateNarrowDisplayMode;
+                xamlMember.Setter = set_84_HamburgerMenu_VisualStateNarrowDisplayMode;
                 break;
             case "Template10.Controls.HamburgerMenu.VisualStateNormalDisplayMode":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.HamburgerMenu");
@@ -4548,634 +4571,640 @@ namespace NSIT_Connect.NSIT_Connect_XamlTypeInfo
                 xamlMember.Getter = get_113_Busy_IsBusy;
                 xamlMember.Setter = set_113_Busy_IsBusy;
                 break;
-            case "NSIT_Connect.ViewModels.HangoutDetailPageViewModel.Distance":
-                userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.ViewModels.HangoutDetailPageViewModel");
-                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Distance", "String");
-                xamlMember.Getter = get_114_HangoutDetailPageViewModel_Distance;
-                xamlMember.Setter = set_114_HangoutDetailPageViewModel_Distance;
+            case "NSIT_Connect.ViewModels.FeedBackPageViewModel.ProgressVisibility":
+                userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.ViewModels.FeedBackPageViewModel");
+                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "ProgressVisibility", "Windows.UI.Xaml.Visibility");
+                xamlMember.Getter = get_114_FeedBackPageViewModel_ProgressVisibility;
+                xamlMember.Setter = set_114_FeedBackPageViewModel_ProgressVisibility;
                 break;
-            case "NSIT_Connect.ViewModels.HangoutDetailPageViewModel.Time":
-                userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.ViewModels.HangoutDetailPageViewModel");
-                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Time", "String");
-                xamlMember.Getter = get_115_HangoutDetailPageViewModel_Time;
-                xamlMember.Setter = set_115_HangoutDetailPageViewModel_Time;
-                break;
-            case "NSIT_Connect.ViewModels.HangoutDetailPageViewModel.Directions":
-                userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.ViewModels.HangoutDetailPageViewModel");
-                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Directions", "String");
-                xamlMember.Getter = get_116_HangoutDetailPageViewModel_Directions;
-                xamlMember.Setter = set_116_HangoutDetailPageViewModel_Directions;
-                break;
-            case "NSIT_Connect.ViewModels.HangoutDetailPageViewModel.Address":
-                userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.ViewModels.HangoutDetailPageViewModel");
-                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Address", "String");
-                xamlMember.Getter = get_117_HangoutDetailPageViewModel_Address;
-                xamlMember.Setter = set_117_HangoutDetailPageViewModel_Address;
-                break;
-            case "NSIT_Connect.ViewModels.HangoutDetailPageViewModel.Phone":
-                userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.ViewModels.HangoutDetailPageViewModel");
-                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Phone", "String");
-                xamlMember.Getter = get_118_HangoutDetailPageViewModel_Phone;
-                xamlMember.Setter = set_118_HangoutDetailPageViewModel_Phone;
-                break;
-            case "NSIT_Connect.ViewModels.HangoutDetailPageViewModel.InternationalPhone":
-                userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.ViewModels.HangoutDetailPageViewModel");
-                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "InternationalPhone", "String");
-                xamlMember.Getter = get_119_HangoutDetailPageViewModel_InternationalPhone;
-                xamlMember.Setter = set_119_HangoutDetailPageViewModel_InternationalPhone;
-                break;
-            case "NSIT_Connect.ViewModels.HangoutDetailPageViewModel.Website":
-                userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.ViewModels.HangoutDetailPageViewModel");
-                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Website", "String");
-                xamlMember.Getter = get_120_HangoutDetailPageViewModel_Website;
-                xamlMember.Setter = set_120_HangoutDetailPageViewModel_Website;
-                break;
-            case "NSIT_Connect.ViewModels.HangoutDetailPageViewModel.Googlemaps":
-                userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.ViewModels.HangoutDetailPageViewModel");
-                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Googlemaps", "String");
-                xamlMember.Getter = get_121_HangoutDetailPageViewModel_Googlemaps;
-                xamlMember.Setter = set_121_HangoutDetailPageViewModel_Googlemaps;
-                break;
-            case "NSIT_Connect.ViewModels.HangoutDetailPageViewModel.ImageSource":
-                userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.ViewModels.HangoutDetailPageViewModel");
-                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "ImageSource", "Windows.UI.Xaml.Media.Imaging.BitmapImage");
-                xamlMember.Getter = get_122_HangoutDetailPageViewModel_ImageSource;
-                xamlMember.Setter = set_122_HangoutDetailPageViewModel_ImageSource;
-                break;
-            case "NSIT_Connect.ViewModels.HangoutDetailPageViewModel.SelectedHangout":
-                userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.ViewModels.HangoutDetailPageViewModel");
-                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "SelectedHangout", "NSIT_Connect.Models.HangoutItem");
-                xamlMember.Getter = get_123_HangoutDetailPageViewModel_SelectedHangout;
-                xamlMember.Setter = set_123_HangoutDetailPageViewModel_SelectedHangout;
-                break;
-            case "NSIT_Connect.ViewModels.HangoutDetailPageViewModel.Item":
-                userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.ViewModels.HangoutDetailPageViewModel");
-                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Item", "System.Collections.ObjectModel.ObservableCollection`1<NSIT_Connect.Models.ReviewItem>");
-                xamlMember.Getter = get_124_HangoutDetailPageViewModel_Item;
-                xamlMember.Setter = set_124_HangoutDetailPageViewModel_Item;
-                break;
-            case "NSIT_Connect.Models.ReviewItem.Rating":
-                userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.Models.ReviewItem");
-                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Rating", "Double");
-                xamlMember.Getter = get_125_ReviewItem_Rating;
-                xamlMember.Setter = set_125_ReviewItem_Rating;
-                break;
-            case "NSIT_Connect.Models.ReviewItem.Time":
-                userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.Models.ReviewItem");
-                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Time", "String");
-                xamlMember.Getter = get_126_ReviewItem_Time;
-                xamlMember.Setter = set_126_ReviewItem_Time;
-                break;
-            case "NSIT_Connect.Models.ReviewItem.Name":
-                userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.Models.ReviewItem");
-                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Name", "String");
-                xamlMember.Getter = get_127_ReviewItem_Name;
-                xamlMember.Setter = set_127_ReviewItem_Name;
-                break;
-            case "NSIT_Connect.Models.ReviewItem.Profile":
-                userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.Models.ReviewItem");
-                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Profile", "String");
-                xamlMember.Getter = get_128_ReviewItem_Profile;
-                xamlMember.Setter = set_128_ReviewItem_Profile;
-                break;
-            case "NSIT_Connect.Models.ReviewItem.Text":
-                userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.Models.ReviewItem");
-                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Text", "String");
-                xamlMember.Getter = get_129_ReviewItem_Text;
-                xamlMember.Setter = set_129_ReviewItem_Text;
+            case "NSIT_Connect.ViewModels.FeedBackPageViewModel.SourceUri":
+                userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.ViewModels.FeedBackPageViewModel");
+                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "SourceUri", "System.Uri");
+                xamlMember.Getter = get_115_FeedBackPageViewModel_SourceUri;
+                xamlMember.Setter = set_115_FeedBackPageViewModel_SourceUri;
                 break;
             case "Template10.Mvvm.ViewModelBase.NavigationService":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Mvvm.ViewModelBase");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "NavigationService", "Template10.Services.NavigationService.INavigationService");
-                xamlMember.Getter = get_130_ViewModelBase_NavigationService;
-                xamlMember.Setter = set_130_ViewModelBase_NavigationService;
+                xamlMember.Getter = get_116_ViewModelBase_NavigationService;
+                xamlMember.Setter = set_116_ViewModelBase_NavigationService;
                 break;
             case "Template10.Mvvm.ViewModelBase.Dispatcher":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Mvvm.ViewModelBase");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Dispatcher", "Template10.Common.IDispatcherWrapper");
-                xamlMember.Getter = get_131_ViewModelBase_Dispatcher;
-                xamlMember.Setter = set_131_ViewModelBase_Dispatcher;
+                xamlMember.Getter = get_117_ViewModelBase_Dispatcher;
+                xamlMember.Setter = set_117_ViewModelBase_Dispatcher;
                 break;
             case "Template10.Mvvm.ViewModelBase.SessionState":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Mvvm.ViewModelBase");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "SessionState", "Template10.Common.IStateItems");
-                xamlMember.Getter = get_132_ViewModelBase_SessionState;
-                xamlMember.Setter = set_132_ViewModelBase_SessionState;
+                xamlMember.Getter = get_118_ViewModelBase_SessionState;
+                xamlMember.Setter = set_118_ViewModelBase_SessionState;
+                break;
+            case "NSIT_Connect.ViewModels.HangoutDetailPageViewModel.Distance":
+                userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.ViewModels.HangoutDetailPageViewModel");
+                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Distance", "String");
+                xamlMember.Getter = get_119_HangoutDetailPageViewModel_Distance;
+                xamlMember.Setter = set_119_HangoutDetailPageViewModel_Distance;
+                break;
+            case "NSIT_Connect.ViewModels.HangoutDetailPageViewModel.Time":
+                userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.ViewModels.HangoutDetailPageViewModel");
+                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Time", "String");
+                xamlMember.Getter = get_120_HangoutDetailPageViewModel_Time;
+                xamlMember.Setter = set_120_HangoutDetailPageViewModel_Time;
+                break;
+            case "NSIT_Connect.ViewModels.HangoutDetailPageViewModel.Directions":
+                userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.ViewModels.HangoutDetailPageViewModel");
+                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Directions", "String");
+                xamlMember.Getter = get_121_HangoutDetailPageViewModel_Directions;
+                xamlMember.Setter = set_121_HangoutDetailPageViewModel_Directions;
+                break;
+            case "NSIT_Connect.ViewModels.HangoutDetailPageViewModel.Address":
+                userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.ViewModels.HangoutDetailPageViewModel");
+                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Address", "String");
+                xamlMember.Getter = get_122_HangoutDetailPageViewModel_Address;
+                xamlMember.Setter = set_122_HangoutDetailPageViewModel_Address;
+                break;
+            case "NSIT_Connect.ViewModels.HangoutDetailPageViewModel.Phone":
+                userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.ViewModels.HangoutDetailPageViewModel");
+                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Phone", "String");
+                xamlMember.Getter = get_123_HangoutDetailPageViewModel_Phone;
+                xamlMember.Setter = set_123_HangoutDetailPageViewModel_Phone;
+                break;
+            case "NSIT_Connect.ViewModels.HangoutDetailPageViewModel.InternationalPhone":
+                userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.ViewModels.HangoutDetailPageViewModel");
+                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "InternationalPhone", "String");
+                xamlMember.Getter = get_124_HangoutDetailPageViewModel_InternationalPhone;
+                xamlMember.Setter = set_124_HangoutDetailPageViewModel_InternationalPhone;
+                break;
+            case "NSIT_Connect.ViewModels.HangoutDetailPageViewModel.Website":
+                userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.ViewModels.HangoutDetailPageViewModel");
+                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Website", "String");
+                xamlMember.Getter = get_125_HangoutDetailPageViewModel_Website;
+                xamlMember.Setter = set_125_HangoutDetailPageViewModel_Website;
+                break;
+            case "NSIT_Connect.ViewModels.HangoutDetailPageViewModel.Googlemaps":
+                userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.ViewModels.HangoutDetailPageViewModel");
+                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Googlemaps", "String");
+                xamlMember.Getter = get_126_HangoutDetailPageViewModel_Googlemaps;
+                xamlMember.Setter = set_126_HangoutDetailPageViewModel_Googlemaps;
+                break;
+            case "NSIT_Connect.ViewModels.HangoutDetailPageViewModel.ImageSource":
+                userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.ViewModels.HangoutDetailPageViewModel");
+                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "ImageSource", "Windows.UI.Xaml.Media.Imaging.BitmapImage");
+                xamlMember.Getter = get_127_HangoutDetailPageViewModel_ImageSource;
+                xamlMember.Setter = set_127_HangoutDetailPageViewModel_ImageSource;
+                break;
+            case "NSIT_Connect.ViewModels.HangoutDetailPageViewModel.SelectedHangout":
+                userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.ViewModels.HangoutDetailPageViewModel");
+                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "SelectedHangout", "NSIT_Connect.Models.HangoutItem");
+                xamlMember.Getter = get_128_HangoutDetailPageViewModel_SelectedHangout;
+                xamlMember.Setter = set_128_HangoutDetailPageViewModel_SelectedHangout;
+                break;
+            case "NSIT_Connect.ViewModels.HangoutDetailPageViewModel.Item":
+                userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.ViewModels.HangoutDetailPageViewModel");
+                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Item", "System.Collections.ObjectModel.ObservableCollection`1<NSIT_Connect.Models.ReviewItem>");
+                xamlMember.Getter = get_129_HangoutDetailPageViewModel_Item;
+                xamlMember.Setter = set_129_HangoutDetailPageViewModel_Item;
+                break;
+            case "NSIT_Connect.Models.ReviewItem.Rating":
+                userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.Models.ReviewItem");
+                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Rating", "Double");
+                xamlMember.Getter = get_130_ReviewItem_Rating;
+                xamlMember.Setter = set_130_ReviewItem_Rating;
+                break;
+            case "NSIT_Connect.Models.ReviewItem.Time":
+                userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.Models.ReviewItem");
+                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Time", "String");
+                xamlMember.Getter = get_131_ReviewItem_Time;
+                xamlMember.Setter = set_131_ReviewItem_Time;
+                break;
+            case "NSIT_Connect.Models.ReviewItem.Name":
+                userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.Models.ReviewItem");
+                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Name", "String");
+                xamlMember.Getter = get_132_ReviewItem_Name;
+                xamlMember.Setter = set_132_ReviewItem_Name;
+                break;
+            case "NSIT_Connect.Models.ReviewItem.Profile":
+                userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.Models.ReviewItem");
+                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Profile", "String");
+                xamlMember.Getter = get_133_ReviewItem_Profile;
+                xamlMember.Setter = set_133_ReviewItem_Profile;
+                break;
+            case "NSIT_Connect.Models.ReviewItem.Text":
+                userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.Models.ReviewItem");
+                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Text", "String");
+                xamlMember.Getter = get_134_ReviewItem_Text;
+                xamlMember.Setter = set_134_ReviewItem_Text;
                 break;
             case "NSIT_Connect.ViewModels.HangoutPageViewModel.RadiusText":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.ViewModels.HangoutPageViewModel");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "RadiusText", "String");
-                xamlMember.Getter = get_133_HangoutPageViewModel_RadiusText;
-                xamlMember.Setter = set_133_HangoutPageViewModel_RadiusText;
+                xamlMember.Getter = get_135_HangoutPageViewModel_RadiusText;
+                xamlMember.Setter = set_135_HangoutPageViewModel_RadiusText;
                 break;
             case "NSIT_Connect.ViewModels.HangoutPageViewModel.Radius":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.ViewModels.HangoutPageViewModel");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Radius", "Double");
-                xamlMember.Getter = get_134_HangoutPageViewModel_Radius;
-                xamlMember.Setter = set_134_HangoutPageViewModel_Radius;
+                xamlMember.Getter = get_136_HangoutPageViewModel_Radius;
+                xamlMember.Setter = set_136_HangoutPageViewModel_Radius;
                 break;
             case "NSIT_Connect.ViewModels.HangoutPageViewModel.ProgressVisibility":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.ViewModels.HangoutPageViewModel");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "ProgressVisibility", "Windows.UI.Xaml.Visibility");
-                xamlMember.Getter = get_135_HangoutPageViewModel_ProgressVisibility;
-                xamlMember.Setter = set_135_HangoutPageViewModel_ProgressVisibility;
+                xamlMember.Getter = get_137_HangoutPageViewModel_ProgressVisibility;
+                xamlMember.Setter = set_137_HangoutPageViewModel_ProgressVisibility;
                 break;
             case "NSIT_Connect.ViewModels.HangoutPageViewModel.Selected":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.ViewModels.HangoutPageViewModel");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Selected", "NSIT_Connect.Models.LocationItem");
-                xamlMember.Getter = get_136_HangoutPageViewModel_Selected;
-                xamlMember.Setter = set_136_HangoutPageViewModel_Selected;
+                xamlMember.Getter = get_138_HangoutPageViewModel_Selected;
+                xamlMember.Setter = set_138_HangoutPageViewModel_Selected;
                 break;
             case "NSIT_Connect.ViewModels.HangoutPageViewModel.SelectedHangout":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.ViewModels.HangoutPageViewModel");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "SelectedHangout", "Object");
-                xamlMember.Getter = get_137_HangoutPageViewModel_SelectedHangout;
-                xamlMember.Setter = set_137_HangoutPageViewModel_SelectedHangout;
+                xamlMember.Getter = get_139_HangoutPageViewModel_SelectedHangout;
+                xamlMember.Setter = set_139_HangoutPageViewModel_SelectedHangout;
                 break;
             case "NSIT_Connect.ViewModels.HangoutPageViewModel.Item":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.ViewModels.HangoutPageViewModel");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Item", "System.Collections.ObjectModel.ObservableCollection`1<NSIT_Connect.Models.HangoutItem>");
-                xamlMember.Getter = get_138_HangoutPageViewModel_Item;
-                xamlMember.Setter = set_138_HangoutPageViewModel_Item;
+                xamlMember.Getter = get_140_HangoutPageViewModel_Item;
+                xamlMember.Setter = set_140_HangoutPageViewModel_Item;
                 break;
             case "NSIT_Connect.Models.HangoutItem.PhotoWidth":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.Models.HangoutItem");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "PhotoWidth", "Double");
-                xamlMember.Getter = get_139_HangoutItem_PhotoWidth;
-                xamlMember.Setter = set_139_HangoutItem_PhotoWidth;
+                xamlMember.Getter = get_141_HangoutItem_PhotoWidth;
+                xamlMember.Setter = set_141_HangoutItem_PhotoWidth;
                 break;
             case "NSIT_Connect.Models.HangoutItem.PhotoHeight":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.Models.HangoutItem");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "PhotoHeight", "Double");
-                xamlMember.Getter = get_140_HangoutItem_PhotoHeight;
-                xamlMember.Setter = set_140_HangoutItem_PhotoHeight;
+                xamlMember.Getter = get_142_HangoutItem_PhotoHeight;
+                xamlMember.Setter = set_142_HangoutItem_PhotoHeight;
                 break;
             case "NSIT_Connect.Models.HangoutItem.Rating":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.Models.HangoutItem");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Rating", "Double");
-                xamlMember.Getter = get_141_HangoutItem_Rating;
-                xamlMember.Setter = set_141_HangoutItem_Rating;
+                xamlMember.Getter = get_143_HangoutItem_Rating;
+                xamlMember.Setter = set_143_HangoutItem_Rating;
                 break;
             case "NSIT_Connect.Models.HangoutItem.OpenNowString":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.Models.HangoutItem");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "OpenNowString", "String");
-                xamlMember.Getter = get_142_HangoutItem_OpenNowString;
-                xamlMember.Setter = set_142_HangoutItem_OpenNowString;
+                xamlMember.Getter = get_144_HangoutItem_OpenNowString;
+                xamlMember.Setter = set_144_HangoutItem_OpenNowString;
                 break;
             case "NSIT_Connect.Models.HangoutItem.Name":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.Models.HangoutItem");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Name", "String");
-                xamlMember.Getter = get_143_HangoutItem_Name;
-                xamlMember.Setter = set_143_HangoutItem_Name;
+                xamlMember.Getter = get_145_HangoutItem_Name;
+                xamlMember.Setter = set_145_HangoutItem_Name;
                 break;
             case "NSIT_Connect.Models.HangoutItem.Icon":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.Models.HangoutItem");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Icon", "String");
-                xamlMember.Getter = get_144_HangoutItem_Icon;
-                xamlMember.Setter = set_144_HangoutItem_Icon;
+                xamlMember.Getter = get_146_HangoutItem_Icon;
+                xamlMember.Setter = set_146_HangoutItem_Icon;
                 break;
             case "NSIT_Connect.Models.HangoutItem.Place_ID":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.Models.HangoutItem");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Place_ID", "String");
-                xamlMember.Getter = get_145_HangoutItem_Place_ID;
-                xamlMember.Setter = set_145_HangoutItem_Place_ID;
+                xamlMember.Getter = get_147_HangoutItem_Place_ID;
+                xamlMember.Setter = set_147_HangoutItem_Place_ID;
                 break;
             case "NSIT_Connect.Models.HangoutItem.Photo_Ref":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.Models.HangoutItem");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Photo_Ref", "System.Uri");
-                xamlMember.Getter = get_146_HangoutItem_Photo_Ref;
-                xamlMember.Setter = set_146_HangoutItem_Photo_Ref;
+                xamlMember.Getter = get_148_HangoutItem_Photo_Ref;
+                xamlMember.Setter = set_148_HangoutItem_Photo_Ref;
                 break;
             case "NSIT_Connect.Models.HangoutItem.Longi":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.Models.HangoutItem");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Longi", "Double");
-                xamlMember.Getter = get_147_HangoutItem_Longi;
-                xamlMember.Setter = set_147_HangoutItem_Longi;
+                xamlMember.Getter = get_149_HangoutItem_Longi;
+                xamlMember.Setter = set_149_HangoutItem_Longi;
                 break;
             case "NSIT_Connect.Models.HangoutItem.Latii":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.Models.HangoutItem");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Latii", "Double");
-                xamlMember.Getter = get_148_HangoutItem_Latii;
-                xamlMember.Setter = set_148_HangoutItem_Latii;
+                xamlMember.Getter = get_150_HangoutItem_Latii;
+                xamlMember.Setter = set_150_HangoutItem_Latii;
                 break;
             case "NSIT_Connect.Models.HangoutItem.Vicinity":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.Models.HangoutItem");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Vicinity", "String");
-                xamlMember.Getter = get_149_HangoutItem_Vicinity;
-                xamlMember.Setter = set_149_HangoutItem_Vicinity;
+                xamlMember.Getter = get_151_HangoutItem_Vicinity;
+                xamlMember.Setter = set_151_HangoutItem_Vicinity;
                 break;
             case "NSIT_Connect.ViewModels.HomePageViewModel.HomeFeed":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.ViewModels.HomePageViewModel");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "HomeFeed", "System.Collections.ObjectModel.ObservableCollection`1<NSIT_Connect.Models.Feed>");
-                xamlMember.Getter = get_150_HomePageViewModel_HomeFeed;
+                xamlMember.Getter = get_152_HomePageViewModel_HomeFeed;
                 xamlMember.SetIsReadOnly();
                 break;
             case "NSIT_Connect.Models.Feed.Message":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.Models.Feed");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Message", "String");
-                xamlMember.Getter = get_151_Feed_Message;
-                xamlMember.Setter = set_151_Feed_Message;
+                xamlMember.Getter = get_153_Feed_Message;
+                xamlMember.Setter = set_153_Feed_Message;
                 break;
             case "NSIT_Connect.Models.Feed.Object_ID":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.Models.Feed");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Object_ID", "String");
-                xamlMember.Getter = get_152_Feed_Object_ID;
-                xamlMember.Setter = set_152_Feed_Object_ID;
+                xamlMember.Getter = get_154_Feed_Object_ID;
+                xamlMember.Setter = set_154_Feed_Object_ID;
                 break;
             case "NSIT_Connect.Models.Feed.Likes":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.Models.Feed");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Likes", "String");
-                xamlMember.Getter = get_153_Feed_Likes;
-                xamlMember.Setter = set_153_Feed_Likes;
+                xamlMember.Getter = get_155_Feed_Likes;
+                xamlMember.Setter = set_155_Feed_Likes;
                 break;
             case "NSIT_Connect.Models.Feed.Link":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.Models.Feed");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Link", "String");
-                xamlMember.Getter = get_154_Feed_Link;
-                xamlMember.Setter = set_154_Feed_Link;
+                xamlMember.Getter = get_156_Feed_Link;
+                xamlMember.Setter = set_156_Feed_Link;
                 break;
             case "NSIT_Connect.Models.Feed.Time_Created":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.Models.Feed");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Time_Created", "String");
-                xamlMember.Getter = get_155_Feed_Time_Created;
-                xamlMember.Setter = set_155_Feed_Time_Created;
+                xamlMember.Getter = get_157_Feed_Time_Created;
+                xamlMember.Setter = set_157_Feed_Time_Created;
                 break;
             case "NSIT_Connect.Models.Feed.Picture":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.Models.Feed");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Picture", "String");
-                xamlMember.Getter = get_156_Feed_Picture;
-                xamlMember.Setter = set_156_Feed_Picture;
+                xamlMember.Getter = get_158_Feed_Picture;
+                xamlMember.Setter = set_158_Feed_Picture;
+                break;
+            case "NSIT_Connect.Models.Feed.PictureUri":
+                userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.Models.Feed");
+                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "PictureUri", "System.Uri");
+                xamlMember.Getter = get_159_Feed_PictureUri;
+                xamlMember.Setter = set_159_Feed_PictureUri;
                 break;
             case "NSIT_Connect.Models.Feed.Date":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.Models.Feed");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Date", "System.DateTime");
-                xamlMember.Getter = get_157_Feed_Date;
-                xamlMember.Setter = set_157_Feed_Date;
+                xamlMember.Getter = get_160_Feed_Date;
+                xamlMember.Setter = set_160_Feed_Date;
                 break;
             case "NSIT_Connect.Models.Feed.IsRead":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.Models.Feed");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "IsRead", "Boolean");
-                xamlMember.Getter = get_158_Feed_IsRead;
-                xamlMember.Setter = set_158_Feed_IsRead;
+                xamlMember.Getter = get_161_Feed_IsRead;
+                xamlMember.Setter = set_161_Feed_IsRead;
                 break;
             case "NSIT_Connect.ViewModels.HomePageViewModel.RefreshCommand":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.ViewModels.HomePageViewModel");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "RefreshCommand", "Template10.Mvvm.DelegateCommand");
-                xamlMember.Getter = get_159_HomePageViewModel_RefreshCommand;
+                xamlMember.Getter = get_162_HomePageViewModel_RefreshCommand;
                 xamlMember.SetIsReadOnly();
                 break;
             case "NSIT_Connect.ViewModels.HomePageViewModel.Selected":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.ViewModels.HomePageViewModel");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Selected", "Object");
-                xamlMember.Getter = get_160_HomePageViewModel_Selected;
-                xamlMember.Setter = set_160_HomePageViewModel_Selected;
-                break;
-            case "NSIT_Connect.ViewModels.HomePageViewModel.NextCommand":
-                userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.ViewModels.HomePageViewModel");
-                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "NextCommand", "Template10.Mvvm.DelegateCommand");
-                xamlMember.Getter = get_161_HomePageViewModel_NextCommand;
-                xamlMember.Setter = set_161_HomePageViewModel_NextCommand;
-                break;
-            case "NSIT_Connect.ViewModels.HomePageViewModel.PreviousCommand":
-                userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.ViewModels.HomePageViewModel");
-                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "PreviousCommand", "Template10.Mvvm.DelegateCommand");
-                xamlMember.Getter = get_162_HomePageViewModel_PreviousCommand;
-                xamlMember.Setter = set_162_HomePageViewModel_PreviousCommand;
+                xamlMember.Getter = get_163_HomePageViewModel_Selected;
+                xamlMember.Setter = set_163_HomePageViewModel_Selected;
                 break;
             case "NSIT_Connect.ViewModels.HomePageViewModel.IsDetailsLoading":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.ViewModels.HomePageViewModel");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "IsDetailsLoading", "Boolean");
-                xamlMember.Getter = get_163_HomePageViewModel_IsDetailsLoading;
-                xamlMember.Setter = set_163_HomePageViewModel_IsDetailsLoading;
+                xamlMember.Getter = get_164_HomePageViewModel_IsDetailsLoading;
+                xamlMember.Setter = set_164_HomePageViewModel_IsDetailsLoading;
                 break;
             case "NSIT_Connect.ViewModels.HomePageViewModel.IsMasterLoading":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.ViewModels.HomePageViewModel");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "IsMasterLoading", "Boolean");
-                xamlMember.Getter = get_164_HomePageViewModel_IsMasterLoading;
-                xamlMember.Setter = set_164_HomePageViewModel_IsMasterLoading;
+                xamlMember.Getter = get_165_HomePageViewModel_IsMasterLoading;
+                xamlMember.Setter = set_165_HomePageViewModel_IsMasterLoading;
                 break;
             case "Template10.Controls.MasterDetailsView.Details":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.MasterDetailsView");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Details", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_165_MasterDetailsView_Details;
-                xamlMember.Setter = set_165_MasterDetailsView_Details;
+                xamlMember.Getter = get_166_MasterDetailsView_Details;
+                xamlMember.Setter = set_166_MasterDetailsView_Details;
                 break;
             case "Template10.Controls.MasterDetailsView.DetailsTemplate":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.MasterDetailsView");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "DetailsTemplate", "Windows.UI.Xaml.DataTemplate");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_166_MasterDetailsView_DetailsTemplate;
-                xamlMember.Setter = set_166_MasterDetailsView_DetailsTemplate;
+                xamlMember.Getter = get_167_MasterDetailsView_DetailsTemplate;
+                xamlMember.Setter = set_167_MasterDetailsView_DetailsTemplate;
                 break;
             case "Template10.Controls.MasterDetailsView.IsDetailsLoading":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.MasterDetailsView");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "IsDetailsLoading", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_167_MasterDetailsView_IsDetailsLoading;
-                xamlMember.Setter = set_167_MasterDetailsView_IsDetailsLoading;
+                xamlMember.Getter = get_168_MasterDetailsView_IsDetailsLoading;
+                xamlMember.Setter = set_168_MasterDetailsView_IsDetailsLoading;
                 break;
             case "Template10.Controls.MasterDetailsView.IsMasterLoading":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.MasterDetailsView");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "IsMasterLoading", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_168_MasterDetailsView_IsMasterLoading;
-                xamlMember.Setter = set_168_MasterDetailsView_IsMasterLoading;
+                xamlMember.Getter = get_169_MasterDetailsView_IsMasterLoading;
+                xamlMember.Setter = set_169_MasterDetailsView_IsMasterLoading;
                 break;
             case "Template10.Controls.MasterDetailsView.MasterCommandBarContent":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.MasterDetailsView");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "MasterCommandBarContent", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_169_MasterDetailsView_MasterCommandBarContent;
-                xamlMember.Setter = set_169_MasterDetailsView_MasterCommandBarContent;
+                xamlMember.Getter = get_170_MasterDetailsView_MasterCommandBarContent;
+                xamlMember.Setter = set_170_MasterDetailsView_MasterCommandBarContent;
                 break;
             case "Template10.Controls.MasterDetailsView.MasterCommands":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.MasterDetailsView");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "MasterCommands", "System.Collections.ObjectModel.ObservableCollection`1<Windows.UI.Xaml.Controls.ICommandBarElement>");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_170_MasterDetailsView_MasterCommands;
-                xamlMember.Setter = set_170_MasterDetailsView_MasterCommands;
-                break;
-            case "Template10.Controls.MasterDetailsView.DetailsCommands":
-                userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.MasterDetailsView");
-                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "DetailsCommands", "System.Collections.ObjectModel.ObservableCollection`1<Windows.UI.Xaml.Controls.ICommandBarElement>");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_171_MasterDetailsView_DetailsCommands;
-                xamlMember.Setter = set_171_MasterDetailsView_DetailsCommands;
-                break;
-            case "Template10.Controls.MasterDetailsView.VisualStateNarrowMinWidth":
-                userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.MasterDetailsView");
-                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "VisualStateNarrowMinWidth", "Double");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_172_MasterDetailsView_VisualStateNarrowMinWidth;
-                xamlMember.Setter = set_172_MasterDetailsView_VisualStateNarrowMinWidth;
-                break;
-            case "Template10.Controls.MasterDetailsView.VisualStateNormalMinWidth":
-                userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.MasterDetailsView");
-                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "VisualStateNormalMinWidth", "Double");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_173_MasterDetailsView_VisualStateNormalMinWidth;
-                xamlMember.Setter = set_173_MasterDetailsView_VisualStateNormalMinWidth;
-                break;
-            case "Template10.Controls.MasterDetailsView.MasterPaneWidth":
-                userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.MasterDetailsView");
-                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "MasterPaneWidth", "Double");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_174_MasterDetailsView_MasterPaneWidth;
-                xamlMember.Setter = set_174_MasterDetailsView_MasterPaneWidth;
-                break;
-            case "Template10.Controls.MasterDetailsView.MasterProgressBar":
-                userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.MasterDetailsView");
-                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "MasterProgressBar", "Windows.UI.Xaml.Controls.ProgressBar");
-                xamlMember.Getter = get_175_MasterDetailsView_MasterProgressBar;
-                xamlMember.Setter = set_175_MasterDetailsView_MasterProgressBar;
-                break;
-            case "Template10.Controls.MasterDetailsView.MasterCommandBar":
-                userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.MasterDetailsView");
-                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "MasterCommandBar", "Windows.UI.Xaml.Controls.CommandBar");
-                xamlMember.Getter = get_176_MasterDetailsView_MasterCommandBar;
-                xamlMember.Setter = set_176_MasterDetailsView_MasterCommandBar;
-                break;
-            case "Template10.Controls.MasterDetailsView.MobileMasterCommandBar":
-                userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.MasterDetailsView");
-                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "MobileMasterCommandBar", "Windows.UI.Xaml.Controls.CommandBar");
-                xamlMember.Getter = get_177_MasterDetailsView_MobileMasterCommandBar;
-                xamlMember.Setter = set_177_MasterDetailsView_MobileMasterCommandBar;
-                break;
-            case "Template10.Controls.MasterDetailsView.DetailsRequested":
-                userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.MasterDetailsView");
-                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "DetailsRequested", "Boolean");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_178_MasterDetailsView_DetailsRequested;
-                xamlMember.Setter = set_178_MasterDetailsView_DetailsRequested;
-                break;
-            case "Template10.Controls.MasterDetailsView.DetailsProgressRing":
-                userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.MasterDetailsView");
-                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "DetailsProgressRing", "Windows.UI.Xaml.Controls.ProgressRing");
-                xamlMember.Getter = get_179_MasterDetailsView_DetailsProgressRing;
-                xamlMember.Setter = set_179_MasterDetailsView_DetailsProgressRing;
-                break;
-            case "Template10.Controls.MasterDetailsView.DetailsCommandBar":
-                userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.MasterDetailsView");
-                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "DetailsCommandBar", "Windows.UI.Xaml.Controls.CommandBar");
-                xamlMember.Getter = get_180_MasterDetailsView_DetailsCommandBar;
-                xamlMember.Setter = set_180_MasterDetailsView_DetailsCommandBar;
-                break;
-            case "Template10.Controls.MasterDetailsView.MobileDetailsCommandBar":
-                userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.MasterDetailsView");
-                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "MobileDetailsCommandBar", "Windows.UI.Xaml.Controls.CommandBar");
-                xamlMember.Getter = get_181_MasterDetailsView_MobileDetailsCommandBar;
-                xamlMember.Setter = set_181_MasterDetailsView_MobileDetailsCommandBar;
+                xamlMember.Getter = get_171_MasterDetailsView_MasterCommands;
+                xamlMember.Setter = set_171_MasterDetailsView_MasterCommands;
                 break;
             case "Template10.Controls.MasterDetailsView.DetailsCommandBarContent":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.MasterDetailsView");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "DetailsCommandBarContent", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_182_MasterDetailsView_DetailsCommandBarContent;
-                xamlMember.Setter = set_182_MasterDetailsView_DetailsCommandBarContent;
+                xamlMember.Getter = get_172_MasterDetailsView_DetailsCommandBarContent;
+                xamlMember.Setter = set_172_MasterDetailsView_DetailsCommandBarContent;
+                break;
+            case "Template10.Controls.MasterDetailsView.DetailsCommands":
+                userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.MasterDetailsView");
+                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "DetailsCommands", "System.Collections.ObjectModel.ObservableCollection`1<Windows.UI.Xaml.Controls.ICommandBarElement>");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_173_MasterDetailsView_DetailsCommands;
+                xamlMember.Setter = set_173_MasterDetailsView_DetailsCommands;
+                break;
+            case "Template10.Controls.MasterDetailsView.VisualStateNarrowMinWidth":
+                userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.MasterDetailsView");
+                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "VisualStateNarrowMinWidth", "Double");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_174_MasterDetailsView_VisualStateNarrowMinWidth;
+                xamlMember.Setter = set_174_MasterDetailsView_VisualStateNarrowMinWidth;
+                break;
+            case "Template10.Controls.MasterDetailsView.VisualStateNormalMinWidth":
+                userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.MasterDetailsView");
+                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "VisualStateNormalMinWidth", "Double");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_175_MasterDetailsView_VisualStateNormalMinWidth;
+                xamlMember.Setter = set_175_MasterDetailsView_VisualStateNormalMinWidth;
+                break;
+            case "Template10.Controls.MasterDetailsView.MasterPaneWidth":
+                userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.MasterDetailsView");
+                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "MasterPaneWidth", "Double");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_176_MasterDetailsView_MasterPaneWidth;
+                xamlMember.Setter = set_176_MasterDetailsView_MasterPaneWidth;
+                break;
+            case "Template10.Controls.MasterDetailsView.MasterProgressBar":
+                userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.MasterDetailsView");
+                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "MasterProgressBar", "Windows.UI.Xaml.Controls.ProgressBar");
+                xamlMember.Getter = get_177_MasterDetailsView_MasterProgressBar;
+                xamlMember.Setter = set_177_MasterDetailsView_MasterProgressBar;
+                break;
+            case "Template10.Controls.MasterDetailsView.MasterCommandBar":
+                userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.MasterDetailsView");
+                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "MasterCommandBar", "Windows.UI.Xaml.Controls.CommandBar");
+                xamlMember.Getter = get_178_MasterDetailsView_MasterCommandBar;
+                xamlMember.Setter = set_178_MasterDetailsView_MasterCommandBar;
+                break;
+            case "Template10.Controls.MasterDetailsView.MobileMasterCommandBar":
+                userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.MasterDetailsView");
+                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "MobileMasterCommandBar", "Windows.UI.Xaml.Controls.CommandBar");
+                xamlMember.Getter = get_179_MasterDetailsView_MobileMasterCommandBar;
+                xamlMember.Setter = set_179_MasterDetailsView_MobileMasterCommandBar;
+                break;
+            case "Template10.Controls.MasterDetailsView.DetailsRequested":
+                userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.MasterDetailsView");
+                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "DetailsRequested", "Boolean");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_180_MasterDetailsView_DetailsRequested;
+                xamlMember.Setter = set_180_MasterDetailsView_DetailsRequested;
+                break;
+            case "Template10.Controls.MasterDetailsView.DetailsProgressRing":
+                userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.MasterDetailsView");
+                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "DetailsProgressRing", "Windows.UI.Xaml.Controls.ProgressRing");
+                xamlMember.Getter = get_181_MasterDetailsView_DetailsProgressRing;
+                xamlMember.Setter = set_181_MasterDetailsView_DetailsProgressRing;
+                break;
+            case "Template10.Controls.MasterDetailsView.DetailsCommandBar":
+                userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.MasterDetailsView");
+                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "DetailsCommandBar", "Windows.UI.Xaml.Controls.CommandBar");
+                xamlMember.Getter = get_182_MasterDetailsView_DetailsCommandBar;
+                xamlMember.Setter = set_182_MasterDetailsView_DetailsCommandBar;
+                break;
+            case "Template10.Controls.MasterDetailsView.MobileDetailsCommandBar":
+                userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.MasterDetailsView");
+                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "MobileDetailsCommandBar", "Windows.UI.Xaml.Controls.CommandBar");
+                xamlMember.Getter = get_183_MasterDetailsView_MobileDetailsCommandBar;
+                xamlMember.Setter = set_183_MasterDetailsView_MobileDetailsCommandBar;
                 break;
             case "Microsoft.Xaml.Interactivity.Interaction.Behaviors":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactivity.Interaction");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Behaviors", "Microsoft.Xaml.Interactivity.BehaviorCollection");
                 xamlMember.SetTargetTypeName("Windows.UI.Xaml.DependencyObject");
                 xamlMember.SetIsAttachable();
-                xamlMember.Getter = get_183_Interaction_Behaviors;
-                xamlMember.Setter = set_183_Interaction_Behaviors;
+                xamlMember.Getter = get_184_Interaction_Behaviors;
+                xamlMember.Setter = set_184_Interaction_Behaviors;
                 break;
             case "Template10.Behaviors.EllipsisBehavior.Visibility":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Behaviors.EllipsisBehavior");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Visibility", "Template10.Behaviors.EllipsisBehavior.Visibilities");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_184_EllipsisBehavior_Visibility;
-                xamlMember.Setter = set_184_EllipsisBehavior_Visibility;
+                xamlMember.Getter = get_185_EllipsisBehavior_Visibility;
+                xamlMember.Setter = set_185_EllipsisBehavior_Visibility;
                 break;
             case "Template10.Behaviors.EllipsisBehavior.AssociatedObject":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Behaviors.EllipsisBehavior");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "AssociatedObject", "Windows.UI.Xaml.DependencyObject");
-                xamlMember.Getter = get_185_EllipsisBehavior_AssociatedObject;
+                xamlMember.Getter = get_186_EllipsisBehavior_AssociatedObject;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior.Actions":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.EventTriggerBehavior");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Actions", "Microsoft.Xaml.Interactivity.ActionCollection");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_186_EventTriggerBehavior_Actions;
+                xamlMember.Getter = get_187_EventTriggerBehavior_Actions;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior.EventName":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.EventTriggerBehavior");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "EventName", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_187_EventTriggerBehavior_EventName;
-                xamlMember.Setter = set_187_EventTriggerBehavior_EventName;
+                xamlMember.Getter = get_188_EventTriggerBehavior_EventName;
+                xamlMember.Setter = set_188_EventTriggerBehavior_EventName;
                 break;
             case "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior.SourceObject":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.EventTriggerBehavior");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "SourceObject", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_188_EventTriggerBehavior_SourceObject;
-                xamlMember.Setter = set_188_EventTriggerBehavior_SourceObject;
+                xamlMember.Getter = get_189_EventTriggerBehavior_SourceObject;
+                xamlMember.Setter = set_189_EventTriggerBehavior_SourceObject;
                 break;
             case "Microsoft.Xaml.Interactivity.Behavior.AssociatedObject":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactivity.Behavior");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "AssociatedObject", "Windows.UI.Xaml.DependencyObject");
-                xamlMember.Getter = get_189_Behavior_AssociatedObject;
+                xamlMember.Getter = get_190_Behavior_AssociatedObject;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Template10.Behaviors.BackButtonBehavior.Actions":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Behaviors.BackButtonBehavior");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Actions", "Microsoft.Xaml.Interactivity.ActionCollection");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_190_BackButtonBehavior_Actions;
+                xamlMember.Getter = get_191_BackButtonBehavior_Actions;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Template10.Behaviors.BackButtonBehavior.Handled":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Behaviors.BackButtonBehavior");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Handled", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_191_BackButtonBehavior_Handled;
-                xamlMember.Setter = set_191_BackButtonBehavior_Handled;
+                xamlMember.Getter = get_192_BackButtonBehavior_Handled;
+                xamlMember.Setter = set_192_BackButtonBehavior_Handled;
                 break;
             case "Template10.Behaviors.BackButtonBehavior.AssociatedObject":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Behaviors.BackButtonBehavior");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "AssociatedObject", "Windows.UI.Xaml.DependencyObject");
-                xamlMember.Getter = get_192_BackButtonBehavior_AssociatedObject;
-                xamlMember.Setter = set_192_BackButtonBehavior_AssociatedObject;
+                xamlMember.Getter = get_193_BackButtonBehavior_AssociatedObject;
+                xamlMember.Setter = set_193_BackButtonBehavior_AssociatedObject;
                 break;
             case "Microsoft.Xaml.Interactions.Core.ChangePropertyAction.PropertyName":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.ChangePropertyAction");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "PropertyName", "Windows.UI.Xaml.PropertyPath");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_193_ChangePropertyAction_PropertyName;
-                xamlMember.Setter = set_193_ChangePropertyAction_PropertyName;
+                xamlMember.Getter = get_194_ChangePropertyAction_PropertyName;
+                xamlMember.Setter = set_194_ChangePropertyAction_PropertyName;
                 break;
             case "Microsoft.Xaml.Interactions.Core.ChangePropertyAction.TargetObject":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.ChangePropertyAction");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "TargetObject", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_194_ChangePropertyAction_TargetObject;
-                xamlMember.Setter = set_194_ChangePropertyAction_TargetObject;
+                xamlMember.Getter = get_195_ChangePropertyAction_TargetObject;
+                xamlMember.Setter = set_195_ChangePropertyAction_TargetObject;
                 break;
             case "Microsoft.Xaml.Interactions.Core.ChangePropertyAction.Value":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.ChangePropertyAction");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Value", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_195_ChangePropertyAction_Value;
-                xamlMember.Setter = set_195_ChangePropertyAction_Value;
+                xamlMember.Getter = get_196_ChangePropertyAction_Value;
+                xamlMember.Setter = set_196_ChangePropertyAction_Value;
                 break;
             case "WindowsStateTriggers.DeviceFamilyStateTrigger.DeviceFamily":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WindowsStateTriggers.DeviceFamilyStateTrigger");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "DeviceFamily", "WindowsStateTriggers.DeviceFamily");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_196_DeviceFamilyStateTrigger_DeviceFamily;
-                xamlMember.Setter = set_196_DeviceFamilyStateTrigger_DeviceFamily;
+                xamlMember.Getter = get_197_DeviceFamilyStateTrigger_DeviceFamily;
+                xamlMember.Setter = set_197_DeviceFamilyStateTrigger_DeviceFamily;
                 break;
             case "WindowsStateTriggers.DeviceFamilyStateTrigger.IsActive":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WindowsStateTriggers.DeviceFamilyStateTrigger");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "IsActive", "Boolean");
-                xamlMember.Getter = get_197_DeviceFamilyStateTrigger_IsActive;
+                xamlMember.Getter = get_198_DeviceFamilyStateTrigger_IsActive;
                 xamlMember.SetIsReadOnly();
                 break;
             case "NSIT_Connect.ViewModels.LocationPageViewModel.lpanel":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.ViewModels.LocationPageViewModel");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "lpanel", "System.Collections.ObjectModel.ObservableCollection`1<NSIT_Connect.Models.LocationItem>");
-                xamlMember.Getter = get_198_LocationPageViewModel_lpanel;
-                xamlMember.Setter = set_198_LocationPageViewModel_lpanel;
+                xamlMember.Getter = get_199_LocationPageViewModel_lpanel;
+                xamlMember.Setter = set_199_LocationPageViewModel_lpanel;
                 break;
             case "NSIT_Connect.Models.LocationItem.Number":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.Models.LocationItem");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Number", "Int32");
-                xamlMember.Getter = get_199_LocationItem_Number;
-                xamlMember.Setter = set_199_LocationItem_Number;
+                xamlMember.Getter = get_200_LocationItem_Number;
+                xamlMember.Setter = set_200_LocationItem_Number;
                 break;
             case "NSIT_Connect.Models.LocationItem.Name":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.Models.LocationItem");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Name", "String");
-                xamlMember.Getter = get_200_LocationItem_Name;
-                xamlMember.Setter = set_200_LocationItem_Name;
+                xamlMember.Getter = get_201_LocationItem_Name;
+                xamlMember.Setter = set_201_LocationItem_Name;
                 break;
             case "NSIT_Connect.Models.LocationItem.source":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.Models.LocationItem");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "source", "System.Uri");
-                xamlMember.Getter = get_201_LocationItem_source;
-                xamlMember.Setter = set_201_LocationItem_source;
+                xamlMember.Getter = get_202_LocationItem_source;
+                xamlMember.Setter = set_202_LocationItem_source;
                 break;
             case "NSIT_Connect.Models.LocationItem.Key":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.Models.LocationItem");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Key", "String");
-                xamlMember.Getter = get_202_LocationItem_Key;
-                xamlMember.Setter = set_202_LocationItem_Key;
+                xamlMember.Getter = get_203_LocationItem_Key;
+                xamlMember.Setter = set_203_LocationItem_Key;
                 break;
             case "NSIT_Connect.ViewModels.LocationPageViewModel.Selected":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.ViewModels.LocationPageViewModel");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Selected", "Object");
-                xamlMember.Getter = get_203_LocationPageViewModel_Selected;
-                xamlMember.Setter = set_203_LocationPageViewModel_Selected;
+                xamlMember.Getter = get_204_LocationPageViewModel_Selected;
+                xamlMember.Setter = set_204_LocationPageViewModel_Selected;
                 break;
             case "NSIT_Connect.ViewModels.ProfessorDetailPageViewModel.Selected":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.ViewModels.ProfessorDetailPageViewModel");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Selected", "NSIT_Connect.Models.LocationItem");
-                xamlMember.Getter = get_204_ProfessorDetailPageViewModel_Selected;
-                xamlMember.Setter = set_204_ProfessorDetailPageViewModel_Selected;
+                xamlMember.Getter = get_205_ProfessorDetailPageViewModel_Selected;
+                xamlMember.Setter = set_205_ProfessorDetailPageViewModel_Selected;
                 break;
             case "NSIT_Connect.ViewModels.ProfessorDetailPageViewModel.Item":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.ViewModels.ProfessorDetailPageViewModel");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Item", "System.Collections.ObjectModel.ObservableCollection`1<NSIT_Connect.Models.ProfessorItem>");
-                xamlMember.Getter = get_205_ProfessorDetailPageViewModel_Item;
-                xamlMember.Setter = set_205_ProfessorDetailPageViewModel_Item;
+                xamlMember.Getter = get_206_ProfessorDetailPageViewModel_Item;
+                xamlMember.Setter = set_206_ProfessorDetailPageViewModel_Item;
                 break;
-            case "NSIT_Connect.Models.ProfessorItem.FirstLetter":
+            case "NSIT_Connect.Models.ProfessorItem.Foreground":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.Models.ProfessorItem");
-                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "FirstLetter", "Char");
-                xamlMember.Getter = get_206_ProfessorItem_FirstLetter;
-                xamlMember.Setter = set_206_ProfessorItem_FirstLetter;
+                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Foreground", "Windows.UI.Xaml.Media.SolidColorBrush");
+                xamlMember.Getter = get_207_ProfessorItem_Foreground;
+                xamlMember.Setter = set_207_ProfessorItem_Foreground;
                 break;
             case "NSIT_Connect.Models.ProfessorItem.Name":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.Models.ProfessorItem");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Name", "String");
-                xamlMember.Getter = get_207_ProfessorItem_Name;
-                xamlMember.Setter = set_207_ProfessorItem_Name;
+                xamlMember.Getter = get_208_ProfessorItem_Name;
+                xamlMember.Setter = set_208_ProfessorItem_Name;
                 break;
             case "NSIT_Connect.Models.ProfessorItem.Room":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.Models.ProfessorItem");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Room", "String");
-                xamlMember.Getter = get_208_ProfessorItem_Room;
-                xamlMember.Setter = set_208_ProfessorItem_Room;
+                xamlMember.Getter = get_209_ProfessorItem_Room;
+                xamlMember.Setter = set_209_ProfessorItem_Room;
                 break;
             case "NSIT_Connect.Models.ProfessorItem.Phone":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.Models.ProfessorItem");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Phone", "String");
-                xamlMember.Getter = get_209_ProfessorItem_Phone;
-                xamlMember.Setter = set_209_ProfessorItem_Phone;
+                xamlMember.Getter = get_210_ProfessorItem_Phone;
+                xamlMember.Setter = set_210_ProfessorItem_Phone;
                 break;
             case "NSIT_Connect.Models.ProfessorItem.Email":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.Models.ProfessorItem");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Email", "String");
-                xamlMember.Getter = get_210_ProfessorItem_Email;
-                xamlMember.Setter = set_210_ProfessorItem_Email;
+                xamlMember.Getter = get_211_ProfessorItem_Email;
+                xamlMember.Setter = set_211_ProfessorItem_Email;
                 break;
             case "NSIT_Connect.ViewModels.ProfessorsPageViewModel.lpanel":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.ViewModels.ProfessorsPageViewModel");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "lpanel", "System.Collections.ObjectModel.ObservableCollection`1<NSIT_Connect.Models.LocationItem>");
-                xamlMember.Getter = get_211_ProfessorsPageViewModel_lpanel;
-                xamlMember.Setter = set_211_ProfessorsPageViewModel_lpanel;
+                xamlMember.Getter = get_212_ProfessorsPageViewModel_lpanel;
+                xamlMember.Setter = set_212_ProfessorsPageViewModel_lpanel;
                 break;
             case "NSIT_Connect.ViewModels.ProfessorsPageViewModel.Selected":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.ViewModels.ProfessorsPageViewModel");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Selected", "Object");
-                xamlMember.Getter = get_212_ProfessorsPageViewModel_Selected;
-                xamlMember.Setter = set_212_ProfessorsPageViewModel_Selected;
+                xamlMember.Getter = get_213_ProfessorsPageViewModel_Selected;
+                xamlMember.Setter = set_213_ProfessorsPageViewModel_Selected;
                 break;
             case "NSIT_Connect.ViewModels.SettingsPageViewModel.SettingsPartViewModel":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.ViewModels.SettingsPageViewModel");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "SettingsPartViewModel", "NSIT_Connect.ViewModels.SettingsPartViewModel");
-                xamlMember.Getter = get_213_SettingsPageViewModel_SettingsPartViewModel;
+                xamlMember.Getter = get_214_SettingsPageViewModel_SettingsPartViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "NSIT_Connect.ViewModels.SettingsPageViewModel.AboutPartViewModel":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.ViewModels.SettingsPageViewModel");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "AboutPartViewModel", "NSIT_Connect.ViewModels.AboutPartViewModel");
-                xamlMember.Getter = get_214_SettingsPageViewModel_AboutPartViewModel;
+                xamlMember.Getter = get_215_SettingsPageViewModel_AboutPartViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             }

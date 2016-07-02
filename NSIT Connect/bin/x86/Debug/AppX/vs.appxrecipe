@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>7b35e933-3e05-42a6-828e-8065ca037667</PackageIdentityName>
     <IntermediateOutputPath>C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>777F7CD00B6FBF2562BF694875906B17AACFFCEC5B26FBC9AF7FB00D73096FE6</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>6A49172C320F078A1243AFC30859445E2EE15BAF83D3CB57B4823ED95DA15563</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>7b35e933-3e05-42a6-828e-8065ca037667_1.0.0.0_x86__dgwpea4fp9k80</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>7b35e933-3e05-42a6-828e-8065ca037667_dgwpea4fp9k80!App</RegisteredUserModeAppID>
     <RegisteredPackageID>7b35e933-3e05-42a6-828e-8065ca037667</RegisteredPackageID>
@@ -22,13 +22,13 @@
     <AppXManifest Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-07-01T23:37:13.837</Modified>
+      <Modified>2016-07-02T16:55:11.936</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\NSIT Connect.exe">
       <PackagePath>entrypoint\NSIT Connect.exe</PackagePath>
-      <Modified>2016-07-01T23:37:11.082</Modified>
+      <Modified>2016-07-02T16:55:10.065</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\.nuget\packages\BratchedTools.RatingControl\1.0.0\lib\wpa81\Bratched.Tools.RatingControl_ua81.dll">
       <PackagePath>Bratched.Tools.RatingControl_ua81.dll</PackagePath>
@@ -142,13 +142,9 @@
       <PackagePath>Microsoft.Xaml.Interactivity.dll</PackagePath>
       <Modified>2016-02-22T21:59:50.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\.nuget\packages\MyToolkit\2.5.12\lib\portable-net45+wp8+win8+wpa81\MyToolkit.dll">
-      <PackagePath>MyToolkit.dll</PackagePath>
-      <Modified>2016-04-06T15:56:04.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\.nuget\packages\Newtonsoft.Json\8.0.3\lib\portable-net45+wp80+win8+wpa81+dnxcore50\Newtonsoft.Json.dll">
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\.nuget\packages\Newtonsoft.Json\9.0.1\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
-      <Modified>2016-03-15T04:30:06.000</Modified>
+      <Modified>2016-06-13T17:36:14.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\.nuget\packages\runtime.any.System.Private.DataContractSerialization\4.1.0\lib\netcore50\System.Private.DataContractSerialization.dll">
       <PackagePath>System.Private.DataContractSerialization.dll</PackagePath>
@@ -514,6 +510,14 @@
       <PackagePath>Zlib.Portable.dll</PackagePath>
       <Modified>2015-06-22T03:30:48.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\appbar.blue.phone.png">
+      <PackagePath>Assets\appbar.blue.phone.png</PackagePath>
+      <Modified>2016-07-02T09:51:37.740</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\appbar.email.blue.minimal.png">
+      <PackagePath>Assets\appbar.email.blue.minimal.png</PackagePath>
+      <Modified>2016-07-02T09:52:50.748</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\blue-marker-icon.png">
       <PackagePath>Assets\blue-marker-icon.png</PackagePath>
       <Modified>2016-07-01T16:21:33.669</Modified>
@@ -521,6 +525,10 @@
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\contact.png">
       <PackagePath>Assets\contact.png</PackagePath>
       <Modified>2016-06-25T21:51:57.835</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\facebook_circle_color-128.png">
+      <PackagePath>Assets\facebook_circle_color-128.png</PackagePath>
+      <Modified>2016-07-02T14:16:39.724</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\facility-management.png">
       <PackagePath>Assets\facility-management.png</PackagePath>
@@ -542,13 +550,13 @@
       <PackagePath>Assets\ic_settings_input_antenna_white_24dp_2x.png</PackagePath>
       <Modified>2016-02-08T06:44:42.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\ic_thumb_up_black_18dp.png">
-      <PackagePath>Assets\ic_thumb_up_black_18dp.png</PackagePath>
-      <Modified>2016-02-08T06:44:58.000</Modified>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\ic_wifi_tethering_white_24dp.png">
       <PackagePath>Assets\ic_wifi_tethering_white_24dp.png</PackagePath>
       <Modified>2016-02-08T06:44:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\like.png">
+      <PackagePath>Assets\like.png</PackagePath>
+      <Modified>2016-07-02T11:54:48.560</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\Location\restuarant.png">
       <PackagePath>Assets\Location\restuarant.png</PackagePath>
@@ -609,6 +617,34 @@
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\red-marker-icon.png">
       <PackagePath>Assets\red-marker-icon.png</PackagePath>
       <Modified>2016-07-01T16:25:54.585</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\ShellIcon\appbar.book.open.information.png">
+      <PackagePath>Assets\ShellIcon\appbar.book.open.information.png</PackagePath>
+      <Modified>2015-02-11T13:54:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\ShellIcon\appbar.home.empty.png">
+      <PackagePath>Assets\ShellIcon\appbar.home.empty.png</PackagePath>
+      <Modified>2015-02-11T13:54:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\ShellIcon\appbar.information.circle.png">
+      <PackagePath>Assets\ShellIcon\appbar.information.circle.png</PackagePath>
+      <Modified>2015-02-11T13:54:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\ShellIcon\appbar.location.checkin.png">
+      <PackagePath>Assets\ShellIcon\appbar.location.checkin.png</PackagePath>
+      <Modified>2015-02-11T13:54:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\ShellIcon\appbar.people.png">
+      <PackagePath>Assets\ShellIcon\appbar.people.png</PackagePath>
+      <Modified>2015-02-11T13:54:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\ShellIcon\appbar.tiles.four.png">
+      <PackagePath>Assets\ShellIcon\appbar.tiles.four.png</PackagePath>
+      <Modified>2015-02-11T13:54:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\ShellIcon\appbar.video.png">
+      <PackagePath>Assets\ShellIcon\appbar.video.png</PackagePath>
+      <Modified>2015-02-11T13:54:36.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -726,7 +762,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\NSIT Connect.xr.xml">
       <PackagePath>NSIT Connect.xr.xml</PackagePath>
-      <Modified>2016-07-01T23:17:32.872</Modified>
+      <Modified>2016-07-02T16:15:35.394</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -790,11 +826,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-07-01T23:37:12.128</Modified>
+      <Modified>2016-07-02T16:53:57.716</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\Core\NSIT Connect.exe">
       <PackagePath>NSIT Connect.exe</PackagePath>
-      <Modified>2016-07-01T23:37:13.831</Modified>
+      <Modified>2016-07-02T16:55:11.932</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

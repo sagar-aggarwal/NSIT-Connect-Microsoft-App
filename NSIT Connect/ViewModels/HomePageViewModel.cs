@@ -21,8 +21,9 @@ namespace NSIT_Connect.ViewModels
             "object_id,link,created_time,comments.limit(0).summary(true),likes.limit(0).summary(true)" +
             "&access_token=" + Constants.common_access;
         private string result = null;
+        private string pictureresult = null;
         private bool refresh = false;
-
+        private string PictureUri = null;
         private string hobject, hmessage, hpicture, hlink, hlikes, htime;
 
         public HomePageViewModel()
@@ -82,12 +83,11 @@ namespace NSIT_Connect.ViewModels
             {
                 var message = value as Feed;
                 Set(ref _selected, message);
-                NextCommand.RaiseCanExecuteChanged();
-                PreviousCommand.RaiseCanExecuteChanged();
+                //NextCommand.RaiseCanExecuteChanged();
+                //PreviousCommand.RaiseCanExecuteChanged();
                 if (message == null) return;
                 message.IsRead = true;
-                IsDetailsLoading = true;
-
+                IsDetailsLoading = true;   
                 WindowWrapper.Current().Dispatcher.Dispatch(() =>
                 {
                     IsDetailsLoading = false;
@@ -95,71 +95,71 @@ namespace NSIT_Connect.ViewModels
             }
         }
 
-        private DelegateCommand _nextCommand;
+        //private DelegateCommand _nextCommand;
 
-        public DelegateCommand NextCommand
-        {
-            get
-            {
-                return _nextCommand ??
-                    (_nextCommand = new DelegateCommand(ExecuteNextCommand, CanExecuteNextCommand));
-            }
-            set { Set(ref _nextCommand, value); }
-        }
+        //public DelegateCommand NextCommand
+        //{
+        //    get
+        //    {
+        //        return _nextCommand ??
+        //            (_nextCommand = new DelegateCommand(ExecuteNextCommand, CanExecuteNextCommand));
+        //    }
+        //    set { Set(ref _nextCommand, value); }
+        //}
 
-        private void ExecuteNextCommand()
-        {
-            if (Selected == null)
-                return;
-            var index = HomeFeed.IndexOf(_selected);
-            if (index == -1)
-                return;
-            var next = index + 1;
-            Selected = HomeFeed[next];
-        }
+        //private void ExecuteNextCommand()
+        //{
+        //    if (Selected == null)
+        //        return;
+        //    var index = HomeFeed.IndexOf(_selected);
+        //    if (index == -1)
+        //        return;
+        //    var next = index + 1;
+        //    Selected = HomeFeed[next];
+        //}
 
-        private bool CanExecuteNextCommand()
-        {
-            if (Selected == null)
-                return false;
-            var index = HomeFeed.IndexOf(_selected);
-            if (index == -1)
-                return false;
-            if (index == HomeFeed.Count - 2)
-                getinfo();
-            return index < (HomeFeed.Count - 1);
-        }
+        //private bool CanExecuteNextCommand()
+        //{
+        //    if (Selected == null)
+        //        return false;
+        //    var index = HomeFeed.IndexOf(_selected);
+        //    if (index == -1)
+        //        return false;
+        //    if (index == HomeFeed.Count - 2)
+        //        getinfo();
+        //    return index < (HomeFeed.Count - 1);
+        //}
 
-        private DelegateCommand _previousCommand;
+        //private DelegateCommand _previousCommand;
 
-        public DelegateCommand PreviousCommand
-        {
-            get
-            {
-                return _previousCommand ??
-                       (_previousCommand = new DelegateCommand(ExecutePreviousCommand, CanExecutePreviousCommand));
-            }
-            set { Set(ref _previousCommand, value); }
-        }
+        //public DelegateCommand PreviousCommand
+        //{
+        //    get
+        //    {
+        //        return _previousCommand ??
+        //               (_previousCommand = new DelegateCommand(ExecutePreviousCommand, CanExecutePreviousCommand));
+        //    }
+        //    set { Set(ref _previousCommand, value); }
+        //}
 
-        private bool CanExecutePreviousCommand()
-        {
-            if (Selected == null)
-                return false;
-            var index = HomeFeed.IndexOf(_selected);
-            return index > 0;
-        }
+        //private bool CanExecutePreviousCommand()
+        //{
+        //    if (Selected == null)
+        //        return false;
+        //    var index = HomeFeed.IndexOf(_selected);
+        //    return index > 0;
+        //}
 
-        private void ExecutePreviousCommand()
-        {
-            if (Selected == null)
-                return;
-            var index = HomeFeed.IndexOf(_selected);
-            if (index == -1)
-                return;
-            var previous = index - 1;
-            Selected = HomeFeed[previous];
-        }
+        //private void ExecutePreviousCommand()
+        //{
+        //    if (Selected == null)
+        //        return;
+        //    var index = HomeFeed.IndexOf(_selected);
+        //    if (index == -1)
+        //        return;
+        //    var previous = index - 1;
+        //    Selected = HomeFeed[previous];
+        //}
 
         private bool _isDetailsLoading;
 
@@ -261,10 +261,51 @@ namespace NSIT_Connect.ViewModels
                 next = ob.GetNamedString("next");
 
             }
+
+            foreach(Feed item in HomeFeed)
+            {
+                
+            }
+
             if (refresh && HomeFeed.Count>0)
                 Selected = HomeFeed[0];
             refresh = false;
         }
+
+        public async void getpicture(Feed message)
+        {
+            pictureresult = null;
+            if (message.Object_ID != null)
+            {
+                PictureUri = "https://graph.facebook.com/" + message.Object_ID + "?fields=images&access_token=" + Constants.common_access;
+                if (NetworkInterface.GetIsNetworkAvailable())
+                {
+                    var httpClient = new HttpClient();
+                    var uri = new Uri(PictureUri);
+
+                    try
+                    {
+                        HttpResponseMessage responseMessage = await httpClient.GetAsync(uri);
+                        responseMessage.EnsureSuccessStatusCode();
+                        pictureresult = await responseMessage.Content.ReadAsStringAsync();
+                    }
+                    catch (Exception ex) { }
+
+
+                    httpClient.Dispose();
+                }
+                if (pictureresult != null)
+                {
+                    JsonObject obt = JsonObject.Parse(pictureresult);
+                    JsonArray array = obt.GetNamedArray("images");
+                    if (array.GetObjectAt(0).ContainsKey("source"))
+                    {
+                        message.PictureUri = new Uri(array.GetObjectAt(0).GetNamedString("source"));
+                    }
+                }
+            }
+        }
+
     }
 }
 

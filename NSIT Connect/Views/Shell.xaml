@@ -19,8 +19,7 @@
                                           AutomationProperties.Name="Jerry"
                                           >
                 <StackPanel Orientation="Horizontal">
-                    <SymbolIcon Width="48" Height="48"
-                                Symbol="Home" />
+                    <BitmapIcon Width="48" Height="48" UriSource="ms-appx:///Assets/ShellIcon/appbar.home.empty.png" />
                     <TextBlock Margin="12,0,0,0" VerticalAlignment="Center"
                                Text="Home" />
                 </StackPanel>
@@ -30,8 +29,7 @@
                                           AutomationProperties.Name="Jerry"
                                           >
                 <StackPanel Orientation="Horizontal">
-                    <SymbolIcon Width="48" Height="48"
-                                Symbol="List" />
+                    <BitmapIcon Width="48" Height="48" UriSource="ms-appx:///Assets/ShellIcon/appbar.tiles.four.png" />
                     <TextBlock Margin="12,0,0,0" VerticalAlignment="Center"
                                Text="My Feed" />
                 </StackPanel>
@@ -41,8 +39,7 @@
                                           AutomationProperties.Name="Jerry"
                                           >
                 <StackPanel Orientation="Horizontal">
-                    <SymbolIcon Width="48" Height="48"
-                                Symbol="Video" />
+                    <BitmapIcon Width="48" Height="48" UriSource="ms-appx:///Assets/ShellIcon/appbar.video.png" />
                     <TextBlock Margin="12,0,0,0" VerticalAlignment="Center"
                                Text="Video" />
                 </StackPanel>
@@ -54,8 +51,7 @@
                                           AutomationProperties.Name="Jerry"
                                           >
                 <StackPanel Orientation="Horizontal">
-                    <SymbolIcon Width="48" Height="48"
-                                Symbol="Map" />
+                    <BitmapIcon Width="48" Height="48" UriSource="ms-appx:///Assets/ShellIcon/appbar.location.checkin.png" />
                     <TextBlock Margin="12,0,0,0" VerticalAlignment="Center"
                                Text="Location" />
                 </StackPanel>
@@ -65,19 +61,17 @@
                                           AutomationProperties.Name="Jerry"
                                           >
                 <StackPanel Orientation="Horizontal">
-                    <SymbolIcon Width="48" Height="48"
-                                Symbol="Contact" />
+                    <BitmapIcon Width="48" Height="48" UriSource="ms-appx:///Assets/ShellIcon/appbar.people.png" />
                     <TextBlock Margin="12,0,0,0" VerticalAlignment="Center"
                                Text="Professors" />
                 </StackPanel>
             </Controls:HamburgerButtonInfo>
 
-            <Controls:HamburgerButtonInfo ClearHistory="True" PageType="views:HomePage" 
+            <Controls:HamburgerButtonInfo ClearHistory="True" PageType="views:FeedBackPage" 
                                           AutomationProperties.Name="Jerry"
                                           >
                 <StackPanel Orientation="Horizontal">
-                    <SymbolIcon Width="48" Height="48"
-                                Symbol="Document" />
+                    <BitmapIcon Width="48" Height="48" UriSource="ms-appx:///Assets/ShellIcon/appbar.book.open.information.png" />
                     <TextBlock Margin="12,0,0,0" VerticalAlignment="Center"
                                Text="Feedback" />
                 </StackPanel>
@@ -87,8 +81,7 @@
                                           AutomationProperties.Name="Jerry"
                                           >
                 <StackPanel Orientation="Horizontal">
-                    <SymbolIcon Width="48" Height="48"
-                                Symbol="Admin" />
+                    <BitmapIcon Width="48" Height="48" UriSource="ms-appx:///Assets/ShellIcon/appbar.information.circle.png" />
                     <TextBlock Margin="12,0,0,0" VerticalAlignment="Center"
                                Text="About" />
                 </StackPanel>

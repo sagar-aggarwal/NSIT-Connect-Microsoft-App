@@ -30,6 +30,8 @@
   </Applications>
   <Capabilities>
     <Capability Name="internetClient" />
+    <uap:Capability Name="removableStorage" />
+    <uap:Capability Name="picturesLibrary" />
     <DeviceCapability Name="location" />
   </Capabilities>
   <build:Metadata>

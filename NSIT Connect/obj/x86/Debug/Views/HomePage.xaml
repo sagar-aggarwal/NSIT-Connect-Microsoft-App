@@ -22,7 +22,7 @@
     <Page.Resources>
         <ResourceDictionary>
             <DataTemplate x:ConnectionId='3' x:Name="MessageListItemTemplate" >
-                <Grid Margin="0,1,0,1">
+                <Grid Margin="0,1,0,1"  >
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="4" />
                         <ColumnDefinition />
@@ -32,20 +32,20 @@
                     <StackPanel Grid.Column="1" Height="60" VerticalAlignment="Center">
                         <TextBlock x:Name="From" Margin="8,0,0,0"
                                FontSize="16" FontWeight="Normal"
-                               Foreground="Black" MaxLines="1" TextWrapping="Wrap"
+                               MaxLines="1" TextWrapping="Wrap"
                                Style="{ThemeResource BodyTextBlockStyle}"
                                Text="{Binding Message, FallbackValue=Message}" />
                         <StackPanel Orientation="Horizontal">
                             <TextBlock x:Name="Subject" Margin="8,0,0,0"
-                               FontSize="12" FontWeight="Normal" Width="25" MaxLines="1" Style="{ThemeResource BodyTextBlockStyle}"
+                               FontSize="12" FontWeight="Bold" Width="25" VerticalAlignment="Center" Foreground="#26b4f5" MaxLines="1" Style="{ThemeResource BodyTextBlockStyle}"
                                Text="{Binding Likes}" />
-                            <Image Source="ms-appx:///Assets/ic_thumb_up_black_18dp.png" />
+                            <Image Source="ms-appx:///Assets/like.png" Width="25" Height="25" />
                         </StackPanel>
                     </StackPanel>
                     <TextBlock x:Name="Date" Grid.Column="2"
                            Margin="8,0,16,8" HorizontalAlignment="Right"
                            VerticalAlignment="Bottom" FontSize="12"
-                           FontWeight="Light" Foreground="DimGray"
+                           FontWeight="Light" 
                            Style="{ThemeResource BodyTextBlockStyle}"
                            Text="{Binding Time_Created, Mode=OneWay, Converter={StaticResource StringFormatConverter}, ConverterParameter=\{0:d\}}"
                            TextAlignment="Right" />
@@ -53,34 +53,42 @@
             </DataTemplate>
 
             <DataTemplate x:ConnectionId='4' x:Name="MessageDetailTemplate" >
-                <ScrollViewer VerticalScrollBarVisibility="Auto" >
+                <ScrollViewer VerticalScrollBarVisibility="Auto" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
                     <RelativePanel Padding="16">
                         <Ellipse x:Name="Ellipse" Width="50"
-                             Height="50" Margin="0,0,16,0"
-                             Fill="{StaticResource colorPrimaryDark}" >
+                             Height="50" Margin="0,0,16,0" >
+                            <Ellipse.Fill>
+                                <ImageBrush>
+                                    <ImageBrush.ImageSource>
+                                        <BitmapImage DecodePixelHeight="500"  DecodePixelWidth="500" UriSource="ms-appx:///Assets/facebook_circle_color-128.png" x:Name="image_source" />
+                                    </ImageBrush.ImageSource>
+                                </ImageBrush>
+                            </Ellipse.Fill>
                         </Ellipse>
                         <TextBlock x:Name="From" FontSize="20"
-                               FontWeight="Normal" Foreground="Black"
+                               FontWeight="Normal" 
                                MaxLines="1" RelativePanel.AlignTopWith="Ellipse"
                                RelativePanel.RightOf="Ellipse"
                                Text="{Binding Message, FallbackValue=Message}" />
+                        <Image RelativePanel.Below="Body" Margin="5" Source="{Binding PictureUri,Mode=OneWay}"/>
                         <TextBlock x:Name="To" FontSize="12"
-                               FontWeight="Normal" Foreground="Black"
-                               MaxLines="1" RelativePanel.AlignLeftWith="Ellipse"
+                               FontWeight="Bold" 
+                               RelativePanel.RightOf="Ellipse"
+                               MaxLines="1" 
                                RelativePanel.Below="Subject">
-                        <Run Text="To: " />
+                        <Run Text="Likes: " />
                         <Run Foreground="DimGray" Text="{Binding Likes, FallbackValue=Likes}" />
                         </TextBlock>
-                        <TextBlock x:Name="Subject" Margin="0,8,0,0"
+                        <TextBlock x:Name="Subject" Margin="0,8,0,0" Visibility="Collapsed"
                                FontSize="16" FontWeight="Bold"
-                               Foreground="Black" MaxLines="1"
+                                MaxLines="1"
                                RelativePanel.AlignLeftWith="Ellipse"
                                RelativePanel.Below="Ellipse"
                                Text="{Binding Object_ID, FallbackValue=Object_ID}"
                                TextWrapping="WrapWholeWords" />
                         <TextBlock x:Name="Body" Margin="0,16,16,16"
-                               FontSize="12" FontWeight="Normal"
-                               Foreground="DimGray" RelativePanel.AlignLeftWith="Ellipse"
+                               FontSize="12" FontWeight="SemiBold"
+                               RelativePanel.AlignLeftWith="Ellipse"
                                RelativePanel.Below="To"
                                Style="{StaticResource TitleTextBlockStyle}"
                                Text="{Binding Message, FallbackValue=Message}">
@@ -92,8 +100,8 @@
                         </TextBlock>
                         <TextBlock x:Name="Date" Grid.Column="2"
                                HorizontalAlignment="Right" VerticalAlignment="Bottom"
-                               FontSize="12" FontWeight="Light"
-                               Foreground="DimGray" RelativePanel.Below="From"
+                               FontSize="12" FontWeight="Normal"
+                               RelativePanel.Below="From"
                                RelativePanel.RightOf="Ellipse"
                                Text="{Binding Time_Created, Mode=OneWay, Converter={StaticResource StringFormatConverter}, ConverterParameter=\{0:D\}}"
                                TextAlignment="Right" />
@@ -181,6 +189,8 @@
                                     </Grid.ColumnDefinitions>
                                     <CommandBar
                                 x:Name="DetailsCommandBar"
+                                        Background="{StaticResource colorPrimaryDark}"
+                                        Foreground="White"
                                 Grid.Row="0"
                                 Grid.Column="1">
                                         <CommandBar.Content>
@@ -219,8 +229,8 @@
                                     <CommandBar
                                 x:Name="MasterCommandBar"
                                 Grid.Row="0"
-                                Background="White"
-                                Foreground="{StaticResource colorPrimaryDark}"
+                                Background="{StaticResource colorPrimaryDark}"
+                                Foreground="WhiteSmoke"
                                 Grid.Column="0">
                                         <CommandBar.Content>
                                             <ContentControl Content="{TemplateBinding MasterCommandBarContent}" />
@@ -268,6 +278,7 @@
                                     <Grid
                                 x:Name="MasterGrid"
                                 Grid.Row="1"
+                                        Margin="0,5,0,0"
                                 Grid.Column="0">
                                         <Grid.RowDefinitions>
                                             <RowDefinition Height="Auto" />
@@ -291,6 +302,7 @@
                                     Visibility="Collapsed" />
                                             <ScrollViewer x:ConnectionId='6'
                                     x:Name="ScrollViewer"
+                                              
                                                                           
                                     AutomationProperties.AccessibilityView="Raw"
                                     BringIntoViewOnFocusChange="{TemplateBinding ScrollViewer.BringIntoViewOnFocusChange}"
@@ -388,7 +400,8 @@
     <Grid x:ConnectionId='8' x:Name="RootGrid" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Controls:MasterDetailsView x:ConnectionId='9'
             x:Name="MailList"
-            Background="White"
+                                          
+            Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
                                                               
             DetailsTemplate="{StaticResource MessageDetailTemplate}"
                                                                                
@@ -414,33 +427,45 @@
             <Controls:MasterDetailsView.MasterCommandBarContent>
                 <StackPanel Height="48" Orientation="Horizontal">
                     <TextBlock
-                        Margin="12,0,0,0"
+                        Margin="12,0,0,5"
                         VerticalAlignment="Center"
                         Style="{ThemeResource BodyTextBlockStyle}"
-                        FontSize="45"
-                        Foreground="{StaticResource colorPrimaryDark}"
+                        FontSize="40"
+                        Foreground="WhiteSmoke"
                         Text="home" />
                 </StackPanel>
             </Controls:MasterDetailsView.MasterCommandBarContent>
             <Controls:MasterDetailsView.MasterCommands>
                 <AppBarButton x:ConnectionId='10'
-                    Foreground="{StaticResource colorPrimaryDark}"
+                    Foreground="WhiteSmoke"
                                                                
                     Icon="Refresh"
                     Label="Refresh" />
             </Controls:MasterDetailsView.MasterCommands>
+            <Controls:MasterDetailsView.DetailsCommandBarContent>
+                <TextBlock Text="post" VerticalAlignment="Center" Margin="10,5,0,0" FontWeight="Bold" Style="{ThemeResource BaseTextBlockStyle}" FontSize="25" />
+            </Controls:MasterDetailsView.DetailsCommandBarContent>
             <Controls:MasterDetailsView.DetailsCommands>
-                <AppBarButton x:ConnectionId='11'
-                                                                             
+                <!--<AppBarButton
+                    Command="{x:Bind ViewModel.PreviousCommand, Mode=OneWay}"
                     Icon="Previous"
+                    Foreground="White"
                     Label="Newer" />
-                <AppBarButton x:ConnectionId='12'
-                                                                         
-                    Icon="Next"
-                    Label="Older" />
                 <AppBarButton
-                    Icon="Delete"
-                    Label="Delete" />
+                    Command="{x:Bind ViewModel.NextCommand, Mode=OneWay}"
+                    Icon="Next"
+                    Foreground="White"
+                    Label="Older" />-->
+                <AppBarButton x:ConnectionId='11'
+                    Icon="Link"
+                                                
+                    Foreground="White"
+                    Label="Link" />
+                <AppBarButton x:ConnectionId='12'
+                    Icon="Save"
+                                              
+                    Foreground="White"
+                    Label="Save Image" />
             </Controls:MasterDetailsView.DetailsCommands>
             <x:String>Sample</x:String>
             <x:String>Sample</x:String>

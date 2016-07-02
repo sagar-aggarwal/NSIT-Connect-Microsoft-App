@@ -70,6 +70,9 @@
           "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.YouTube.v3.dll": {}
         }
       },
+      "MahApps.Metro.Resources.Standalone/0.1.0": {
+        "type": "package"
+      },
       "Microsoft.Bcl/1.1.10": {
         "type": "package",
         "dependencies": {
@@ -400,22 +403,13 @@
           "lib/uap10.0/Microsoft.Xaml.Interactivity.dll": {}
         }
       },
-      "MyToolkit/2.5.12": {
+      "Newtonsoft.Json/9.0.1": {
         "type": "package",
         "compile": {
-          "lib/portable-net45+wp8+win8+wpa81/MyToolkit.dll": {}
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
         },
         "runtime": {
-          "lib/portable-net45+wp8+win8+wpa81/MyToolkit.dll": {}
-        }
-      },
-      "Newtonsoft.Json/8.0.3": {
-        "type": "package",
-        "compile": {
-          "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll": {}
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
         }
       },
       "System.AppContext/4.0.0": {
@@ -2119,6 +2113,9 @@
           "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.YouTube.v3.dll": {}
         }
       },
+      "MahApps.Metro.Resources.Standalone/0.1.0": {
+        "type": "package"
+      },
       "Microsoft.Bcl/1.1.10": {
         "type": "package",
         "dependencies": {
@@ -2398,22 +2395,13 @@
           "lib/uap10.0/Microsoft.Xaml.Interactivity.dll": {}
         }
       },
-      "MyToolkit/2.5.12": {
+      "Newtonsoft.Json/9.0.1": {
         "type": "package",
         "compile": {
-          "lib/portable-net45+wp8+win8+wpa81/MyToolkit.dll": {}
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
         },
         "runtime": {
-          "lib/portable-net45+wp8+win8+wpa81/MyToolkit.dll": {}
-        }
-      },
-      "Newtonsoft.Json/8.0.3": {
-        "type": "package",
-        "compile": {
-          "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll": {}
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
         }
       },
       "runtime.any.System.Private.DataContractSerialization/4.1.0": {
@@ -4034,6 +4022,9 @@
           "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.YouTube.v3.dll": {}
         }
       },
+      "MahApps.Metro.Resources.Standalone/0.1.0": {
+        "type": "package"
+      },
       "Microsoft.Bcl/1.1.10": {
         "type": "package",
         "dependencies": {
@@ -4311,22 +4302,13 @@
           "lib/uap10.0/Microsoft.Xaml.Interactivity.dll": {}
         }
       },
-      "MyToolkit/2.5.12": {
+      "Newtonsoft.Json/9.0.1": {
         "type": "package",
         "compile": {
-          "lib/portable-net45+wp8+win8+wpa81/MyToolkit.dll": {}
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
         },
         "runtime": {
-          "lib/portable-net45+wp8+win8+wpa81/MyToolkit.dll": {}
-        }
-      },
-      "Newtonsoft.Json/8.0.3": {
-        "type": "package",
-        "compile": {
-          "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll": {}
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
         }
       },
       "runtime.aot.System.Private.DataContractSerialization/4.1.0": {
@@ -5906,6 +5888,9 @@
           "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.YouTube.v3.dll": {}
         }
       },
+      "MahApps.Metro.Resources.Standalone/0.1.0": {
+        "type": "package"
+      },
       "Microsoft.Bcl/1.1.10": {
         "type": "package",
         "dependencies": {
@@ -6191,22 +6176,13 @@
           "lib/uap10.0/Microsoft.Xaml.Interactivity.dll": {}
         }
       },
-      "MyToolkit/2.5.12": {
+      "Newtonsoft.Json/9.0.1": {
         "type": "package",
         "compile": {
-          "lib/portable-net45+wp8+win8+wpa81/MyToolkit.dll": {}
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
         },
         "runtime": {
-          "lib/portable-net45+wp8+win8+wpa81/MyToolkit.dll": {}
-        }
-      },
-      "Newtonsoft.Json/8.0.3": {
-        "type": "package",
-        "compile": {
-          "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll": {}
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
         }
       },
       "runtime.any.System.Private.DataContractSerialization/4.1.0": {
@@ -7830,6 +7806,9 @@
           "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.YouTube.v3.dll": {}
         }
       },
+      "MahApps.Metro.Resources.Standalone/0.1.0": {
+        "type": "package"
+      },
       "Microsoft.Bcl/1.1.10": {
         "type": "package",
         "dependencies": {
@@ -8107,22 +8086,13 @@
           "lib/uap10.0/Microsoft.Xaml.Interactivity.dll": {}
         }
       },
-      "MyToolkit/2.5.12": {
+      "Newtonsoft.Json/9.0.1": {
         "type": "package",
         "compile": {
-          "lib/portable-net45+wp8+win8+wpa81/MyToolkit.dll": {}
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
         },
         "runtime": {
-          "lib/portable-net45+wp8+win8+wpa81/MyToolkit.dll": {}
-        }
-      },
-      "Newtonsoft.Json/8.0.3": {
-        "type": "package",
-        "compile": {
-          "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll": {}
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
         }
       },
       "runtime.aot.System.Private.DataContractSerialization/4.1.0": {
@@ -9702,6 +9672,9 @@
           "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.YouTube.v3.dll": {}
         }
       },
+      "MahApps.Metro.Resources.Standalone/0.1.0": {
+        "type": "package"
+      },
       "Microsoft.Bcl/1.1.10": {
         "type": "package",
         "dependencies": {
@@ -9987,22 +9960,13 @@
           "lib/uap10.0/Microsoft.Xaml.Interactivity.dll": {}
         }
       },
-      "MyToolkit/2.5.12": {
+      "Newtonsoft.Json/9.0.1": {
         "type": "package",
         "compile": {
-          "lib/portable-net45+wp8+win8+wpa81/MyToolkit.dll": {}
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
         },
         "runtime": {
-          "lib/portable-net45+wp8+win8+wpa81/MyToolkit.dll": {}
-        }
-      },
-      "Newtonsoft.Json/8.0.3": {
-        "type": "package",
-        "compile": {
-          "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll": {}
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
         }
       },
       "runtime.any.System.Private.DataContractSerialization/4.1.0": {
@@ -11626,6 +11590,9 @@
           "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.YouTube.v3.dll": {}
         }
       },
+      "MahApps.Metro.Resources.Standalone/0.1.0": {
+        "type": "package"
+      },
       "Microsoft.Bcl/1.1.10": {
         "type": "package",
         "dependencies": {
@@ -11903,22 +11870,13 @@
           "lib/uap10.0/Microsoft.Xaml.Interactivity.dll": {}
         }
       },
-      "MyToolkit/2.5.12": {
+      "Newtonsoft.Json/9.0.1": {
         "type": "package",
         "compile": {
-          "lib/portable-net45+wp8+win8+wpa81/MyToolkit.dll": {}
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
         },
         "runtime": {
-          "lib/portable-net45+wp8+win8+wpa81/MyToolkit.dll": {}
-        }
-      },
-      "Newtonsoft.Json/8.0.3": {
-        "type": "package",
-        "compile": {
-          "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll": {}
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
         }
       },
       "runtime.aot.System.Private.DataContractSerialization/4.1.0": {
@@ -13555,6 +13513,17 @@
         "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.YouTube.v3.xml"
       ]
     },
+    "MahApps.Metro.Resources.Standalone/0.1.0": {
+      "sha512": "w9I7yAi+G8xWzYIqD0Sh1HEhBDA2ZyhxaUoDSMpZAWMrgTldeYWHKeq+dKL1qEDdX2XLFcj0ixupnAQ0wLGJQQ==",
+      "type": "package",
+      "files": [
+        "MahApps.Metro.Resources.Standalone.0.1.0.nupkg.sha512",
+        "MahApps.Metro.Resources.Standalone.nuspec",
+        "content/Resources/Entypo-license.txt",
+        "content/Resources/Entypo.ttf",
+        "content/Resources/Icons.xaml"
+      ]
+    },
     "Microsoft.Bcl/1.1.10": {
       "sha512": "+tTqoh/M1pyL8El3qLy30EcwnAtyvFoDZJtdG9Cbg/WdFbh4N8kyrq198XHuEL7lnJbeD0DRO8jcX5IIOh05cQ==",
       "type": "package",
@@ -14374,24 +14343,11 @@
         "lib/uap10.0/Microsoft.Xaml.Interactivity.xml"
       ]
     },
-    "MyToolkit/2.5.12": {
-      "sha512": "dUPVdRP5Intc4JSKjzXnbWp0wKhtiToQCiTNekF4tT0y0Dr+iCr2FCwY3HmOmyAz6XUnfseknBWCsdsmxbU4KQ==",
+    "Newtonsoft.Json/9.0.1": {
+      "sha512": "U82mHQSKaIk+lpSVCbWYKNavmNH1i5xrExDEquU1i6I5pV6UMOqRnJRSlKO3cMPfcpp0RgDY+8jUXHdQ4IfXvw==",
       "type": "package",
       "files": [
-        "MyToolkit.2.5.12.nupkg.sha512",
-        "MyToolkit.nuspec",
-        "lib/portable-net45+wp8+win8+wpa81/CodeContracts/MyToolkit.Contracts.dll",
-        "lib/portable-net45+wp8+win8+wpa81/MyToolkit.dll",
-        "lib/portable-net45+wp8+win8+wpa81/MyToolkit.xml",
-        "lib/portable-sl5+wp71/MyToolkit.dll",
-        "lib/portable-sl5+wp71/MyToolkit.xml"
-      ]
-    },
-    "Newtonsoft.Json/8.0.3": {
-      "sha512": "KGsYQdS2zLH+H8x2cZaSI7e+YZ4SFIbyy1YJQYl6GYBWjf5o4H1A68nxyq+WTyVSOJQ4GqS/DiPE+UseUizgMg==",
-      "type": "package",
-      "files": [
-        "Newtonsoft.Json.8.0.3.nupkg.sha512",
+        "Newtonsoft.Json.9.0.1.nupkg.sha512",
         "Newtonsoft.Json.nuspec",
         "lib/net20/Newtonsoft.Json.dll",
         "lib/net20/Newtonsoft.Json.xml",
@@ -14401,10 +14357,12 @@
         "lib/net40/Newtonsoft.Json.xml",
         "lib/net45/Newtonsoft.Json.dll",
         "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
         "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.dll",
         "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.xml",
-        "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll",
-        "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.xml",
+        "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.xml",
         "tools/install.ps1"
       ]
     },
@@ -17160,11 +17118,11 @@
     "": [
       "BratchedTools.RatingControl >= 1.0.0",
       "Google.Apis.YouTube.v3 >= 1.13.1.529",
+      "MahApps.Metro.Resources.Standalone >= 0.1.0",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 5.1.0",
       "Microsoft.Xaml.Behaviors.Uwp.Managed >= 1.1.0",
-      "MyToolkit >= 2.5.12",
-      "Newtonsoft.Json >= 8.0.3",
-      "Template10 >= 1.1.*",
+      "Newtonsoft.Json >= 9.0.1",
+      "Template10 >= 1.1.11",
       "WindowsStateTriggers >= 1.1.0"
     ],
     "UAP,Version=v10.0": []

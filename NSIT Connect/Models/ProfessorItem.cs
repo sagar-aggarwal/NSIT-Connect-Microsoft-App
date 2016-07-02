@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Windows.UI.Xaml.Media;
 
 namespace NSIT_Connect.Models
 {
@@ -13,18 +14,18 @@ namespace NSIT_Connect.Models
         private string room;
         private string phone;
         private string email;
-        private char fisrtLetter;
+        private SolidColorBrush foreground;
 
         public event PropertyChangedEventHandler PropertyChanged;
 
-        public char FirstLetter
+        public SolidColorBrush Foreground
         {
-            get { return fisrtLetter; }
+            get { return foreground; }
             set
             {
-                fisrtLetter = value;
+                foreground = value;
                 // Call OnPropertyChanged whenever the property is updated
-                OnPropertyChanged("FirstLetter");
+                OnPropertyChanged("Foreground");
             }
         }
 
