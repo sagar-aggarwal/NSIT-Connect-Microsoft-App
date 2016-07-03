@@ -330,6 +330,7 @@
     <RootType FullName="Windows.UI.Xaml.Controls.Flyout">
       <RootProperty Name="Placement" />
       <RootProperty Name="Content" />
+      <RootEvent Name="Closed" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
       <RootProperty Name="Margin" />
@@ -414,6 +415,7 @@
       <RootProperty Name="SelectionMode" />
       <RootProperty Name="ItemsPanel" />
       <RootEvent Name="ItemClick" />
+      <RootEvent Name="Loaded" />
     </RootType>
     <RootType FullName="NSIT_Connect.Views.HangoutPage" />
     <RootType FullName="NSIT_Connect.ViewModels.HomePageViewModel" />

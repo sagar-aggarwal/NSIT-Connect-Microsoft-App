@@ -477,9 +477,9 @@
                     Icon="Setting"
                     Label="settings" >
                     <AppBarButton.Flyout>
-                        <Flyout >
+                        <Flyout Closed="Flyout_Closed">
                             <Grid Background="{StaticResource universalBackground}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
-                                <GridView IsMultiSelectCheckBoxEnabled="True" SelectionMode="Multiple" ItemsSource="{Binding Item,Mode=TwoWay}" >
+                                <GridView x:Name="Choose_GridView" IsMultiSelectCheckBoxEnabled="True" Loaded="Choose_GridView_Loaded"    SelectionMode="Multiple" ItemsSource="{Binding Item,Mode=TwoWay}" >
                                     <GridView.ItemTemplate>
                                         <DataTemplate x:DataType="models:ChooseFeedItem">
                                             <Grid Height="170" Width="140" Margin="15,5,15,5">

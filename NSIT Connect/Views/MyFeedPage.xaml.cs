@@ -35,7 +35,7 @@ namespace NSIT_Connect.Views
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
-
+        
         }
 
         private void NarrowVisualStateGroup_CurrentStateChanged(object sender, VisualStateChangedEventArgs e)
@@ -52,7 +52,7 @@ namespace NSIT_Connect.Views
             var scrollViewer = (ScrollViewer)sender;
             if (scrollViewer.VerticalOffset == scrollViewer.ScrollableHeight)
             {
-                ViewModel.getinfo();
+                ViewModel.getinfo(Constants.id_nsitonline);
             }
         }
 
@@ -107,6 +107,43 @@ namespace NSIT_Connect.Views
             {
                 var mssg = new MessageDialog("NO URL AVAILABLE");
                 await mssg.ShowAsync();
+            }
+
+        }
+
+        private  void Flyout_Closed(object sender, object e)
+        {
+            Windows.Storage.ApplicationDataContainer localSettings = Windows.Storage.ApplicationData.Current.LocalSettings;
+            for (int i = 0; i < ViewModel.Item.Count; i++)
+            {
+                ChooseFeedItem item = ViewModel.Item[i];
+                if (Choose_GridView.SelectedItems.Contains(item))
+                {
+                     localSettings.Values[item.Title] = true;
+                }
+                else
+                {
+                    localSettings.Values[item.Title] = false;
+                }
+            }  
+        }
+
+        private  void Choose_GridView_Loaded(object sender, RoutedEventArgs e)
+        {
+            Windows.Storage.ApplicationDataContainer localSettings = Windows.Storage.ApplicationData.Current.LocalSettings;
+
+            for (int i = 0; i < ViewModel.Item.Count; i++)
+            {
+                ChooseFeedItem item = ViewModel.Item[i];
+                if (localSettings.Values[item.Title] != null)
+                {
+                    bool selected = (bool)localSettings.Values[item.Title];
+                    if (selected)
+                    {
+                        Choose_GridView.SelectedItems.Add(item);
+
+                    }
+                }
             }
 
         }

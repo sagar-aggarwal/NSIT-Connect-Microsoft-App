@@ -93,7 +93,7 @@ namespace NSIT_Connect.ViewModels
             refresh = true;
             WindowWrapper.Current().Dispatcher.Dispatch(() =>
             {
-                getinfo();
+                getinfo(Constants.id_nsitonline);
                 Selected = HomeFeed?.FirstOrDefault();
                 IsMasterLoading = false;
 
@@ -203,10 +203,10 @@ namespace NSIT_Connect.ViewModels
             set { Set(ref _isMasterLoading, value); }
         }
 
-        public async void getinfo()
+        public async void getinfo(string id)
         {
             if (refresh)
-                next = "https://graph.facebook.com/" + Constants.id_nsitonline + "/posts?limit=20&fields=id,picture,from,shares,message," +
+                next = "https://graph.facebook.com/" + id + "/posts?limit=20&fields=id,picture,from,shares,message," +
             "object_id,link,created_time,comments.limit(0).summary(true),likes.limit(0).summary(true)" +
             "&access_token=" + Constants.common_access;
             if (NetworkInterface.GetIsNetworkAvailable())
