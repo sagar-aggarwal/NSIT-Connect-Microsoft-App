@@ -1619,6 +1619,7 @@ namespace NSIT_Connect.NSIT_Connect_XamlTypeInfo
                 userType.Activator = Activate_123_ChooseFeedItem;
                 userType.AddMemberName("ImageSource");
                 userType.AddMemberName("Title");
+                userType.AddMemberName("ID");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -3799,142 +3800,152 @@ namespace NSIT_Connect.NSIT_Connect_XamlTypeInfo
             var that = (global::NSIT_Connect.Models.ChooseFeedItem)instance;
             that.Title = (global::System.String)Value;
         }
-        private object get_208_MyFeedPageViewModel_HomeFeed(object instance)
+        private object get_208_ChooseFeedItem_ID(object instance)
+        {
+            var that = (global::NSIT_Connect.Models.ChooseFeedItem)instance;
+            return that.ID;
+        }
+        private void set_208_ChooseFeedItem_ID(object instance, object Value)
+        {
+            var that = (global::NSIT_Connect.Models.ChooseFeedItem)instance;
+            that.ID = (global::System.String)Value;
+        }
+        private object get_209_MyFeedPageViewModel_HomeFeed(object instance)
         {
             var that = (global::NSIT_Connect.ViewModels.MyFeedPageViewModel)instance;
             return that.HomeFeed;
         }
-        private object get_209_MyFeedPageViewModel_RefreshCommand(object instance)
+        private object get_210_MyFeedPageViewModel_RefreshCommand(object instance)
         {
             var that = (global::NSIT_Connect.ViewModels.MyFeedPageViewModel)instance;
             return that.RefreshCommand;
         }
-        private object get_210_MyFeedPageViewModel_Selected(object instance)
+        private object get_211_MyFeedPageViewModel_Selected(object instance)
         {
             var that = (global::NSIT_Connect.ViewModels.MyFeedPageViewModel)instance;
             return that.Selected;
         }
-        private void set_210_MyFeedPageViewModel_Selected(object instance, object Value)
+        private void set_211_MyFeedPageViewModel_Selected(object instance, object Value)
         {
             var that = (global::NSIT_Connect.ViewModels.MyFeedPageViewModel)instance;
             that.Selected = (global::System.Object)Value;
         }
-        private object get_211_MyFeedPageViewModel_IsDetailsLoading(object instance)
+        private object get_212_MyFeedPageViewModel_IsDetailsLoading(object instance)
         {
             var that = (global::NSIT_Connect.ViewModels.MyFeedPageViewModel)instance;
             return that.IsDetailsLoading;
         }
-        private void set_211_MyFeedPageViewModel_IsDetailsLoading(object instance, object Value)
+        private void set_212_MyFeedPageViewModel_IsDetailsLoading(object instance, object Value)
         {
             var that = (global::NSIT_Connect.ViewModels.MyFeedPageViewModel)instance;
             that.IsDetailsLoading = (global::System.Boolean)Value;
         }
-        private object get_212_MyFeedPageViewModel_IsMasterLoading(object instance)
+        private object get_213_MyFeedPageViewModel_IsMasterLoading(object instance)
         {
             var that = (global::NSIT_Connect.ViewModels.MyFeedPageViewModel)instance;
             return that.IsMasterLoading;
         }
-        private void set_212_MyFeedPageViewModel_IsMasterLoading(object instance, object Value)
+        private void set_213_MyFeedPageViewModel_IsMasterLoading(object instance, object Value)
         {
             var that = (global::NSIT_Connect.ViewModels.MyFeedPageViewModel)instance;
             that.IsMasterLoading = (global::System.Boolean)Value;
         }
-        private object get_213_ProfessorDetailPageViewModel_Selected(object instance)
+        private object get_214_ProfessorDetailPageViewModel_Selected(object instance)
         {
             var that = (global::NSIT_Connect.ViewModels.ProfessorDetailPageViewModel)instance;
             return that.Selected;
         }
-        private void set_213_ProfessorDetailPageViewModel_Selected(object instance, object Value)
+        private void set_214_ProfessorDetailPageViewModel_Selected(object instance, object Value)
         {
             var that = (global::NSIT_Connect.ViewModels.ProfessorDetailPageViewModel)instance;
             that.Selected = (global::NSIT_Connect.Models.LocationItem)Value;
         }
-        private object get_214_ProfessorDetailPageViewModel_Item(object instance)
+        private object get_215_ProfessorDetailPageViewModel_Item(object instance)
         {
             var that = (global::NSIT_Connect.ViewModels.ProfessorDetailPageViewModel)instance;
             return that.Item;
         }
-        private void set_214_ProfessorDetailPageViewModel_Item(object instance, object Value)
+        private void set_215_ProfessorDetailPageViewModel_Item(object instance, object Value)
         {
             var that = (global::NSIT_Connect.ViewModels.ProfessorDetailPageViewModel)instance;
             that.Item = (global::System.Collections.ObjectModel.ObservableCollection<global::NSIT_Connect.Models.ProfessorItem>)Value;
         }
-        private object get_215_ProfessorItem_Foreground(object instance)
+        private object get_216_ProfessorItem_Foreground(object instance)
         {
             var that = (global::NSIT_Connect.Models.ProfessorItem)instance;
             return that.Foreground;
         }
-        private void set_215_ProfessorItem_Foreground(object instance, object Value)
+        private void set_216_ProfessorItem_Foreground(object instance, object Value)
         {
             var that = (global::NSIT_Connect.Models.ProfessorItem)instance;
             that.Foreground = (global::Windows.UI.Xaml.Media.SolidColorBrush)Value;
         }
-        private object get_216_ProfessorItem_Name(object instance)
+        private object get_217_ProfessorItem_Name(object instance)
         {
             var that = (global::NSIT_Connect.Models.ProfessorItem)instance;
             return that.Name;
         }
-        private void set_216_ProfessorItem_Name(object instance, object Value)
+        private void set_217_ProfessorItem_Name(object instance, object Value)
         {
             var that = (global::NSIT_Connect.Models.ProfessorItem)instance;
             that.Name = (global::System.String)Value;
         }
-        private object get_217_ProfessorItem_Room(object instance)
+        private object get_218_ProfessorItem_Room(object instance)
         {
             var that = (global::NSIT_Connect.Models.ProfessorItem)instance;
             return that.Room;
         }
-        private void set_217_ProfessorItem_Room(object instance, object Value)
+        private void set_218_ProfessorItem_Room(object instance, object Value)
         {
             var that = (global::NSIT_Connect.Models.ProfessorItem)instance;
             that.Room = (global::System.String)Value;
         }
-        private object get_218_ProfessorItem_Phone(object instance)
+        private object get_219_ProfessorItem_Phone(object instance)
         {
             var that = (global::NSIT_Connect.Models.ProfessorItem)instance;
             return that.Phone;
         }
-        private void set_218_ProfessorItem_Phone(object instance, object Value)
+        private void set_219_ProfessorItem_Phone(object instance, object Value)
         {
             var that = (global::NSIT_Connect.Models.ProfessorItem)instance;
             that.Phone = (global::System.String)Value;
         }
-        private object get_219_ProfessorItem_Email(object instance)
+        private object get_220_ProfessorItem_Email(object instance)
         {
             var that = (global::NSIT_Connect.Models.ProfessorItem)instance;
             return that.Email;
         }
-        private void set_219_ProfessorItem_Email(object instance, object Value)
+        private void set_220_ProfessorItem_Email(object instance, object Value)
         {
             var that = (global::NSIT_Connect.Models.ProfessorItem)instance;
             that.Email = (global::System.String)Value;
         }
-        private object get_220_ProfessorsPageViewModel_lpanel(object instance)
+        private object get_221_ProfessorsPageViewModel_lpanel(object instance)
         {
             var that = (global::NSIT_Connect.ViewModels.ProfessorsPageViewModel)instance;
             return that.lpanel;
         }
-        private void set_220_ProfessorsPageViewModel_lpanel(object instance, object Value)
+        private void set_221_ProfessorsPageViewModel_lpanel(object instance, object Value)
         {
             var that = (global::NSIT_Connect.ViewModels.ProfessorsPageViewModel)instance;
             that.lpanel = (global::System.Collections.ObjectModel.ObservableCollection<global::NSIT_Connect.Models.LocationItem>)Value;
         }
-        private object get_221_ProfessorsPageViewModel_Selected(object instance)
+        private object get_222_ProfessorsPageViewModel_Selected(object instance)
         {
             var that = (global::NSIT_Connect.ViewModels.ProfessorsPageViewModel)instance;
             return that.Selected;
         }
-        private void set_221_ProfessorsPageViewModel_Selected(object instance, object Value)
+        private void set_222_ProfessorsPageViewModel_Selected(object instance, object Value)
         {
             var that = (global::NSIT_Connect.ViewModels.ProfessorsPageViewModel)instance;
             that.Selected = (global::System.Object)Value;
         }
-        private object get_222_SettingsPageViewModel_SettingsPartViewModel(object instance)
+        private object get_223_SettingsPageViewModel_SettingsPartViewModel(object instance)
         {
             var that = (global::NSIT_Connect.ViewModels.SettingsPageViewModel)instance;
             return that.SettingsPartViewModel;
         }
-        private object get_223_SettingsPageViewModel_AboutPartViewModel(object instance)
+        private object get_224_SettingsPageViewModel_AboutPartViewModel(object instance)
         {
             var that = (global::NSIT_Connect.ViewModels.SettingsPageViewModel)instance;
             return that.AboutPartViewModel;
@@ -5299,100 +5310,106 @@ namespace NSIT_Connect.NSIT_Connect_XamlTypeInfo
                 xamlMember.Getter = get_207_ChooseFeedItem_Title;
                 xamlMember.Setter = set_207_ChooseFeedItem_Title;
                 break;
+            case "NSIT_Connect.Models.ChooseFeedItem.ID":
+                userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.Models.ChooseFeedItem");
+                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "ID", "String");
+                xamlMember.Getter = get_208_ChooseFeedItem_ID;
+                xamlMember.Setter = set_208_ChooseFeedItem_ID;
+                break;
             case "NSIT_Connect.ViewModels.MyFeedPageViewModel.HomeFeed":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.ViewModels.MyFeedPageViewModel");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "HomeFeed", "System.Collections.ObjectModel.ObservableCollection`1<NSIT_Connect.Models.Feed>");
-                xamlMember.Getter = get_208_MyFeedPageViewModel_HomeFeed;
+                xamlMember.Getter = get_209_MyFeedPageViewModel_HomeFeed;
                 xamlMember.SetIsReadOnly();
                 break;
             case "NSIT_Connect.ViewModels.MyFeedPageViewModel.RefreshCommand":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.ViewModels.MyFeedPageViewModel");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "RefreshCommand", "Template10.Mvvm.DelegateCommand");
-                xamlMember.Getter = get_209_MyFeedPageViewModel_RefreshCommand;
+                xamlMember.Getter = get_210_MyFeedPageViewModel_RefreshCommand;
                 xamlMember.SetIsReadOnly();
                 break;
             case "NSIT_Connect.ViewModels.MyFeedPageViewModel.Selected":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.ViewModels.MyFeedPageViewModel");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Selected", "Object");
-                xamlMember.Getter = get_210_MyFeedPageViewModel_Selected;
-                xamlMember.Setter = set_210_MyFeedPageViewModel_Selected;
+                xamlMember.Getter = get_211_MyFeedPageViewModel_Selected;
+                xamlMember.Setter = set_211_MyFeedPageViewModel_Selected;
                 break;
             case "NSIT_Connect.ViewModels.MyFeedPageViewModel.IsDetailsLoading":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.ViewModels.MyFeedPageViewModel");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "IsDetailsLoading", "Boolean");
-                xamlMember.Getter = get_211_MyFeedPageViewModel_IsDetailsLoading;
-                xamlMember.Setter = set_211_MyFeedPageViewModel_IsDetailsLoading;
+                xamlMember.Getter = get_212_MyFeedPageViewModel_IsDetailsLoading;
+                xamlMember.Setter = set_212_MyFeedPageViewModel_IsDetailsLoading;
                 break;
             case "NSIT_Connect.ViewModels.MyFeedPageViewModel.IsMasterLoading":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.ViewModels.MyFeedPageViewModel");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "IsMasterLoading", "Boolean");
-                xamlMember.Getter = get_212_MyFeedPageViewModel_IsMasterLoading;
-                xamlMember.Setter = set_212_MyFeedPageViewModel_IsMasterLoading;
+                xamlMember.Getter = get_213_MyFeedPageViewModel_IsMasterLoading;
+                xamlMember.Setter = set_213_MyFeedPageViewModel_IsMasterLoading;
                 break;
             case "NSIT_Connect.ViewModels.ProfessorDetailPageViewModel.Selected":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.ViewModels.ProfessorDetailPageViewModel");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Selected", "NSIT_Connect.Models.LocationItem");
-                xamlMember.Getter = get_213_ProfessorDetailPageViewModel_Selected;
-                xamlMember.Setter = set_213_ProfessorDetailPageViewModel_Selected;
+                xamlMember.Getter = get_214_ProfessorDetailPageViewModel_Selected;
+                xamlMember.Setter = set_214_ProfessorDetailPageViewModel_Selected;
                 break;
             case "NSIT_Connect.ViewModels.ProfessorDetailPageViewModel.Item":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.ViewModels.ProfessorDetailPageViewModel");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Item", "System.Collections.ObjectModel.ObservableCollection`1<NSIT_Connect.Models.ProfessorItem>");
-                xamlMember.Getter = get_214_ProfessorDetailPageViewModel_Item;
-                xamlMember.Setter = set_214_ProfessorDetailPageViewModel_Item;
+                xamlMember.Getter = get_215_ProfessorDetailPageViewModel_Item;
+                xamlMember.Setter = set_215_ProfessorDetailPageViewModel_Item;
                 break;
             case "NSIT_Connect.Models.ProfessorItem.Foreground":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.Models.ProfessorItem");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Foreground", "Windows.UI.Xaml.Media.SolidColorBrush");
-                xamlMember.Getter = get_215_ProfessorItem_Foreground;
-                xamlMember.Setter = set_215_ProfessorItem_Foreground;
+                xamlMember.Getter = get_216_ProfessorItem_Foreground;
+                xamlMember.Setter = set_216_ProfessorItem_Foreground;
                 break;
             case "NSIT_Connect.Models.ProfessorItem.Name":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.Models.ProfessorItem");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Name", "String");
-                xamlMember.Getter = get_216_ProfessorItem_Name;
-                xamlMember.Setter = set_216_ProfessorItem_Name;
+                xamlMember.Getter = get_217_ProfessorItem_Name;
+                xamlMember.Setter = set_217_ProfessorItem_Name;
                 break;
             case "NSIT_Connect.Models.ProfessorItem.Room":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.Models.ProfessorItem");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Room", "String");
-                xamlMember.Getter = get_217_ProfessorItem_Room;
-                xamlMember.Setter = set_217_ProfessorItem_Room;
+                xamlMember.Getter = get_218_ProfessorItem_Room;
+                xamlMember.Setter = set_218_ProfessorItem_Room;
                 break;
             case "NSIT_Connect.Models.ProfessorItem.Phone":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.Models.ProfessorItem");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Phone", "String");
-                xamlMember.Getter = get_218_ProfessorItem_Phone;
-                xamlMember.Setter = set_218_ProfessorItem_Phone;
+                xamlMember.Getter = get_219_ProfessorItem_Phone;
+                xamlMember.Setter = set_219_ProfessorItem_Phone;
                 break;
             case "NSIT_Connect.Models.ProfessorItem.Email":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.Models.ProfessorItem");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Email", "String");
-                xamlMember.Getter = get_219_ProfessorItem_Email;
-                xamlMember.Setter = set_219_ProfessorItem_Email;
+                xamlMember.Getter = get_220_ProfessorItem_Email;
+                xamlMember.Setter = set_220_ProfessorItem_Email;
                 break;
             case "NSIT_Connect.ViewModels.ProfessorsPageViewModel.lpanel":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.ViewModels.ProfessorsPageViewModel");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "lpanel", "System.Collections.ObjectModel.ObservableCollection`1<NSIT_Connect.Models.LocationItem>");
-                xamlMember.Getter = get_220_ProfessorsPageViewModel_lpanel;
-                xamlMember.Setter = set_220_ProfessorsPageViewModel_lpanel;
+                xamlMember.Getter = get_221_ProfessorsPageViewModel_lpanel;
+                xamlMember.Setter = set_221_ProfessorsPageViewModel_lpanel;
                 break;
             case "NSIT_Connect.ViewModels.ProfessorsPageViewModel.Selected":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.ViewModels.ProfessorsPageViewModel");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Selected", "Object");
-                xamlMember.Getter = get_221_ProfessorsPageViewModel_Selected;
-                xamlMember.Setter = set_221_ProfessorsPageViewModel_Selected;
+                xamlMember.Getter = get_222_ProfessorsPageViewModel_Selected;
+                xamlMember.Setter = set_222_ProfessorsPageViewModel_Selected;
                 break;
             case "NSIT_Connect.ViewModels.SettingsPageViewModel.SettingsPartViewModel":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.ViewModels.SettingsPageViewModel");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "SettingsPartViewModel", "NSIT_Connect.ViewModels.SettingsPartViewModel");
-                xamlMember.Getter = get_222_SettingsPageViewModel_SettingsPartViewModel;
+                xamlMember.Getter = get_223_SettingsPageViewModel_SettingsPartViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "NSIT_Connect.ViewModels.SettingsPageViewModel.AboutPartViewModel":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.ViewModels.SettingsPageViewModel");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "AboutPartViewModel", "NSIT_Connect.ViewModels.AboutPartViewModel");
-                xamlMember.Getter = get_223_SettingsPageViewModel_AboutPartViewModel;
+                xamlMember.Getter = get_224_SettingsPageViewModel_AboutPartViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             }

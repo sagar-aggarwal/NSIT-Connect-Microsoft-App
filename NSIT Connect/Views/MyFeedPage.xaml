@@ -71,7 +71,9 @@
                                MaxLines="1" RelativePanel.AlignTopWith="Ellipse"
                                RelativePanel.RightOf="Ellipse"
                                Text="{Binding Message, FallbackValue=Message}" />
-                        <Image RelativePanel.Below="Body" Margin="5" Source="{Binding PictureUri,Mode=OneWay}"/>
+                        <Viewbox StretchDirection="DownOnly" RelativePanel.Below="Body">
+                            <Image  Margin="5" Source="{Binding PictureUri,Mode=OneWay}" Stretch="None"/>
+                        </Viewbox>
                         <TextBlock x:Name="To" FontSize="12"
                                FontWeight="Bold" 
                                RelativePanel.RightOf="Ellipse"
@@ -474,6 +476,11 @@
             <Controls:MasterDetailsView.MasterCommands>
                 <AppBarButton
                     Foreground="WhiteSmoke"
+                    Command="{x:Bind ViewModel.RefreshCommand}"
+                    Icon="Refresh"
+                    Label="Refresh" />
+                <AppBarButton
+                    Foreground="WhiteSmoke"
                     Icon="Setting"
                     Label="settings" >
                     <AppBarButton.Flyout>
@@ -504,14 +511,10 @@
                         </Flyout>
                     </AppBarButton.Flyout>
                 </AppBarButton>
-                <AppBarButton
-                    Foreground="WhiteSmoke"
-                    Command="{x:Bind ViewModel.RefreshCommand}"
-                    Icon="Refresh"
-                    Label="Refresh" />
+                
             </Controls:MasterDetailsView.MasterCommands>
             <Controls:MasterDetailsView.DetailsCommandBarContent>
-                <TextBlock Text="post" VerticalAlignment="Center" Margin="10,5,0,0" FontWeight="Bold" Style="{ThemeResource BaseTextBlockStyle}" FontSize="25" />
+                <TextBlock Text="post" VerticalAlignment="Center" Margin="15,5,0,0" FontWeight="Bold" Style="{ThemeResource BaseTextBlockStyle}" FontSize="25" />
             </Controls:MasterDetailsView.DetailsCommandBarContent>
             <Controls:MasterDetailsView.DetailsCommands>
                 <!--<AppBarButton

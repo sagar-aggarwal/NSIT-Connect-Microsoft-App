@@ -443,7 +443,7 @@
                     Label="Refresh" />
             </Controls:MasterDetailsView.MasterCommands>
             <Controls:MasterDetailsView.DetailsCommandBarContent>
-                <TextBlock Text="post" VerticalAlignment="Center" Margin="10,5,0,0" FontWeight="Bold" Style="{ThemeResource BaseTextBlockStyle}" FontSize="25" />
+                <TextBlock Text="post" VerticalAlignment="Center" Margin="15,5,0,0" FontWeight="Bold" Style="{ThemeResource BaseTextBlockStyle}" FontSize="25" />
             </Controls:MasterDetailsView.DetailsCommandBarContent>
             <Controls:MasterDetailsView.DetailsCommands>
                 <!--<AppBarButton

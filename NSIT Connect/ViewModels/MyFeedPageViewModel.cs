@@ -17,12 +17,16 @@ namespace NSIT_Connect.ViewModels
 {
     public class MyFeedPageViewModel : ViewModelBase
     {
+        public List<ChooseFeedItem> ChooseSelectedItem;
         private string next = "https://graph.facebook.com/" + Constants.id_nsitonline + "/posts?limit=20&fields=id,picture,from,shares,message," +
             "object_id,link,created_time,comments.limit(0).summary(true),likes.limit(0).summary(true)" +
             "&access_token=" + Constants.common_access;
+        private Dictionary<string, string> nextdic = new Dictionary<string, string>();
         private string result = null;
+        private Dictionary<string, string> resultdic = new Dictionary<string, string>();
         private string pictureresult = null;
         private bool refresh = false;
+        private Dictionary<string, bool> refreshdic = new Dictionary<string, bool>();
         private string PictureUri = null;
         private string hobject, hmessage, hpicture, hlink, hlikes, htime;
         private string[] ChooseSource = {
@@ -41,6 +45,21 @@ namespace NSIT_Connect.ViewModels
 
         };
 
+        private string[] ids = {
+            Constants.id_collegespace,
+            Constants.id_crosslinks,
+            Constants.id_csi,
+            Constants.id_ieee,
+            Constants.id_ashwa,
+            Constants.id_junoon,
+            Constants.id_debsoc,
+            Constants.id_quiz,
+            Constants.id_bullet,
+            Constants.id_rotaract,
+            Constants.id_enactus,
+            Constants.id_aagaz
+        };
+
         private string[] ChooseTitle = {
             "COLLEGESPACE","CROSSLINKS","CSI NSIT","IEEE NSIT","ASHWAMEDH","JUNOON" ,"DEBSOC","QUIZ CLUB","BULLETHAWK","ROTARACT","ENACTUS","AAGAZ"
         };
@@ -50,11 +69,21 @@ namespace NSIT_Connect.ViewModels
 
         public MyFeedPageViewModel()
         {
+            ChooseSelectedItem = new List<ChooseFeedItem>();
             HomeFeed = new ObservableCollection<Feed>();
             for (int i = 0; i < 12; i++)
             {
-                Item.Add(new ChooseFeedItem() {ImageSource = new Uri(ChooseSource[i]),Title = ChooseTitle[i] });
+                Item.Add(new ChooseFeedItem() {ImageSource = new Uri(ChooseSource[i]),Title = ChooseTitle[i] ,ID = ids[i] });
             } 
+
+            foreach(string item in ids)
+            {
+                resultdic.Add(item,null);
+                refreshdic.Add(item, false);
+                nextdic.Add(item, "https://graph.facebook.com/" + item + "/posts?limit=20&fields=id,picture,from,shares,message," +
+            "object_id,link,created_time,comments.limit(0).summary(true),likes.limit(0).summary(true)" +
+            "&access_token=" + Constants.common_access);
+            }
         }
 
 
@@ -90,10 +119,13 @@ namespace NSIT_Connect.ViewModels
             IsMasterLoading = true;
             HomeFeed.Clear();
             Selected = null;
-            refresh = true;
+            foreach(string item in ids)
+            {
+                refreshdic[item] = true;
+            }
             WindowWrapper.Current().Dispatcher.Dispatch(() =>
             {
-                getinfo(Constants.id_nsitonline);
+                Chooseinfo();
                 Selected = HomeFeed?.FirstOrDefault();
                 IsMasterLoading = false;
 
@@ -203,22 +235,29 @@ namespace NSIT_Connect.ViewModels
             set { Set(ref _isMasterLoading, value); }
         }
 
+        public async void Chooseinfo()
+        {
+            foreach(ChooseFeedItem item in ChooseSelectedItem)
+            {
+                getinfo(item.ID);
+            }
+        }
+
         public async void getinfo(string id)
         {
-            if (refresh)
-                next = "https://graph.facebook.com/" + id + "/posts?limit=20&fields=id,picture,from,shares,message," +
-            "object_id,link,created_time,comments.limit(0).summary(true),likes.limit(0).summary(true)" +
-            "&access_token=" + Constants.common_access;
+            if (refreshdic[id])
+                nextdic[id] = "https://graph.facebook.com/" + id + "/posts?limit=10&fields=picture,shares,message,object_id," +
+                    "link,comments.limit(0).summary(true),to,created_time,likes.limit(0).summary(true)&access_token=" + Constants.common_access;
             if (NetworkInterface.GetIsNetworkAvailable())
             {
                 var httpClient = new HttpClient();
-                var uri = new Uri(next);
+                var uri = new Uri(nextdic[id]);
 
                 try
                 {
                     HttpResponseMessage responseMessage = await httpClient.GetAsync(uri);
                     responseMessage.EnsureSuccessStatusCode();
-                    result = await responseMessage.Content.ReadAsStringAsync();
+                    resultdic[id] = await responseMessage.Content.ReadAsStringAsync();
                 }
                 catch (Exception ex) { }
 
@@ -227,9 +266,9 @@ namespace NSIT_Connect.ViewModels
             }
             JsonObject ob, ob2;
             JsonArray arr;
-            if (result != null && result != string.Empty)
+            if (resultdic[id] != null && resultdic[id] != string.Empty)
             {
-                ob = JsonObject.Parse(result);
+                ob = JsonObject.Parse(resultdic[id]);
                 arr = ob.GetNamedArray("data");
 
 
@@ -237,15 +276,10 @@ namespace NSIT_Connect.ViewModels
                 for (uint i = 0; i < len; i++)
                 {
 
-                    ob2 = arr.GetObjectAt(i).GetNamedObject("from");
-                    string s2 = ob2.GetNamedString("id");
-                    if (!s2.Equals(Constants.id_nsitonline))
-                        continue;
-
                     if (arr.GetObjectAt(i).ContainsKey("message"))
                         hmessage = arr.GetObjectAt(i).GetNamedString("message");
                     else
-                        hmessage = string.Empty;
+                        hmessage = "No Description";
 
                     if (!(arr.GetObjectAt(i).ContainsKey("object_id")))
                         hobject = string.Empty;
@@ -284,7 +318,7 @@ namespace NSIT_Connect.ViewModels
 
                 }
                 ob = ob.GetNamedObject("paging");
-                next = ob.GetNamedString("next");
+                nextdic[id] = ob.GetNamedString("next");
 
             }
 
@@ -293,9 +327,12 @@ namespace NSIT_Connect.ViewModels
 
             }
 
-            if (refresh && HomeFeed.Count > 0)
+            if (refreshdic[id] && HomeFeed.Count > 0)
+            {
                 Selected = HomeFeed[0];
-            refresh = false;
+                getpicture(Selected as Feed);
+            }
+            refreshdic[id] = false;
         }
 
         public async void getpicture(Feed message)
@@ -328,7 +365,16 @@ namespace NSIT_Connect.ViewModels
                     {
                         message.PictureUri = new Uri(array.GetObjectAt(0).GetNamedString("source"));
                     }
+                    
                 }
+                if(message.PictureUri == null && message.Picture!=null && message.Picture != string.Empty)
+                {
+                    message.PictureUri = new Uri(message.Picture);
+                }
+            }
+            else
+            {
+                message.PictureUri = new Uri(message.Picture);
             }
         }
     }

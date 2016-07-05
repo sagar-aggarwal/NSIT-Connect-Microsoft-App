@@ -12,6 +12,7 @@ namespace NSIT_Connect.Models
     {
         private Uri imagesource;
         private string title;
+        private string id;
 
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -20,6 +21,9 @@ namespace NSIT_Connect.Models
 
         public string Title
         { get { return title; } set { title = value; OnPropertyChanged(); } }
+
+        public string ID
+        { get { return id; } set { id = value; OnPropertyChanged(); } }
 
         protected void OnPropertyChanged([CallerMemberName]string name = null)
         {

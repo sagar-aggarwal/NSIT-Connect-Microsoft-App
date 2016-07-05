@@ -28,14 +28,35 @@ namespace NSIT_Connect.Views
     /// </summary>
     public sealed partial class MyFeedPage : Page
     {
+        
         public MyFeedPage()
         {
             this.InitializeComponent();
+            
         }
-        protected override void OnNavigatedTo(NavigationEventArgs e)
+        protected async override void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
-        
+            ViewModel.ChooseSelectedItem.Clear();
+            Windows.Storage.ApplicationDataContainer localSettings = Windows.Storage.ApplicationData.Current.LocalSettings;
+            for (int i = 0; i < ViewModel.Item.Count; i++)
+            {
+                ChooseFeedItem item = ViewModel.Item[i];
+                if (localSettings.Values[item.Title] != null)
+                {
+                    bool selected = (bool)localSettings.Values[item.Title];
+                    if (selected)
+                    {
+                        ViewModel.ChooseSelectedItem.Add(item);
+                    }
+                }
+            }
+            if(ViewModel.ChooseSelectedItem.Count == 0)
+            {
+                var mssg = new MessageDialog("No item Selected");
+                await mssg.ShowAsync();
+            }
+
         }
 
         private void NarrowVisualStateGroup_CurrentStateChanged(object sender, VisualStateChangedEventArgs e)
@@ -52,7 +73,7 @@ namespace NSIT_Connect.Views
             var scrollViewer = (ScrollViewer)sender;
             if (scrollViewer.VerticalOffset == scrollViewer.ScrollableHeight)
             {
-                ViewModel.getinfo(Constants.id_nsitonline);
+                ViewModel.Chooseinfo();
             }
         }
 
@@ -111,8 +132,10 @@ namespace NSIT_Connect.Views
 
         }
 
-        private  void Flyout_Closed(object sender, object e)
+        private async void Flyout_Closed(object sender, object e)
         {
+            List<ChooseFeedItem> CurrentItem = new List<ChooseFeedItem>();
+            CurrentItem.Clear();
             Windows.Storage.ApplicationDataContainer localSettings = Windows.Storage.ApplicationData.Current.LocalSettings;
             for (int i = 0; i < ViewModel.Item.Count; i++)
             {
@@ -120,18 +143,23 @@ namespace NSIT_Connect.Views
                 if (Choose_GridView.SelectedItems.Contains(item))
                 {
                      localSettings.Values[item.Title] = true;
+                     CurrentItem.Add(item);
                 }
                 else
                 {
                     localSettings.Values[item.Title] = false;
                 }
-            }  
+            }
+            if(ViewModel.ChooseSelectedItem.Count != CurrentItem.Count)
+            ViewModel.RefreshCommand.Execute();
+
+            ViewModel.ChooseSelectedItem = CurrentItem;
         }
 
         private  void Choose_GridView_Loaded(object sender, RoutedEventArgs e)
         {
+            
             Windows.Storage.ApplicationDataContainer localSettings = Windows.Storage.ApplicationData.Current.LocalSettings;
-
             for (int i = 0; i < ViewModel.Item.Count; i++)
             {
                 ChooseFeedItem item = ViewModel.Item[i];
@@ -141,11 +169,10 @@ namespace NSIT_Connect.Views
                     if (selected)
                     {
                         Choose_GridView.SelectedItems.Add(item);
-
                     }
                 }
             }
-
+            
         }
     }
 }
