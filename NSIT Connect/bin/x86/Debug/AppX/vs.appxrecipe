@@ -22,7 +22,7 @@
     <AppXManifest Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-07-05T12:13:01.221</Modified>
+      <Modified>2016-07-05T13:09:28.791</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -878,11 +878,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-07-05T12:12:59.574</Modified>
+      <Modified>2016-07-05T13:09:27.133</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\Core\NSIT Connect.exe">
       <PackagePath>NSIT Connect.exe</PackagePath>
-      <Modified>2016-07-05T12:13:01.216</Modified>
+      <Modified>2016-07-05T13:09:28.785</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
