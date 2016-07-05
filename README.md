@@ -47,7 +47,7 @@ Locations section help you to get around the whole college by providing you the 
 ![Locations Glossary](/../master/screenshots/Locations/2.png "Locations Glossary")
 ![Locations Glossary](/../master/screenshots/Locations/3.png "Locations Glossary")
 ![Map view](/../master/screenshots/Locations/4.png "Map view")
-![Map view](/../master/screenshots/5.png "Map view")
+![Map view](/../master/screenshots/Locations/5.png "Map view")
 
 ###6.CodeRadar 
 CodeRadar is a Coding Contest Reminder that lets you keep track of all ongoing and upcoming contests on various online judges like Codechef,Topcoder,CodeForces,URIoj,HackerRank,etc..  you can filter the online judges you want to see, set reminders and do many more stuff..Happy Coding :)
