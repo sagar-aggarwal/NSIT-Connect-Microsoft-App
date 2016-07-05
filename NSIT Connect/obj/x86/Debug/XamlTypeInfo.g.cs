@@ -210,9 +210,9 @@ namespace NSIT_Connect.NSIT_Connect_XamlTypeInfo
             _typeNameTable[50] = "System.Type";
             _typeNameTable[51] = "Windows.UI.Xaml.Visibility";
             _typeNameTable[52] = "System.Nullable`1<Boolean>";
-            _typeNameTable[53] = "Windows.UI.Xaml.Thickness";
-            _typeNameTable[54] = "Windows.UI.Xaml.Media.Brush";
-            _typeNameTable[55] = "Windows.UI.Xaml.Controls.SplitViewDisplayMode";
+            _typeNameTable[53] = "Windows.UI.Xaml.Controls.SplitViewDisplayMode";
+            _typeNameTable[54] = "Windows.UI.Xaml.Thickness";
+            _typeNameTable[55] = "Windows.UI.Xaml.Media.Brush";
             _typeNameTable[56] = "Windows.UI.Xaml.Controls.Orientation";
             _typeNameTable[57] = "Template10.Controls.HamburgerMenu.OpenCloseModes";
             _typeNameTable[58] = "Template10.Mvvm.DelegateCommand`1<Template10.Controls.HamburgerButtonInfo>";
@@ -350,9 +350,9 @@ namespace NSIT_Connect.NSIT_Connect_XamlTypeInfo
             _typeTable[50] = typeof(global::System.Type);
             _typeTable[51] = typeof(global::Windows.UI.Xaml.Visibility);
             _typeTable[52] = typeof(global::System.Nullable<global::System.Boolean>);
-            _typeTable[53] = typeof(global::Windows.UI.Xaml.Thickness);
-            _typeTable[54] = typeof(global::Windows.UI.Xaml.Media.Brush);
-            _typeTable[55] = typeof(global::Windows.UI.Xaml.Controls.SplitViewDisplayMode);
+            _typeTable[53] = typeof(global::Windows.UI.Xaml.Controls.SplitViewDisplayMode);
+            _typeTable[54] = typeof(global::Windows.UI.Xaml.Thickness);
+            _typeTable[55] = typeof(global::Windows.UI.Xaml.Media.Brush);
             _typeTable[56] = typeof(global::Windows.UI.Xaml.Controls.Orientation);
             _typeTable[57] = typeof(global::Template10.Controls.HamburgerMenu.OpenCloseModes);
             _typeTable[58] = typeof(global::Template10.Mvvm.DelegateCommand<global::Template10.Controls.HamburgerButtonInfo>);
@@ -963,6 +963,7 @@ namespace NSIT_Connect.NSIT_Connect_XamlTypeInfo
                 userType.Activator = Activate_41_HamburgerMenu;
                 userType.SetContentPropertyName("Template10.Controls.HamburgerMenu.PrimaryButtons");
                 userType.AddMemberName("PrimaryButtons");
+                userType.AddMemberName("VisualStateNarrowDisplayMode");
                 userType.AddMemberName("PaneBorderThickness");
                 userType.AddMemberName("SecondarySeparator");
                 userType.AddMemberName("NavButtonBackground");
@@ -984,7 +985,6 @@ namespace NSIT_Connect.NSIT_Connect_XamlTypeInfo
                 userType.AddMemberName("NavButtonHoverBackground");
                 userType.AddMemberName("HamburgerButtonVisibility");
                 userType.AddMemberName("DisplayMode");
-                userType.AddMemberName("VisualStateNarrowDisplayMode");
                 userType.AddMemberName("VisualStateNormalDisplayMode");
                 userType.AddMemberName("VisualStateWideDisplayMode");
                 userType.AddMemberName("SecondaryButtonOrientation");
@@ -1080,15 +1080,15 @@ namespace NSIT_Connect.NSIT_Connect_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 53:   //  Windows.UI.Xaml.Thickness
+            case 53:   //  Windows.UI.Xaml.Controls.SplitViewDisplayMode
                 xamlType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 54:   //  Windows.UI.Xaml.Media.Brush
+            case 54:   //  Windows.UI.Xaml.Thickness
                 xamlType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 55:   //  Windows.UI.Xaml.Controls.SplitViewDisplayMode
+            case 55:   //  Windows.UI.Xaml.Media.Brush
                 xamlType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
@@ -2397,225 +2397,225 @@ namespace NSIT_Connect.NSIT_Connect_XamlTypeInfo
             var that = (global::Template10.Controls.HamburgerButtonInfo)instance;
             that.MaxWidth = (global::System.Double)Value;
         }
-        private object get_63_HamburgerMenu_PaneBorderThickness(object instance)
-        {
-            var that = (global::Template10.Controls.HamburgerMenu)instance;
-            return that.PaneBorderThickness;
-        }
-        private void set_63_HamburgerMenu_PaneBorderThickness(object instance, object Value)
-        {
-            var that = (global::Template10.Controls.HamburgerMenu)instance;
-            that.PaneBorderThickness = (global::Windows.UI.Xaml.Thickness)Value;
-        }
-        private object get_64_HamburgerMenu_SecondarySeparator(object instance)
-        {
-            var that = (global::Template10.Controls.HamburgerMenu)instance;
-            return that.SecondarySeparator;
-        }
-        private void set_64_HamburgerMenu_SecondarySeparator(object instance, object Value)
-        {
-            var that = (global::Template10.Controls.HamburgerMenu)instance;
-            that.SecondarySeparator = (global::Windows.UI.Xaml.Media.Brush)Value;
-        }
-        private object get_65_HamburgerMenu_NavButtonBackground(object instance)
-        {
-            var that = (global::Template10.Controls.HamburgerMenu)instance;
-            return that.NavButtonBackground;
-        }
-        private void set_65_HamburgerMenu_NavButtonBackground(object instance, object Value)
-        {
-            var that = (global::Template10.Controls.HamburgerMenu)instance;
-            that.NavButtonBackground = (global::Windows.UI.Xaml.Media.Brush)Value;
-        }
-        private object get_66_HamburgerMenu_NavButtonForeground(object instance)
-        {
-            var that = (global::Template10.Controls.HamburgerMenu)instance;
-            return that.NavButtonForeground;
-        }
-        private void set_66_HamburgerMenu_NavButtonForeground(object instance, object Value)
-        {
-            var that = (global::Template10.Controls.HamburgerMenu)instance;
-            that.NavButtonForeground = (global::Windows.UI.Xaml.Media.Brush)Value;
-        }
-        private object get_67_HamburgerMenu_NavAreaBackground(object instance)
-        {
-            var that = (global::Template10.Controls.HamburgerMenu)instance;
-            return that.NavAreaBackground;
-        }
-        private void set_67_HamburgerMenu_NavAreaBackground(object instance, object Value)
-        {
-            var that = (global::Template10.Controls.HamburgerMenu)instance;
-            that.NavAreaBackground = (global::Windows.UI.Xaml.Media.Brush)Value;
-        }
-        private object get_68_HamburgerMenu_HamburgerForeground(object instance)
-        {
-            var that = (global::Template10.Controls.HamburgerMenu)instance;
-            return that.HamburgerForeground;
-        }
-        private void set_68_HamburgerMenu_HamburgerForeground(object instance, object Value)
-        {
-            var that = (global::Template10.Controls.HamburgerMenu)instance;
-            that.HamburgerForeground = (global::Windows.UI.Xaml.Media.Brush)Value;
-        }
-        private object get_69_HamburgerMenu_HamburgerBackground(object instance)
-        {
-            var that = (global::Template10.Controls.HamburgerMenu)instance;
-            return that.HamburgerBackground;
-        }
-        private void set_69_HamburgerMenu_HamburgerBackground(object instance, object Value)
-        {
-            var that = (global::Template10.Controls.HamburgerMenu)instance;
-            that.HamburgerBackground = (global::Windows.UI.Xaml.Media.Brush)Value;
-        }
-        private object get_70_HamburgerMenu_VisualStateNarrowMinWidth(object instance)
-        {
-            var that = (global::Template10.Controls.HamburgerMenu)instance;
-            return that.VisualStateNarrowMinWidth;
-        }
-        private void set_70_HamburgerMenu_VisualStateNarrowMinWidth(object instance, object Value)
-        {
-            var that = (global::Template10.Controls.HamburgerMenu)instance;
-            that.VisualStateNarrowMinWidth = (global::System.Double)Value;
-        }
-        private object get_71_HamburgerMenu_VisualStateNormalMinWidth(object instance)
-        {
-            var that = (global::Template10.Controls.HamburgerMenu)instance;
-            return that.VisualStateNormalMinWidth;
-        }
-        private void set_71_HamburgerMenu_VisualStateNormalMinWidth(object instance, object Value)
-        {
-            var that = (global::Template10.Controls.HamburgerMenu)instance;
-            that.VisualStateNormalMinWidth = (global::System.Double)Value;
-        }
-        private object get_72_HamburgerMenu_VisualStateWideMinWidth(object instance)
-        {
-            var that = (global::Template10.Controls.HamburgerMenu)instance;
-            return that.VisualStateWideMinWidth;
-        }
-        private void set_72_HamburgerMenu_VisualStateWideMinWidth(object instance, object Value)
-        {
-            var that = (global::Template10.Controls.HamburgerMenu)instance;
-            that.VisualStateWideMinWidth = (global::System.Double)Value;
-        }
-        private object get_73_HamburgerMenu_AccentColor(object instance)
-        {
-            var that = (global::Template10.Controls.HamburgerMenu)instance;
-            return that.AccentColor;
-        }
-        private void set_73_HamburgerMenu_AccentColor(object instance, object Value)
-        {
-            var that = (global::Template10.Controls.HamburgerMenu)instance;
-            that.AccentColor = (global::Windows.UI.Color)Value;
-        }
-        private object get_74_HamburgerMenu_PaneBorderBrush(object instance)
-        {
-            var that = (global::Template10.Controls.HamburgerMenu)instance;
-            return that.PaneBorderBrush;
-        }
-        private void set_74_HamburgerMenu_PaneBorderBrush(object instance, object Value)
-        {
-            var that = (global::Template10.Controls.HamburgerMenu)instance;
-            that.PaneBorderBrush = (global::Windows.UI.Xaml.Media.Brush)Value;
-        }
-        private object get_75_HamburgerMenu_NavButtonCheckedForeground(object instance)
-        {
-            var that = (global::Template10.Controls.HamburgerMenu)instance;
-            return that.NavButtonCheckedForeground;
-        }
-        private void set_75_HamburgerMenu_NavButtonCheckedForeground(object instance, object Value)
-        {
-            var that = (global::Template10.Controls.HamburgerMenu)instance;
-            that.NavButtonCheckedForeground = (global::Windows.UI.Xaml.Media.Brush)Value;
-        }
-        private object get_76_HamburgerMenu_NavButtonCheckedBackground(object instance)
-        {
-            var that = (global::Template10.Controls.HamburgerMenu)instance;
-            return that.NavButtonCheckedBackground;
-        }
-        private void set_76_HamburgerMenu_NavButtonCheckedBackground(object instance, object Value)
-        {
-            var that = (global::Template10.Controls.HamburgerMenu)instance;
-            that.NavButtonCheckedBackground = (global::Windows.UI.Xaml.Media.Brush)Value;
-        }
-        private object get_77_HamburgerMenu_NavButtonCheckedIndicatorBrush(object instance)
-        {
-            var that = (global::Template10.Controls.HamburgerMenu)instance;
-            return that.NavButtonCheckedIndicatorBrush;
-        }
-        private void set_77_HamburgerMenu_NavButtonCheckedIndicatorBrush(object instance, object Value)
-        {
-            var that = (global::Template10.Controls.HamburgerMenu)instance;
-            that.NavButtonCheckedIndicatorBrush = (global::Windows.UI.Xaml.Media.Brush)Value;
-        }
-        private object get_78_HamburgerMenu_NavButtonPressedForeground(object instance)
-        {
-            var that = (global::Template10.Controls.HamburgerMenu)instance;
-            return that.NavButtonPressedForeground;
-        }
-        private void set_78_HamburgerMenu_NavButtonPressedForeground(object instance, object Value)
-        {
-            var that = (global::Template10.Controls.HamburgerMenu)instance;
-            that.NavButtonPressedForeground = (global::Windows.UI.Xaml.Media.Brush)Value;
-        }
-        private object get_79_HamburgerMenu_NavButtonPressedBackground(object instance)
-        {
-            var that = (global::Template10.Controls.HamburgerMenu)instance;
-            return that.NavButtonPressedBackground;
-        }
-        private void set_79_HamburgerMenu_NavButtonPressedBackground(object instance, object Value)
-        {
-            var that = (global::Template10.Controls.HamburgerMenu)instance;
-            that.NavButtonPressedBackground = (global::Windows.UI.Xaml.Media.Brush)Value;
-        }
-        private object get_80_HamburgerMenu_NavButtonHoverForeground(object instance)
-        {
-            var that = (global::Template10.Controls.HamburgerMenu)instance;
-            return that.NavButtonHoverForeground;
-        }
-        private void set_80_HamburgerMenu_NavButtonHoverForeground(object instance, object Value)
-        {
-            var that = (global::Template10.Controls.HamburgerMenu)instance;
-            that.NavButtonHoverForeground = (global::Windows.UI.Xaml.Media.Brush)Value;
-        }
-        private object get_81_HamburgerMenu_NavButtonHoverBackground(object instance)
-        {
-            var that = (global::Template10.Controls.HamburgerMenu)instance;
-            return that.NavButtonHoverBackground;
-        }
-        private void set_81_HamburgerMenu_NavButtonHoverBackground(object instance, object Value)
-        {
-            var that = (global::Template10.Controls.HamburgerMenu)instance;
-            that.NavButtonHoverBackground = (global::Windows.UI.Xaml.Media.Brush)Value;
-        }
-        private object get_82_HamburgerMenu_HamburgerButtonVisibility(object instance)
-        {
-            var that = (global::Template10.Controls.HamburgerMenu)instance;
-            return that.HamburgerButtonVisibility;
-        }
-        private void set_82_HamburgerMenu_HamburgerButtonVisibility(object instance, object Value)
-        {
-            var that = (global::Template10.Controls.HamburgerMenu)instance;
-            that.HamburgerButtonVisibility = (global::Windows.UI.Xaml.Visibility)Value;
-        }
-        private object get_83_HamburgerMenu_DisplayMode(object instance)
-        {
-            var that = (global::Template10.Controls.HamburgerMenu)instance;
-            return that.DisplayMode;
-        }
-        private void set_83_HamburgerMenu_DisplayMode(object instance, object Value)
-        {
-            var that = (global::Template10.Controls.HamburgerMenu)instance;
-            that.DisplayMode = (global::Windows.UI.Xaml.Controls.SplitViewDisplayMode)Value;
-        }
-        private object get_84_HamburgerMenu_VisualStateNarrowDisplayMode(object instance)
+        private object get_63_HamburgerMenu_VisualStateNarrowDisplayMode(object instance)
         {
             var that = (global::Template10.Controls.HamburgerMenu)instance;
             return that.VisualStateNarrowDisplayMode;
         }
-        private void set_84_HamburgerMenu_VisualStateNarrowDisplayMode(object instance, object Value)
+        private void set_63_HamburgerMenu_VisualStateNarrowDisplayMode(object instance, object Value)
         {
             var that = (global::Template10.Controls.HamburgerMenu)instance;
             that.VisualStateNarrowDisplayMode = (global::Windows.UI.Xaml.Controls.SplitViewDisplayMode)Value;
+        }
+        private object get_64_HamburgerMenu_PaneBorderThickness(object instance)
+        {
+            var that = (global::Template10.Controls.HamburgerMenu)instance;
+            return that.PaneBorderThickness;
+        }
+        private void set_64_HamburgerMenu_PaneBorderThickness(object instance, object Value)
+        {
+            var that = (global::Template10.Controls.HamburgerMenu)instance;
+            that.PaneBorderThickness = (global::Windows.UI.Xaml.Thickness)Value;
+        }
+        private object get_65_HamburgerMenu_SecondarySeparator(object instance)
+        {
+            var that = (global::Template10.Controls.HamburgerMenu)instance;
+            return that.SecondarySeparator;
+        }
+        private void set_65_HamburgerMenu_SecondarySeparator(object instance, object Value)
+        {
+            var that = (global::Template10.Controls.HamburgerMenu)instance;
+            that.SecondarySeparator = (global::Windows.UI.Xaml.Media.Brush)Value;
+        }
+        private object get_66_HamburgerMenu_NavButtonBackground(object instance)
+        {
+            var that = (global::Template10.Controls.HamburgerMenu)instance;
+            return that.NavButtonBackground;
+        }
+        private void set_66_HamburgerMenu_NavButtonBackground(object instance, object Value)
+        {
+            var that = (global::Template10.Controls.HamburgerMenu)instance;
+            that.NavButtonBackground = (global::Windows.UI.Xaml.Media.Brush)Value;
+        }
+        private object get_67_HamburgerMenu_NavButtonForeground(object instance)
+        {
+            var that = (global::Template10.Controls.HamburgerMenu)instance;
+            return that.NavButtonForeground;
+        }
+        private void set_67_HamburgerMenu_NavButtonForeground(object instance, object Value)
+        {
+            var that = (global::Template10.Controls.HamburgerMenu)instance;
+            that.NavButtonForeground = (global::Windows.UI.Xaml.Media.Brush)Value;
+        }
+        private object get_68_HamburgerMenu_NavAreaBackground(object instance)
+        {
+            var that = (global::Template10.Controls.HamburgerMenu)instance;
+            return that.NavAreaBackground;
+        }
+        private void set_68_HamburgerMenu_NavAreaBackground(object instance, object Value)
+        {
+            var that = (global::Template10.Controls.HamburgerMenu)instance;
+            that.NavAreaBackground = (global::Windows.UI.Xaml.Media.Brush)Value;
+        }
+        private object get_69_HamburgerMenu_HamburgerForeground(object instance)
+        {
+            var that = (global::Template10.Controls.HamburgerMenu)instance;
+            return that.HamburgerForeground;
+        }
+        private void set_69_HamburgerMenu_HamburgerForeground(object instance, object Value)
+        {
+            var that = (global::Template10.Controls.HamburgerMenu)instance;
+            that.HamburgerForeground = (global::Windows.UI.Xaml.Media.Brush)Value;
+        }
+        private object get_70_HamburgerMenu_HamburgerBackground(object instance)
+        {
+            var that = (global::Template10.Controls.HamburgerMenu)instance;
+            return that.HamburgerBackground;
+        }
+        private void set_70_HamburgerMenu_HamburgerBackground(object instance, object Value)
+        {
+            var that = (global::Template10.Controls.HamburgerMenu)instance;
+            that.HamburgerBackground = (global::Windows.UI.Xaml.Media.Brush)Value;
+        }
+        private object get_71_HamburgerMenu_VisualStateNarrowMinWidth(object instance)
+        {
+            var that = (global::Template10.Controls.HamburgerMenu)instance;
+            return that.VisualStateNarrowMinWidth;
+        }
+        private void set_71_HamburgerMenu_VisualStateNarrowMinWidth(object instance, object Value)
+        {
+            var that = (global::Template10.Controls.HamburgerMenu)instance;
+            that.VisualStateNarrowMinWidth = (global::System.Double)Value;
+        }
+        private object get_72_HamburgerMenu_VisualStateNormalMinWidth(object instance)
+        {
+            var that = (global::Template10.Controls.HamburgerMenu)instance;
+            return that.VisualStateNormalMinWidth;
+        }
+        private void set_72_HamburgerMenu_VisualStateNormalMinWidth(object instance, object Value)
+        {
+            var that = (global::Template10.Controls.HamburgerMenu)instance;
+            that.VisualStateNormalMinWidth = (global::System.Double)Value;
+        }
+        private object get_73_HamburgerMenu_VisualStateWideMinWidth(object instance)
+        {
+            var that = (global::Template10.Controls.HamburgerMenu)instance;
+            return that.VisualStateWideMinWidth;
+        }
+        private void set_73_HamburgerMenu_VisualStateWideMinWidth(object instance, object Value)
+        {
+            var that = (global::Template10.Controls.HamburgerMenu)instance;
+            that.VisualStateWideMinWidth = (global::System.Double)Value;
+        }
+        private object get_74_HamburgerMenu_AccentColor(object instance)
+        {
+            var that = (global::Template10.Controls.HamburgerMenu)instance;
+            return that.AccentColor;
+        }
+        private void set_74_HamburgerMenu_AccentColor(object instance, object Value)
+        {
+            var that = (global::Template10.Controls.HamburgerMenu)instance;
+            that.AccentColor = (global::Windows.UI.Color)Value;
+        }
+        private object get_75_HamburgerMenu_PaneBorderBrush(object instance)
+        {
+            var that = (global::Template10.Controls.HamburgerMenu)instance;
+            return that.PaneBorderBrush;
+        }
+        private void set_75_HamburgerMenu_PaneBorderBrush(object instance, object Value)
+        {
+            var that = (global::Template10.Controls.HamburgerMenu)instance;
+            that.PaneBorderBrush = (global::Windows.UI.Xaml.Media.Brush)Value;
+        }
+        private object get_76_HamburgerMenu_NavButtonCheckedForeground(object instance)
+        {
+            var that = (global::Template10.Controls.HamburgerMenu)instance;
+            return that.NavButtonCheckedForeground;
+        }
+        private void set_76_HamburgerMenu_NavButtonCheckedForeground(object instance, object Value)
+        {
+            var that = (global::Template10.Controls.HamburgerMenu)instance;
+            that.NavButtonCheckedForeground = (global::Windows.UI.Xaml.Media.Brush)Value;
+        }
+        private object get_77_HamburgerMenu_NavButtonCheckedBackground(object instance)
+        {
+            var that = (global::Template10.Controls.HamburgerMenu)instance;
+            return that.NavButtonCheckedBackground;
+        }
+        private void set_77_HamburgerMenu_NavButtonCheckedBackground(object instance, object Value)
+        {
+            var that = (global::Template10.Controls.HamburgerMenu)instance;
+            that.NavButtonCheckedBackground = (global::Windows.UI.Xaml.Media.Brush)Value;
+        }
+        private object get_78_HamburgerMenu_NavButtonCheckedIndicatorBrush(object instance)
+        {
+            var that = (global::Template10.Controls.HamburgerMenu)instance;
+            return that.NavButtonCheckedIndicatorBrush;
+        }
+        private void set_78_HamburgerMenu_NavButtonCheckedIndicatorBrush(object instance, object Value)
+        {
+            var that = (global::Template10.Controls.HamburgerMenu)instance;
+            that.NavButtonCheckedIndicatorBrush = (global::Windows.UI.Xaml.Media.Brush)Value;
+        }
+        private object get_79_HamburgerMenu_NavButtonPressedForeground(object instance)
+        {
+            var that = (global::Template10.Controls.HamburgerMenu)instance;
+            return that.NavButtonPressedForeground;
+        }
+        private void set_79_HamburgerMenu_NavButtonPressedForeground(object instance, object Value)
+        {
+            var that = (global::Template10.Controls.HamburgerMenu)instance;
+            that.NavButtonPressedForeground = (global::Windows.UI.Xaml.Media.Brush)Value;
+        }
+        private object get_80_HamburgerMenu_NavButtonPressedBackground(object instance)
+        {
+            var that = (global::Template10.Controls.HamburgerMenu)instance;
+            return that.NavButtonPressedBackground;
+        }
+        private void set_80_HamburgerMenu_NavButtonPressedBackground(object instance, object Value)
+        {
+            var that = (global::Template10.Controls.HamburgerMenu)instance;
+            that.NavButtonPressedBackground = (global::Windows.UI.Xaml.Media.Brush)Value;
+        }
+        private object get_81_HamburgerMenu_NavButtonHoverForeground(object instance)
+        {
+            var that = (global::Template10.Controls.HamburgerMenu)instance;
+            return that.NavButtonHoverForeground;
+        }
+        private void set_81_HamburgerMenu_NavButtonHoverForeground(object instance, object Value)
+        {
+            var that = (global::Template10.Controls.HamburgerMenu)instance;
+            that.NavButtonHoverForeground = (global::Windows.UI.Xaml.Media.Brush)Value;
+        }
+        private object get_82_HamburgerMenu_NavButtonHoverBackground(object instance)
+        {
+            var that = (global::Template10.Controls.HamburgerMenu)instance;
+            return that.NavButtonHoverBackground;
+        }
+        private void set_82_HamburgerMenu_NavButtonHoverBackground(object instance, object Value)
+        {
+            var that = (global::Template10.Controls.HamburgerMenu)instance;
+            that.NavButtonHoverBackground = (global::Windows.UI.Xaml.Media.Brush)Value;
+        }
+        private object get_83_HamburgerMenu_HamburgerButtonVisibility(object instance)
+        {
+            var that = (global::Template10.Controls.HamburgerMenu)instance;
+            return that.HamburgerButtonVisibility;
+        }
+        private void set_83_HamburgerMenu_HamburgerButtonVisibility(object instance, object Value)
+        {
+            var that = (global::Template10.Controls.HamburgerMenu)instance;
+            that.HamburgerButtonVisibility = (global::Windows.UI.Xaml.Visibility)Value;
+        }
+        private object get_84_HamburgerMenu_DisplayMode(object instance)
+        {
+            var that = (global::Template10.Controls.HamburgerMenu)instance;
+            return that.DisplayMode;
+        }
+        private void set_84_HamburgerMenu_DisplayMode(object instance, object Value)
+        {
+            var that = (global::Template10.Controls.HamburgerMenu)instance;
+            that.DisplayMode = (global::Windows.UI.Xaml.Controls.SplitViewDisplayMode)Value;
         }
         private object get_85_HamburgerMenu_VisualStateNormalDisplayMode(object instance)
         {
@@ -4367,159 +4367,159 @@ namespace NSIT_Connect.NSIT_Connect_XamlTypeInfo
                 xamlMember.Getter = get_62_HamburgerButtonInfo_MaxWidth;
                 xamlMember.Setter = set_62_HamburgerButtonInfo_MaxWidth;
                 break;
+            case "Template10.Controls.HamburgerMenu.VisualStateNarrowDisplayMode":
+                userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.HamburgerMenu");
+                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "VisualStateNarrowDisplayMode", "Windows.UI.Xaml.Controls.SplitViewDisplayMode");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_63_HamburgerMenu_VisualStateNarrowDisplayMode;
+                xamlMember.Setter = set_63_HamburgerMenu_VisualStateNarrowDisplayMode;
+                break;
             case "Template10.Controls.HamburgerMenu.PaneBorderThickness":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.HamburgerMenu");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "PaneBorderThickness", "Windows.UI.Xaml.Thickness");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_63_HamburgerMenu_PaneBorderThickness;
-                xamlMember.Setter = set_63_HamburgerMenu_PaneBorderThickness;
+                xamlMember.Getter = get_64_HamburgerMenu_PaneBorderThickness;
+                xamlMember.Setter = set_64_HamburgerMenu_PaneBorderThickness;
                 break;
             case "Template10.Controls.HamburgerMenu.SecondarySeparator":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.HamburgerMenu");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "SecondarySeparator", "Windows.UI.Xaml.Media.Brush");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_64_HamburgerMenu_SecondarySeparator;
-                xamlMember.Setter = set_64_HamburgerMenu_SecondarySeparator;
+                xamlMember.Getter = get_65_HamburgerMenu_SecondarySeparator;
+                xamlMember.Setter = set_65_HamburgerMenu_SecondarySeparator;
                 break;
             case "Template10.Controls.HamburgerMenu.NavButtonBackground":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.HamburgerMenu");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "NavButtonBackground", "Windows.UI.Xaml.Media.Brush");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_65_HamburgerMenu_NavButtonBackground;
-                xamlMember.Setter = set_65_HamburgerMenu_NavButtonBackground;
+                xamlMember.Getter = get_66_HamburgerMenu_NavButtonBackground;
+                xamlMember.Setter = set_66_HamburgerMenu_NavButtonBackground;
                 break;
             case "Template10.Controls.HamburgerMenu.NavButtonForeground":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.HamburgerMenu");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "NavButtonForeground", "Windows.UI.Xaml.Media.Brush");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_66_HamburgerMenu_NavButtonForeground;
-                xamlMember.Setter = set_66_HamburgerMenu_NavButtonForeground;
+                xamlMember.Getter = get_67_HamburgerMenu_NavButtonForeground;
+                xamlMember.Setter = set_67_HamburgerMenu_NavButtonForeground;
                 break;
             case "Template10.Controls.HamburgerMenu.NavAreaBackground":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.HamburgerMenu");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "NavAreaBackground", "Windows.UI.Xaml.Media.Brush");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_67_HamburgerMenu_NavAreaBackground;
-                xamlMember.Setter = set_67_HamburgerMenu_NavAreaBackground;
+                xamlMember.Getter = get_68_HamburgerMenu_NavAreaBackground;
+                xamlMember.Setter = set_68_HamburgerMenu_NavAreaBackground;
                 break;
             case "Template10.Controls.HamburgerMenu.HamburgerForeground":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.HamburgerMenu");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "HamburgerForeground", "Windows.UI.Xaml.Media.Brush");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_68_HamburgerMenu_HamburgerForeground;
-                xamlMember.Setter = set_68_HamburgerMenu_HamburgerForeground;
+                xamlMember.Getter = get_69_HamburgerMenu_HamburgerForeground;
+                xamlMember.Setter = set_69_HamburgerMenu_HamburgerForeground;
                 break;
             case "Template10.Controls.HamburgerMenu.HamburgerBackground":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.HamburgerMenu");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "HamburgerBackground", "Windows.UI.Xaml.Media.Brush");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_69_HamburgerMenu_HamburgerBackground;
-                xamlMember.Setter = set_69_HamburgerMenu_HamburgerBackground;
+                xamlMember.Getter = get_70_HamburgerMenu_HamburgerBackground;
+                xamlMember.Setter = set_70_HamburgerMenu_HamburgerBackground;
                 break;
             case "Template10.Controls.HamburgerMenu.VisualStateNarrowMinWidth":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.HamburgerMenu");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "VisualStateNarrowMinWidth", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_70_HamburgerMenu_VisualStateNarrowMinWidth;
-                xamlMember.Setter = set_70_HamburgerMenu_VisualStateNarrowMinWidth;
+                xamlMember.Getter = get_71_HamburgerMenu_VisualStateNarrowMinWidth;
+                xamlMember.Setter = set_71_HamburgerMenu_VisualStateNarrowMinWidth;
                 break;
             case "Template10.Controls.HamburgerMenu.VisualStateNormalMinWidth":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.HamburgerMenu");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "VisualStateNormalMinWidth", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_71_HamburgerMenu_VisualStateNormalMinWidth;
-                xamlMember.Setter = set_71_HamburgerMenu_VisualStateNormalMinWidth;
+                xamlMember.Getter = get_72_HamburgerMenu_VisualStateNormalMinWidth;
+                xamlMember.Setter = set_72_HamburgerMenu_VisualStateNormalMinWidth;
                 break;
             case "Template10.Controls.HamburgerMenu.VisualStateWideMinWidth":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.HamburgerMenu");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "VisualStateWideMinWidth", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_72_HamburgerMenu_VisualStateWideMinWidth;
-                xamlMember.Setter = set_72_HamburgerMenu_VisualStateWideMinWidth;
+                xamlMember.Getter = get_73_HamburgerMenu_VisualStateWideMinWidth;
+                xamlMember.Setter = set_73_HamburgerMenu_VisualStateWideMinWidth;
                 break;
             case "Template10.Controls.HamburgerMenu.AccentColor":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.HamburgerMenu");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "AccentColor", "Windows.UI.Color");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_73_HamburgerMenu_AccentColor;
-                xamlMember.Setter = set_73_HamburgerMenu_AccentColor;
+                xamlMember.Getter = get_74_HamburgerMenu_AccentColor;
+                xamlMember.Setter = set_74_HamburgerMenu_AccentColor;
                 break;
             case "Template10.Controls.HamburgerMenu.PaneBorderBrush":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.HamburgerMenu");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "PaneBorderBrush", "Windows.UI.Xaml.Media.Brush");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_74_HamburgerMenu_PaneBorderBrush;
-                xamlMember.Setter = set_74_HamburgerMenu_PaneBorderBrush;
+                xamlMember.Getter = get_75_HamburgerMenu_PaneBorderBrush;
+                xamlMember.Setter = set_75_HamburgerMenu_PaneBorderBrush;
                 break;
             case "Template10.Controls.HamburgerMenu.NavButtonCheckedForeground":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.HamburgerMenu");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "NavButtonCheckedForeground", "Windows.UI.Xaml.Media.Brush");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_75_HamburgerMenu_NavButtonCheckedForeground;
-                xamlMember.Setter = set_75_HamburgerMenu_NavButtonCheckedForeground;
+                xamlMember.Getter = get_76_HamburgerMenu_NavButtonCheckedForeground;
+                xamlMember.Setter = set_76_HamburgerMenu_NavButtonCheckedForeground;
                 break;
             case "Template10.Controls.HamburgerMenu.NavButtonCheckedBackground":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.HamburgerMenu");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "NavButtonCheckedBackground", "Windows.UI.Xaml.Media.Brush");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_76_HamburgerMenu_NavButtonCheckedBackground;
-                xamlMember.Setter = set_76_HamburgerMenu_NavButtonCheckedBackground;
+                xamlMember.Getter = get_77_HamburgerMenu_NavButtonCheckedBackground;
+                xamlMember.Setter = set_77_HamburgerMenu_NavButtonCheckedBackground;
                 break;
             case "Template10.Controls.HamburgerMenu.NavButtonCheckedIndicatorBrush":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.HamburgerMenu");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "NavButtonCheckedIndicatorBrush", "Windows.UI.Xaml.Media.Brush");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_77_HamburgerMenu_NavButtonCheckedIndicatorBrush;
-                xamlMember.Setter = set_77_HamburgerMenu_NavButtonCheckedIndicatorBrush;
+                xamlMember.Getter = get_78_HamburgerMenu_NavButtonCheckedIndicatorBrush;
+                xamlMember.Setter = set_78_HamburgerMenu_NavButtonCheckedIndicatorBrush;
                 break;
             case "Template10.Controls.HamburgerMenu.NavButtonPressedForeground":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.HamburgerMenu");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "NavButtonPressedForeground", "Windows.UI.Xaml.Media.Brush");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_78_HamburgerMenu_NavButtonPressedForeground;
-                xamlMember.Setter = set_78_HamburgerMenu_NavButtonPressedForeground;
+                xamlMember.Getter = get_79_HamburgerMenu_NavButtonPressedForeground;
+                xamlMember.Setter = set_79_HamburgerMenu_NavButtonPressedForeground;
                 break;
             case "Template10.Controls.HamburgerMenu.NavButtonPressedBackground":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.HamburgerMenu");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "NavButtonPressedBackground", "Windows.UI.Xaml.Media.Brush");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_79_HamburgerMenu_NavButtonPressedBackground;
-                xamlMember.Setter = set_79_HamburgerMenu_NavButtonPressedBackground;
+                xamlMember.Getter = get_80_HamburgerMenu_NavButtonPressedBackground;
+                xamlMember.Setter = set_80_HamburgerMenu_NavButtonPressedBackground;
                 break;
             case "Template10.Controls.HamburgerMenu.NavButtonHoverForeground":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.HamburgerMenu");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "NavButtonHoverForeground", "Windows.UI.Xaml.Media.Brush");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_80_HamburgerMenu_NavButtonHoverForeground;
-                xamlMember.Setter = set_80_HamburgerMenu_NavButtonHoverForeground;
+                xamlMember.Getter = get_81_HamburgerMenu_NavButtonHoverForeground;
+                xamlMember.Setter = set_81_HamburgerMenu_NavButtonHoverForeground;
                 break;
             case "Template10.Controls.HamburgerMenu.NavButtonHoverBackground":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.HamburgerMenu");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "NavButtonHoverBackground", "Windows.UI.Xaml.Media.Brush");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_81_HamburgerMenu_NavButtonHoverBackground;
-                xamlMember.Setter = set_81_HamburgerMenu_NavButtonHoverBackground;
+                xamlMember.Getter = get_82_HamburgerMenu_NavButtonHoverBackground;
+                xamlMember.Setter = set_82_HamburgerMenu_NavButtonHoverBackground;
                 break;
             case "Template10.Controls.HamburgerMenu.HamburgerButtonVisibility":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.HamburgerMenu");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "HamburgerButtonVisibility", "Windows.UI.Xaml.Visibility");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_82_HamburgerMenu_HamburgerButtonVisibility;
-                xamlMember.Setter = set_82_HamburgerMenu_HamburgerButtonVisibility;
+                xamlMember.Getter = get_83_HamburgerMenu_HamburgerButtonVisibility;
+                xamlMember.Setter = set_83_HamburgerMenu_HamburgerButtonVisibility;
                 break;
             case "Template10.Controls.HamburgerMenu.DisplayMode":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.HamburgerMenu");
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "DisplayMode", "Windows.UI.Xaml.Controls.SplitViewDisplayMode");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_83_HamburgerMenu_DisplayMode;
-                xamlMember.Setter = set_83_HamburgerMenu_DisplayMode;
-                break;
-            case "Template10.Controls.HamburgerMenu.VisualStateNarrowDisplayMode":
-                userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.HamburgerMenu");
-                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "VisualStateNarrowDisplayMode", "Windows.UI.Xaml.Controls.SplitViewDisplayMode");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_84_HamburgerMenu_VisualStateNarrowDisplayMode;
-                xamlMember.Setter = set_84_HamburgerMenu_VisualStateNarrowDisplayMode;
+                xamlMember.Getter = get_84_HamburgerMenu_DisplayMode;
+                xamlMember.Setter = set_84_HamburgerMenu_DisplayMode;
                 break;
             case "Template10.Controls.HamburgerMenu.VisualStateNormalDisplayMode":
                 userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.HamburgerMenu");

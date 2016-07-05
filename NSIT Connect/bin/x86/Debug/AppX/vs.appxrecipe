@@ -22,13 +22,13 @@
     <AppXManifest Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-07-05T13:09:28.791</Modified>
+      <Modified>2016-07-05T14:07:05.391</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\NSIT Connect.exe">
       <PackagePath>entrypoint\NSIT Connect.exe</PackagePath>
-      <Modified>2016-07-05T12:12:58.377</Modified>
+      <Modified>2016-07-05T14:07:01.149</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\.nuget\packages\BratchedTools.RatingControl\1.0.0\lib\wpa81\Bratched.Tools.RatingControl_ua81.dll">
       <PackagePath>Bratched.Tools.RatingControl_ua81.dll</PackagePath>
@@ -814,7 +814,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\NSIT Connect.xr.xml">
       <PackagePath>NSIT Connect.xr.xml</PackagePath>
-      <Modified>2016-07-05T12:08:00.423</Modified>
+      <Modified>2016-07-05T14:07:00.219</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -878,11 +878,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-07-05T13:09:27.133</Modified>
+      <Modified>2016-07-05T14:07:03.090</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\Core\NSIT Connect.exe">
       <PackagePath>NSIT Connect.exe</PackagePath>
-      <Modified>2016-07-05T13:09:28.785</Modified>
+      <Modified>2016-07-05T14:07:05.385</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
