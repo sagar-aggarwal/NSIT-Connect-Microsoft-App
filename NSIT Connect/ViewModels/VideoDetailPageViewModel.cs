@@ -50,7 +50,7 @@ namespace NSIT_Connect.ViewModels
                     if (!Selected.VideoID.Equals(string.Empty))
                     {
                         //Get The Video Uri and set it as a player source
-                        var url = await YouTube.GetVideoUriAsync(Selected.VideoID, YouTubeQuality.Quality480P);
+                        var url = await YouTube.GetVideoUriAsync(Selected.VideoID, YouTubeQuality.QualityHigh);
                         SourceUri = url.Uri;
                     }
 

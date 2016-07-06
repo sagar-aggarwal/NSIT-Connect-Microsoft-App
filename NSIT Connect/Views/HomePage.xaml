@@ -70,7 +70,9 @@
                                MaxLines="1" RelativePanel.AlignTopWith="Ellipse"
                                RelativePanel.RightOf="Ellipse"
                                Text="{Binding Message, FallbackValue=Message}" />
-                        <Image RelativePanel.Below="Body" Margin="5" Source="{Binding PictureUri,Mode=OneWay}"/>
+                        <Viewbox StretchDirection="DownOnly" RelativePanel.Below="Body">
+                            <Image  Margin="5" Source="{Binding PictureUri,Mode=OneWay}" Stretch="None"/>
+                        </Viewbox>
                         <TextBlock x:Name="To" FontSize="12"
                                FontWeight="Bold" 
                                RelativePanel.RightOf="Ellipse"

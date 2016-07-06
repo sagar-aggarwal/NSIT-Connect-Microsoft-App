@@ -16,14 +16,18 @@ Assets\ChooseFeedItem\junoon.png
 Assets\ChooseFeedItem\quiz.png
 Assets\ChooseFeedItem\rotaract.png
 Assets\contact.png
+Assets\facebook.png
 Assets\facebook_circle_color-128.png
 Assets\facility-management.png
+Assets\github.png
+Assets\github_logo.png
 Assets\ic_call_black_24dp.png
 Assets\ic_directions_white_24dp_2x.png
 Assets\ic_email_black_24dp.png
 Assets\ic_settings_input_antenna_white_24dp_2x.png
 Assets\ic_wifi_tethering_white_24dp.png
 Assets\like.png
+Assets\linkedin.png
 Assets\Location\amusment.jpg
 Assets\Location\bowling.jpg
 Assets\Location\cafes.jpg
@@ -57,6 +61,7 @@ Assets\Professors\management.png
 Assets\Professors\math.png
 Assets\Professors\Mechanical.png
 Assets\Professors\physics.png
+Assets\profile_photo.jpg
 Assets\red-marker-icon.png
 Assets\ShellIcon\appbar.book.open.information.png
 Assets\ShellIcon\appbar.home.empty.png

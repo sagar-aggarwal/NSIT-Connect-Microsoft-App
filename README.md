@@ -34,7 +34,9 @@ The My Feed section allows you to create your own news feed by following only th
 
 ###3.Video
 [Junnon Photography Club's YouTube channel](https://www.youtube.com/channel/UCu445B5LTXzkNr5eft8wNHg) is the source of all entertainment going on in the college. No one wants to miss out on them, so this feed gets you the latest uploads and also allows you to view them right there in the app. 
-
+![Video Feed](/../master/screenshots/Video/1.png "Video Feed")
+![Video Feed](/../master/screenshots/Video/2.png "Department List")
+![Video](/../master/screenshots/Video/3.png "Video")
 
 ###4.Calendar
 The Calendar helps you in tracking your attendance on a regular basis by recording your dates attended and missed (inputted by the user). It will also fetch you your timetable from our server and give you advise about how many classes you need to attend to make up for short attendance or leave if you have more than enough attendance.

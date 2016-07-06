@@ -130,6 +130,9 @@
     <Compile Include="ViewModels\ProfessorsPageViewModel.cs" />
     <Compile Include="ViewModels\VideoDetailPageViewModel.cs" />
     <Compile Include="ViewModels\VideoPageViewModel.cs" />
+    <Compile Include="Views\AboutPage.xaml.cs">
+      <DependentUpon>AboutPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\FeedBackPage.xaml.cs">
       <DependentUpon>FeedBackPage.xaml</DependentUpon>
     </Compile>
@@ -197,14 +200,18 @@
     <Content Include="Assets\ChooseFeedItem\quiz.png" />
     <Content Include="Assets\ChooseFeedItem\rotaract.png" />
     <Content Include="Assets\contact.png" />
+    <Content Include="Assets\facebook.png" />
     <Content Include="Assets\facebook_circle_color-128.png" />
     <Content Include="Assets\facility-management.png" />
+    <Content Include="Assets\github.png" />
+    <Content Include="Assets\github_logo.png" />
     <Content Include="Assets\ic_call_black_24dp.png" />
     <Content Include="Assets\ic_directions_white_24dp_2x.png" />
     <Content Include="Assets\ic_email_black_24dp.png" />
     <Content Include="Assets\ic_settings_input_antenna_white_24dp_2x.png" />
     <Content Include="Assets\ic_wifi_tethering_white_24dp.png" />
     <Content Include="Assets\like.png" />
+    <Content Include="Assets\linkedin.png" />
     <Content Include="Assets\Location-Default\amuse_hangout.jpg" />
     <Content Include="Assets\Location-Default\bowling_hangout.jpg" />
     <Content Include="Assets\Location-Default\cafe_hangout.jpg" />
@@ -237,6 +244,7 @@
     <Content Include="Assets\Professors\math.png" />
     <Content Include="Assets\Professors\Mechanical.png" />
     <Content Include="Assets\Professors\physics.png" />
+    <Content Include="Assets\profile_photo.jpg" />
     <Content Include="Assets\red-marker-icon.png" />
     <Content Include="Assets\ShellIcon\appbar.book.open.information.png" />
     <Content Include="Assets\ShellIcon\appbar.home.empty.png" />
@@ -282,6 +290,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Page>
+    <Page Include="Views\AboutPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\Busy.xaml">
       <Generator>MSBuild:Compile</Generator>

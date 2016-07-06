@@ -13,6 +13,6 @@
     </Page.DataContext>
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <MediaElement x:Name="player" Source="{Binding SourceUri,Mode=TwoWay}" Margin="25" AutoPlay="False" />
+        <MediaElement x:Name="player" Source="{Binding SourceUri,Mode=TwoWay}"  AutoPlay="True"    AreTransportControlsEnabled="True"  />
     </Grid>
 </Page>

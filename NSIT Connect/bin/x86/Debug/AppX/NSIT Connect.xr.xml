@@ -73,8 +73,8 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Padding" />
       <RootProperty Name="Orientation" />
+      <RootProperty Name="Padding" />
       <RootProperty Name="Height" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
@@ -102,6 +102,7 @@
       <RootProperty Name="Style" />
       <RootProperty Name="FontSize" />
       <RootProperty Name="MinHeight" />
+      <RootProperty Name="Padding" />
       <RootProperty Name="Inlines" />
       <RootProperty Name="Visibility" />
       <RootProperty Name="Transitions" />
@@ -192,8 +193,8 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Stretch" />
-      <RootProperty Name="MaxHeight" />
       <RootProperty Name="Height" />
+      <RootProperty Name="MaxHeight" />
     </RootType>
     <RootType FullName="NSIT_Connect.Controls.RectangularPanel">
       <RootProperty Name="Margin" />
@@ -260,14 +261,83 @@
       <RootProperty Name="GrabberBrush" />
       <RootProperty Name="GrabberVisibility" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
+      <RootProperty Name="Background" />
+      <RootProperty Name="Content" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="BringIntoViewOnFocusChange" />
+      <RootProperty Name="HorizontalScrollBarVisibility" />
+      <RootProperty Name="HorizontalScrollMode" />
+      <RootProperty Name="IsDeferredScrollingEnabled" />
+      <RootProperty Name="IsHorizontalRailEnabled" />
+      <RootProperty Name="IsHorizontalScrollChainingEnabled" />
+      <RootProperty Name="IsVerticalRailEnabled" />
+      <RootProperty Name="IsVerticalScrollChainingEnabled" />
+      <RootProperty Name="TabNavigation" />
+      <RootProperty Name="VerticalScrollBarVisibility" />
+      <RootProperty Name="VerticalScrollMode" />
+      <RootProperty Name="ZoomMode" />
+      <RootProperty Name="HorizontalContentAlignment" />
+      <RootEvent Name="ViewChanged" />
+      <RootMethod Name="GetHorizontalScrollBarVisibility" />
+      <RootMethod Name="SetHorizontalScrollBarVisibility" />
+      <RootMethod Name="GetVerticalScrollBarVisibility" />
+      <RootMethod Name="SetVerticalScrollBarVisibility" />
+      <RootMethod Name="GetHorizontalScrollMode" />
+      <RootMethod Name="SetHorizontalScrollMode" />
+      <RootMethod Name="GetIsHorizontalRailEnabled" />
+      <RootMethod Name="SetIsHorizontalRailEnabled" />
+      <RootMethod Name="GetVerticalScrollMode" />
+      <RootMethod Name="SetVerticalScrollMode" />
+      <RootMethod Name="GetIsVerticalRailEnabled" />
+      <RootMethod Name="SetIsVerticalRailEnabled" />
+      <RootMethod Name="GetZoomMode" />
+      <RootMethod Name="SetZoomMode" />
+      <RootMethod Name="GetIsDeferredScrollingEnabled" />
+      <RootMethod Name="SetIsDeferredScrollingEnabled" />
+      <RootMethod Name="GetBringIntoViewOnFocusChange" />
+      <RootMethod Name="SetBringIntoViewOnFocusChange" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Viewbox">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Child" />
       <RootProperty Name="Height" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Child" />
       <RootProperty Name="StretchDirection" />
       <RootProperty Name="Width" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Button">
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="HorizontalContentAlignment" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="Content" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="Flyout" />
+      <RootProperty Name="Command" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Style" />
+      <RootProperty Name="BorderBrush" />
+      <RootEvent Name="Click" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Shapes.Rectangle">
+      <RootProperty Name="Fill" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Visibility" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.SymbolIcon">
+      <RootProperty Name="Symbol" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+    </RootType>
+    <RootType FullName="NSIT_Connect.Views.AboutPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.ProgressRing">
       <RootProperty Name="Width" />
       <RootProperty Name="Height" />
@@ -328,62 +398,10 @@
       <RootProperty Name="Children" />
       <RootEvent Name="Loaded" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.Button">
-      <RootProperty Name="Margin" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Background" />
-      <RootProperty Name="Foreground" />
-      <RootProperty Name="Content" />
-      <RootProperty Name="Flyout" />
-      <RootProperty Name="Command" />
-      <RootProperty Name="Height" />
-      <RootProperty Name="Width" />
-      <RootProperty Name="Style" />
-      <RootProperty Name="BorderBrush" />
-      <RootEvent Name="Click" />
-    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Flyout">
       <RootProperty Name="Placement" />
       <RootProperty Name="Content" />
       <RootEvent Name="Closed" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
-      <RootProperty Name="Margin" />
-      <RootProperty Name="Content" />
-      <RootProperty Name="BringIntoViewOnFocusChange" />
-      <RootProperty Name="HorizontalScrollBarVisibility" />
-      <RootProperty Name="HorizontalScrollMode" />
-      <RootProperty Name="IsDeferredScrollingEnabled" />
-      <RootProperty Name="IsHorizontalRailEnabled" />
-      <RootProperty Name="IsHorizontalScrollChainingEnabled" />
-      <RootProperty Name="IsVerticalRailEnabled" />
-      <RootProperty Name="IsVerticalScrollChainingEnabled" />
-      <RootProperty Name="TabNavigation" />
-      <RootProperty Name="VerticalScrollBarVisibility" />
-      <RootProperty Name="VerticalScrollMode" />
-      <RootProperty Name="ZoomMode" />
-      <RootProperty Name="Background" />
-      <RootProperty Name="HorizontalContentAlignment" />
-      <RootEvent Name="ViewChanged" />
-      <RootMethod Name="GetHorizontalScrollBarVisibility" />
-      <RootMethod Name="SetHorizontalScrollBarVisibility" />
-      <RootMethod Name="GetVerticalScrollBarVisibility" />
-      <RootMethod Name="SetVerticalScrollBarVisibility" />
-      <RootMethod Name="GetHorizontalScrollMode" />
-      <RootMethod Name="SetHorizontalScrollMode" />
-      <RootMethod Name="GetIsHorizontalRailEnabled" />
-      <RootMethod Name="SetIsHorizontalRailEnabled" />
-      <RootMethod Name="GetVerticalScrollMode" />
-      <RootMethod Name="SetVerticalScrollMode" />
-      <RootMethod Name="GetIsVerticalRailEnabled" />
-      <RootMethod Name="SetIsVerticalRailEnabled" />
-      <RootMethod Name="GetZoomMode" />
-      <RootMethod Name="SetZoomMode" />
-      <RootMethod Name="GetIsDeferredScrollingEnabled" />
-      <RootMethod Name="SetIsDeferredScrollingEnabled" />
-      <RootMethod Name="GetBringIntoViewOnFocusChange" />
-      <RootMethod Name="SetBringIntoViewOnFocusChange" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ListView">
       <RootProperty Name="ItemsSource" />
@@ -587,10 +605,6 @@
       <RootProperty Name="Text" />
       <RootProperty Name="Foreground" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Shapes.Rectangle">
-      <RootProperty Name="Fill" />
-      <RootProperty Name="Visibility" />
-    </RootType>
     <RootType FullName="System.String" />
     <RootType FullName="NSIT_Connect.Views.HomePage" />
     <RootType FullName="NSIT_Connect.ViewModels.LocationPageViewModel" />
@@ -634,12 +648,6 @@
       <RootProperty Name="NavigationTransitionInfo" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Media.Animation.SuppressNavigationTransitionInfo" />
-    <RootType FullName="Windows.UI.Xaml.Controls.SymbolIcon">
-      <RootProperty Name="Width" />
-      <RootProperty Name="Height" />
-      <RootProperty Name="Symbol" />
-      <RootProperty Name="Foreground" />
-    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.BitmapIcon">
       <RootProperty Name="Width" />
       <RootProperty Name="Height" />
@@ -662,8 +670,8 @@
     <RootType FullName="NSIT_Connect.ViewModels.VideoDetailPageViewModel" />
     <RootType FullName="Windows.UI.Xaml.Controls.MediaElement">
       <RootProperty Name="Source" />
-      <RootProperty Name="Margin" />
       <RootProperty Name="AutoPlay" />
+      <RootProperty Name="AreTransportControlsEnabled" />
     </RootType>
     <RootType FullName="NSIT_Connect.Views.VideoDetailPage" />
     <RootType FullName="Windows.UI.Xaml.Media.Animation.Storyboard">
