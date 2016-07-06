@@ -72,6 +72,8 @@
             <SolidColorBrush x:Key="ContrastColorBrush" Color="{StaticResource ContrastColor}" />
             <SolidColorBrush x:Key="ExtendedSplashBackground" Color="{StaticResource CustomColor}" />
             <SolidColorBrush x:Key="ExtendedSplashForeground" Color="{StaticResource ContrastColor}" />
+            <SolidColorBrush x:Key="ThemeColor" Color="{StaticResource CustomColor}" />
+
 
             <Style TargetType="controls:HamburgerMenu">
                 <Setter Property="AccentColor" Value="{StaticResource CustomColor}" />
@@ -100,6 +102,7 @@
             <SolidColorBrush x:Key="ContrastColorBrush" Color="{StaticResource ContrastColor}" />
             <SolidColorBrush x:Key="ExtendedSplashBackground" Color="{StaticResource CustomColor}" />
             <SolidColorBrush x:Key="ExtendedSplashForeground" Color="{StaticResource ContrastColor}" />
+            <SolidColorBrush x:Key="ThemeColor" Color="{StaticResource CustomColor}" />
 
             <Style TargetType="controls:HamburgerMenu">
 
@@ -143,8 +146,10 @@
 
         </ResourceDictionary>
 
+
         <ResourceDictionary x:Key="HighContrast">
 
+            <SolidColorBrush x:Key="ThemeColor" Color="Black" />
             <SolidColorBrush x:Key="ExtendedSplashBackground" Color="Black" />
             <SolidColorBrush x:Key="ExtendedSplashForeground" Color="White" />
 

@@ -16,6 +16,8 @@ C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Conn
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\Views\SettingsPage.xbf
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\Views\Shell.xbf
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\Views\Splash.xbf
+C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\Views\VideoDetailPage.xbf
+C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\Views\VideoPage.xbf
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\NSIT Connect.xr.xml
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\NSIT Connect.exe
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\NSIT Connect.pdb
@@ -59,6 +61,8 @@ C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Conn
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\Microsoft.Win32.Primitives.dll
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\Microsoft.Xaml.Interactions.dll
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\Microsoft.Xaml.Interactivity.dll
+C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\MyToolkit.dll
+C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\MyToolkit.Extended.dll
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\Newtonsoft.Json.dll
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\System.Private.DataContractSerialization.dll
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\System.AppContext.dll
@@ -152,6 +156,7 @@ C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Conn
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\WindowsStateTriggers.dll
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\WindowsStateTriggers.pdb
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\Zlib.Portable.dll
+C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\NSIT Connect.csprojResolveAssemblyReference.cache
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\App.g.i.cs
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\App.g.cs
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Controls\CircularPanel.g.i.cs
@@ -186,6 +191,10 @@ C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Conn
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Views\Shell.g.cs
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Views\Splash.g.i.cs
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Views\Splash.g.cs
+C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Views\VideoDetailPage.g.i.cs
+C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Views\VideoDetailPage.g.cs
+C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Views\VideoPage.g.i.cs
+C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Views\VideoPage.g.cs
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\XamlTypeInfo.g.cs
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\App.xaml
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Controls\CircularPanel.xaml
@@ -205,6 +214,8 @@ C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Conn
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Views\SettingsPage.xaml
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Views\Shell.xaml
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Views\Splash.xaml
+C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Views\VideoPage.xaml
+C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Views\VideoDetailPage.xaml
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\App.xbf
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Controls\CircularPanel.xbf
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Controls\HangoutPanel.xbf
@@ -223,6 +234,8 @@ C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Conn
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Views\SettingsPage.xbf
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Views\Shell.xbf
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Views\Splash.xbf
+C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Views\VideoPage.xbf
+C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Views\VideoDetailPage.xbf
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\XamlSaveStateFile.xml
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\NSIT Connect.exe
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\NSIT Connect.pdb
@@ -295,6 +308,7 @@ C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Conn
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Bratched.Tools.RatingControl_ua81.pri.xml
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Microsoft.Xaml.Interactions.pri.xml
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Microsoft.Xaml.Interactivity.pri.xml
+C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\MyToolkit.Extended.pri.xml
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\Template10Library.pri.xml
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\WindowsStateTriggers.pri.xml
 C:\Users\AGGARWAL'S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\ProjectArchitectures.txt

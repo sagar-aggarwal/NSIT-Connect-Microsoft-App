@@ -24,22 +24,22 @@
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\.nuget\packages\BratchedTools.RatingControl\1.0.0\lib\wpa81\Bratched.Tools.RatingControl_ua81.dll">
       <PackagePath>Bratched.Tools.RatingControl_ua81.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\.nuget\packages\Google.Apis\1.13.1\lib\win81\Google.Apis.PlatformServices.dll">
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\.nuget\packages\Google.Apis\1.14.0\lib\win81\Google.Apis.PlatformServices.dll">
       <PackagePath>Google.Apis.PlatformServices.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\.nuget\packages\Google.Apis\1.13.1\lib\win81\Google.Apis.dll">
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\.nuget\packages\Google.Apis\1.14.0\lib\win81\Google.Apis.dll">
       <PackagePath>Google.Apis.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\.nuget\packages\Google.Apis.Auth\1.13.1\lib\win81\Google.Apis.Auth.PlatformServices.dll">
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\.nuget\packages\Google.Apis.Auth\1.14.0\lib\win81\Google.Apis.Auth.PlatformServices.dll">
       <PackagePath>Google.Apis.Auth.PlatformServices.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\.nuget\packages\Google.Apis.Auth\1.13.1\lib\win81\Google.Apis.Auth.dll">
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\.nuget\packages\Google.Apis.Auth\1.14.0\lib\win81\Google.Apis.Auth.dll">
       <PackagePath>Google.Apis.Auth.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\.nuget\packages\Google.Apis.Core\1.13.1\lib\portable-net45+sl50+netcore45+wpa81+wp8\Google.Apis.Core.dll">
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\.nuget\packages\Google.Apis.Core\1.14.0\lib\portable-net45+sl50+netcore45+wpa81+wp8\Google.Apis.Core.dll">
       <PackagePath>Google.Apis.Core.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\.nuget\packages\Google.Apis.YouTube.v3\1.13.1.529\lib\portable-net45+netcore45+wpa81+wp8\Google.Apis.YouTube.v3.dll">
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\.nuget\packages\Google.Apis.YouTube.v3\1.14.0.529\lib\portable-net45+netcore45+wpa81+wp8\Google.Apis.YouTube.v3.dll">
       <PackagePath>Google.Apis.YouTube.v3.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\.nuget\packages\Microsoft.Bcl.Async\1.0.168\lib\win8\Microsoft.Threading.Tasks.Extensions.dll">
@@ -104,6 +104,12 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\.nuget\packages\Microsoft.Xaml.Behaviors.Uwp.Managed\1.1.0\lib\uap10.0\Microsoft.Xaml.Interactivity.dll">
       <PackagePath>Microsoft.Xaml.Interactivity.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\.nuget\packages\MyToolkit\2.5.12\lib\portable-net45+wp8+win8+wpa81\MyToolkit.dll">
+      <PackagePath>MyToolkit.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\.nuget\packages\MyToolkit.Extended\2.5.12\lib\uap10.0\MyToolkit.Extended.dll">
+      <PackagePath>MyToolkit.Extended.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\.nuget\packages\Newtonsoft.Json\9.0.1\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
@@ -629,6 +635,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\.nuget\packages\BratchedTools.RatingControl\1.0.0\lib\wpa81\Bratched.Tools.RatingControl_ua81\RatingControl.xbf">
       <PackagePath>Bratched.Tools.RatingControl_ua81\RatingControl.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\.nuget\packages\MyToolkit.Extended\2.5.12\lib\uap10.0\MyToolkit.Extended\MyToolkit.Extended.xr.xml">
+      <PackagePath>MyToolkit.Extended\MyToolkit.Extended.xr.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\.nuget\packages\Template10\1.1.11\lib\uap10.0\Template10Library\Template10Library.xr.xml">
       <PackagePath>Template10Library\Template10Library.xr.xml</PackagePath>

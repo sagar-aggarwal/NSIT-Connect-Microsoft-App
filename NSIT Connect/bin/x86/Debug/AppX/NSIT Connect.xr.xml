@@ -50,6 +50,8 @@
     <RootPropertyPathName Name="UseShellBackButton" />
     <RootPropertyPathName Name="ActualWidth" />
     <RootPropertyPathName Name="ActualHeight" />
+    <RootPropertyPathName Name="Date" />
+    <RootPropertyPathName Name="Thumbnail" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Template10.Common.BootStrapper">
@@ -70,9 +72,9 @@
       <RootProperty Name="Children" />
       <RootProperty Name="Margin" />
       <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Padding" />
       <RootProperty Name="Orientation" />
-      <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Height" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
@@ -83,6 +85,8 @@
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Fill" />
       <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Stroke" />
+      <RootProperty Name="StrokeThickness" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
       <RootProperty Name="Text" />
@@ -136,9 +140,10 @@
       <RootProperty Name="Children" />
       <RootProperty Name="RowDefinitions" />
       <RootProperty Name="Height" />
-      <RootProperty Name="Width" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="MaxWidth" />
       <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Width" />
       <RootMethod Name="GetColumn" />
       <RootMethod Name="SetColumn" />
       <RootMethod Name="GetRow" />
@@ -240,6 +245,11 @@
       <RootProperty Name="IsTabStop" />
       <RootProperty Name="TabNavigation" />
       <RootProperty Name="Template" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="FontFamily" />
+      <RootProperty Name="FontWeight" />
+      <RootProperty Name="UseSystemFocusVisuals" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Setter">
       <RootProperty Name="Property" />
@@ -327,6 +337,11 @@
       <RootProperty Name="Content" />
       <RootProperty Name="Flyout" />
       <RootProperty Name="Command" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Style" />
+      <RootProperty Name="BorderBrush" />
+      <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Flyout">
       <RootProperty Name="Placement" />
@@ -520,6 +535,7 @@
     <RootType FullName="Windows.UI.Xaml.VisualState">
       <RootProperty Name="StateTriggers" />
       <RootProperty Name="Setters" />
+      <RootProperty Name="Storyboard" />
     </RootType>
     <RootType FullName="WindowsStateTriggers.DeviceFamilyStateTrigger">
       <RootProperty Name="DeviceFamily" />
@@ -622,6 +638,7 @@
       <RootProperty Name="Width" />
       <RootProperty Name="Height" />
       <RootProperty Name="Symbol" />
+      <RootProperty Name="Foreground" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.BitmapIcon">
       <RootProperty Name="Width" />
@@ -642,5 +659,39 @@
       <RootProperty Name="Y" />
     </RootType>
     <RootType FullName="NSIT_Connect.Views.Splash" />
+    <RootType FullName="NSIT_Connect.ViewModels.VideoDetailPageViewModel" />
+    <RootType FullName="Windows.UI.Xaml.Controls.MediaElement">
+      <RootProperty Name="Source" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="AutoPlay" />
+    </RootType>
+    <RootType FullName="NSIT_Connect.Views.VideoDetailPage" />
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.Storyboard">
+      <RootProperty Name="Children" />
+      <RootMethod Name="GetTargetProperty" />
+      <RootMethod Name="SetTargetProperty" />
+      <RootMethod Name="GetTargetName" />
+      <RootMethod Name="SetTargetName" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.ObjectAnimationUsingKeyFrames">
+      <RootProperty Name="KeyFrames" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.DiscreteObjectKeyFrame">
+      <RootProperty Name="KeyTime" />
+      <RootProperty Name="Value" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.PointerDownThemeAnimation" />
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.PointerUpThemeAnimation" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ContentPresenter">
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="ContentTemplate" />
+      <RootProperty Name="ContentTransitions" />
+      <RootProperty Name="Content" />
+      <RootProperty Name="HorizontalContentAlignment" />
+      <RootProperty Name="Padding" />
+      <RootProperty Name="VerticalContentAlignment" />
+    </RootType>
+    <RootType FullName="NSIT_Connect.ViewModels.VideoPageViewModel" />
+    <RootType FullName="NSIT_Connect.Views.VideoPage" />
   </Roots.RootTypes>
 </Roots>

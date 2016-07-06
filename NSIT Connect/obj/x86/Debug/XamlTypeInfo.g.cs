@@ -156,7 +156,7 @@ namespace NSIT_Connect.NSIT_Connect_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[138];
+            _typeNameTable = new string[145];
             _typeNameTable[0] = "Template10.Common.BootStrapper";
             _typeNameTable[1] = "Windows.UI.Xaml.Application";
             _typeNameTable[2] = "Template10.Common.StateItems";
@@ -295,8 +295,15 @@ namespace NSIT_Connect.NSIT_Connect_XamlTypeInfo
             _typeNameTable[135] = "NSIT_Connect.Views.SettingsPage";
             _typeNameTable[136] = "NSIT_Connect.Views.Shell";
             _typeNameTable[137] = "NSIT_Connect.Views.Splash";
+            _typeNameTable[138] = "NSIT_Connect.ViewModels.VideoDetailPageViewModel";
+            _typeNameTable[139] = "NSIT_Connect.Models.YVideoItem";
+            _typeNameTable[140] = "NSIT_Connect.Views.VideoDetailPage";
+            _typeNameTable[141] = "NSIT_Connect.ViewModels.VideoPageViewModel";
+            _typeNameTable[142] = "System.Collections.ObjectModel.ObservableCollection`1<NSIT_Connect.Models.YVideoItem>";
+            _typeNameTable[143] = "System.Collections.ObjectModel.Collection`1<NSIT_Connect.Models.YVideoItem>";
+            _typeNameTable[144] = "NSIT_Connect.Views.VideoPage";
 
-            _typeTable = new global::System.Type[138];
+            _typeTable = new global::System.Type[145];
             _typeTable[0] = typeof(global::Template10.Common.BootStrapper);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Application);
             _typeTable[2] = typeof(global::Template10.Common.StateItems);
@@ -435,6 +442,13 @@ namespace NSIT_Connect.NSIT_Connect_XamlTypeInfo
             _typeTable[135] = typeof(global::NSIT_Connect.Views.SettingsPage);
             _typeTable[136] = typeof(global::NSIT_Connect.Views.Shell);
             _typeTable[137] = typeof(global::NSIT_Connect.Views.Splash);
+            _typeTable[138] = typeof(global::NSIT_Connect.ViewModels.VideoDetailPageViewModel);
+            _typeTable[139] = typeof(global::NSIT_Connect.Models.YVideoItem);
+            _typeTable[140] = typeof(global::NSIT_Connect.Views.VideoDetailPage);
+            _typeTable[141] = typeof(global::NSIT_Connect.ViewModels.VideoPageViewModel);
+            _typeTable[142] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::NSIT_Connect.Models.YVideoItem>);
+            _typeTable[143] = typeof(global::System.Collections.ObjectModel.Collection<global::NSIT_Connect.Models.YVideoItem>);
+            _typeTable[144] = typeof(global::NSIT_Connect.Views.VideoPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -537,6 +551,13 @@ namespace NSIT_Connect.NSIT_Connect_XamlTypeInfo
         private object Activate_134_AboutPartViewModel() { return new global::NSIT_Connect.ViewModels.AboutPartViewModel(); }
         private object Activate_135_SettingsPage() { return new global::NSIT_Connect.Views.SettingsPage(); }
         private object Activate_136_Shell() { return new global::NSIT_Connect.Views.Shell(); }
+        private object Activate_138_VideoDetailPageViewModel() { return new global::NSIT_Connect.ViewModels.VideoDetailPageViewModel(); }
+        private object Activate_139_YVideoItem() { return new global::NSIT_Connect.Models.YVideoItem(); }
+        private object Activate_140_VideoDetailPage() { return new global::NSIT_Connect.Views.VideoDetailPage(); }
+        private object Activate_141_VideoPageViewModel() { return new global::NSIT_Connect.ViewModels.VideoPageViewModel(); }
+        private object Activate_142_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::NSIT_Connect.Models.YVideoItem>(); }
+        private object Activate_143_Collection() { return new global::System.Collections.ObjectModel.Collection<global::NSIT_Connect.Models.YVideoItem>(); }
+        private object Activate_144_VideoPage() { return new global::NSIT_Connect.Views.VideoPage(); }
         private void MapAdd_2_StateItems(object instance, object key, object item)
         {
             var collection = (global::System.Collections.Generic.IDictionary<global::System.String, global::System.Object>)instance;
@@ -669,6 +690,18 @@ namespace NSIT_Connect.NSIT_Connect_XamlTypeInfo
         {
             var collection = (global::System.Collections.Generic.ICollection<global::NSIT_Connect.Models.ProfessorItem>)instance;
             var newItem = (global::NSIT_Connect.Models.ProfessorItem)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_142_ObservableCollection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::NSIT_Connect.Models.YVideoItem>)instance;
+            var newItem = (global::NSIT_Connect.Models.YVideoItem)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_143_Collection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::NSIT_Connect.Models.YVideoItem>)instance;
+            var newItem = (global::NSIT_Connect.Models.YVideoItem)item;
             collection.Add(newItem);
         }
 
@@ -1731,6 +1764,65 @@ namespace NSIT_Connect.NSIT_Connect_XamlTypeInfo
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
+
+            case 138:   //  NSIT_Connect.ViewModels.VideoDetailPageViewModel
+                userType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Template10.Mvvm.ViewModelBase"));
+                userType.Activator = Activate_138_VideoDetailPageViewModel;
+                userType.AddMemberName("Selected");
+                userType.AddMemberName("SourceUri");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 139:   //  NSIT_Connect.Models.YVideoItem
+                userType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_139_YVideoItem;
+                userType.AddMemberName("Title");
+                userType.AddMemberName("Descrption");
+                userType.AddMemberName("Date");
+                userType.AddMemberName("VideoID");
+                userType.AddMemberName("Thumbnail");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 140:   //  NSIT_Connect.Views.VideoDetailPage
+                userType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_140_VideoDetailPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 141:   //  NSIT_Connect.ViewModels.VideoPageViewModel
+                userType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Template10.Mvvm.ViewModelBase"));
+                userType.Activator = Activate_141_VideoPageViewModel;
+                userType.AddMemberName("ProgressVisibility");
+                userType.AddMemberName("Selected");
+                userType.AddMemberName("Item");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 142:   //  System.Collections.ObjectModel.ObservableCollection`1<NSIT_Connect.Models.YVideoItem>
+                userType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<NSIT_Connect.Models.YVideoItem>"));
+                userType.CollectionAdd = VectorAdd_142_ObservableCollection;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 143:   //  System.Collections.ObjectModel.Collection`1<NSIT_Connect.Models.YVideoItem>
+                userType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_143_Collection;
+                userType.CollectionAdd = VectorAdd_143_Collection;
+                xamlType = userType;
+                break;
+
+            case 144:   //  NSIT_Connect.Views.VideoPage
+                userType = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_144_VideoPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
             }
             return xamlType;
         }
@@ -1745,6 +1837,8 @@ namespace NSIT_Connect.NSIT_Connect_XamlTypeInfo
                     var otherProviders = new global::System.Collections.Generic.List<global::Windows.UI.Xaml.Markup.IXamlMetadataProvider>();
                     global::Windows.UI.Xaml.Markup.IXamlMetadataProvider provider;
                     provider = new global::Bratched.Tools.RatingControl.Bratched_Tools_RatingControl_ua81_XamlTypeInfo.XamlMetaDataProvider() as global::Windows.UI.Xaml.Markup.IXamlMetadataProvider;
+                    otherProviders.Add(provider); 
+                    provider = new global::MyToolkit.MyToolkit_Extended_Uwp_XamlTypeInfo.XamlMetaDataProvider() as global::Windows.UI.Xaml.Markup.IXamlMetadataProvider;
                     otherProviders.Add(provider); 
                     provider = new global::Template10.Template10__Library__XamlTypeInfo.XamlMetaDataProvider() as global::Windows.UI.Xaml.Markup.IXamlMetadataProvider;
                     otherProviders.Add(provider); 
@@ -3950,6 +4044,106 @@ namespace NSIT_Connect.NSIT_Connect_XamlTypeInfo
             var that = (global::NSIT_Connect.ViewModels.SettingsPageViewModel)instance;
             return that.AboutPartViewModel;
         }
+        private object get_225_VideoDetailPageViewModel_Selected(object instance)
+        {
+            var that = (global::NSIT_Connect.ViewModels.VideoDetailPageViewModel)instance;
+            return that.Selected;
+        }
+        private void set_225_VideoDetailPageViewModel_Selected(object instance, object Value)
+        {
+            var that = (global::NSIT_Connect.ViewModels.VideoDetailPageViewModel)instance;
+            that.Selected = (global::NSIT_Connect.Models.YVideoItem)Value;
+        }
+        private object get_226_VideoDetailPageViewModel_SourceUri(object instance)
+        {
+            var that = (global::NSIT_Connect.ViewModels.VideoDetailPageViewModel)instance;
+            return that.SourceUri;
+        }
+        private void set_226_VideoDetailPageViewModel_SourceUri(object instance, object Value)
+        {
+            var that = (global::NSIT_Connect.ViewModels.VideoDetailPageViewModel)instance;
+            that.SourceUri = (global::System.Uri)Value;
+        }
+        private object get_227_VideoPageViewModel_ProgressVisibility(object instance)
+        {
+            var that = (global::NSIT_Connect.ViewModels.VideoPageViewModel)instance;
+            return that.ProgressVisibility;
+        }
+        private void set_227_VideoPageViewModel_ProgressVisibility(object instance, object Value)
+        {
+            var that = (global::NSIT_Connect.ViewModels.VideoPageViewModel)instance;
+            that.ProgressVisibility = (global::Windows.UI.Xaml.Visibility)Value;
+        }
+        private object get_228_VideoPageViewModel_Selected(object instance)
+        {
+            var that = (global::NSIT_Connect.ViewModels.VideoPageViewModel)instance;
+            return that.Selected;
+        }
+        private void set_228_VideoPageViewModel_Selected(object instance, object Value)
+        {
+            var that = (global::NSIT_Connect.ViewModels.VideoPageViewModel)instance;
+            that.Selected = (global::System.Object)Value;
+        }
+        private object get_229_VideoPageViewModel_Item(object instance)
+        {
+            var that = (global::NSIT_Connect.ViewModels.VideoPageViewModel)instance;
+            return that.Item;
+        }
+        private void set_229_VideoPageViewModel_Item(object instance, object Value)
+        {
+            var that = (global::NSIT_Connect.ViewModels.VideoPageViewModel)instance;
+            that.Item = (global::System.Collections.ObjectModel.ObservableCollection<global::NSIT_Connect.Models.YVideoItem>)Value;
+        }
+        private object get_230_YVideoItem_Title(object instance)
+        {
+            var that = (global::NSIT_Connect.Models.YVideoItem)instance;
+            return that.Title;
+        }
+        private void set_230_YVideoItem_Title(object instance, object Value)
+        {
+            var that = (global::NSIT_Connect.Models.YVideoItem)instance;
+            that.Title = (global::System.String)Value;
+        }
+        private object get_231_YVideoItem_Descrption(object instance)
+        {
+            var that = (global::NSIT_Connect.Models.YVideoItem)instance;
+            return that.Descrption;
+        }
+        private void set_231_YVideoItem_Descrption(object instance, object Value)
+        {
+            var that = (global::NSIT_Connect.Models.YVideoItem)instance;
+            that.Descrption = (global::System.String)Value;
+        }
+        private object get_232_YVideoItem_Date(object instance)
+        {
+            var that = (global::NSIT_Connect.Models.YVideoItem)instance;
+            return that.Date;
+        }
+        private void set_232_YVideoItem_Date(object instance, object Value)
+        {
+            var that = (global::NSIT_Connect.Models.YVideoItem)instance;
+            that.Date = (global::System.String)Value;
+        }
+        private object get_233_YVideoItem_VideoID(object instance)
+        {
+            var that = (global::NSIT_Connect.Models.YVideoItem)instance;
+            return that.VideoID;
+        }
+        private void set_233_YVideoItem_VideoID(object instance, object Value)
+        {
+            var that = (global::NSIT_Connect.Models.YVideoItem)instance;
+            that.VideoID = (global::System.String)Value;
+        }
+        private object get_234_YVideoItem_Thumbnail(object instance)
+        {
+            var that = (global::NSIT_Connect.Models.YVideoItem)instance;
+            return that.Thumbnail;
+        }
+        private void set_234_YVideoItem_Thumbnail(object instance, object Value)
+        {
+            var that = (global::NSIT_Connect.Models.YVideoItem)instance;
+            that.Thumbnail = (global::System.Uri)Value;
+        }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
         {
@@ -5411,6 +5605,66 @@ namespace NSIT_Connect.NSIT_Connect_XamlTypeInfo
                 xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "AboutPartViewModel", "NSIT_Connect.ViewModels.AboutPartViewModel");
                 xamlMember.Getter = get_224_SettingsPageViewModel_AboutPartViewModel;
                 xamlMember.SetIsReadOnly();
+                break;
+            case "NSIT_Connect.ViewModels.VideoDetailPageViewModel.Selected":
+                userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.ViewModels.VideoDetailPageViewModel");
+                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Selected", "NSIT_Connect.Models.YVideoItem");
+                xamlMember.Getter = get_225_VideoDetailPageViewModel_Selected;
+                xamlMember.Setter = set_225_VideoDetailPageViewModel_Selected;
+                break;
+            case "NSIT_Connect.ViewModels.VideoDetailPageViewModel.SourceUri":
+                userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.ViewModels.VideoDetailPageViewModel");
+                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "SourceUri", "System.Uri");
+                xamlMember.Getter = get_226_VideoDetailPageViewModel_SourceUri;
+                xamlMember.Setter = set_226_VideoDetailPageViewModel_SourceUri;
+                break;
+            case "NSIT_Connect.ViewModels.VideoPageViewModel.ProgressVisibility":
+                userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.ViewModels.VideoPageViewModel");
+                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "ProgressVisibility", "Windows.UI.Xaml.Visibility");
+                xamlMember.Getter = get_227_VideoPageViewModel_ProgressVisibility;
+                xamlMember.Setter = set_227_VideoPageViewModel_ProgressVisibility;
+                break;
+            case "NSIT_Connect.ViewModels.VideoPageViewModel.Selected":
+                userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.ViewModels.VideoPageViewModel");
+                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Selected", "Object");
+                xamlMember.Getter = get_228_VideoPageViewModel_Selected;
+                xamlMember.Setter = set_228_VideoPageViewModel_Selected;
+                break;
+            case "NSIT_Connect.ViewModels.VideoPageViewModel.Item":
+                userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.ViewModels.VideoPageViewModel");
+                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Item", "System.Collections.ObjectModel.ObservableCollection`1<NSIT_Connect.Models.YVideoItem>");
+                xamlMember.Getter = get_229_VideoPageViewModel_Item;
+                xamlMember.Setter = set_229_VideoPageViewModel_Item;
+                break;
+            case "NSIT_Connect.Models.YVideoItem.Title":
+                userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.Models.YVideoItem");
+                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Title", "String");
+                xamlMember.Getter = get_230_YVideoItem_Title;
+                xamlMember.Setter = set_230_YVideoItem_Title;
+                break;
+            case "NSIT_Connect.Models.YVideoItem.Descrption":
+                userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.Models.YVideoItem");
+                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Descrption", "String");
+                xamlMember.Getter = get_231_YVideoItem_Descrption;
+                xamlMember.Setter = set_231_YVideoItem_Descrption;
+                break;
+            case "NSIT_Connect.Models.YVideoItem.Date":
+                userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.Models.YVideoItem");
+                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Date", "String");
+                xamlMember.Getter = get_232_YVideoItem_Date;
+                xamlMember.Setter = set_232_YVideoItem_Date;
+                break;
+            case "NSIT_Connect.Models.YVideoItem.VideoID":
+                userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.Models.YVideoItem");
+                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "VideoID", "String");
+                xamlMember.Getter = get_233_YVideoItem_VideoID;
+                xamlMember.Setter = set_233_YVideoItem_VideoID;
+                break;
+            case "NSIT_Connect.Models.YVideoItem.Thumbnail":
+                userType = (global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlUserType)GetXamlTypeByName("NSIT_Connect.Models.YVideoItem");
+                xamlMember = new global::NSIT_Connect.NSIT_Connect_XamlTypeInfo.XamlMember(this, "Thumbnail", "System.Uri");
+                xamlMember.Getter = get_234_YVideoItem_Thumbnail;
+                xamlMember.Setter = set_234_YVideoItem_Thumbnail;
                 break;
             }
             return xamlMember;

@@ -117,6 +117,7 @@
     <Compile Include="Models\LocationItem.cs" />
     <Compile Include="Models\ProfessorItem.cs" />
     <Compile Include="Models\ReviewItem.cs" />
+    <Compile Include="Models\YVideoItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\SettingsServices\SettingsService.cs" />
     <Compile Include="ViewModels\FeedBackPageViewModel.cs" />
@@ -127,6 +128,8 @@
     <Compile Include="ViewModels\MyFeedPageViewModel.cs" />
     <Compile Include="ViewModels\ProfessorDetailPageViewModel.cs" />
     <Compile Include="ViewModels\ProfessorsPageViewModel.cs" />
+    <Compile Include="ViewModels\VideoDetailPageViewModel.cs" />
+    <Compile Include="ViewModels\VideoPageViewModel.cs" />
     <Compile Include="Views\FeedBackPage.xaml.cs">
       <DependentUpon>FeedBackPage.xaml</DependentUpon>
     </Compile>
@@ -163,6 +166,12 @@
     </Compile>
     <Compile Include="Views\Splash.xaml.cs">
       <DependentUpon>Splash.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\VideoDetailPage.xaml.cs">
+      <DependentUpon>VideoDetailPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\VideoPage.xaml.cs">
+      <DependentUpon>VideoPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -319,6 +328,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\Splash.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\VideoDetailPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\VideoPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -12,10 +12,10 @@
           "lib/wpa81/Bratched.Tools.RatingControl_ua81.dll": {}
         }
       },
-      "Google.Apis/1.13.1": {
+      "Google.Apis/1.14.0": {
         "type": "package",
         "dependencies": {
-          "Google.Apis.Core": "1.13.1",
+          "Google.Apis.Core": "1.14.0",
           "Zlib.Portable.Signed": "1.11.0"
         },
         "compile": {
@@ -27,10 +27,10 @@
           "lib/win81/Google.Apis.dll": {}
         }
       },
-      "Google.Apis.Auth/1.13.1": {
+      "Google.Apis.Auth/1.14.0": {
         "type": "package",
         "dependencies": {
-          "Google.Apis.Core": "1.13.1"
+          "Google.Apis.Core": "1.14.0"
         },
         "compile": {
           "lib/win81/Google.Apis.Auth.PlatformServices.dll": {},
@@ -41,7 +41,7 @@
           "lib/win81/Google.Apis.Auth.dll": {}
         }
       },
-      "Google.Apis.Core/1.13.1": {
+      "Google.Apis.Core/1.14.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Bcl": "1.1.10",
@@ -57,11 +57,11 @@
           "lib/portable-net45+sl50+netcore45+wpa81+wp8/Google.Apis.Core.dll": {}
         }
       },
-      "Google.Apis.YouTube.v3/1.13.1.529": {
+      "Google.Apis.YouTube.v3/1.14.0.529": {
         "type": "package",
         "dependencies": {
-          "Google.Apis": "1.13.1",
-          "Google.Apis.Auth": "1.13.1"
+          "Google.Apis": "1.14.0",
+          "Google.Apis.Auth": "1.14.0"
         },
         "compile": {
           "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.YouTube.v3.dll": {}
@@ -401,6 +401,27 @@
         "runtime": {
           "lib/uap10.0/Microsoft.Xaml.Interactions.dll": {},
           "lib/uap10.0/Microsoft.Xaml.Interactivity.dll": {}
+        }
+      },
+      "MyToolkit/2.5.12": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+wp8+win8+wpa81/MyToolkit.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp8+win8+wpa81/MyToolkit.dll": {}
+        }
+      },
+      "MyToolkit.Extended/2.5.12": {
+        "type": "package",
+        "dependencies": {
+          "MyToolkit": "2.5.12"
+        },
+        "compile": {
+          "lib/uap10.0/MyToolkit.Extended.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/MyToolkit.Extended.dll": {}
         }
       },
       "Newtonsoft.Json/9.0.1": {
@@ -2055,10 +2076,10 @@
           "lib/wpa81/Bratched.Tools.RatingControl_ua81.dll": {}
         }
       },
-      "Google.Apis/1.13.1": {
+      "Google.Apis/1.14.0": {
         "type": "package",
         "dependencies": {
-          "Google.Apis.Core": "1.13.1",
+          "Google.Apis.Core": "1.14.0",
           "Zlib.Portable.Signed": "1.11.0"
         },
         "compile": {
@@ -2070,10 +2091,10 @@
           "lib/win81/Google.Apis.dll": {}
         }
       },
-      "Google.Apis.Auth/1.13.1": {
+      "Google.Apis.Auth/1.14.0": {
         "type": "package",
         "dependencies": {
-          "Google.Apis.Core": "1.13.1"
+          "Google.Apis.Core": "1.14.0"
         },
         "compile": {
           "lib/win81/Google.Apis.Auth.PlatformServices.dll": {},
@@ -2084,7 +2105,7 @@
           "lib/win81/Google.Apis.Auth.dll": {}
         }
       },
-      "Google.Apis.Core/1.13.1": {
+      "Google.Apis.Core/1.14.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Bcl": "1.1.10",
@@ -2100,11 +2121,11 @@
           "lib/portable-net45+sl50+netcore45+wpa81+wp8/Google.Apis.Core.dll": {}
         }
       },
-      "Google.Apis.YouTube.v3/1.13.1.529": {
+      "Google.Apis.YouTube.v3/1.14.0.529": {
         "type": "package",
         "dependencies": {
-          "Google.Apis": "1.13.1",
-          "Google.Apis.Auth": "1.13.1"
+          "Google.Apis": "1.14.0",
+          "Google.Apis.Auth": "1.14.0"
         },
         "compile": {
           "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.YouTube.v3.dll": {}
@@ -2393,6 +2414,27 @@
         "runtime": {
           "lib/uap10.0/Microsoft.Xaml.Interactions.dll": {},
           "lib/uap10.0/Microsoft.Xaml.Interactivity.dll": {}
+        }
+      },
+      "MyToolkit/2.5.12": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+wp8+win8+wpa81/MyToolkit.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp8+win8+wpa81/MyToolkit.dll": {}
+        }
+      },
+      "MyToolkit.Extended/2.5.12": {
+        "type": "package",
+        "dependencies": {
+          "MyToolkit": "2.5.12"
+        },
+        "compile": {
+          "lib/uap10.0/MyToolkit.Extended.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/MyToolkit.Extended.dll": {}
         }
       },
       "Newtonsoft.Json/9.0.1": {
@@ -3964,10 +4006,10 @@
           "lib/wpa81/Bratched.Tools.RatingControl_ua81.dll": {}
         }
       },
-      "Google.Apis/1.13.1": {
+      "Google.Apis/1.14.0": {
         "type": "package",
         "dependencies": {
-          "Google.Apis.Core": "1.13.1",
+          "Google.Apis.Core": "1.14.0",
           "Zlib.Portable.Signed": "1.11.0"
         },
         "compile": {
@@ -3979,10 +4021,10 @@
           "lib/win81/Google.Apis.dll": {}
         }
       },
-      "Google.Apis.Auth/1.13.1": {
+      "Google.Apis.Auth/1.14.0": {
         "type": "package",
         "dependencies": {
-          "Google.Apis.Core": "1.13.1"
+          "Google.Apis.Core": "1.14.0"
         },
         "compile": {
           "lib/win81/Google.Apis.Auth.PlatformServices.dll": {},
@@ -3993,7 +4035,7 @@
           "lib/win81/Google.Apis.Auth.dll": {}
         }
       },
-      "Google.Apis.Core/1.13.1": {
+      "Google.Apis.Core/1.14.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Bcl": "1.1.10",
@@ -4009,11 +4051,11 @@
           "lib/portable-net45+sl50+netcore45+wpa81+wp8/Google.Apis.Core.dll": {}
         }
       },
-      "Google.Apis.YouTube.v3/1.13.1.529": {
+      "Google.Apis.YouTube.v3/1.14.0.529": {
         "type": "package",
         "dependencies": {
-          "Google.Apis": "1.13.1",
-          "Google.Apis.Auth": "1.13.1"
+          "Google.Apis": "1.14.0",
+          "Google.Apis.Auth": "1.14.0"
         },
         "compile": {
           "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.YouTube.v3.dll": {}
@@ -4300,6 +4342,27 @@
         "runtime": {
           "lib/uap10.0/Microsoft.Xaml.Interactions.dll": {},
           "lib/uap10.0/Microsoft.Xaml.Interactivity.dll": {}
+        }
+      },
+      "MyToolkit/2.5.12": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+wp8+win8+wpa81/MyToolkit.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp8+win8+wpa81/MyToolkit.dll": {}
+        }
+      },
+      "MyToolkit.Extended/2.5.12": {
+        "type": "package",
+        "dependencies": {
+          "MyToolkit": "2.5.12"
+        },
+        "compile": {
+          "lib/uap10.0/MyToolkit.Extended.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/MyToolkit.Extended.dll": {}
         }
       },
       "Newtonsoft.Json/9.0.1": {
@@ -5830,10 +5893,10 @@
           "lib/wpa81/Bratched.Tools.RatingControl_ua81.dll": {}
         }
       },
-      "Google.Apis/1.13.1": {
+      "Google.Apis/1.14.0": {
         "type": "package",
         "dependencies": {
-          "Google.Apis.Core": "1.13.1",
+          "Google.Apis.Core": "1.14.0",
           "Zlib.Portable.Signed": "1.11.0"
         },
         "compile": {
@@ -5845,10 +5908,10 @@
           "lib/win81/Google.Apis.dll": {}
         }
       },
-      "Google.Apis.Auth/1.13.1": {
+      "Google.Apis.Auth/1.14.0": {
         "type": "package",
         "dependencies": {
-          "Google.Apis.Core": "1.13.1"
+          "Google.Apis.Core": "1.14.0"
         },
         "compile": {
           "lib/win81/Google.Apis.Auth.PlatformServices.dll": {},
@@ -5859,7 +5922,7 @@
           "lib/win81/Google.Apis.Auth.dll": {}
         }
       },
-      "Google.Apis.Core/1.13.1": {
+      "Google.Apis.Core/1.14.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Bcl": "1.1.10",
@@ -5875,11 +5938,11 @@
           "lib/portable-net45+sl50+netcore45+wpa81+wp8/Google.Apis.Core.dll": {}
         }
       },
-      "Google.Apis.YouTube.v3/1.13.1.529": {
+      "Google.Apis.YouTube.v3/1.14.0.529": {
         "type": "package",
         "dependencies": {
-          "Google.Apis": "1.13.1",
-          "Google.Apis.Auth": "1.13.1"
+          "Google.Apis": "1.14.0",
+          "Google.Apis.Auth": "1.14.0"
         },
         "compile": {
           "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.YouTube.v3.dll": {}
@@ -6174,6 +6237,27 @@
         "runtime": {
           "lib/uap10.0/Microsoft.Xaml.Interactions.dll": {},
           "lib/uap10.0/Microsoft.Xaml.Interactivity.dll": {}
+        }
+      },
+      "MyToolkit/2.5.12": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+wp8+win8+wpa81/MyToolkit.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp8+win8+wpa81/MyToolkit.dll": {}
+        }
+      },
+      "MyToolkit.Extended/2.5.12": {
+        "type": "package",
+        "dependencies": {
+          "MyToolkit": "2.5.12"
+        },
+        "compile": {
+          "lib/uap10.0/MyToolkit.Extended.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/MyToolkit.Extended.dll": {}
         }
       },
       "Newtonsoft.Json/9.0.1": {
@@ -7748,10 +7832,10 @@
           "lib/wpa81/Bratched.Tools.RatingControl_ua81.dll": {}
         }
       },
-      "Google.Apis/1.13.1": {
+      "Google.Apis/1.14.0": {
         "type": "package",
         "dependencies": {
-          "Google.Apis.Core": "1.13.1",
+          "Google.Apis.Core": "1.14.0",
           "Zlib.Portable.Signed": "1.11.0"
         },
         "compile": {
@@ -7763,10 +7847,10 @@
           "lib/win81/Google.Apis.dll": {}
         }
       },
-      "Google.Apis.Auth/1.13.1": {
+      "Google.Apis.Auth/1.14.0": {
         "type": "package",
         "dependencies": {
-          "Google.Apis.Core": "1.13.1"
+          "Google.Apis.Core": "1.14.0"
         },
         "compile": {
           "lib/win81/Google.Apis.Auth.PlatformServices.dll": {},
@@ -7777,7 +7861,7 @@
           "lib/win81/Google.Apis.Auth.dll": {}
         }
       },
-      "Google.Apis.Core/1.13.1": {
+      "Google.Apis.Core/1.14.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Bcl": "1.1.10",
@@ -7793,11 +7877,11 @@
           "lib/portable-net45+sl50+netcore45+wpa81+wp8/Google.Apis.Core.dll": {}
         }
       },
-      "Google.Apis.YouTube.v3/1.13.1.529": {
+      "Google.Apis.YouTube.v3/1.14.0.529": {
         "type": "package",
         "dependencies": {
-          "Google.Apis": "1.13.1",
-          "Google.Apis.Auth": "1.13.1"
+          "Google.Apis": "1.14.0",
+          "Google.Apis.Auth": "1.14.0"
         },
         "compile": {
           "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.YouTube.v3.dll": {}
@@ -8084,6 +8168,27 @@
         "runtime": {
           "lib/uap10.0/Microsoft.Xaml.Interactions.dll": {},
           "lib/uap10.0/Microsoft.Xaml.Interactivity.dll": {}
+        }
+      },
+      "MyToolkit/2.5.12": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+wp8+win8+wpa81/MyToolkit.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp8+win8+wpa81/MyToolkit.dll": {}
+        }
+      },
+      "MyToolkit.Extended/2.5.12": {
+        "type": "package",
+        "dependencies": {
+          "MyToolkit": "2.5.12"
+        },
+        "compile": {
+          "lib/uap10.0/MyToolkit.Extended.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/MyToolkit.Extended.dll": {}
         }
       },
       "Newtonsoft.Json/9.0.1": {
@@ -9614,10 +9719,10 @@
           "lib/wpa81/Bratched.Tools.RatingControl_ua81.dll": {}
         }
       },
-      "Google.Apis/1.13.1": {
+      "Google.Apis/1.14.0": {
         "type": "package",
         "dependencies": {
-          "Google.Apis.Core": "1.13.1",
+          "Google.Apis.Core": "1.14.0",
           "Zlib.Portable.Signed": "1.11.0"
         },
         "compile": {
@@ -9629,10 +9734,10 @@
           "lib/win81/Google.Apis.dll": {}
         }
       },
-      "Google.Apis.Auth/1.13.1": {
+      "Google.Apis.Auth/1.14.0": {
         "type": "package",
         "dependencies": {
-          "Google.Apis.Core": "1.13.1"
+          "Google.Apis.Core": "1.14.0"
         },
         "compile": {
           "lib/win81/Google.Apis.Auth.PlatformServices.dll": {},
@@ -9643,7 +9748,7 @@
           "lib/win81/Google.Apis.Auth.dll": {}
         }
       },
-      "Google.Apis.Core/1.13.1": {
+      "Google.Apis.Core/1.14.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Bcl": "1.1.10",
@@ -9659,11 +9764,11 @@
           "lib/portable-net45+sl50+netcore45+wpa81+wp8/Google.Apis.Core.dll": {}
         }
       },
-      "Google.Apis.YouTube.v3/1.13.1.529": {
+      "Google.Apis.YouTube.v3/1.14.0.529": {
         "type": "package",
         "dependencies": {
-          "Google.Apis": "1.13.1",
-          "Google.Apis.Auth": "1.13.1"
+          "Google.Apis": "1.14.0",
+          "Google.Apis.Auth": "1.14.0"
         },
         "compile": {
           "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.YouTube.v3.dll": {}
@@ -9958,6 +10063,27 @@
         "runtime": {
           "lib/uap10.0/Microsoft.Xaml.Interactions.dll": {},
           "lib/uap10.0/Microsoft.Xaml.Interactivity.dll": {}
+        }
+      },
+      "MyToolkit/2.5.12": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+wp8+win8+wpa81/MyToolkit.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp8+win8+wpa81/MyToolkit.dll": {}
+        }
+      },
+      "MyToolkit.Extended/2.5.12": {
+        "type": "package",
+        "dependencies": {
+          "MyToolkit": "2.5.12"
+        },
+        "compile": {
+          "lib/uap10.0/MyToolkit.Extended.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/MyToolkit.Extended.dll": {}
         }
       },
       "Newtonsoft.Json/9.0.1": {
@@ -11532,10 +11658,10 @@
           "lib/wpa81/Bratched.Tools.RatingControl_ua81.dll": {}
         }
       },
-      "Google.Apis/1.13.1": {
+      "Google.Apis/1.14.0": {
         "type": "package",
         "dependencies": {
-          "Google.Apis.Core": "1.13.1",
+          "Google.Apis.Core": "1.14.0",
           "Zlib.Portable.Signed": "1.11.0"
         },
         "compile": {
@@ -11547,10 +11673,10 @@
           "lib/win81/Google.Apis.dll": {}
         }
       },
-      "Google.Apis.Auth/1.13.1": {
+      "Google.Apis.Auth/1.14.0": {
         "type": "package",
         "dependencies": {
-          "Google.Apis.Core": "1.13.1"
+          "Google.Apis.Core": "1.14.0"
         },
         "compile": {
           "lib/win81/Google.Apis.Auth.PlatformServices.dll": {},
@@ -11561,7 +11687,7 @@
           "lib/win81/Google.Apis.Auth.dll": {}
         }
       },
-      "Google.Apis.Core/1.13.1": {
+      "Google.Apis.Core/1.14.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Bcl": "1.1.10",
@@ -11577,11 +11703,11 @@
           "lib/portable-net45+sl50+netcore45+wpa81+wp8/Google.Apis.Core.dll": {}
         }
       },
-      "Google.Apis.YouTube.v3/1.13.1.529": {
+      "Google.Apis.YouTube.v3/1.14.0.529": {
         "type": "package",
         "dependencies": {
-          "Google.Apis": "1.13.1",
-          "Google.Apis.Auth": "1.13.1"
+          "Google.Apis": "1.14.0",
+          "Google.Apis.Auth": "1.14.0"
         },
         "compile": {
           "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.YouTube.v3.dll": {}
@@ -11868,6 +11994,27 @@
         "runtime": {
           "lib/uap10.0/Microsoft.Xaml.Interactions.dll": {},
           "lib/uap10.0/Microsoft.Xaml.Interactivity.dll": {}
+        }
+      },
+      "MyToolkit/2.5.12": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+wp8+win8+wpa81/MyToolkit.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp8+win8+wpa81/MyToolkit.dll": {}
+        }
+      },
+      "MyToolkit.Extended/2.5.12": {
+        "type": "package",
+        "dependencies": {
+          "MyToolkit": "2.5.12"
+        },
+        "compile": {
+          "lib/uap10.0/MyToolkit.Extended.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/MyToolkit.Extended.dll": {}
         }
       },
       "Newtonsoft.Json/9.0.1": {
@@ -13412,11 +13559,11 @@
         "lib/wpa81/Bratched.Tools.RatingControl_ua81/RatingControl.xbf"
       ]
     },
-    "Google.Apis/1.13.1": {
-      "sha512": "ZuMIgXI41bNfqyjlecP0+QinIV2716caw0u2iG8CX6EXwy/TMT8KZ9kBdUPe9j3Z708JZUMEI8BkR2SCkgchCw==",
+    "Google.Apis/1.14.0": {
+      "sha512": "xaOjRZ84LLfr31b5hEnslynuH4kZO4tg8aKE7cIwx+eOOmk7lqmIK/IkzETgFvt6fIYkXDalu2PxrLWwDRgoHg==",
       "type": "package",
       "files": [
-        "Google.Apis.1.13.1.nupkg.sha512",
+        "Google.Apis.1.14.0.nupkg.sha512",
         "Google.Apis.nuspec",
         "License.txt",
         "lib/net45/Google.Apis.PlatformServices.dll",
@@ -13448,11 +13595,11 @@
         "lib/wpa81/Google.Apis.xml"
       ]
     },
-    "Google.Apis.Auth/1.13.1": {
-      "sha512": "KkD3721e5OgJhCLcjVEeNy5Maa+LhsnZQOLgt79va5Jb1AhsfqyJvXTY4EHiPQZhAR8eDMRXnzFDE+x9UMbSMA==",
+    "Google.Apis.Auth/1.14.0": {
+      "sha512": "M5N+E8CFat9ZnXkESPOjung62Eb6hZM0/gZXbwWxN/Ds/ls5/LKCR04D7ceh2vVCWQk6ImymvAMEmzQQ0/U/uQ==",
       "type": "package",
       "files": [
-        "Google.Apis.Auth.1.13.1.nupkg.sha512",
+        "Google.Apis.Auth.1.14.0.nupkg.sha512",
         "Google.Apis.Auth.nuspec",
         "License.txt",
         "lib/net45/Google.Apis.Auth.PlatformServices.dll",
@@ -13484,11 +13631,11 @@
         "lib/wpa81/Google.Apis.Auth.xml"
       ]
     },
-    "Google.Apis.Core/1.13.1": {
-      "sha512": "B7vOVZggQ+LUub/dsu24C5oHO6cumtG556RpTXEvw1dRgdEvxy2FINwVAkGgowdyQBMcZ5xmRyi4pAWbntq6QQ==",
+    "Google.Apis.Core/1.14.0": {
+      "sha512": "5nYOq10bTyoawN6U04BB67kkjR/tnv6pFrkV2jzcuK6nBv5rIF7vUdF7NDgDKOFFgLHOOOFWBLOjjVp3Vv3XaA==",
       "type": "package",
       "files": [
-        "Google.Apis.Core.1.13.1.nupkg.sha512",
+        "Google.Apis.Core.1.14.0.nupkg.sha512",
         "Google.Apis.Core.nuspec",
         "License.txt",
         "lib/net45/Google.Apis.Core.dll",
@@ -13499,11 +13646,11 @@
         "lib/portable-net45+sl50+netcore45+wpa81+wp8/Google.Apis.Core.xml"
       ]
     },
-    "Google.Apis.YouTube.v3/1.13.1.529": {
-      "sha512": "m5syeYtbb7oPIrYhMwlrcs8hzxcJatCLBfLCSjBPyzvvkG74v1ziKZrmWvFke3ay8lRpvg3nfDa62DQ4Ktg7fg==",
+    "Google.Apis.YouTube.v3/1.14.0.529": {
+      "sha512": "xqXgg0FlX6luYi16LjWtfbRwV4N3TRmxs7mFzQ9bdL+2nibEqZ9DXyzzC/4SYosUhQ89yb9I20FPKRxlduzvuw==",
       "type": "package",
       "files": [
-        "Google.Apis.YouTube.v3.1.13.1.529.nupkg.sha512",
+        "Google.Apis.YouTube.v3.1.14.0.529.nupkg.sha512",
         "Google.Apis.YouTube.v3.nuspec",
         "lib/portable-net40+sl50+netcore45+wpa81+wp8/Google.Apis.YouTube.v3.dll",
         "lib/portable-net40+sl50+netcore45+wpa81+wp8/Google.Apis.YouTube.v3.pdb",
@@ -14341,6 +14488,56 @@
         "lib/uap10.0/Microsoft.Xaml.Interactivity.dll",
         "lib/uap10.0/Microsoft.Xaml.Interactivity.pri",
         "lib/uap10.0/Microsoft.Xaml.Interactivity.xml"
+      ]
+    },
+    "MyToolkit/2.5.12": {
+      "sha512": "dUPVdRP5Intc4JSKjzXnbWp0wKhtiToQCiTNekF4tT0y0Dr+iCr2FCwY3HmOmyAz6XUnfseknBWCsdsmxbU4KQ==",
+      "type": "package",
+      "files": [
+        "MyToolkit.2.5.12.nupkg.sha512",
+        "MyToolkit.nuspec",
+        "lib/portable-net45+wp8+win8+wpa81/CodeContracts/MyToolkit.Contracts.dll",
+        "lib/portable-net45+wp8+win8+wpa81/MyToolkit.dll",
+        "lib/portable-net45+wp8+win8+wpa81/MyToolkit.xml",
+        "lib/portable-sl5+wp71/MyToolkit.dll",
+        "lib/portable-sl5+wp71/MyToolkit.xml"
+      ]
+    },
+    "MyToolkit.Extended/2.5.12": {
+      "sha512": "VSuWmUAOQ/VL+k5MzAmPCT2JLmt4zDi3j1HLRUnPN8axMQKDKu8SH8tu7IE25MfCTON2s8AVD2XUU3OdJA6yNQ==",
+      "type": "package",
+      "files": [
+        "MyToolkit.Extended.2.5.12.nupkg.sha512",
+        "MyToolkit.Extended.nuspec",
+        "lib/net40/MyToolkit.Extended.dll",
+        "lib/net40/MyToolkit.Extended.xml",
+        "lib/net45/MyToolkit.Extended.dll",
+        "lib/net45/MyToolkit.Extended.xml",
+        "lib/portable-wpa81+win8/MyToolkit.Extended.dll",
+        "lib/portable-wpa81+win8/MyToolkit.Extended.pri",
+        "lib/portable-wpa81+win8/MyToolkit.Extended.xml",
+        "lib/portable-wpa81+win8/MyToolkit.Extended/Controls/DatePicker.xbf",
+        "lib/portable-wpa81+win8/MyToolkit.Extended/Controls/TimePicker.xbf",
+        "lib/portable-wpa81+win8/MyToolkit.Extended/MyToolkit.Extended.pdb",
+        "lib/portable-wpa81+win8/MyToolkit.Extended/MyToolkit.Extended.xr.xml",
+        "lib/portable-wpa81+win8/MyToolkit.Extended/Themes/Generic.xbf",
+        "lib/portable-wpa81+win8/MyToolkit.Extended/UI/Popups/ListPickerBox.xbf",
+        "lib/sl4-wp71/MyToolkit.Extended.dll",
+        "lib/sl4-wp71/MyToolkit.Extended.xml",
+        "lib/sl4-wp71/de/MyToolkit.Extended.resources.dll",
+        "lib/sl4-wp71/fr/MyToolkit.Extended.resources.dll",
+        "lib/sl50/MyToolkit.Extended.dll",
+        "lib/sl50/MyToolkit.Extended.xml",
+        "lib/uap10.0/MyToolkit.Extended.dll",
+        "lib/uap10.0/MyToolkit.Extended.pri",
+        "lib/uap10.0/MyToolkit.Extended.xml",
+        "lib/uap10.0/MyToolkit.Extended/MyToolkit.Extended.pdb",
+        "lib/uap10.0/MyToolkit.Extended/MyToolkit.Extended.xr.xml",
+        "lib/uap10.0/MyToolkit.Extended/Themes/Generic.xbf",
+        "lib/wp80/MyToolkit.Extended.dll",
+        "lib/wp80/MyToolkit.Extended.xml",
+        "lib/wp80/de/MyToolkit.Extended.resources.dll",
+        "lib/wp80/fr/MyToolkit.Extended.resources.dll"
       ]
     },
     "Newtonsoft.Json/9.0.1": {
@@ -17117,10 +17314,12 @@
   "projectFileDependencyGroups": {
     "": [
       "BratchedTools.RatingControl >= 1.0.0",
-      "Google.Apis.YouTube.v3 >= 1.13.1.529",
+      "Google.Apis.YouTube.v3 >= 1.14.0.529",
       "MahApps.Metro.Resources.Standalone >= 0.1.0",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 5.1.0",
       "Microsoft.Xaml.Behaviors.Uwp.Managed >= 1.1.0",
+      "MyToolkit >= 2.5.12",
+      "MyToolkit.Extended >= 2.5.12",
       "Newtonsoft.Json >= 9.0.1",
       "Template10 >= 1.1.11",
       "WindowsStateTriggers >= 1.1.0"

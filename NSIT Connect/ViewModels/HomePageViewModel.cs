@@ -262,11 +262,6 @@ namespace NSIT_Connect.ViewModels
 
             }
 
-            foreach(Feed item in HomeFeed)
-            {
-                
-            }
-
             if (refresh && HomeFeed.Count>0)
                 Selected = HomeFeed[0];
             refresh = false;

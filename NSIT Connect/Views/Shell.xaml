@@ -35,7 +35,7 @@
                 </StackPanel>
             </Controls:HamburgerButtonInfo>
 
-            <Controls:HamburgerButtonInfo ClearHistory="True" PageType="views:HomePage" 
+            <Controls:HamburgerButtonInfo ClearHistory="True" PageType="views:VideoPage" 
                                           AutomationProperties.Name="Jerry"
                                           >
                 <StackPanel Orientation="Horizontal">
