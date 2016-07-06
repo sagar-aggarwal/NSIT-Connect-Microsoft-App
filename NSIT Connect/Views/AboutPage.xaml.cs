@@ -38,7 +38,7 @@ namespace NSIT_Connect.Views
 
         private async void ContributeButto_Click(object sender, RoutedEventArgs e)
         {
-            var uri = new Uri("https://github.com/sgaggarwal2009/NSIT-Connect-Microsoft-App");
+            var uri = new Uri("https://github.com/sgaggarwal2009/NSIT-Connect-Microsoft-App/wiki");
             if (uri != null)
             {
                 var success = await Windows.System.Launcher.LaunchUriAsync(uri);
