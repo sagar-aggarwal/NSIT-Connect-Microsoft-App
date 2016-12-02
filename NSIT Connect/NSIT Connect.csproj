@@ -18,8 +18,8 @@
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <PackageCertificateKeyFile>NSIT Connect_TemporaryKey.pfx</PackageCertificateKeyFile>
-    <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
-    <AppxBundle>Always</AppxBundle>
+    <AppxAutoIncrementPackageRevision>False</AppxAutoIncrementPackageRevision>
+    <AppxBundle>Never</AppxBundle>
     <AppxBundlePlatforms>x86|x64|arm</AppxBundlePlatforms>
     <AppxPackageDir>C:\Users\AGGARWAL%27S\Documents\Projects\NSIT Connect\NSIT Connect\AppPackages\</AppxPackageDir>
   </PropertyGroup>
@@ -104,6 +104,7 @@
     <Compile Include="Controls\CircularPanel.xaml.cs">
       <DependentUpon>CircularPanel.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Controls\ExpandableRowListViewControl.cs" />
     <Compile Include="Controls\HangoutPanel.xaml.cs">
       <DependentUpon>HangoutPanel.xaml</DependentUpon>
     </Compile>
@@ -136,6 +137,9 @@
     <Compile Include="ViewModels\VideoPageViewModel.cs" />
     <Compile Include="Views\AboutPage.xaml.cs">
       <DependentUpon>AboutPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CodeRadarPage.xaml.cs">
+      <DependentUpon>CodeRadarPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\FeedBackPage.xaml.cs">
       <DependentUpon>FeedBackPage.xaml</DependentUpon>
@@ -253,6 +257,7 @@
     <Content Include="Assets\ShellIcon\appbar.book.open.information.png" />
     <Content Include="Assets\ShellIcon\appbar.home.empty.png" />
     <Content Include="Assets\ShellIcon\appbar.information.circle.png" />
+    <Content Include="Assets\ShellIcon\appbar.laptop.png" />
     <Content Include="Assets\ShellIcon\appbar.location.checkin.png" />
     <Content Include="Assets\ShellIcon\appbar.people.png" />
     <Content Include="Assets\ShellIcon\appbar.tiles.four.png" />
@@ -302,6 +307,10 @@
     <Page Include="Views\Busy.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\CodeRadarPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\FeedBackPage.xaml">
       <SubType>Designer</SubType>

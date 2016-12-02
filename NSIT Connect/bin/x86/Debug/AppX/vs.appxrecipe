@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>7b35e933-3e05-42a6-828e-8065ca037667</PackageIdentityName>
     <IntermediateOutputPath>C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>9CCFEB5BFF74D40A77915718DDA97B61F412C9BF0C5075C750A3FD31B88B7F21</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>13835B6D40DAD86BFB58B7540D88EAFD71BAE4684407690CC603324A1DFB84A0</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>7b35e933-3e05-42a6-828e-8065ca037667_1.0.1.0_x86__dgwpea4fp9k80</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>7b35e933-3e05-42a6-828e-8065ca037667_dgwpea4fp9k80!App</RegisteredUserModeAppID>
     <RegisteredPackageID>7b35e933-3e05-42a6-828e-8065ca037667</RegisteredPackageID>
@@ -22,13 +22,13 @@
     <AppXManifest Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-08-11T17:12:08.684</Modified>
+      <Modified>2016-12-02T10:56:59.031</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\NSIT Connect.exe">
       <PackagePath>entrypoint\NSIT Connect.exe</PackagePath>
-      <Modified>2016-07-07T17:35:04.871</Modified>
+      <Modified>2016-12-02T10:56:55.414</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\.nuget\packages\BratchedTools.RatingControl\1.0.0\lib\wpa81\Bratched.Tools.RatingControl_ua81.dll">
       <PackagePath>Bratched.Tools.RatingControl_ua81.dll</PackagePath>
@@ -706,6 +706,10 @@
       <PackagePath>Assets\ShellIcon\appbar.information.circle.png</PackagePath>
       <Modified>2015-02-11T13:54:36.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\ShellIcon\appbar.laptop.png">
+      <PackagePath>Assets\ShellIcon\appbar.laptop.png</PackagePath>
+      <Modified>2015-02-11T13:54:36.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\ShellIcon\appbar.location.checkin.png">
       <PackagePath>Assets\ShellIcon\appbar.location.checkin.png</PackagePath>
       <Modified>2015-02-11T13:54:36.000</Modified>
@@ -842,7 +846,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\NSIT Connect.xr.xml">
       <PackagePath>NSIT Connect.xr.xml</PackagePath>
-      <Modified>2016-07-06T18:28:05.804</Modified>
+      <Modified>2016-12-02T10:52:55.014</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -910,11 +914,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-08-11T17:12:02.662</Modified>
+      <Modified>2016-12-02T10:56:56.797</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\Core\NSIT Connect.exe">
       <PackagePath>NSIT Connect.exe</PackagePath>
-      <Modified>2016-08-11T17:12:08.650</Modified>
+      <Modified>2016-12-02T10:56:59.017</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

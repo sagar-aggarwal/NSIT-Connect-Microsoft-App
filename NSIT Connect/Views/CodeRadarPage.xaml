@@ -1,0 +1,270 @@
+﻿<Page
+    x:Class="NSIT_Connect.Views.CodeRadarPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ExpandableRowListView"
+    xmlns:expand="using:ExpandableRowListView"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+
+        <ResourceDictionary>
+            <x:String x:Key="ArrowGlyph">&#xE96E;</x:String>
+
+            <!-- Defines item template for 'ExpandableRowListView' -->
+            <Style TargetType="local:ExpandableRowListViewControlItem">
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="local:ExpandableRowListViewControlItem">
+                            <Grid>
+                                <VisualStateManager.VisualStateGroups>
+                                    <VisualStateGroup x:Name="ViewStates">
+                                        <VisualState x:Name="Expanded">
+                                            <Storyboard>
+                                                <DoubleAnimation Storyboard.TargetName="RotateTextblockArrowGlyph" Storyboard.TargetProperty="Angle" To="180" Duration="0:0:0.3"/>
+                                                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="gridRowContent" Storyboard.TargetProperty="Visibility">
+                                                    <DiscreteObjectKeyFrame KeyTime="0:0:0" Value="Visible"/>
+                                                </ObjectAnimationUsingKeyFrames>
+                                                <DoubleAnimationUsingKeyFrames Storyboard.TargetName="gridRowContent" Storyboard.TargetProperty="Opacity">
+                                                    <DiscreteDoubleKeyFrame KeyTime="0:0:0" Value="0.0"/>
+                                                    <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="1.0"/>
+                                                </DoubleAnimationUsingKeyFrames>
+                                            </Storyboard>
+                                        </VisualState>
+                                        <VisualState x:Name="Collapsed">
+                                            <Storyboard>
+                                                <DoubleAnimation Storyboard.TargetName="RotateTextblockArrowGlyph" Storyboard.TargetProperty="Angle" To="0" Duration="0:0:0.3"/>
+                                                <DoubleAnimationUsingKeyFrames Storyboard.TargetName="gridRowContent" Storyboard.TargetProperty="Opacity">
+                                                    <DiscreteDoubleKeyFrame KeyTime="0:0:0" Value="1.0"/>
+                                                    <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0.0"/>
+                                                </DoubleAnimationUsingKeyFrames>
+                                                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="gridRowContent" Storyboard.TargetProperty="Visibility">
+                                                    <DiscreteObjectKeyFrame KeyTime="0:0:0.3" Value="Collapsed"/>
+                                                </ObjectAnimationUsingKeyFrames>
+                                            </Storyboard>
+                                        </VisualState>
+                                    </VisualStateGroup>
+                                </VisualStateManager.VisualStateGroups>
+
+                                <Grid.RowDefinitions>
+                                    <RowDefinition MinHeight="{StaticResource ListViewItemMinHeight}"/>
+                                    <RowDefinition Height="auto"/>
+                                </Grid.RowDefinitions>
+
+                                <!-- CAUTION: Make sure the following 'Grid.Background' is set to
+                                    at least 'Transparent' else 'Tapped' event won't fire
+                                    around 'ListViewItem' edges made with 'Padding'. -->
+                                <Grid Name="gridRowHeader" Grid.Row="0" Background="Transparent">
+                                    <Grid VerticalAlignment="Center" Margin="0">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="32"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+
+                                        <Grid Grid.Column="0" Height="32" RenderTransformOrigin="0.5,0.5">
+                                            <Grid.RenderTransform>
+                                                <RotateTransform x:Name="RotateTextblockArrowGlyph"/>
+                                            </Grid.RenderTransform>
+
+                                            <TextBlock FontFamily="{ThemeResource SymbolThemeFontFamily}" Text="{StaticResource ArrowGlyph}" FontSize="12" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                                        </Grid>
+
+                                        <ContentPresenter Grid.Column="1" Content="{TemplateBinding RowHeader}" VerticalAlignment="Center"/>
+                                        <!-- NOTE: Use the following to color row separator, if preferred -->
+                                        <!--<Border Grid.Column="0" Grid.ColumnSpan="2" Background="Red" Height="1" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Margin="0,0,0,-6"/>-->
+                                    </Grid>
+                                </Grid>
+
+                                <!-- Expandable row content -->
+                                <Grid x:Name="gridRowContent" Grid.Row="1" Visibility="Collapsed" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+                                    <ContentPresenter x:Name="contentpresenterRowContent" Content="{TemplateBinding Content}" ContentTemplate="{TemplateBinding ContentTemplate}" Margin="0"/>
+                                </Grid>
+                            </Grid>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <!-- Defines control template for 'ExpandableRowListViewControl' -->
+            <Style TargetType="local:ExpandableRowListViewControl">
+                <Setter Property="ItemTemplate" Value="{StaticResource ListPickerFlyoutPresenterContentTemplate}"/>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="local:ExpandableRowListViewControl">
+                            <!-- Parent 'ListView' which is clickable -->
+                            <ListView Name="listviewRows"
+                              Background="{TemplateBinding Background}"
+                              BorderBrush="{TemplateBinding BorderBrush}"
+                              BorderThickness="{TemplateBinding BorderThickness}"
+                              SelectionMode="None"
+                              IsItemClickEnabled="True"
+                              Margin="12,0,12,0"
+                              ItemsSource="{TemplateBinding ItemsSource}">
+
+                                <ListView.ItemContainerStyle>
+                                    <!-- We want to remove the default padding and use our own.
+                                 Also, we want 'ListViewItem' to stretch to take all horizontal space. -->
+                                    <Style TargetType="ListViewItem">
+                                        <Setter Property="Margin" Value="0"/>
+                                        <Setter Property="Padding" Value="0"/>
+                                        <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                                        <Setter Property="Template">
+                                            <Setter.Value>
+                                                <ControlTemplate TargetType="ListViewItem">
+                                                    <Grid x:Name="LayoutRoot" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}">
+                                                        <Grid.Resources>
+                                                            <Style x:Key="BaseContentPresenterStyle" TargetType="ContentPresenter">
+                                                                <Setter Property="FontFamily" Value="Segoe UI"/>
+                                                                <Setter Property="FontWeight" Value="SemiBold"/>
+                                                                <Setter Property="FontSize" Value="15"/>
+                                                                <Setter Property="TextWrapping" Value="Wrap"/>
+                                                                <Setter Property="LineStackingStrategy" Value="MaxHeight"/>
+                                                                <Setter Property="TextLineBounds" Value="Full"/>
+                                                                <Setter Property="OpticalMarginAlignment" Value="TrimSideBearings"/>
+                                                            </Style>
+                                                            <Style x:Key="BodyContentPresenterStyle" BasedOn="{StaticResource BaseContentPresenterStyle}" TargetType="ContentPresenter">
+                                                                <Setter Property="FontWeight" Value="Normal"/>
+                                                                <Setter Property="FontSize" Value="15"/>
+                                                            </Style>
+                                                        </Grid.Resources>
+                                                        <VisualStateManager.VisualStateGroups>
+                                                            <VisualStateGroup x:Name="CommonStates">
+                                                                <VisualState x:Name="Normal"/>
+                                                                <VisualState x:Name="Disabled">
+                                                                    <Storyboard>
+                                                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="ContentPresenter">
+                                                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource SystemControlDisabledBaseLowBrush}"/>
+                                                                        </ObjectAnimationUsingKeyFrames>
+                                                                    </Storyboard>
+                                                                </VisualState>
+                                                                <VisualState x:Name="PointerOver">
+                                                                    <Storyboard>
+                                                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Fill" Storyboard.TargetName="PressedBackground">
+                                                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource SystemControlHighlightListLowBrush}"/>
+                                                                        </ObjectAnimationUsingKeyFrames>
+                                                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="ContentPresenter">
+                                                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource SystemControlHighlightAltBaseHighBrush}"/>
+                                                                        </ObjectAnimationUsingKeyFrames>
+                                                                    </Storyboard>
+                                                                </VisualState>
+                                                                <VisualState x:Name="Pressed">
+                                                                    <Storyboard>
+                                                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Fill" Storyboard.TargetName="PressedBackground">
+                                                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource SystemControlHighlightListMediumBrush}"/>
+                                                                        </ObjectAnimationUsingKeyFrames>
+                                                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="ContentPresenter">
+                                                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource SystemControlHighlightAltBaseHighBrush}"/>
+                                                                        </ObjectAnimationUsingKeyFrames>
+                                                                    </Storyboard>
+                                                                </VisualState>
+                                                                <VisualState x:Name="Selected">
+                                                                    <Storyboard>
+                                                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Fill" Storyboard.TargetName="PressedBackground">
+                                                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource SystemControlHighlightListAccentLowBrush}"/>
+                                                                        </ObjectAnimationUsingKeyFrames>
+                                                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="ContentPresenter">
+                                                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource SystemControlHighlightAltBaseHighBrush}"/>
+                                                                        </ObjectAnimationUsingKeyFrames>
+                                                                    </Storyboard>
+                                                                </VisualState>
+                                                                <VisualState x:Name="SelectedUnfocused">
+                                                                    <Storyboard>
+                                                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Fill" Storyboard.TargetName="PressedBackground">
+                                                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource SystemControlHighlightListAccentLowBrush}"/>
+                                                                        </ObjectAnimationUsingKeyFrames>
+                                                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="ContentPresenter">
+                                                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource SystemControlHighlightAltBaseHighBrush}"/>
+                                                                        </ObjectAnimationUsingKeyFrames>
+                                                                    </Storyboard>
+                                                                </VisualState>
+                                                                <VisualState x:Name="SelectedPointerOver">
+                                                                    <Storyboard>
+                                                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Fill" Storyboard.TargetName="PressedBackground">
+                                                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource SystemControlHighlightListAccentMediumBrush}"/>
+                                                                        </ObjectAnimationUsingKeyFrames>
+                                                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="ContentPresenter">
+                                                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource SystemControlHighlightAltBaseHighBrush}"/>
+                                                                        </ObjectAnimationUsingKeyFrames>
+                                                                    </Storyboard>
+                                                                </VisualState>
+                                                                <VisualState x:Name="SelectedPressed">
+                                                                    <Storyboard>
+                                                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Fill" Storyboard.TargetName="PressedBackground">
+                                                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource SystemControlHighlightListAccentHighBrush}"/>
+                                                                        </ObjectAnimationUsingKeyFrames>
+                                                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="ContentPresenter">
+                                                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource SystemControlHighlightAltBaseHighBrush}"/>
+                                                                        </ObjectAnimationUsingKeyFrames>
+                                                                    </Storyboard>
+                                                                </VisualState>
+                                                            </VisualStateGroup>
+                                                        </VisualStateManager.VisualStateGroups>
+                                                        <Rectangle x:Name="PressedBackground" Fill="Transparent" Control.IsTemplateFocusTarget="True" Height="44" VerticalAlignment="Top"/>
+                                                        <ContentPresenter x:Name="ContentPresenter" ContentTemplate="{TemplateBinding ContentTemplate}" ContentTransitions="{TemplateBinding ContentTransitions}" Content="{TemplateBinding Content}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" Style="{StaticResource BodyContentPresenterStyle}" TextWrapping="NoWrap" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                                                    </Grid>
+                                                </ControlTemplate>
+                                            </Setter.Value>
+                                        </Setter>
+                                    </Style>
+                                </ListView.ItemContainerStyle>
+                            </ListView>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Styles/Custom.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Page.Resources>
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+        <Pivot x:Name="rootPivot"  >
+            <Pivot.Resources>
+                <Style TargetType="PivotHeaderItem" >
+                    <Setter Property="Margin" Value="5" />
+                    <Setter Property="Foreground" Value="{StaticResource colorPrimaryDark}" />
+                    <Setter Property="FontSize" Value="30" />
+                    <Setter Property="Style" Value="{ThemeResource BaseTextBlockStyle}" />
+                </Style>
+            </Pivot.Resources>
+            <PivotItem Header="Running">
+                <expand:ExpandableRowListViewControl x:Name="control" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Margin="-10,0,-10,0">
+                    <expand:ExpandableRowListViewControl.Items>
+                        <expand:ExpandableRowListViewControlItem x:Name="item1" RowHeader="Item1">
+                            <expand:ExpandableRowListViewControlItem.Content>
+                                <ListView>
+                                    <ListView.Items>
+                                        <ListViewItem Content="1"/>
+                                        <ListViewItem Content="2"/>
+                                    </ListView.Items>
+                                </ListView>
+                            </expand:ExpandableRowListViewControlItem.Content>
+                        </expand:ExpandableRowListViewControlItem>
+
+                        <expand:ExpandableRowListViewControlItem x:Name="item2" IsExpanded="True">
+                            <expand:ExpandableRowListViewControlItem.RowHeader>
+                                <StackPanel Orientation="Horizontal">
+                                    <SymbolIcon Symbol="Like" Margin="0,0,10,0"/>
+                                    <TextBlock Text="Item2"/>
+                                </StackPanel>
+                            </expand:ExpandableRowListViewControlItem.RowHeader>
+
+                            <expand:ExpandableRowListViewControlItem.Content>
+                                <Image Source="Assets/StoreLogo.png" Stretch="None"/>
+                            </expand:ExpandableRowListViewControlItem.Content>
+                        </expand:ExpandableRowListViewControlItem>
+                    </expand:ExpandableRowListViewControl.Items>
+                </expand:ExpandableRowListViewControl>
+            </PivotItem>
+            <PivotItem Header="Upcomming">
+                <!--Pivot content goes here-->
+                
+            </PivotItem>
+        </Pivot>
+
+    </Grid>
+</Page>

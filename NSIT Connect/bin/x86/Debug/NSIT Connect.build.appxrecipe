@@ -528,6 +528,9 @@
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\ShellIcon\appbar.information.circle.png">
       <PackagePath>Assets\ShellIcon\appbar.information.circle.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\ShellIcon\appbar.laptop.png">
+      <PackagePath>Assets\ShellIcon\appbar.laptop.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\ShellIcon\appbar.location.checkin.png">
       <PackagePath>Assets\ShellIcon\appbar.location.checkin.png</PackagePath>
     </AppxPackagedFile>
