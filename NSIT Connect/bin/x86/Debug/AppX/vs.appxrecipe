@@ -22,13 +22,13 @@
     <AppXManifest Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-02T10:56:59.031</Modified>
+      <Modified>2016-12-03T22:38:22.243</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\NSIT Connect.exe">
       <PackagePath>entrypoint\NSIT Connect.exe</PackagePath>
-      <Modified>2016-12-02T10:56:55.414</Modified>
+      <Modified>2016-12-03T22:38:19.835</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\.nuget\packages\BratchedTools.RatingControl\1.0.0\lib\wpa81\Bratched.Tools.RatingControl_ua81.dll">
       <PackagePath>Bratched.Tools.RatingControl_ua81.dll</PackagePath>
@@ -582,6 +582,34 @@
       <PackagePath>Assets\ChooseFeedItem\rotaract.png</PackagePath>
       <Modified>2016-05-07T18:34:04.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\CodeRadarLogo\codechef_logo.png">
+      <PackagePath>Assets\CodeRadarLogo\codechef_logo.png</PackagePath>
+      <Modified>2016-08-24T00:45:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\CodeRadarLogo\codeforces_logo.png">
+      <PackagePath>Assets\CodeRadarLogo\codeforces_logo.png</PackagePath>
+      <Modified>2016-08-24T00:45:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\CodeRadarLogo\hackerearth_logo.png">
+      <PackagePath>Assets\CodeRadarLogo\hackerearth_logo.png</PackagePath>
+      <Modified>2016-08-24T00:45:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\CodeRadarLogo\hackerrank_logo.png">
+      <PackagePath>Assets\CodeRadarLogo\hackerrank_logo.png</PackagePath>
+      <Modified>2016-08-24T00:45:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\CodeRadarLogo\topcoder_logo.png">
+      <PackagePath>Assets\CodeRadarLogo\topcoder_logo.png</PackagePath>
+      <Modified>2016-08-24T00:45:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\CodeRadarLogo\unknown_logo.png">
+      <PackagePath>Assets\CodeRadarLogo\unknown_logo.png</PackagePath>
+      <Modified>2016-08-24T00:45:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\CodeRadarLogo\uri_logo.png">
+      <PackagePath>Assets\CodeRadarLogo\uri_logo.png</PackagePath>
+      <Modified>2016-08-24T00:45:02.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\contact.png">
       <PackagePath>Assets\contact.png</PackagePath>
       <Modified>2016-06-25T21:51:57.835</Modified>
@@ -846,7 +874,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\NSIT Connect.xr.xml">
       <PackagePath>NSIT Connect.xr.xml</PackagePath>
-      <Modified>2016-12-02T10:52:55.014</Modified>
+      <Modified>2016-12-03T21:49:47.536</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -914,11 +942,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-12-02T10:56:56.797</Modified>
+      <Modified>2016-12-03T22:38:20.984</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\Core\NSIT Connect.exe">
       <PackagePath>NSIT Connect.exe</PackagePath>
-      <Modified>2016-12-02T10:56:59.017</Modified>
+      <Modified>2016-12-03T22:38:22.238</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

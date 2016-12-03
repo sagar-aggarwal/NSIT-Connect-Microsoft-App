@@ -435,6 +435,27 @@
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\ChooseFeedItem\rotaract.png">
       <PackagePath>Assets\ChooseFeedItem\rotaract.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\CodeRadarLogo\codechef_logo.png">
+      <PackagePath>Assets\CodeRadarLogo\codechef_logo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\CodeRadarLogo\codeforces_logo.png">
+      <PackagePath>Assets\CodeRadarLogo\codeforces_logo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\CodeRadarLogo\hackerearth_logo.png">
+      <PackagePath>Assets\CodeRadarLogo\hackerearth_logo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\CodeRadarLogo\hackerrank_logo.png">
+      <PackagePath>Assets\CodeRadarLogo\hackerrank_logo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\CodeRadarLogo\topcoder_logo.png">
+      <PackagePath>Assets\CodeRadarLogo\topcoder_logo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\CodeRadarLogo\unknown_logo.png">
+      <PackagePath>Assets\CodeRadarLogo\unknown_logo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\CodeRadarLogo\uri_logo.png">
+      <PackagePath>Assets\CodeRadarLogo\uri_logo.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\Assets\contact.png">
       <PackagePath>Assets\contact.png</PackagePath>
     </AppxPackagedFile>

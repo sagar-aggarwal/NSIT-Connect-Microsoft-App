@@ -116,6 +116,7 @@
       <DependentUpon>Test.xaml</DependentUpon>
     </Compile>
     <Compile Include="Models\ChooseFeedItem.cs" />
+    <Compile Include="Models\CodeRadarItem.cs" />
     <Compile Include="Models\Constants.cs" />
     <Compile Include="Models\Feed.cs" />
     <Compile Include="Models\HangoutItem.cs" />
@@ -125,6 +126,7 @@
     <Compile Include="Models\YVideoItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\SettingsServices\SettingsService.cs" />
+    <Compile Include="ViewModels\CodeRadarPageViewModel.cs" />
     <Compile Include="ViewModels\FeedBackPageViewModel.cs" />
     <Compile Include="ViewModels\HangoutDetailPageViewModel.cs" />
     <Compile Include="ViewModels\HangoutPageViewModel.cs" />
@@ -207,6 +209,13 @@
     <Content Include="Assets\ChooseFeedItem\junoon.png" />
     <Content Include="Assets\ChooseFeedItem\quiz.png" />
     <Content Include="Assets\ChooseFeedItem\rotaract.png" />
+    <Content Include="Assets\CodeRadarLogo\codechef_logo.png" />
+    <Content Include="Assets\CodeRadarLogo\codeforces_logo.png" />
+    <Content Include="Assets\CodeRadarLogo\hackerearth_logo.png" />
+    <Content Include="Assets\CodeRadarLogo\hackerrank_logo.png" />
+    <Content Include="Assets\CodeRadarLogo\topcoder_logo.png" />
+    <Content Include="Assets\CodeRadarLogo\unknown_logo.png" />
+    <Content Include="Assets\CodeRadarLogo\uri_logo.png" />
     <Content Include="Assets\contact.png" />
     <Content Include="Assets\facebook.png" />
     <Content Include="Assets\facebook_circle_color-128.png" />
