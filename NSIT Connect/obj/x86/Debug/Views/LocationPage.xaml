@@ -35,11 +35,6 @@
                 Margin="15,0,0,0"
         		Foreground="{StaticResource colorPrimaryDark}" 
         		FontSize="55"         />
-            <TextBlock Text="#find interesting places around you" 
-        		Style="{ThemeResource BodyTextBlockStyle}" 
-        		Foreground="{StaticResource colorPrimary}" 
-                Margin="15,0,0,0"
-        		FontSize="24" />
         </StackPanel>
         <GridView x:ConnectionId='3' x:Name="Main_Grid"
                                                   IsItemClickEnabled="True"

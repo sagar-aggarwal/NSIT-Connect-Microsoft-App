@@ -21,7 +21,7 @@
 
         <TextBlock 
                 Grid.Row="0"
-                Text="#feedback"
+                Text="feedback"
         		Style="{ThemeResource BodyTextBlockStyle}"
                 Margin="10,0,5,0"
                 FontSize="55"

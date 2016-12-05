@@ -59,7 +59,7 @@ namespace NSIT_Connect.Views
             }
         }
 
-        private   void MailList_ItemClick(object sender, ItemClickEventArgs e)
+        private  void MailList_ItemClick(object sender, ItemClickEventArgs e)
         {
             ViewModel.getpicture(e.ClickedItem as Feed);
         }

@@ -22,9 +22,10 @@
     </Page.Resources>
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        
-        
-        <Pivot x:Name="rootPivot"  >
+
+ 
+        <Pivot x:Name="rootPivot" Margin="-8,0,0,0" >
+
             <Pivot.Resources>
                 <Style TargetType="PivotHeaderItem" >
                     <Setter Property="Margin" Value="5" />
@@ -37,26 +38,29 @@
                 <GridView Margin="0,25,5,0" ItemsSource="{x:Bind ViewModel.Item}" >
                     <GridView.ItemTemplate>
                         <DataTemplate x:DataType="models:CodeRadarItem">
-                            <Grid Height="150" Width="400" Margin="5,2.5,0,2.5" >
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="0.9*" />
-                                    <ColumnDefinition Width="2*" />
-                                </Grid.ColumnDefinitions>
-                                <Grid Grid.Column="0" Background="{x:Bind Color}">
-                                    <Image Source="{Binding Logo}" Margin="10" ></Image>
-                                </Grid>
-                                <Grid Grid.Column="1" Margin="0,5,5,0" >
-                                    <Grid.RowDefinitions>
-                                        <RowDefinition Height="Auto" />
-                                        <RowDefinition Height="*" />
-                                        <RowDefinition Height="Auto" />
-                                    </Grid.RowDefinitions>
-                                    <TextBlock Margin="8,0,0,0" Grid.Row="0" Style="{ThemeResource BodyTextBlockStyle}" FontWeight="Bold" Text="{x:Bind Title}" FontSize="18" TextWrapping="Wrap"/>
-                                    <TextBlock Margin="8,0,0,0" Grid.Row="1" Text="{x:Bind Description}" TextTrimming="WordEllipsis" TextWrapping="Wrap"/>
-                                    <TextBlock Margin="8,0,0,0" Grid.Row="2" Text="{x:Bind Days}" TextWrapping="Wrap" FontWeight="SemiBold"/>
+                            <UserControl>
 
+                                <Grid x:Name="Running_Grid" Height="135" Width="300" Margin="0,2.5,0,2.5" >
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="0.9*" />
+                                        <ColumnDefinition Width="2*" />
+                                    </Grid.ColumnDefinitions>
+                                    <Grid Grid.Column="0" Background="{x:Bind Color}">
+                                        <Image Source="{Binding Logo}" Margin="10" ></Image>
+                                    </Grid>
+                                    <Grid Grid.Column="1" Margin="-2,5,5,0" >
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="*" />
+                                            <RowDefinition Height="Auto" />
+                                        </Grid.RowDefinitions>
+                                        <TextBlock Margin="8,0,0,0" Grid.Row="0" Style="{ThemeResource BodyTextBlockStyle}" FontWeight="Bold" Text="{x:Bind Title}"  TextWrapping="Wrap"/>
+                                        <TextBlock Margin="8,0,0,0" Grid.Row="1" Text="{x:Bind Description}" TextTrimming="WordEllipsis" TextWrapping="Wrap"/>
+                                        <TextBlock Margin="8,0,0,0" Grid.Row="2" Text="{x:Bind Days}" TextWrapping="Wrap" FontWeight="SemiBold"/>
+
+                                    </Grid>
                                 </Grid>
-                            </Grid>
+                            </UserControl>
                         </DataTemplate>
                     </GridView.ItemTemplate>
                 </GridView>
@@ -66,7 +70,7 @@
                 <GridView Margin="0,25,5,0" ItemsSource="{x:Bind ViewModel.CurrentItem}" >
                     <GridView.ItemTemplate>
                         <DataTemplate x:DataType="models:CodeRadarItem">
-                            <Grid Height="150" Width="400" Margin="5,2.5,0,2.5" >
+                            <Grid x:Name="Upcomming_Grid" Height="135" Width="300" Margin="0,2.5,0,2.5" >
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="0.9*" />
                                     <ColumnDefinition Width="2*" />
@@ -74,15 +78,15 @@
                                 <Grid Grid.Column="0" Background="{x:Bind Color}">
                                     <Image Source="{Binding Logo}" Margin="10" ></Image>
                                 </Grid>
-                                <Grid Grid.Column="1" Margin="0,5,5,0" >
+                                <Grid Grid.Column="1" Margin="-2,5,5,0" >
                                     <Grid.RowDefinitions>
                                         <RowDefinition Height="Auto" />
                                         <RowDefinition Height="*" />
                                         <RowDefinition Height="Auto" />
                                     </Grid.RowDefinitions>
-                                    <TextBlock Margin="8,0,0,0" Grid.Row="0" Style="{ThemeResource BodyTextBlockStyle}" FontWeight="Bold" FontSize="17" Text="{x:Bind Title}" TextWrapping="Wrap"/>
-                                    <TextBlock Margin="8,0,0,0" Grid.Row="1" Text="{x:Bind Description}" TextTrimming="WordEllipsis" TextWrapping="Wrap"/>
-                                    <TextBlock Margin="8,0,0,0" Grid.Row="2" Text="{x:Bind Days}" TextWrapping="Wrap" FontWeight="SemiBold"/>
+                                    <TextBlock Margin="8,0,0,0" Grid.Row="0" Style="{ThemeResource BodyTextBlockStyle}" FontWeight="Bold"  Text="{x:Bind Title}" TextWrapping="Wrap"/>
+                                    <TextBlock Margin="8,0,0,0" Grid.Row="1" Text="{x:Bind Description}" TextTrimming="WordEllipsis"  TextWrapping="Wrap"/>
+                                    <TextBlock Margin="8,0,0,0" Grid.Row="2" Text="{x:Bind Days}" TextWrapping="Wrap"  FontWeight="SemiBold"/>
                                     
                                 </Grid>
                             </Grid>

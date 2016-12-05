@@ -11,16 +11,52 @@
     d:DesignWidth="150">
 
     <StackPanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Ellipse Width="145" Height="145" Margin='0,4,0,0' HorizontalAlignment="Center">
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:ConnectionId='2' x:Name="AdaptiveVisualStateGroup">
+                <VisualState x:ConnectionId='3' x:Name="VisualStateNarrow">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="{StaticResource NarrowMinWidth}" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <!--  TODO: change properties for narrow view  -->
+                        <Setter Target="ellipse.Width" Value="170" />
+                        <Setter Target="ellipse.Height" Value="170" />
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:ConnectionId='4' x:Name="VisualStateNormal">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="{StaticResource NormalMinWidth}" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <!--  TODO: change properties for normal view  -->
+                        <Setter Target="ellipse.Width" Value="145" />
+                        <Setter Target="ellipse.Height" Value="145" />
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:ConnectionId='5' x:Name="VisualStateWide">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="{StaticResource WideMinWidth}" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <!--  TODO: change properties for wide view  -->
+                        <Setter Target="ellipse.Width" Value="145" />
+                        <Setter Target="ellipse.Height" Value="145" />
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+
+
+        <Ellipse x:ConnectionId='6' x:Name="ellipse" Width="145" Height="145" Margin='0,4,0,0' HorizontalAlignment="Center">
             <Ellipse.Fill>
                 <ImageBrush>
                     <ImageBrush.ImageSource>
-                        <BitmapImage x:ConnectionId='3' DecodePixelHeight="500" DecodePixelWidth="500" UriSource="{Binding ImageUri, ElementName=CircularPanelcontrol}" x:Name="image_source" />
+                        <BitmapImage x:ConnectionId='8' DecodePixelHeight="500" DecodePixelWidth="500" UriSource="{Binding ImageUri, ElementName=CircularPanelcontrol}" x:Name="image_source" />
                     </ImageBrush.ImageSource>
                 </ImageBrush>
             </Ellipse.Fill>
         </Ellipse>
-        <TextBlock x:ConnectionId='2' x:Name="label" Text="{Binding LabelName, ElementName=CircularPanelcontrol}" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,5,0,0" FontWeight="Bold"/>
+        <TextBlock x:ConnectionId='7' x:Name="label" Text="{Binding LabelName, ElementName=CircularPanelcontrol}" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,5,0,0" FontWeight="Bold"/>
     </StackPanel>
 
 </UserControl>

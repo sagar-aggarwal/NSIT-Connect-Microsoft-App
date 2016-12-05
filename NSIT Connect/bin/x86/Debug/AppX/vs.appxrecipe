@@ -10,25 +10,25 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>7b35e933-3e05-42a6-828e-8065ca037667</PackageIdentityName>
     <IntermediateOutputPath>C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\obj\x86\Debug\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>13835B6D40DAD86BFB58B7540D88EAFD71BAE4684407690CC603324A1DFB84A0</RegisteredManifestChecksum>
-    <RegisteredPackageMoniker>7b35e933-3e05-42a6-828e-8065ca037667_1.0.1.0_x86__dgwpea4fp9k80</RegisteredPackageMoniker>
+    <RegisteredManifestChecksum>B0B8C55DC3EC2D399C28EA9089372F9FB63FEA65B889DC9D45F3CB1E5F25B722</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>7b35e933-3e05-42a6-828e-8065ca037667_1.0.0.0_x86__dgwpea4fp9k80</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>7b35e933-3e05-42a6-828e-8065ca037667_dgwpea4fp9k80!App</RegisteredUserModeAppID>
     <RegisteredPackageID>7b35e933-3e05-42a6-828e-8065ca037667</RegisteredPackageID>
     <RegisteredPackagePublisher>CN=AGGARWAL'S</RegisteredPackagePublisher>
-    <RegisteredVersion>1.0.1.0</RegisteredVersion>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
     <AppXManifest Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-03T22:38:22.243</Modified>
+      <Modified>2016-12-04T17:37:49.490</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\NSIT Connect.exe">
       <PackagePath>entrypoint\NSIT Connect.exe</PackagePath>
-      <Modified>2016-12-03T22:38:19.835</Modified>
+      <Modified>2016-12-04T17:37:35.762</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\.nuget\packages\BratchedTools.RatingControl\1.0.0\lib\wpa81\Bratched.Tools.RatingControl_ua81.dll">
       <PackagePath>Bratched.Tools.RatingControl_ua81.dll</PackagePath>
@@ -942,11 +942,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-12-03T22:38:20.984</Modified>
+      <Modified>2016-12-04T17:37:46.799</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AGGARWAL%27S\Documents\Visual Studio 2015\Projects\NSIT Connect\NSIT Connect\bin\x86\Debug\Core\NSIT Connect.exe">
       <PackagePath>NSIT Connect.exe</PackagePath>
-      <Modified>2016-12-03T22:38:22.238</Modified>
+      <Modified>2016-12-04T17:37:49.471</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

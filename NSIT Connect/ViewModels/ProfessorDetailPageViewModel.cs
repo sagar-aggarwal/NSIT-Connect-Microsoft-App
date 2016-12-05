@@ -47,7 +47,7 @@ namespace NSIT_Connect.ViewModels
         public override async Task OnNavigatedToAsync(object parameter, NavigationMode mode, IDictionary<string, object> suspensionState)
         {
             Selected = (suspensionState.ContainsKey(nameof(Selected))) ? suspensionState[nameof(Selected)] as LocationItem : parameter as LocationItem;
-            Selected.Name = "#"+arrlocations[Selected.Number].ToLower();
+            Selected.Name = arrlocations[Selected.Number].ToLower();
             int key = Selected.Number;
             string[] name = new string[100], ids = new string[100], contact = new string[100];
             int k = 0;

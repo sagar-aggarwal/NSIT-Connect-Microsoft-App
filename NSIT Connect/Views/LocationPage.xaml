@@ -23,6 +23,39 @@
 
     </Page.Resources>
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        
+         <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:Name="AdaptiveVisualStateGroup">
+                <VisualState x:Name="VisualStateNarrow">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="{StaticResource NarrowMinWidth}" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <!--  TODO: change properties for narrow view  -->
+                        <Setter Target="Main_Grid.Margin" Value="35,25,0,0" />
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:Name="VisualStateNormal">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="{StaticResource NormalMinWidth}" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <!--  TODO: change properties for normal view  -->
+                        <Setter Target="Main_Grid.Margin" Value="20,25,0,0" />
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:Name="VisualStateWide">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="{StaticResource WideMinWidth}" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <!--  TODO: change properties for wide view  -->
+                        <Setter Target="Main_Grid.Margin" Value="20,25,0,0" />
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+
 
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
@@ -35,15 +68,10 @@
                 Margin="15,0,0,0"
         		Foreground="{StaticResource colorPrimaryDark}" 
         		FontSize="55"         />
-            <TextBlock Text="#find interesting places around you" 
-        		Style="{ThemeResource BodyTextBlockStyle}" 
-        		Foreground="{StaticResource colorPrimary}" 
-                Margin="15,0,0,0"
-        		FontSize="24" />
         </StackPanel>
         <GridView x:Name="Main_Grid"
                   ItemClick="Main_Grid_ItemClick" IsItemClickEnabled="True"
-                  Height="Auto" ItemsSource="{x:Bind ViewModel.lpanel}" Margin="15,25,0,0" Grid.Row="1" >
+                  Height="Auto" ItemsSource="{x:Bind ViewModel.lpanel}" Margin="35,25,0,0" Grid.Row="1" >
             <GridView.ItemTemplate >
                 <DataTemplate x:DataType="models:LocationItem">
                     <imagepanel:CircularPanel Margin="15" Label="{x:Bind Name}" Source ="{x:Bind source}" />

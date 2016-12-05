@@ -23,25 +23,23 @@
     </Page.Resources>
     
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        
+        
 
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
-        <StackPanel Grid.Row="0">
-            <TextBlock Text="professors List" 
+            <TextBlock 
+                Grid.Row="0"
+                Text="professors List" 
         		Style="{ThemeResource BodyTextBlockStyle}"
                 Margin="15,0,0,0"
         		Foreground="{StaticResource colorPrimaryDark}" 
-        		FontSize="55"         />
-            <TextBlock Text="#departments of nsit" 
-        		Style="{ThemeResource BodyTextBlockStyle}" 
-        		Foreground="{StaticResource colorPrimary}" 
-                Margin="15,0,0,0"
-        		FontSize="24" />
-        </StackPanel>
-        <GridView 
+        		FontSize="40"         />
+        
+            <GridView 
             x:Name="Main_Grid"
             Height="Auto" ItemsSource="{x:Bind ViewModel.lpanel}" Margin="30,25,0,0" Grid.Row="1" HorizontalAlignment="Stretch"
             ItemClick="Main_Grid_ItemClick" IsItemClickEnabled="True">

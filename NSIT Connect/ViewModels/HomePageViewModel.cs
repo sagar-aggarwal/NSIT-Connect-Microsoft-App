@@ -26,6 +26,7 @@ namespace NSIT_Connect.ViewModels
         private string PictureUri = null;
         private string hobject, hmessage, hpicture, hlink, hlikes, htime;
 
+
         public HomePageViewModel()
         {
             HomeFeed = new ObservableCollection<Feed>();
@@ -179,6 +180,7 @@ namespace NSIT_Connect.ViewModels
 
         public async void getinfo()
         {
+            
             if(refresh)
                 next = "https://graph.facebook.com/" + Constants.id_nsitonline + "/posts?limit=20&fields=id,picture,from,shares,message," +
             "object_id,link,created_time,comments.limit(0).summary(true),likes.limit(0).summary(true)" +

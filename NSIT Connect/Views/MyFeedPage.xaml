@@ -426,6 +426,24 @@
 
 
     <Grid x:Name="RootGrid" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:Name="AdaptiveVisualStateGroup">
+                <VisualState x:Name="DesktopVisualState" >
+                    <VisualState.StateTriggers>
+                        <Triggers:DeviceFamilyStateTrigger DeviceFamily="Desktop" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="Refresh_Appbar.Foreground" Value="WhiteSmoke" />
+                        <Setter Target="Link_AppBar.Foreground" Value="WhiteSmoke" />
+                        <Setter Target="Save_AppBar.Foreground" Value="WhiteSmoke" />
+                        <Setter Target="Settings_Appbar.Foreground" Value="WhiteSmoke" />
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+
+
         <Controls:MasterDetailsView
             x:Name="MailList"
             ItemClick="MailList_ItemClick"
@@ -466,12 +484,12 @@
             
             <Controls:MasterDetailsView.MasterCommands>
                 <AppBarButton
-                    Foreground="WhiteSmoke"
+                    x:Name="Refresh_Appbar"
                     Command="{x:Bind ViewModel.RefreshCommand}"
                     Icon="Refresh"
                     Label="Refresh" />
                 <AppBarButton
-                    Foreground="WhiteSmoke"
+                    x:Name="Settings_Appbar"
                     Icon="Setting"
                     Label="settings" >
                     <AppBarButton.Flyout>
@@ -519,14 +537,14 @@
                     Foreground="White"
                     Label="Older" />-->
                 <AppBarButton
+                    x:Name="Link_AppBar"
                     Icon="Link"
                     Click="AppBarButton_Click_1"
-                    Foreground="White"
                     Label="Link" />
                 <AppBarButton
+                    x:Name="Save_AppBar"
                     Icon="Save"
                     Click="AppBarButton_Click"
-                    Foreground="White"
                     Label="Save Image" />
             </Controls:MasterDetailsView.DetailsCommands>
             <x:String>Sample</x:String>
