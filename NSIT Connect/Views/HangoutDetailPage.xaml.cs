@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NSIT_Connect.Models;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -10,6 +11,7 @@ using Windows.Foundation.Collections;
 using Windows.Services.Maps;
 using Windows.Storage.Streams;
 using Windows.UI;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Maps;
@@ -120,5 +122,22 @@ namespace NSIT_Connect.Views
                 maps.LandmarksVisible = true;
             }
         }
+
+        private async void ListView_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            var uri = new Uri((e.ClickedItem as ReviewItem).Profile);
+            if (uri != null)
+            {
+                var success = await Windows.System.Launcher.LaunchUriAsync(uri);
+            }
+            else
+            {
+                var mssg = new MessageDialog("NO URL AVAILABLE");
+                await mssg.ShowAsync();
+            }
+
+        }
+
     }
+    
 }

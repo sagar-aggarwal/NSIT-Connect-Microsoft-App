@@ -67,11 +67,13 @@
                         </Ellipse>
                         <TextBlock x:Name="From" FontSize="20"
                                FontWeight="Normal" 
-                               MaxLines="1" RelativePanel.AlignTopWith="Ellipse"
+                               MaxLines="1"
+                               TextTrimming="WordEllipsis"
+                               RelativePanel.AlignTopWith="Ellipse"
                                RelativePanel.RightOf="Ellipse"
                                Text="{Binding Message, FallbackValue=Message}" />
                         <Viewbox StretchDirection="DownOnly" RelativePanel.Below="Body">
-                            <Image  Margin="5" Source="{Binding PictureUri,Mode=OneWay}" Stretch="None"/>
+                            <Image  Margin="5" Source="{Binding PictureUri,Mode=OneWay}" Stretch="None" />
                         </Viewbox>
                         <TextBlock x:Name="To" FontSize="12"
                                FontWeight="Bold" 
@@ -293,7 +295,7 @@
                                     Margin="0,2,0,0"
                                     HorizontalAlignment="Stretch"
                                     VerticalAlignment="Top"
-                                    IsIndeterminate="False"
+                                    IsIndeterminate="True"
                                     Visibility="Collapsed" />
                                             <ScrollViewer
                                     x:Name="ScrollViewer"
@@ -475,13 +477,11 @@
                     x:Name="Link_AppBar"
                     Icon="Link"
                     Click="AppBarButton_Click_1"
-                    Foreground="White"
                     Label="Link" />
                 <AppBarButton
                     x:Name="Save_AppBar"
                     Icon="Save"
                     Click="AppBarButton_Click"
-                    Foreground="White"
                     Label="Save Image" />
             </Controls:MasterDetailsView.DetailsCommands>
             <x:String>Sample</x:String>

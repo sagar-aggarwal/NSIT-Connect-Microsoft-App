@@ -12,6 +12,7 @@ using Template10.Mvvm;
 using Template10.Services.NavigationService;
 using Windows.Data.Json;
 using Windows.UI;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
@@ -107,6 +108,11 @@ namespace NSIT_Connect.ViewModels
 
 
                 httpClient.Dispose();
+            }
+            else
+            {
+                var mssg = new MessageDialog("No Internet");
+                await mssg.ShowAsync();
             }
             if (result != null && result != string.Empty)
             {

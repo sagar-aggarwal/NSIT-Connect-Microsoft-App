@@ -139,6 +139,11 @@ namespace NSIT_Connect.ViewModels
                     URL = MAIN_HTTP + NEARBYPLACES + LOCATION + pos.Coordinate.Latitude.ToString() + "," + pos.Coordinate.Longitude.ToString()
                     + RADIUS + Radius.ToString() + TYPE + Selected.Key + KEY;
                 }
+                else
+                {
+                    var mssg = new MessageDialog("Turn On Locations !");
+                    await mssg.ShowAsync();
+                }
                 if (URL != null)
                 {
                     var httpClient = new HttpClient();
@@ -253,6 +258,11 @@ namespace NSIT_Connect.ViewModels
                     }
                 }
                 ProgressVisibility = Visibility.Collapsed;
+            }
+            else
+            {
+                var mssg = new MessageDialog("No Internet");
+                await mssg.ShowAsync();
             }
         }
     }

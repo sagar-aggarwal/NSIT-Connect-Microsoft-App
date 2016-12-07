@@ -35,7 +35,7 @@
                 </Style>
             </Pivot.Resources>
             <PivotItem Header="Running">
-                <GridView Margin="0,25,5,0" ItemsSource="{x:Bind ViewModel.Item}" >
+                <GridView Margin="0,25,5,0" ItemsSource="{x:Bind ViewModel.Item}" ItemClick="GridView_ItemClick" IsItemClickEnabled="True">
                     <GridView.ItemTemplate>
                         <DataTemplate x:DataType="models:CodeRadarItem">
                             <UserControl>
@@ -67,10 +67,10 @@
             </PivotItem>
             <PivotItem Header="Upcomming">
                 <!--Pivot content goes here-->
-                <GridView Margin="0,25,5,0" ItemsSource="{x:Bind ViewModel.CurrentItem}" >
+                <GridView Margin="0,25,5,0" ItemsSource="{x:Bind ViewModel.CurrentItem}" ItemClick="GridView_ItemClick" IsItemClickEnabled="True" >
                     <GridView.ItemTemplate>
                         <DataTemplate x:DataType="models:CodeRadarItem">
-                            <Grid x:Name="Upcomming_Grid" Height="135" Width="300" Margin="0,2.5,0,2.5" >
+                            <Grid x:Name="Upcomming_Grid" Height="135" Width="300" Margin="0,2.5,0,2.5"  >
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="0.9*" />
                                     <ColumnDefinition Width="2*" />

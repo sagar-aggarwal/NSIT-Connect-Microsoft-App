@@ -7,6 +7,12 @@
     xmlns:ViewModel="using:NSIT_Connect.ViewModels"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Behaviors="using:Template10.Behaviors"
+    xmlns:Core="using:Microsoft.Xaml.Interactions.Core"
+    xmlns:Interactivity="using:Microsoft.Xaml.Interactivity"
+    xmlns:Controls="using:Template10.Controls"
+    xmlns:behaviors="using:Template10.Behaviors"
+    xmlns:Triggers="using:WindowsStateTriggers"
     mc:Ignorable="d">
     
     <Page.Resources>
@@ -85,6 +91,20 @@
     </Page.DataContext>
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:Name="AdaptiveVisualStateGroup">
+                <VisualState x:Name="DesktopVisualState" >
+                    <VisualState.StateTriggers>
+                        <Triggers:DeviceFamilyStateTrigger DeviceFamily="Desktop" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+   
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+
+
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
@@ -139,7 +159,7 @@
                         <Image Grid.Row="0" Source="{Binding Thumbnail}" Stretch="Fill" HorizontalAlignment="Stretch" />
                         <Grid  Grid.Row="1" Margin="0,10,5,5">
                             <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="2*" />
+                                <ColumnDefinition Width="1.3*" />
                                 <ColumnDefinition Width="*" />
                             </Grid.ColumnDefinitions>
                             <TextBlock Grid.Column="0" Text="{Binding Title}" TextWrapping="Wrap" HorizontalAlignment="Left"  />

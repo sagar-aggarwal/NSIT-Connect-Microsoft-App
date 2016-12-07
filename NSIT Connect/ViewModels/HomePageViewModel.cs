@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using Template10.Common;
 using Template10.Mvvm;
 using Windows.Data.Json;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Navigation;
 
@@ -25,7 +26,7 @@ namespace NSIT_Connect.ViewModels
         private bool refresh = false;
         private string PictureUri = null;
         private string hobject, hmessage, hpicture, hlink, hlikes, htime;
-
+        public Feed temp = null;
 
         public HomePageViewModel()
         {
@@ -201,6 +202,11 @@ namespace NSIT_Connect.ViewModels
 
                 httpClient.Dispose();
             }
+            else
+            {
+                var mssg = new MessageDialog("No Internet");
+                await mssg.ShowAsync();
+            }
             JsonObject ob, ob2;
             JsonArray arr;
             if (result != null && result!= string.Empty)
@@ -256,7 +262,7 @@ namespace NSIT_Connect.ViewModels
                     else
                         htime = string.Empty;
                     DateTime dt = Convert.ToDateTime(htime);
-                    HomeFeed.Add(new Feed() { Object_ID = hobject, Likes = hlikes, Link = hlink, Message = hmessage, Picture = hpicture, Time_Created = dt.ToString("d MMM , h:mm tt") });
+                    HomeFeed.Add(new Feed() {  Object_ID = hobject, Likes = hlikes, Link = hlink, Message = hmessage, Picture = hpicture, Time_Created = dt.ToString("d MMM , h:mm tt") });
 
                 }
                 ob = ob.GetNamedObject("paging");
@@ -268,6 +274,7 @@ namespace NSIT_Connect.ViewModels
                 Selected = HomeFeed[0];
             refresh = false;
         }
+
 
         public async void getpicture(Feed message)
         {
@@ -298,7 +305,10 @@ namespace NSIT_Connect.ViewModels
                     if (array.GetObjectAt(0).ContainsKey("source"))
                     {
                         message.PictureUri = new Uri(array.GetObjectAt(0).GetNamedString("source"));
+                        temp = message;
                     }
+                    
+                   
                 }
             }
         }

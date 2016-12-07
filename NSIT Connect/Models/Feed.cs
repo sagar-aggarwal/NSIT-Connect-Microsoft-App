@@ -9,6 +9,7 @@ namespace NSIT_Connect.Models
 {
     public class Feed : BindableBase
     {
+
         string _Message = default(string);
         public string Message { get { return _Message; } set { Set(ref _Message, value); } }
 

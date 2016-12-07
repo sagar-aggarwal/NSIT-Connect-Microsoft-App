@@ -40,7 +40,7 @@
                             <TextBlock x:Name="Subject" Margin="8,0,0,0"
                                FontSize="12" FontWeight="Bold" Width="25" VerticalAlignment="Center" Foreground="#26b4f5" MaxLines="1" Style="{ThemeResource BodyTextBlockStyle}"
                                Text="{Binding Likes}" />
-                            <Image Source="ms-appx:///Assets/like.png" Width="25" Height="25" />
+                            <Image Source="ms-appx:///Assets/like.png" Width="25" Height="25"  />
                         </StackPanel>
                     </StackPanel>
                     <TextBlock x:Name="Date" Grid.Column="2"
@@ -72,7 +72,7 @@
                                RelativePanel.RightOf="Ellipse"
                                Text="{Binding Message, FallbackValue=Message}" />
                         <Viewbox StretchDirection="DownOnly" RelativePanel.Below="Body">
-                            <Image  Margin="5" Source="{Binding PictureUri,Mode=OneWay}" Stretch="None"/>
+                            <Image  Margin="5" Source="{Binding PictureUri,Mode=OneWay}" Stretch="None" />
                         </Viewbox>
                         <TextBlock x:Name="To" FontSize="12"
                                FontWeight="Bold" 

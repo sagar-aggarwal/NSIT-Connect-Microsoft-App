@@ -9,6 +9,11 @@
     xmlns:Rating="using:Bratched.Tools.RatingControl"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Behaviors="using:Template10.Behaviors"
+    xmlns:Core="using:Microsoft.Xaml.Interactions.Core"
+    xmlns:Interactivity="using:Microsoft.Xaml.Interactivity"
+    xmlns:behaviors="using:Template10.Behaviors"
+    xmlns:Triggers="using:WindowsStateTriggers"
     mc:Ignorable="d">
 
     <Page.DataContext>
@@ -17,6 +22,8 @@
 
     <Page.BottomAppBar>
         <CommandBar Background="{StaticResource colorPrimaryDark}" Foreground="White"    >
+
+
             <AppBarButton Icon="Refresh" Label="Refresh" Foreground="WhiteSmoke" Click="AppBarButton_Click" />
             <CommandBar.Content>
                 <Grid Margin="10,0,0,0" >
@@ -26,11 +33,12 @@
                         <ColumnDefinition Width="Auto" />
                     </Grid.ColumnDefinitions>
                     <Image Grid.Column="0"  Source="ms-appx:///Assets/ic_wifi_tethering_white_24dp.png" Stretch="None" />
-                    <Slider Grid.Column="1" 
+                    <Slider x:Name="SliderValue"
+                            Grid.Column="1" 
                             Value="{Binding Radius}"
                             ValueChanged="Slider_ValueChanged"
                             Minimum="0" Maximum="50" 
-                            Margin="15,7,0,0"  Foreground="White" Width="600"   >
+                            Margin="15,7,0,0"  Foreground="White" Width="150"   >
                     </Slider>
                     <TextBlock Grid.Column="2" Margin="10,0,0,0" FontSize="20" VerticalAlignment="Center"  Style="{ThemeResource BodyTextBlockStyle}" Text="{Binding RadiusText}" Foreground="WhiteSmoke" />
                 </Grid>
@@ -48,6 +56,19 @@
     </Page.Resources>
     
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:Name="AdaptiveVisualStateGroup">
+                <VisualState x:Name="DesktopVisualState" >
+                    <VisualState.StateTriggers>
+                        <Triggers:DeviceFamilyStateTrigger DeviceFamily="Desktop" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="SliderValue.Width" Value="600" />
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
@@ -59,7 +80,7 @@
                 Text="{x:Bind ViewModel.Selected.Name}"
         		Style="{ThemeResource BodyTextBlockStyle}"
                 Margin="10,0,5,0"
-                FontSize="55"
+                FontSize="40"
         		Foreground="{StaticResource colorPrimaryDark}" />
         
         <ProgressBar x:Name="MasterProgressBar"

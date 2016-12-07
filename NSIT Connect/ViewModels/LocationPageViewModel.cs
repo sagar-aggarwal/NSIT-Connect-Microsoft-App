@@ -14,9 +14,9 @@ namespace NSIT_Connect.ViewModels
     public class LocationPageViewModel : ViewModelBase
     {
         public ObservableCollection<LocationItem> lpanel { get; set; }
-        string[] arrlocations = { "NSIT Hotspots", "Cafes", "NightClub", "Restuarant", "Malls", "Bowling", "Food", "Movies", "Amusment Park", "Park" };
+        string[] arrlocations = {/* "NSIT Hotspots", */"Cafes", "NightClub", "Restuarant", "Malls", "Bowling", "Food", "Movies", "Amusment Park", "Park" };
         string[] Source = {
-              "ms-appx:///Assets/Location/nsit_hotspots.jpg",
+       //       "ms-appx:///Assets/Location/nsit_hotspots.jpg",
               "ms-appx:///Assets/Location/cafes.jpg",
               "ms-appx:///Assets/Location/night_club.jpg",
               "ms-appx:///Assets/Location/restuarant.png",
@@ -27,7 +27,7 @@ namespace NSIT_Connect.ViewModels
               "ms-appx:///Assets/Location/amusment.jpg",
               "ms-appx:///Assets/Location/park.jpg",
         };
-        private string[] searches = { "Empty" , "cafe", "night_club", "restaurant", "shopping_mall", "bowling_alley", "food", "movie_theater", "amusement_park", "park" };
+        private string[] searches = { /*"Empty" ,*/ "cafe", "night_club", "restaurant", "shopping_mall", "bowling_alley", "food", "movie_theater", "amusement_park", "park" };
 
         public LocationPageViewModel()
         {

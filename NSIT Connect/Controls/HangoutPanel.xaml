@@ -7,6 +7,11 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:rating="using:Bratched.Tools.RatingControl"
     mc:Ignorable="d"
+    xmlns:Behaviors="using:Template10.Behaviors"
+    xmlns:Core="using:Microsoft.Xaml.Interactions.Core"
+    xmlns:Interactivity="using:Microsoft.Xaml.Interactivity"
+    xmlns:behaviors="using:Template10.Behaviors"
+    xmlns:Triggers="using:WindowsStateTriggers"
     x:Name="HangoutPanelcontrol"
     d:DesignHeight="190"
     d:DesignWidth="402">
@@ -20,12 +25,33 @@
     </UserControl.Resources>
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" HorizontalAlignment="Left">
+
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:Name="AdaptiveVisualStateGroup">
+                <VisualState x:Name="MobileVisualState" >
+                    <VisualState.StateTriggers>
+                        <Triggers:DeviceFamilyStateTrigger DeviceFamily="Mobile" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="ellipse.Width" Value="80" />
+                        <Setter Target="ellipse.Height" Value="80" />
+                        <Setter Target="vicinity.MaxWidth" Value="200" />
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="149" />
+            <ColumnDefinition Width="Auto" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
 
-        <Ellipse Grid.Column="0" Width="145" Height="145" Margin='2,4,0,0' HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Ellipse x:Name="ellipse" Grid.Column="0" Width="145" Height="145" Margin='4,4,2,0' HorizontalAlignment="Center" VerticalAlignment="Center">
             <Ellipse.Fill>
                 <ImageBrush>
                     <ImageBrush.ImageSource>
@@ -34,17 +60,26 @@
                 </ImageBrush>
             </Ellipse.Fill>
         </Ellipse>
-        <StackPanel Grid.Column="1" Margin="5" VerticalAlignment="Center">
+        <Grid Grid.Column="1" Margin="5" VerticalAlignment="Center">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            
             <TextBlock Text="{Binding HangoutName, ElementName=HangoutPanelcontrol}" 
                        MaxLines="2"
+                       Grid.Row="0"
                        TextTrimming="WordEllipsis"
                        MaxWidth="243"
                        TextWrapping="Wrap" Foreground="{StaticResource colorPrimaryDark}" 
-                       FontWeight="Bold" Style="{ThemeResource BodyTextBlockStyle}" Margin="5,5,0,0" />
-            <TextBlock Text="{Binding HangoutVicinity, ElementName=HangoutPanelcontrol}" FontWeight="Normal"  TextWrapping="Wrap"  Style="{ThemeResource BaseTextBlockStyle}" Margin="5,5,0,0"/>
-            <TextBlock Text="{Binding Available, ElementName=HangoutPanelcontrol}" TextWrapping="Wrap" FontWeight="Bold" Style="{ThemeResource BaseTextBlockStyle}" Margin="5,0,0,0" 
+                       FontWeight="Bold" Style="{ThemeResource BodyTextBlockStyle}" Margin="0,5,0,0" />
+            <TextBlock HorizontalAlignment="Left"  x:Name="vicinity" TextTrimming="WordEllipsis" Grid.Row="1" Text="{Binding HangoutVicinity, ElementName=HangoutPanelcontrol}" FontWeight="Normal"   TextWrapping="Wrap"  Style="{ThemeResource BaseTextBlockStyle}" Margin="0,5,0,0"/>
+            <TextBlock Grid.Row="2" Text="{Binding Available, ElementName=HangoutPanelcontrol}" TextWrapping="Wrap" FontWeight="Bold" Style="{ThemeResource BaseTextBlockStyle}" Margin="0,0,0,0" 
                        FontSize="20"  Foreground="#FF686868"/>
-            <rating:RatingControl ItemsCount="5" Value="{Binding RatValue, ElementName=HangoutPanelcontrol,Mode=TwoWay}" Height ="20"  Margin="0,8,125,0"  >
+            <rating:RatingControl Grid.Row="3" ItemsCount="5" Value="{Binding RatValue, ElementName=HangoutPanelcontrol,Mode=TwoWay}" Height ="20"  Margin="0,8,125,0"  >
                 <rating:RatingControl.EmptyItemsDefinition>
                     <rating:RateItemDefinition BackgroundColor="Gray" OutlineColor="Black" OutlineThikness="4" />
                 </rating:RatingControl.EmptyItemsDefinition>
@@ -52,6 +87,6 @@
                     <rating:RateItemDefinition BackgroundColor="#FF26B4F5" OutlineColor="Black" OutlineThikness="4" />
                 </rating:RatingControl.FullItemsDefinition>
             </rating:RatingControl>
-        </StackPanel>
+        </Grid>
     </Grid>
 </UserControl>

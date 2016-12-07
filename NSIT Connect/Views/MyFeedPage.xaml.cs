@@ -80,6 +80,7 @@ namespace NSIT_Connect.Views
         private void MailList_ItemClick(object sender, ItemClickEventArgs e)
         {
             ViewModel.getpicture(e.ClickedItem as Feed);
+            ViewModel.temp = e.ClickedItem as Feed;
         }
 
         private async void AppBarButton_Click(object sender, RoutedEventArgs e)
@@ -174,5 +175,6 @@ namespace NSIT_Connect.Views
             }
             
         }
+
     }
 }

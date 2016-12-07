@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using Template10.Common;
 using Template10.Mvvm;
 using Windows.Data.Json;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Navigation;
 
@@ -26,6 +27,7 @@ namespace NSIT_Connect.ViewModels
         private Dictionary<string, string> resultdic = new Dictionary<string, string>();
         private string pictureresult = null;
         private bool refresh = false;
+        public Feed temp;
         private Dictionary<string, bool> refreshdic = new Dictionary<string, bool>();
         private string PictureUri = null;
         private string hobject, hmessage, hpicture, hlink, hlikes, htime;
@@ -263,6 +265,11 @@ namespace NSIT_Connect.ViewModels
 
 
                 httpClient.Dispose();
+            }
+            else
+            {
+                var mssg = new MessageDialog("No Internet");
+                await mssg.ShowAsync();
             }
             JsonObject ob, ob2;
             JsonArray arr;
