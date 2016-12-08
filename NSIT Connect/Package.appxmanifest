@@ -5,7 +5,7 @@
   <Properties>
     <DisplayName>NSIT Connect</DisplayName>
     <PublisherDisplayName>AGGARWAL'S</PublisherDisplayName>
-    <Logo>Assets\StoreLogo.png</Logo>
+    <Logo>Assets\Logo\logo50.png</Logo>
   </Properties>
   <Dependencies>
     <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.0.0" MaxVersionTested="10.0.0.0" />
@@ -15,10 +15,15 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="NSIT Connect">
-      <uap:VisualElements DisplayName="NSIT Connect" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="Sample" BackgroundColor="transparent">
-        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png">
+      <uap:VisualElements DisplayName="NSIT Connect" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Logo\size44.png" Description="Sample" BackgroundColor="transparent">
+        <uap:DefaultTile Square310x310Logo="Assets\Logo\logo310.png" Wide310x150Logo="Assets\Logo\logo 310150.png" Square71x71Logo="Assets\Square71x71Logo.png">
+          <uap:ShowNameOnTiles>
+            <uap:ShowOn Tile="square150x150Logo" />
+            <uap:ShowOn Tile="wide310x150Logo" />
+            <uap:ShowOn Tile="square310x310Logo" />
+          </uap:ShowNameOnTiles>
         </uap:DefaultTile>
-        <uap:SplashScreen Image="Assets\SplashScreen.png" />
+        <uap:SplashScreen Image="Assets\Logo\Splash600.png" />
       </uap:VisualElements>
     </Application>
   </Applications>
