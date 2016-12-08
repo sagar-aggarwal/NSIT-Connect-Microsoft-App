@@ -77,16 +77,6 @@
                 </StackPanel>
             </Controls:HamburgerButtonInfo>
 
-            <Controls:HamburgerButtonInfo ClearHistory="True" PageType="views:AboutPage" 
-                                          AutomationProperties.Name="Jerry"
-                                          >
-                <StackPanel Orientation="Horizontal">
-                    <BitmapIcon Width="48" Height="48" UriSource="ms-appx:///Assets/ShellIcon/appbar.information.circle.png" />
-                    <TextBlock Margin="12,0,0,0" VerticalAlignment="Center"
-                               Text="About" />
-                </StackPanel>
-            </Controls:HamburgerButtonInfo>
-
             <Controls:HamburgerButtonInfo ClearHistory="True" PageType="views:CodeRadarPage" 
                                           AutomationProperties.Name="Jerry"
                                           >
@@ -94,6 +84,16 @@
                     <BitmapIcon Width="48" Height="48" UriSource="ms-appx:///Assets/ShellIcon/appbar.laptop.png" />
                     <TextBlock Margin="12,0,0,0" VerticalAlignment="Center"
                                Text="CodeRadar" />
+                </StackPanel>
+            </Controls:HamburgerButtonInfo>
+
+            <Controls:HamburgerButtonInfo ClearHistory="True" PageType="views:AboutPage" 
+                                          AutomationProperties.Name="Jerry"
+                                          >
+                <StackPanel Orientation="Horizontal">
+                    <BitmapIcon Width="48" Height="48" UriSource="ms-appx:///Assets/ShellIcon/appbar.information.circle.png" />
+                    <TextBlock Margin="12,0,0,0" VerticalAlignment="Center"
+                               Text="About" />
                 </StackPanel>
             </Controls:HamburgerButtonInfo>
 

@@ -67,11 +67,13 @@
                         </Ellipse>
                         <TextBlock x:Name="From" FontSize="20"
                                FontWeight="Normal" 
-                               MaxLines="1" RelativePanel.AlignTopWith="Ellipse"
+                               MaxLines="1"
+                               TextTrimming="WordEllipsis"
+                               RelativePanel.AlignTopWith="Ellipse"
                                RelativePanel.RightOf="Ellipse"
                                Text="{Binding Message, FallbackValue=Message}" />
                         <Viewbox StretchDirection="DownOnly" RelativePanel.Below="Body">
-                            <Image  Margin="5" Source="{Binding PictureUri,Mode=OneWay}" Stretch="None"/>
+                            <Image  Margin="5" Source="{Binding PictureUri,Mode=OneWay}" Stretch="None" />
                         </Viewbox>
                         <TextBlock x:Name="To" FontSize="12"
                                FontWeight="Bold" 
@@ -231,8 +233,8 @@
                                     <CommandBar
                                 x:Name="MasterCommandBar"
                                 Grid.Row="0"
-                                Background="{StaticResource colorPrimaryDark}"
                                 Foreground="WhiteSmoke"
+                                Background="{StaticResource colorPrimaryDark}"
                                 Grid.Column="0">
                                         <CommandBar.Content>
                                             <ContentControl Content="{TemplateBinding MasterCommandBarContent}" />
@@ -368,7 +370,9 @@
                                         </VisualState>
                                     </VisualStateGroup>
                                     <VisualStateGroup x:Name="DeviceVisualStateGroup">
-                                        <VisualState x:Name="DesktopVisualState" />
+                                        <VisualState x:Name="DesktopVisualState" >
+                                           
+                                        </VisualState>
                                         <VisualState x:Name="MobileVisualState">
                                             <VisualState.StateTriggers>
                                                 <Triggers:DeviceFamilyStateTrigger DeviceFamily="Mobile" />
@@ -393,7 +397,25 @@
 
 
     <Grid x:ConnectionId='8' x:Name="RootGrid" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Controls:MasterDetailsView x:ConnectionId='9'
+
+
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:ConnectionId='9' x:Name="AdaptiveVisualStateGroup">
+                <VisualState x:ConnectionId='10' x:Name="DesktopVisualState" >
+                    <VisualState.StateTriggers>
+                        <Triggers:DeviceFamilyStateTrigger DeviceFamily="Desktop" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="Refresh_Appbar.Foreground" Value="WhiteSmoke" />
+                        <Setter Target="Link_AppBar.Foreground" Value="WhiteSmoke" />
+                        <Setter Target="Save_AppBar.Foreground" Value="WhiteSmoke" />
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+
+
+        <Controls:MasterDetailsView x:ConnectionId='11'
             x:Name="MailList"
                                           
             Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
@@ -431,8 +453,8 @@
                 </StackPanel>
             </Controls:MasterDetailsView.MasterCommandBarContent>
             <Controls:MasterDetailsView.MasterCommands>
-                <AppBarButton x:ConnectionId='10'
-                    Foreground="WhiteSmoke"
+                <AppBarButton x:ConnectionId='12'
+                    x:Name="Refresh_Appbar"
                                                                
                     Icon="Refresh"
                     Label="Refresh" />
@@ -451,15 +473,15 @@
                     Icon="Next"
                     Foreground="White"
                     Label="Older" />-->
-                <AppBarButton x:ConnectionId='11'
+                <AppBarButton x:ConnectionId='13'
+                    x:Name="Link_AppBar"
                     Icon="Link"
                                                 
-                    Foreground="White"
                     Label="Link" />
-                <AppBarButton x:ConnectionId='12'
+                <AppBarButton x:ConnectionId='14'
+                    x:Name="Save_AppBar"
                     Icon="Save"
                                               
-                    Foreground="White"
                     Label="Save Image" />
             </Controls:MasterDetailsView.DetailsCommands>
             <x:String>Sample</x:String>

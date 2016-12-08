@@ -96,7 +96,7 @@ namespace NSIT_Connect.ViewModels
                 SelectedHangout = suspensionState[nameof(SelectedHangout)];
             }
             Selected = (suspensionState.ContainsKey(nameof(Selected))) ? suspensionState[nameof(Selected)] as LocationItem : parameter as LocationItem;
-            Selected.Name = "#" + Selected.Name.ToLower();
+            Selected.Name = Selected.Name.ToLower();
             ProgressVisibility = Visibility.Collapsed;
             gethangoutlist();
             await Task.CompletedTask;

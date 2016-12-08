@@ -20,6 +20,8 @@
     <RootPropertyPathName Name="Text" />
     <RootPropertyPathName Name="Name" />
     <RootPropertyPathName Name="Rating" />
+    <RootPropertyPathName Name="Googlemaps" />
+    <RootPropertyPathName Name="Website" />
     <RootPropertyPathName Name="ImageSource" />
     <RootPropertyPathName Name="SelectedHangout" />
     <RootPropertyPathName Name="Vicinity" />
@@ -71,11 +73,11 @@
       <RootProperty Name="Background" />
       <RootProperty Name="Children" />
       <RootProperty Name="Margin" />
-      <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Orientation" />
       <RootProperty Name="Padding" />
       <RootProperty Name="Height" />
+      <RootProperty Name="VerticalAlignment" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.VisualStateManager">
       <RootMethod Name="GetVisualStateGroups" />
@@ -159,20 +161,26 @@
       <RootProperty Name="Background" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="ColumnDefinitions" />
-      <RootProperty Name="Children" />
       <RootProperty Name="RowDefinitions" />
-      <RootProperty Name="Height" />
+      <RootProperty Name="Children" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Height" />
       <RootProperty Name="MaxWidth" />
       <RootProperty Name="Width" />
-      <RootProperty Name="VerticalAlignment" />
       <RootMethod Name="GetColumn" />
       <RootMethod Name="SetColumn" />
       <RootMethod Name="GetRow" />
       <RootMethod Name="SetRow" />
     </RootType>
+    <RootType FullName="WindowsStateTriggers.DeviceFamilyStateTrigger">
+      <RootProperty Name="DeviceFamily" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
       <RootProperty Name="Width" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
+      <RootProperty Name="Height" />
     </RootType>
     <RootType FullName="Bratched.Tools.RatingControl.RatingControl">
       <RootProperty Name="ItemsCount" />
@@ -203,9 +211,6 @@
       <RootProperty Name="DataContext" />
       <RootProperty Name="BottomAppBar" />
       <RootProperty Name="Background" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
-      <RootProperty Name="Height" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Image">
       <RootProperty Name="Width" />
@@ -372,9 +377,9 @@
     <RootType FullName="NSIT_Connect.Views.Busy" />
     <RootType FullName="NSIT_Connect.ViewModels.CodeRadarPageViewModel" />
     <RootType FullName="Windows.UI.Xaml.Controls.Pivot">
+      <RootProperty Name="Margin" />
       <RootProperty Name="Resources" />
       <RootProperty Name="Items" />
-      <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Primitives.PivotHeaderItem" />
     <RootType FullName="Windows.UI.Xaml.FrameworkElement">
@@ -394,8 +399,8 @@
     <RootType FullName="Windows.UI.Xaml.Controls.GridView">
       <RootProperty Name="Margin" />
       <RootProperty Name="ItemsSource" />
-      <RootProperty Name="ItemTemplate" />
       <RootProperty Name="IsItemClickEnabled" />
+      <RootProperty Name="ItemTemplate" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Height" />
       <RootProperty Name="IsMultiSelectCheckBoxEnabled" />
@@ -439,7 +444,16 @@
     <RootType FullName="Windows.UI.Xaml.Controls.ListView">
       <RootProperty Name="ItemsSource" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="IsItemClickEnabled" />
       <RootProperty Name="ItemTemplate" />
+      <RootEvent Name="ItemClick" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.HyperlinkButton">
+      <RootProperty Name="Content" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="NavigateUri" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="Foreground" />
     </RootType>
     <RootType FullName="NSIT_Connect.Views.HangoutDetailPage" />
     <RootType FullName="NSIT_Connect.ViewModels.HangoutPageViewModel" />
@@ -560,9 +574,6 @@
       <RootProperty Name="TargetObject" />
       <RootProperty Name="Value" />
     </RootType>
-    <RootType FullName="WindowsStateTriggers.DeviceFamilyStateTrigger">
-      <RootProperty Name="DeviceFamily" />
-    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ItemsPanelTemplate">
       <RootProperty Name="Template" />
     </RootType>
@@ -658,6 +669,7 @@
     <RootType FullName="NSIT_Connect.Views.Shell" />
     <RootType FullName="Windows.UI.Xaml.Controls.Canvas">
       <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Margin" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Background" />
       <RootProperty Name="Children" />

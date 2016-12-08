@@ -6,34 +6,49 @@
              xmlns:Media="using:Microsoft.Xaml.Interactions.Media"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="using:NSIT_Connect.Views"
+             xmlns:Triggers="using:WindowsStateTriggers"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d">
 
     <Grid Background="{StaticResource ExtendedSplashBackground}">
 
-        <Canvas x:ConnectionId='1' x:Name="rootCanvas" HorizontalAlignment="Stretch"
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:ConnectionId='1' x:Name="AdaptiveVisualStateGroup">
+                <VisualState x:ConnectionId='2' x:Name="MobileVisualState" >
+                    <VisualState.StateTriggers>
+                        <Triggers:DeviceFamilyStateTrigger DeviceFamily="Mobile" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="progressRing.Margin" Value="0,50,10,0" />
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+
+        <Canvas x:ConnectionId='3' x:Name="rootCanvas" HorizontalAlignment="Stretch" Margin="5,0,0,0"
                 VerticalAlignment="Stretch">
             <Canvas.Background>
-                <ImageBrush ImageSource="ms-appx:///Assets/SplashScreen.png" Stretch="Uniform">
+                <ImageBrush ImageSource="ms-appx:///Assets/Logo/Splash.png" Stretch="Uniform">
                     <ImageBrush.Transform>
                         <TranslateTransform Y="10" />
                     </ImageBrush.Transform>
                 </ImageBrush>
             </Canvas.Background>
-            <Viewbox x:ConnectionId='4' x:Name="splashImage"
+            <Viewbox x:ConnectionId='6' x:Name="splashImage"
                      Width="{Binding ActualWidth, ElementName=MyCanvas, Mode=OneWay}"
                      Height="{Binding ActualHeight, ElementName=MyCanvas, Mode=OneWay}">
-                <Image Source="ms-appx:///Assets/SplashScreen.png" />
+                <Image Source="ms-appx:///Assets/Logo/Splash.png" />
             </Viewbox>
         </Canvas>
 
-        <ProgressRing x:ConnectionId='2' x:Name="progressRing" Width="50"
+        <ProgressRing x:ConnectionId='4' x:Name="progressRing" Width="50"
                       Height="50" HorizontalAlignment="Center"
                       VerticalAlignment="Center"
-                      Foreground="{StaticResource ExtendedSplashForeground}"
+                      Margin="0,50,35,0"
+                      Foreground="WhiteSmoke"
                       IsActive="True" RenderTransformOrigin="0.5,0.5">
             <ProgressRing.RenderTransform>
-                <CompositeTransform x:ConnectionId='3' x:Name="ProgressTransform" TranslateY="120" />
+                <CompositeTransform x:ConnectionId='5' x:Name="ProgressTransform" TranslateY="120" />
             </ProgressRing.RenderTransform>
         </ProgressRing>
 

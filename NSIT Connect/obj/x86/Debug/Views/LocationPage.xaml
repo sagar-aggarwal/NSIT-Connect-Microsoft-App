@@ -23,6 +23,39 @@
 
     </Page.Resources>
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        
+         <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:ConnectionId='3' x:Name="AdaptiveVisualStateGroup">
+                <VisualState x:ConnectionId='4' x:Name="VisualStateNarrow">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="{StaticResource NarrowMinWidth}" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <!--  TODO: change properties for narrow view  -->
+                        <Setter Target="Main_Grid.Margin" Value="35,25,0,0" />
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:ConnectionId='5' x:Name="VisualStateNormal">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="{StaticResource NormalMinWidth}" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <!--  TODO: change properties for normal view  -->
+                        <Setter Target="Main_Grid.Margin" Value="20,25,0,0" />
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:ConnectionId='6' x:Name="VisualStateWide">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="{StaticResource WideMinWidth}" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <!--  TODO: change properties for wide view  -->
+                        <Setter Target="Main_Grid.Margin" Value="20,25,0,0" />
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+
 
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
@@ -36,12 +69,12 @@
         		Foreground="{StaticResource colorPrimaryDark}" 
         		FontSize="55"         />
         </StackPanel>
-        <GridView x:ConnectionId='3' x:Name="Main_Grid"
+        <GridView x:ConnectionId='7' x:Name="Main_Grid"
                                                   IsItemClickEnabled="True"
-                  Height="Auto"                                         Margin="15,25,0,0" Grid.Row="1" >
+                  Height="Auto"                                         Margin="35,25,0,0" Grid.Row="1" >
             <GridView.ItemTemplate >
                 <DataTemplate                                 >
-                    <imagepanel:CircularPanel x:ConnectionId='4' Margin="15"                                                 />
+                    <imagepanel:CircularPanel x:ConnectionId='8' Margin="15"                                                 />
                 </DataTemplate>
             </GridView.ItemTemplate>
         </GridView>

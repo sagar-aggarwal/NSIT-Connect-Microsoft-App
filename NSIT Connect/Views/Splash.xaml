@@ -6,10 +6,24 @@
              xmlns:Media="using:Microsoft.Xaml.Interactions.Media"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="using:NSIT_Connect.Views"
+             xmlns:Triggers="using:WindowsStateTriggers"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d">
 
     <Grid Background="{StaticResource ExtendedSplashBackground}">
+
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:Name="AdaptiveVisualStateGroup">
+                <VisualState x:Name="MobileVisualState" >
+                    <VisualState.StateTriggers>
+                        <Triggers:DeviceFamilyStateTrigger DeviceFamily="Mobile" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="progressRing.Margin" Value="0,50,10,0" />
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
 
         <Canvas x:Name="rootCanvas" HorizontalAlignment="Stretch" Margin="5,0,0,0"
                 VerticalAlignment="Stretch">
@@ -30,8 +44,8 @@
         <ProgressRing x:Name="progressRing" Width="50"
                       Height="50" HorizontalAlignment="Center"
                       VerticalAlignment="Center"
-                      Margin="0,45,30,0"
-                      Foreground="{StaticResource ExtendedSplashForeground}"
+                      Margin="0,50,35,0"
+                      Foreground="WhiteSmoke"
                       IsActive="True" RenderTransformOrigin="0.5,0.5">
             <ProgressRing.RenderTransform>
                 <CompositeTransform x:Name="ProgressTransform" TranslateY="120" />

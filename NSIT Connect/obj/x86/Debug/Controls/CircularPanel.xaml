@@ -19,8 +19,8 @@
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
                         <!--  TODO: change properties for narrow view  -->
-                        <Setter Target="ellipse.Width" Value="170" />
-                        <Setter Target="ellipse.Height" Value="170" />
+                        <Setter Target="ellipse.Width" Value="190" />
+                        <Setter Target="ellipse.Height" Value="190" />
                     </VisualState.Setters>
                 </VisualState>
                 <VisualState x:ConnectionId='4' x:Name="VisualStateNormal">
@@ -47,7 +47,7 @@
         </VisualStateManager.VisualStateGroups>
 
 
-        <Ellipse x:ConnectionId='6' x:Name="ellipse" Width="145" Height="145" Margin='0,4,0,0' HorizontalAlignment="Center">
+        <Ellipse x:ConnectionId='6' x:Name="ellipse" Width="190" Height="190" Margin='0,4,0,0' HorizontalAlignment="Center">
             <Ellipse.Fill>
                 <ImageBrush>
                     <ImageBrush.ImageSource>
