@@ -3,6 +3,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Template10.Mvvm;
 using Template10.Services.SettingsService;
+using Windows.Storage;
 using Windows.UI.Xaml;
 
 namespace NSIT_Connect.ViewModels
@@ -38,7 +39,8 @@ namespace NSIT_Connect.ViewModels
         public bool UseLightThemeButton
         {
             get { return _settings.AppTheme.Equals(ApplicationTheme.Light); }
-            set { _settings.AppTheme = value ? ApplicationTheme.Light : ApplicationTheme.Dark; base.RaisePropertyChanged(); }
+            set { _settings.AppTheme = value ? ApplicationTheme.Light : ApplicationTheme.Dark;
+                base.RaisePropertyChanged(); }
         }
 
         private string _BusyText = "Please wait...";

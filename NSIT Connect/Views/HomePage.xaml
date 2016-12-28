@@ -37,9 +37,9 @@
                                Text="{Binding Message, FallbackValue=Message}" />
                         <StackPanel Orientation="Horizontal">
                             <TextBlock x:Name="Subject" Margin="8,0,0,0"
-                               FontSize="12" FontWeight="Bold" Width="25" VerticalAlignment="Center" Foreground="#26b4f5" MaxLines="1" Style="{ThemeResource BodyTextBlockStyle}"
+                               FontSize="12" FontWeight="Bold" Width="20" VerticalAlignment="Center" Foreground="#26b4f5" MaxLines="1" Style="{ThemeResource BodyTextBlockStyle}"
                                Text="{Binding Likes}" />
-                            <Image Source="ms-appx:///Assets/like.png" Width="25" Height="25" />
+                            <Image Source="ms-appx:///Assets/like.png" Width="18" Height="18" />
                         </StackPanel>
                     </StackPanel>
                     <TextBlock x:Name="Date" Grid.Column="2"
@@ -75,14 +75,15 @@
                         <Viewbox StretchDirection="DownOnly" RelativePanel.Below="Body">
                             <Image  Margin="5" Source="{Binding PictureUri,Mode=OneWay}" Stretch="None" />
                         </Viewbox>
-                        <TextBlock x:Name="To" FontSize="12"
-                               FontWeight="Bold" 
-                               RelativePanel.RightOf="Ellipse"
-                               MaxLines="1" 
-                               RelativePanel.Below="Subject">
-                        <Run Text="Likes: " />
-                        <Run Foreground="DimGray" Text="{Binding Likes, FallbackValue=Likes}" />
-                        </TextBlock>
+
+                        <StackPanel x:Name="To" Orientation="Horizontal" RelativePanel.RightOf="Ellipse"
+                               RelativePanel.Below="Ellipse">
+                            <TextBlock  
+                               FontSize="14" FontWeight="SemiBold" Width="20" VerticalAlignment="Center" Foreground="#26b4f5" MaxLines="1" Style="{ThemeResource BodyTextBlockStyle}"
+                               Text="{Binding Likes}" />
+                            <Image Source="ms-appx:///Assets/like.png" Width="18" Height="18" />
+                        </StackPanel>
+
                         <TextBlock x:Name="Subject" Margin="0,8,0,0" Visibility="Collapsed"
                                FontSize="16" FontWeight="Bold"
                                 MaxLines="1"
@@ -449,7 +450,7 @@
                         Style="{ThemeResource BodyTextBlockStyle}"
                         FontSize="40"
                         Foreground="WhiteSmoke"
-                        Text="home" />
+                        Text="Home" />
                 </StackPanel>
             </Controls:MasterDetailsView.MasterCommandBarContent>
             <Controls:MasterDetailsView.MasterCommands>
@@ -460,7 +461,7 @@
                     Label="Refresh" />
             </Controls:MasterDetailsView.MasterCommands>
             <Controls:MasterDetailsView.DetailsCommandBarContent>
-                <TextBlock Text="post" VerticalAlignment="Center" Margin="15,5,0,0" FontWeight="Bold" Style="{ThemeResource BaseTextBlockStyle}" FontSize="25" />
+                <TextBlock Text="Post" VerticalAlignment="Center" Margin="15,5,0,0" FontWeight="Bold" Style="{ThemeResource BaseTextBlockStyle}" FontSize="25" />
             </Controls:MasterDetailsView.DetailsCommandBarContent>
             <Controls:MasterDetailsView.DetailsCommands>
                 <!--<AppBarButton

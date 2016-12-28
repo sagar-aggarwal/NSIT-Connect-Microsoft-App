@@ -65,7 +65,7 @@
                     </GridView.ItemTemplate>
                 </GridView>
             </PivotItem>
-            <PivotItem Header="Upcomming">
+            <PivotItem Header="Upcoming">
                 <!--Pivot content goes here-->
                 <GridView Margin="0,25,5,0" ItemsSource="{x:Bind ViewModel.CurrentItem}" ItemClick="GridView_ItemClick" IsItemClickEnabled="True" >
                     <GridView.ItemTemplate>

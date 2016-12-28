@@ -70,9 +70,9 @@ namespace NSIT_Connect.ViewModels
             Byte[] b = new Byte[3];
             for (int j = 0; j < k; j++) {
                 if (ids[j] == string.Empty)
-                    ids[j] = "not available";
+                    ids[j] = "-";
                 if (contact[j] == string.Empty)
-                    contact[j] = "not available";
+                    contact[j] = "-";
 
                 rnd.NextBytes(b);
                 Color color = Color.FromArgb(150,b[0], b[1], b[2]);

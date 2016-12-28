@@ -172,7 +172,7 @@ namespace NSIT_Connect.ViewModels
                     else
                         thumbnail = YTFeedItems.GetObjectAt(i).GetNamedObject("snippet").GetNamedObject("thumbnails").GetNamedObject("default").GetNamedString("url");
                     DateTime dt = Convert.ToDateTime(date);
-                    Item.Add(new YVideoItem() { Date = dt.ToString("d MMM , yyy"), Descrption = description, Thumbnail = new Uri(thumbnail), Title = title, VideoID = videoid });
+                    Item.Add(new YVideoItem() { Date = dt.ToString("d MMM, yyy"), Descrption = description, Thumbnail = new Uri(thumbnail), Title = title, VideoID = videoid });
 
 
                 }
