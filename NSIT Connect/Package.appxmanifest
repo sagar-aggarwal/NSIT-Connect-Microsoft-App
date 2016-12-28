@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
-  <Identity Name="55161SagarAggarwal.NSITConnect" Publisher="CN=62809702-030E-4738-9388-CE081B96CA10" Version="1.0.0.0" />
+  <Identity Name="55161SagarAggarwal.NSITConnect" Publisher="CN=62809702-030E-4738-9388-CE081B96CA10" Version="1.0.1.0" />
   <mp:PhoneIdentity PhoneProductId="7b35e933-3e05-42a6-828e-8065ca037667" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>NSIT Connect</DisplayName>

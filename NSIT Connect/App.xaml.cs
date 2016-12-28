@@ -31,6 +31,7 @@ namespace NSIT_Connect
             #endregion
         }
 
+
         public override async Task OnInitializeAsync(IActivatedEventArgs args)
         {
             if (Window.Current.Content as ModalDialog == null)
